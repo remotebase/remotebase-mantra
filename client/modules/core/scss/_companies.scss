@@ -1,0 +1,19 @@
+.company-item {
+  padding: 2em 3em;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 10px;
+
+  &:hover {
+    background: #FDFDFD;
+  }
+
+  .company-logo {
+    width: 100%;
+  }
+
+  .company-name {
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+  }
+}

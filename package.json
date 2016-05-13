@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "faker": "^3.1.0",
+    "lodash": "^4.12.0",
     "mantra-core": "^1.2.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",

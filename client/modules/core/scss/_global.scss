@@ -1,0 +1,23 @@
+.header {
+  .navbar-brand {
+    .logo {
+      width: 50px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .name {
+      font-size: 29px;
+      vertical-align: middle;
+      color: #1E1F2A;
+    }
+  }
+}
+
+html {
+  body {
+    color: #1E1F2A;
+    font-family: 'Lato', sans-serif;
+  }
+}
