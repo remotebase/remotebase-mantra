@@ -3,6 +3,11 @@
   border: 1px solid #E8E8E8;
   margin-bottom: 10px;
   cursor: pointer;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  -o-user-select: none;
+  user-select: none;
 
   &:hover {
     background: #FDFDFD;
@@ -21,17 +26,108 @@
 
 .company-modal {
 
-  @media (min-width: 544px) {
+  @media (min-width: 1167px) {
     .modal-dialog {
       width: 1125px;
       margin-top: 79px;
     }
   }
 
-  .modal-content {
-    border: 0;
-    border-radius: 1px;
-    height: 637px;
+  @media (min-width: 1024px) and (max-width: 1166px) {
+    .modal-dialog {
+      width: 900px;
+      margin-top: 79px;
+    }
+  }
+
+  @media (max-width: 769px) and (min-width: 500px) {
+    .modal-dialog {
+      width: 100%;
+      margin-top: 98px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    .modal-dialog {
+      width: 100%;
+      margin: 0;
+    }
+
+    .modal-content {
+      height: 100vh;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .modal-content {
+      border: 0;
+      border-radius: 1px;
+      height: 637px;
+    }
+  }
+
+  .modal-header {
+    text-align: center;
+
+    .company-logo {
+      width: 80px;
+    }
+  }
+
+  .company-link {
+    color: #949494;
+    margin-left: 9px;
+    font-size: 18px;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  .banner {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .hiring-banner {
+    background: #F02C41;
+
+  }
+
+  .not-hiring-banner {
+    background: #519EB0;
+  }
+
+  .category-heading {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 17px;
+
+    .fa {
+      margin-right: 11px;
+    }
+  }
+
+  .modal-body {
+    padding: 1.2em 2.9em;
+  }
+
+  li {
+    margin-bottom: 3px;
+
+    .item-name {
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 11px;
+    }
+
+    .item-value {
+      font-size: 17px;
+      font-weight: 500;
+    }
   }
 }
 

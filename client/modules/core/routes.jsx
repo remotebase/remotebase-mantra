@@ -10,6 +10,9 @@ export default function (injectDeps, {FlowRouter, _, DocHead}) {
   FlowRouter.route('/', {
     name: 'home',
     action() {
+      let title = 'RemoteBase - Best Companies for Remote Jobs';
+      DocHead.setTitle(title);
+
       mount(MainLayoutCtx, {
         content: () => (<Home />)
       });
