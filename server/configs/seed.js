@@ -8,8 +8,11 @@ export function generateFixtures() {
     console.log('Generating companies...');
 
     for (var i = 0; i < 50; i++) {
+      let companyName = faker.company.companyName();
+
       Companies.insert({
-        name: faker.company.companyName(),
+        name: companyName,
+        slug: _.snakeCase(companyName),
         headquarters: faker.address.city(),
         description: faker.lorem.sentence(),
         website: faker.internet.url(),

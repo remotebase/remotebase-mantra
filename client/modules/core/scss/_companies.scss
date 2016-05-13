@@ -2,6 +2,7 @@
   padding: 2em 3em;
   border: 1px solid #E8E8E8;
   margin-bottom: 10px;
+  cursor: pointer;
 
   &:hover {
     background: #FDFDFD;
@@ -15,5 +16,31 @@
     font-size: 25px;
     font-weight: 600;
     display: inline-block;
+  }
+}
+
+.company-modal {
+
+  @media (min-width: 544px) {
+    .modal-dialog {
+      width: 1125px;
+      margin-top: 79px;
+    }
+  }
+
+  .modal-content {
+    border: 0;
+    border-radius: 1px;
+    height: 637px;
+  }
+}
+
+// make modal slide from the right
+.modal.fade:not(.in) {
+  .modal-dialog {
+    transform: translate(25%, 0);
+    -webkit-transform: translate(25%, 0);
+    -ms-transform: translate(25%, 0);
+    -o-transform: translate(25%, 0);
   }
 }

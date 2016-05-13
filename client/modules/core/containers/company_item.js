@@ -9,7 +9,8 @@ export const composer = ({context}, onData) => {
 };
 
 export const depsMapper = (context, actions) => ({
-  context: () => context
+  context: () => context,
+  navToCompany: actions.companies.navToCompany
 });
 
 export default composeAll(

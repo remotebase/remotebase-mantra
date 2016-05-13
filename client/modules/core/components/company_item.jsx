@@ -1,7 +1,7 @@
 import React from 'react';
 
-const CompanyItem = ({company}) => (
-  <li className="company-item">
+const CompanyItem = ({company, navToCompany}) => (
+  <li className="company-item" onClick={navToCompany.bind(this, company.slug)}>
     <div className="row">
       <div className="col-xs-12 col-sm-1">
         <img src="/images/company.png" alt="company" className="company-logo"/>
