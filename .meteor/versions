@@ -28,6 +28,7 @@ ecmascript-runtime@0.2.10
 ejson@1.0.11
 es5-shim@4.5.10
 fastclick@1.0.11
+force-ssl@1.0.11
 fourseven:scss@3.4.3
 geojson-utils@1.0.8
 hot-code-push@1.0.4
