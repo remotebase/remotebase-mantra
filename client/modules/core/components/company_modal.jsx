@@ -1,8 +1,9 @@
 import React from 'react';
 import {Modal} from 'react-bootstrap';
-import HiringBanner from './hiring_banner';
+import classnames from 'classnames';
+import {pathFor} from '/client/modules/core/libs/helpers';
 
-const CompanyModal = ({company, navToHome}) => {
+const CompanyModal = ({company, navToHome, companyTab}) => {
   if (company) {
     return (
       <Modal show={true}
@@ -23,109 +24,127 @@ const CompanyModal = ({company, navToHome}) => {
           </div>
         </Modal.Header>
 
-        <HiringBanner company={company} />
+        <div className="menu-bar">
+          <ul className="list-unstyled menu-list">
+            <li className="menu-item">
+              <a href={pathFor('company', {companySlug: company.slug})}
+                className={classnames({active: !companyTab})}>
+                Overview
+              </a>
+            </li>
+            <li className="menu-item">
+              <a href={pathFor('company', {companySlug: company.slug, query: {tab: 'work'}})}
+                className={classnames({active: companyTab === 'work'})}>
+                Work
+              </a>
+            </li>
+            <li className="menu-item">
+              <a href={pathFor('company', {companySlug: company.slug, query: {tab: 'tech'}})}
+                className={classnames({active: companyTab === 'tech'})}>
+                Technology
+              </a>
+            </li>
+          </ul>
+        </div>
 
         <Modal.Body>
-          <div className="row">
-            <div className="col-xs-12 col-sm-6">
-              <h2 className="category-heading">
-                <i className="fa fa-users"></i>
-                Team
-              </h2>
-              <ul className="list-unstyled">
-                <li>
-                  <span className="item-name">Founded:</span>
-                  <span className="item-value">{company.founded_year}</span>
-                </li>
-                <li>
-                  <span className="item-name">Team size:</span>
-                  <span className="item-value">{company.team_size}</span>
-                </li>
-                <li>
-                  <span className="item-name">Fully distributed:</span>
-                  <span className="item-value">{company.fully_distributed ? 'Yes' : 'No'}</span>
-                </li>
-                <li>
-                  <span className="item-name">Agency:</span>
-                  <span className="item-value">{company.fully_distributed ? 'Yes' : 'No'}</span>
-                </li>
-                <li>
-                  <span className="item-name">Retreats per year:</span>
-                  <span className="item-value">{company.num_retreats_per_year}</span>
-                </li>
-              </ul>
-
-              <h2 className="category-heading">
-                <i className="fa fa-money"></i>
-                Compensation
-              </h2>
-              <ul className="list-unstyled">
-                <li>
-                  <span className="item-name">Salary range:</span>
-                  <span className="item-value">
-                    ${company.salary_lower_bound} ~ ${company.salary_upper_bound}
-                  </span>
-                </li>
-                <li>
-                  <span className="item-name">Location-based salary:</span>
-                  <span className="item-value">
-                    {company.location_based_salary ? 'Yes' : 'No'}
-                  </span>
-                </li>
-                <li>
-                  <span className="item-name">Benefits:</span>
-                  <span className="item-value">
-                    {company.healthcare ? 'healthcare' : ''} {company.family_leave ? 'Family leave' : ''}
-                  </span>
-                </li>
-                <li>
-                  <span className="item-name">Vacation:</span>
-                  <span className="item-value">
-                    {company.unlimited_vacation ? 'Unlimited' : ''} {company.funded_vacation ? 'Funded' : ''}
-                  </span>
-                </li>
-                <li>
-                  <span className="item-name">Equity:</span>
-                  <span className="item-value">
-                    {company.offers_equity ? 'Yes' : 'No'}
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="col-xs-12 col-sm-6">
-              <h2 className="category-heading">
-                <i className="fa fa-laptop"></i>
-                Work
-              </h2>
-              <ul className="list-unstyled">
-                <li>
-                  <span className="item-name">
-                    Async Collaboration:
-                  </span>
-                  <span className="item-value">
-                    {company.asynchronous_collaboration ? 'Yes' : 'No'}
-                  </span>
-                </li>
-                <li>
-                  <span className="item-name">
-                    Workweek:
-                  </span>
-                  <span className="item-value">
-                    {company.workweek}
-                  </span>
-                </li>
-              </ul>
-
-              <h2 className="category-heading">
-                <i className="fa fa-wifi"></i>
-                Communication
-              </h2>
-              <ul className="list-unstyled">
-
-              </ul>
+          <div className={classnames('tab', 'tab-overview', {active: !companyTab})}>
+            <div className="row">
+              <div className="col-xs-12 col-sm-12 text-xs-center">
+                <ul className="list-unstyled">
+                  <li className="trait-item">
+                    <span className="item-name">Fully distributed:</span>
+                    <span className="item-value">{company.fully_distributed ? 'Yes' : 'No'}</span>
+                  </li>
+                  <li className="trait-item">
+                    <span className="item-name">Team size:</span>
+                    <span className="item-value">{company.team_size}</span>
+                  </li>
+                  <li className="trait-item">
+                    <span className="item-name">Salary range:</span>
+                    <span className="item-value">
+                      {company.salary_lower_bound} ~ {company.salary_upper_bound}
+                    </span>
+                  </li>
+                  <li className="trait-item">
+                    <span className="item-name">Retreats per year:</span>
+                    <span className="item-value">{company.num_retreats_per_year}</span>
+                  </li>
+                  <li className="trait-item">
+                    <span className="item-name">Benefits:</span>
+                    <span className="item-value">
+                      {company.healthcare ?
+                        <span className="rb-label">
+                          healthcare
+                        </span> :
+                      ''}
+                      {company.family_leave ?
+                        <span className="rb-label">
+                          Family leave
+                        </span> : ''}
+                      {company.unlimited_vacation ?
+                        <span className="rb-label">
+                          Unlimited vacation
+                        </span> : ''}
+                      {company.funded_vacation ?
+                        <span className="rb-label">
+                          Funded vacation
+                        </span> : ''}
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+          <div className={classnames('tab', 'tab-work', {active: companyTab === 'work'})}>
+            <div className="row">
+              <div className="col-xs-12 col-sm-12 text-xs-center">
+                <ul className="list-unstyled">
+                  <li className="trait-item">
+                    <span className="item-name">
+                      Async Collaboration:
+                    </span>
+                    <span className="item-value">
+                      {company.asynchronous_collaboration ? 'Yes' : 'No'}
+                    </span>
+                  </li>
+                  <li className="trait-item">
+                    <span className="item-name">
+                      Communication methods:
+                    </span>
+                    <span className="item-value">
+
+                    </span>
+                  </li>
+                  <li className="trait-item">
+                    <span className="item-name">
+                      Collaboration methods:
+                    </span>
+                    <span className="item-value">
+
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={classnames('tab', 'tab-work', {active: companyTab === 'tech'})}>
+            <div className="row">
+              <div className="col-xs-12 col-sm-12 text-xs-center">
+                <ul className="list-unstyled">
+                  <li className="trait-item">
+                    <span className="item-name">
+                      Technology Stack:
+                    </span>
+                    <span className="item-value">
+
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </Modal.Body>
       </Modal>
     );

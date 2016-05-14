@@ -21,12 +21,12 @@ export default function (injectDeps, {FlowRouter, _, DocHead}) {
 
   FlowRouter.route('/:companySlug', {
     name: 'company',
-    action({companySlug}) {
-      let title = `RemoteBase - ${_.capitalize(companySlug)}`;
+    action({companySlug}, {tab}) {
+      let title = `RemoteBase - ${_.capitalize(companySlug)} for remote jobs`;
       DocHead.setTitle(title);
 
       mount(MainLayoutCtx, {
-        content: () => (<Home companySlug={companySlug} />)
+        content: () => (<Home companySlug={companySlug} companyTab={tab} />)
       });
     }
   });

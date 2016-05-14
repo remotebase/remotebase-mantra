@@ -80,12 +80,38 @@
     }
   }
 
-  .banner {
+  .menu-bar {
+    background: #F02C41;
     color: #fff;
-    padding: 10px;
-    text-align: center;
+    padding: 9px 48px;
     font-size: 17px;
     font-weight: 600;
+
+    .menu-list {
+      margin-bottom: 0;
+    }
+
+    .menu-item {
+      display: inline-block;
+      margin-right: 74px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 300;
+
+        &.active {
+          font-weight: 600;
+          border-bottom: 1px solid #fff;
+          padding-bottom: 1px;
+        }
+
+        &:hover {
+          border-bottom: 1px solid #fff;
+          padding-bottom: 1px;
+        }
+      }
+    }
   }
 
   .hiring-banner {
@@ -111,17 +137,27 @@
     padding: 1.2em 2.9em;
   }
 
-  li {
-    margin-bottom: 3px;
+  .tab:not(.active) {
+    display: none;
+  }
+
+  .tab-overview {
+    margin-top: 28px;
+  }
+
+  .trait-item {
+    margin-bottom: 18px;
 
     .item-name {
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 17px;
+      font-weight: 400;
       margin-right: 11px;
+      text-transform: uppercase;
+      text-decoration: underline;
     }
 
     .item-value {
-      font-size: 17px;
+      font-size: 27px;
       font-weight: 500;
     }
   }
