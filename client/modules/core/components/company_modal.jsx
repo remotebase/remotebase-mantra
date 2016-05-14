@@ -9,7 +9,7 @@ const CompanyModal = ({company, navToHome}) => {
           className="company-modal"
           onHide={navToHome.bind(this)} >
         <Modal.Header closeButton>
-          <img src="/images/company.png" alt="company" className="company-logo" />
+          <img src={company.getLogoUrl()} alt="company" className="company-logo" />
           <Modal.Title>
             {company.name}
             <a className="company-link"
