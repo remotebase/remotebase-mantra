@@ -1,8 +1,51 @@
 .company-item-container {
-  padding-bottom: 23px;
+  margin-bottom: 23px;
+  position: relative;
+  overflow: hidden;
+
+  .company-item, .hover-info-container {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .company-item {
+    margin-left: 0;
+  }
+
+  .hover-info-container {
+    position:absolute;
+    top:0;
+    width: 100%;
+    margin-left:-598px;
+  }
+
+  .hover-info {
+    background: #40435C;
+    color: #ffffff;
+    opacity: 0.98;
+
+    .badges {
+      margin-top: 9px;
+
+      .fa {
+        margin-right: 4px;
+      }
+    }
+
+    .salary-range {
+      margin-top: 11px;
+      font-size: 1.4em;
+    }
+  }
+
+  &:hover {
+    .hover-info-container {
+      margin-left: -15px;
+    }
+  }
 }
 
-.company-item {
+.company-item, .hover-info {
   padding: 2em 3em;
   border: 1px solid #E8E8E8;
   margin-bottom: 10px;
@@ -17,10 +60,6 @@
   @media (max-width: 499px) {
     height: 274px;
     text-align: center;
-  }
-
-  &:hover {
-    background: #FDFDFD;
   }
 
   .company-logo {

@@ -25,6 +25,8 @@ html {
 }
 
 .rb-label {
+  background-color: white;
+  color: #40435C;
   border: 1px solid #40435C;
   padding: 6px 10px;
   border-radius: 9px;
@@ -37,7 +39,9 @@ html {
   -o-user-select: none;
   user-select: none;
   cursor: default;
+}
 
+.rb-label.rb-label-hoverable {
   &:hover {
     background-color: #40435C;
     color: #EFF8FE;

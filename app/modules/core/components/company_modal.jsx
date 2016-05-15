@@ -74,20 +74,20 @@ const CompanyModal = ({company, navToHome, companyTab}) => {
                     <span className="item-name">Benefits:</span>
                     <span className="item-value">
                       {company.healthcare ?
-                        <span className="rb-label">
+                        <span className="rb-label rb-label-hoverable">
                           healthcare
                         </span> :
                       ''}
                       {company.family_leave ?
-                        <span className="rb-label">
+                        <span className="rb-label rb-label-hoverable">
                           Family leave
                         </span> : ''}
                       {company.unlimited_vacation ?
-                        <span className="rb-label">
+                        <span className="rb-label rb-label-hoverable">
                           Unlimited vacation
                         </span> : ''}
                       {company.funded_vacation ?
-                        <span className="rb-label">
+                        <span className="rb-label rb-label-hoverable">
                           Funded vacation
                         </span> : ''}
                     </span>

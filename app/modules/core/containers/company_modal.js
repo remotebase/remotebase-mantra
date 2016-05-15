@@ -7,6 +7,9 @@ export const composer = ({context, companySlug}, onData) => {
 
   if (Meteor.subscribe('company', companySlug).ready()) {
     let company = Collections.Companies.findOne({slug: companySlug});
+    if (company) {
+      company = Collections.Companies._transform(company);
+    }
     onData(null, {company});
   }
 };
