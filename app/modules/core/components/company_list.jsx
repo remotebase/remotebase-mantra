@@ -2,7 +2,7 @@ import React from 'react';
 import CompanyItem from '../containers/company_item';
 
 const CompanyList = ({companies}) => (
-  <ul className="list-unstyled">
+  <ul className="list-unstyled row">
     {
       companies.map(company => {
         return <CompanyItem company={company}

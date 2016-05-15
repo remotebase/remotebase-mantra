@@ -1,3 +1,7 @@
+.company-item-container {
+  padding-bottom: 23px;
+}
+
 .company-item {
   padding: 2em 3em;
   border: 1px solid #E8E8E8;
@@ -8,6 +12,12 @@
   -ms-user-select: none; /* IE10+ */
   -o-user-select: none;
   user-select: none;
+  height: 192px;
+
+  @media (max-width: 499px) {
+    height: 274px;
+    text-align: center;
+  }
 
   &:hover {
     background: #FDFDFD;
@@ -15,6 +25,11 @@
 
   .company-logo {
     width: 100%;
+
+    @media (max-width: 499px) {
+      width: 64px;
+      margin-bottom: 20px;
+    }
   }
 
   .company-name {
