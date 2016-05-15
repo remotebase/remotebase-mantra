@@ -18,10 +18,10 @@ export default function (injectDeps, {FlowRouter, _, DocHead, Meteor}) {
       DocHead.addMeta({name: 'twitter:site', content: '@remotebase'});
       DocHead.addMeta({name: 'twitter:title', content: title});
       DocHead.addMeta({name: 'twitter:description', content: description});
-      DocHead.addMeta({name: 'twitter:images', content: Meteor.absoluteUrl('images/logo.png')});
+      DocHead.addMeta({name: 'twitter:image', content: Meteor.absoluteUrl('images/logo.png')});
       DocHead.addMeta({property: 'og:title', content: 'Best Remote Companies and Remote Jobs'});
       DocHead.addMeta({property: 'og:site_name', content: 'RemoteBase'});
-      DocHead.addMeta({property: 'og:image', content: Meteor.absoluteUrl('images/logo.png')});
+      DocHead.addMeta({property: 'og:image', content: Meteor.absoluteUrl('images/logo-680x680.png')});
       DocHead.addMeta({property: 'og:description', content: description});
 
       mount(MainLayoutCtx, {
