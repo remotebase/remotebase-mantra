@@ -47,3 +47,28 @@ html {
     color: #EFF8FE;
   }
 }
+
+.mailchimp-banner {
+  background-color: #F02C41;
+  padding: 1.4em 2.1em;
+  margin-bottom: 28px;
+  border-radius: 6px;
+
+  .cta {
+    color: #ffffff;
+    font-size: 19px;
+    margin-top: 4px;
+    padding-left: 36px;
+  }
+
+  .signup-btn {
+    background: #eef8fe;
+    color: #1E1F2A;
+
+    &:hover {
+      color: #ffffff;
+      background: #40435C;
+      padding: .375rem 1.09rem;
+    }
+  }
+}
