@@ -1,7 +1,7 @@
 import React from 'react';
 import {Modal} from 'react-bootstrap';
 import classnames from 'classnames';
-import {pathFor} from '/client/modules/core/libs/helpers';
+import {pathFor} from '/app/modules/core/libs/helpers';
 
 const CompanyModal = ({company, navToHome, companyTab}) => {
   if (company) {

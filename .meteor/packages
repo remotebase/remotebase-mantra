@@ -17,9 +17,10 @@ standard-minifier-js    # JS minifier run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-kadira:flow-router
 aldeed:collection2
 fourseven:scss
 kadira:dochead
 force-ssl
 dburles:collection-helpers
+spiderable
+kadira:flow-router-ssr

@@ -7,6 +7,13 @@ export const composer = ({context}, onData) => {
 
   if (Meteor.subscribe('companies').ready()) {
     let companies = Collections.Companies.find().fetch();
+
+    // transform manually to use helpers in SSR
+    // https://github.com/dburles/meteor-collection-helpers/issues/60
+    companies = companies.map(company => {
+      return Collections.Companies._transform(company);
+    });
+
     onData(null, {companies});
   }
 };
