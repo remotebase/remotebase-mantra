@@ -1,7 +1,19 @@
 .header {
   margin-bottom: 21px;
 
+  .navbar-brand-container {
+    @media (max-width: 499px) {
+      text-align: center;
+      margin-top: 2px;
+    }
+  }
+
   .navbar-brand {
+
+    @media (max-width: 499px) {
+      float: none;
+    }
+
     .logo {
       width: 50px;
       display: inline-block;
@@ -20,6 +32,10 @@
     margin-top: 7px;
     font-size: 21px;
     padding-right: 10px;
+
+    @media (min-width: 499px) {
+      float: right;
+    }
   }
 }
 
@@ -65,11 +81,20 @@ html {
     font-size: 19px;
     margin-top: 4px;
     padding-left: 36px;
+
+    @media (max-width: 499px) {
+      margin-bottom: 7px;
+    }
   }
 
   .signup-btn {
     background: #eef8fe;
     color: #1E1F2A;
+
+    @media (max-width: 499px) {
+      width: 100%;
+      margin-top: 6px;
+    }
 
     &:hover {
       color: #ffffff;
