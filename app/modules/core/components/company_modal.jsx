@@ -2,6 +2,9 @@ import React from 'react';
 import {Modal} from 'react-bootstrap';
 import classnames from 'classnames';
 import {pathFor} from '/app/modules/core/libs/helpers';
+import ModalOverview from '../containers/modal_overview';
+import ModalWork from '../containers/modal_work';
+import ModalTechnology from '../containers/modal_technology';
 
 const CompanyModal = ({company, navToHome, companyTab}) => {
   if (company) {
@@ -48,103 +51,9 @@ const CompanyModal = ({company, navToHome, companyTab}) => {
         </div>
 
         <Modal.Body>
-          <div className={classnames('tab', 'tab-overview', {active: !companyTab})}>
-            <div className="row">
-              <div className="col-xs-12 col-sm-12 text-xs-center">
-                <ul className="list-unstyled">
-                  <li className="trait-item">
-                    <span className="item-name">Fully distributed:</span>
-                    <span className="item-value">{company.fully_distributed ? 'Yes' : 'No'}</span>
-                  </li>
-                  <li className="trait-item">
-                    <span className="item-name">Team size:</span>
-                    <span className="item-value">{company.team_size}</span>
-                  </li>
-                  <li className="trait-item">
-                    <span className="item-name">Salary range:</span>
-                    <span className="item-value">
-                      {company.salary_lower_bound} ~ {company.salary_upper_bound}
-                    </span>
-                  </li>
-                  <li className="trait-item">
-                    <span className="item-name">Retreats per year:</span>
-                    <span className="item-value">{company.num_retreats_per_year}</span>
-                  </li>
-                  <li className="trait-item">
-                    <span className="item-name">Benefits:</span>
-                    <span className="item-value">
-                      {company.healthcare ?
-                        <span className="rb-label rb-label-hoverable">
-                          healthcare
-                        </span> :
-                      ''}
-                      {company.family_leave ?
-                        <span className="rb-label rb-label-hoverable">
-                          Family leave
-                        </span> : ''}
-                      {company.unlimited_vacation ?
-                        <span className="rb-label rb-label-hoverable">
-                          Unlimited vacation
-                        </span> : ''}
-                      {company.funded_vacation ?
-                        <span className="rb-label rb-label-hoverable">
-                          Funded vacation
-                        </span> : ''}
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className={classnames('tab', 'tab-work', {active: companyTab === 'work'})}>
-            <div className="row">
-              <div className="col-xs-12 col-sm-12 text-xs-center">
-                <ul className="list-unstyled">
-                  <li className="trait-item">
-                    <span className="item-name">
-                      Async Collaboration:
-                    </span>
-                    <span className="item-value">
-                      {company.asynchronous_collaboration ? 'Yes' : 'No'}
-                    </span>
-                  </li>
-                  <li className="trait-item">
-                    <span className="item-name">
-                      Communication methods:
-                    </span>
-                    <span className="item-value">
-
-                    </span>
-                  </li>
-                  <li className="trait-item">
-                    <span className="item-name">
-                      Collaboration methods:
-                    </span>
-                    <span className="item-value">
-
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className={classnames('tab', 'tab-work', {active: companyTab === 'tech'})}>
-            <div className="row">
-              <div className="col-xs-12 col-sm-12 text-xs-center">
-                <ul className="list-unstyled">
-                  <li className="trait-item">
-                    <span className="item-name">
-                      Technology Stack:
-                    </span>
-                    <span className="item-value">
-
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
+          <ModalOverview company={company} isActive={!companyTab} />
+          <ModalWork company={company} isActive={companyTab === 'work'} />
+          <ModalTechnology company={company} isActive={companyTab === 'tech'} />
         </Modal.Body>
       </Modal>
     );

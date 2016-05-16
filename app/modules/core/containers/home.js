@@ -6,7 +6,7 @@ export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
 
   if (Meteor.subscribe('companies').ready()) {
-    let companies = Collections.Companies.find().fetch();
+    let companies = Collections.Companies.find({}, {sort: {name: 1}}).fetch();
 
     // transform manually to use helpers in SSR
     // https://github.com/dburles/meteor-collection-helpers/issues/60
