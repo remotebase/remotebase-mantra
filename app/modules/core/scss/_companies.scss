@@ -146,6 +146,14 @@
     .company-logo {
       width: 80px;
     }
+
+    .edit-btn {
+      left: 16px;
+      position: absolute;
+      background: transparent;
+      border: 1px solid #F02C41;
+      color: #F02C41;
+    }
   }
 
   .company-link {
@@ -156,6 +164,10 @@
     &:hover {
       color: inherit;
     }
+  }
+
+  .company-desc {
+    text-transform: uppercase;
   }
 
   .menu-bar {
@@ -220,11 +232,10 @@
   }
 
   .tab-overview {
-    margin-top: 28px;
+    // margin-top: 28px;
   }
 
   .trait-item {
-    margin-bottom: 18px;
 
     .item-name {
       font-size: 17px;
@@ -235,7 +246,7 @@
     }
 
     .item-value {
-      font-size: 27px;
+      font-size: 21px;
       font-weight: 500;
     }
   }

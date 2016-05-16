@@ -4,11 +4,19 @@ import classnames from 'classnames';
 const ModalOverview = ({company, isActive}) => (
   <div className={classnames('tab', 'tab-overview', {active: isActive})}>
     <div className="row">
-      <div className="col-xs-12 col-sm-12 text-xs-center">
+      <div className="col-xs-12 col-sm-6">
         <ul className="list-unstyled">
+          <li className="trait-item">
+            <span className="item-name">Founded:</span>
+            <span className="item-value">{company.founded_year}</span>
+          </li>
           <li className="trait-item">
             <span className="item-name">Fully distributed:</span>
             <span className="item-value">{company.fully_distributed ? 'Yes' : 'No'}</span>
+          </li>
+          <li className="trait-item">
+            <span className="item-name">Agency:</span>
+            <span className="item-value">{company.is_agency ? 'Yes' : 'No'}</span>
           </li>
           <li className="trait-item">
             <span className="item-name">Team size:</span>
@@ -47,6 +55,17 @@ const ModalOverview = ({company, isActive}) => (
             </span>
           </li>
         </ul>
+      </div>
+
+      <div className="col-xs-12 col-sm-6">
+        <div className="row">
+          <div className="col-xs-12">
+
+          </div>
+          <div className="col-xs-12">
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
