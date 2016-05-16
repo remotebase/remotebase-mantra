@@ -20,21 +20,33 @@
   }
 
   .hover-info {
+    padding: 1.3em 3em;
     background: #40435C;
     color: #ffffff;
     opacity: 0.98;
 
-    .badges {
-      margin-top: 9px;
-
-      .fa {
-        margin-right: 4px;
-      }
+    .company-name {
+      display: block;
+      text-align: center;
+      font-size: 1.6em;
+      text-decoration: underline;
     }
 
     .salary-range {
       margin-top: 11px;
-      font-size: 1.4em;
+      font-size: 1.1em;
+    }
+
+    .summary-list {
+      margin-top: 19px;
+
+      li {
+        font-size: 18px;
+
+        .fa {
+          margin-right: 4px;
+        }
+      }
     }
   }
 
@@ -46,8 +58,9 @@
 }
 
 .company-item, .hover-info {
-  padding: 2em 3em;
+  padding: 2em 0em;
   border: 1px solid #E8E8E8;
+  border-radius: 2px;
   margin-bottom: 10px;
   cursor: pointer;
   -webkit-user-select: none; /* Chrome/Safari */
@@ -55,7 +68,7 @@
   -ms-user-select: none; /* IE10+ */
   -o-user-select: none;
   user-select: none;
-  height: 192px;
+  height: 234px;
 
   @media (max-width: 499px) {
     height: 274px;
@@ -63,7 +76,8 @@
   }
 
   .company-logo {
-    width: 100%;
+    width: 66px;
+    margin-bottom: 14px;
 
     @media (max-width: 499px) {
       width: 64px;
@@ -75,6 +89,16 @@
     font-size: 25px;
     font-weight: 600;
     display: inline-block;
+    margin-top: 6px;
+  }
+
+  .company-heading {
+    margin-bottom: 8px;
+  }
+
+  .short-desc {
+    text-transform: uppercase;
+    padding: 0 0.7em;
   }
 }
 
