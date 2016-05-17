@@ -18,15 +18,16 @@
     "location_based_salary":true,
     "funded_vacation":true,
     "is_agency":0,
-    "tech_stack":0,
     "offers_equity":true,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Plex"
+    "slug":"Plex",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Ghost",
@@ -47,15 +48,22 @@
     "location_based_salary":true,
     "funded_vacation":true,
     "is_agency":false,
-    "tech_stack":"node.js, javascript, ember.js",
     "offers_equity":0,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":true,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Ghost"
+    "slug":"Ghost",
+    "communication_methods": [
+      "slack", "email", "skype", "hangout"
+    ],
+    "collaboration_methods": [
+      "git", "google docs", "GoToMeetings"
+    ],
+    "technologies": [
+      "node.js", "ember.js", "HTML", "CSS", "JavaScript"
+    ]
   },
   {
     "name":"DuckDuckGo",
@@ -76,15 +84,16 @@
     "location_based_salary":false,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":true,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"DuckDuckGo"
+    "slug":"DuckDuckGo",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Toggl",
@@ -105,15 +114,16 @@
     "location_based_salary":false,
     "funded_vacation":false,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Toggl"
+    "slug":"Toggl",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"TopTal",
@@ -134,15 +144,16 @@
     "location_based_salary":false,
     "funded_vacation":false,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":true,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"TopTal"
+    "slug":"TopTal",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"GitHub",
@@ -163,15 +174,16 @@
     "location_based_salary":false,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":true,
     "family_leave":4,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"GitHub"
+    "slug":"GitHub",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Treehouse",
@@ -192,15 +204,16 @@
     "location_based_salary":false,
     "funded_vacation":true,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Treehouse"
+    "slug":"Treehouse",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Baremetrics",
@@ -221,15 +234,16 @@
     "location_based_salary":false,
     "funded_vacation":false,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":false,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Baremetrics"
+    "slug":"Baremetrics",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Buffer",
@@ -250,15 +264,16 @@
     "location_based_salary":false,
     "funded_vacation":true,
     "is_agency":false,
-    "tech_stack":"android, ios",
     "offers_equity":true,
     "family_leave":3,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Buffer"
+    "slug":"Buffer",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Spotify",
@@ -279,15 +294,16 @@
     "location_based_salary":false,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Spotify"
+    "slug":"Spotify",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"CleverTech",
@@ -308,15 +324,16 @@
     "location_based_salary":false,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"CleverTech"
+    "slug":"CleverTech",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Twilio",
@@ -337,15 +354,16 @@
     "location_based_salary":false,
     "funded_vacation":false,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":true,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Twilio"
+    "slug":"Twilio",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Prezi",
@@ -366,15 +384,16 @@
     "location_based_salary":false,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Prezi"
+    "slug":"Prezi",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Zapier",
@@ -395,15 +414,16 @@
     "location_based_salary":false,
     "funded_vacation":0,
     "is_agency":0,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Zapier"
+    "slug":"Zapier",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Automattic",
@@ -424,15 +444,16 @@
     "location_based_salary":false,
     "funded_vacation":false,
     "is_agency":false,
-    "tech_stack":"PHP",
     "offers_equity":0,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Automattic"
+    "slug":"Automattic",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Olark",
@@ -453,15 +474,16 @@
     "location_based_salary":false,
     "funded_vacation":false,
     "is_agency":false,
-    "tech_stack":"javascript",
     "offers_equity":true,
     "family_leave":3,
     "healthcare":true,
     "note":"only allows remote in usa and canada",
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Olark"
+    "slug":"Olark",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Basecamp",
@@ -482,15 +504,16 @@
     "location_based_salary":false,
     "funded_vacation":false,
     "is_agency":false,
-    "tech_stack":"ruby, ruby on rails, javascript",
     "offers_equity":true,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Basecamp"
+    "slug":"Basecamp",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Stack Exchange",
@@ -511,15 +534,16 @@
     "location_based_salary":false,
     "funded_vacation":true,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":true,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Stack-Exchange"
+    "slug":"Stack-Exchange",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Product Hunt",
@@ -540,15 +564,16 @@
     "location_based_salary":false,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":"ruby on rails",
     "offers_equity":0,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Product-Hunt"
+    "slug":"Product-Hunt",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Fortumo",
@@ -569,15 +594,16 @@
     "location_based_salary":false,
     "funded_vacation":false,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":false,
     "family_leave":0,
     "healthcare":0,
     "note":"only select location",
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Fortumo"
+    "slug":"Fortumo",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"LivingSocial",
@@ -598,15 +624,16 @@
     "location_based_salary":0,
     "funded_vacation":true,
     "is_agency":0,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"LivingSocial"
+    "slug":"LivingSocial",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Teleport",
@@ -627,15 +654,16 @@
     "location_based_salary":0,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Teleport"
+    "slug":"Teleport",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Mozilla",
@@ -656,15 +684,16 @@
     "location_based_salary":0,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":false,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Mozilla"
+    "slug":"Mozilla",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"KissMetrics",
@@ -685,15 +714,16 @@
     "location_based_salary":0,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":false,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":true,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"KissMetrics"
+    "slug":"KissMetrics",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Harvest",
@@ -714,15 +744,16 @@
     "location_based_salary":0,
     "funded_vacation":0,
     "is_agency":0,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Harvest"
+    "slug":"Harvest",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Parse.ly",
@@ -743,15 +774,16 @@
     "location_based_salary":0,
     "funded_vacation":0,
     "is_agency":0,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Parsely"
+    "slug":"Parsely",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Shopify",
@@ -772,15 +804,16 @@
     "location_based_salary":0,
     "funded_vacation":0,
     "is_agency":false,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Shopify"
+    "slug":"Shopify",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Upworthy",
@@ -801,15 +834,16 @@
     "location_based_salary":0,
     "funded_vacation":0,
     "is_agency":0,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":true,
     "note":0,
     "unlimited_vacation":true,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Upworthy"
+    "slug":"Upworthy",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Roger CPA Review",
@@ -829,15 +863,16 @@
     "location_based_salary":true,
     "funded_vacation":false,
     "is_agency":false,
-    "tech_stack":"Drupal/jQuery",
     "offers_equity":false,
     "family_leave":0,
     "healthcare":false,
     "note":0,
     "unlimited_vacation":false,
     "sex_ratio":"1/3 women in tech team; almost entirely women in non-tech teams",
-    "uses_slack?":false,
-    "slug":"Roger-CPA-Review"
+    "slug":"Roger-CPA-Review",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   },
   {
     "name":"Patients Know Best",
@@ -858,14 +893,15 @@
     "location_based_salary":0,
     "funded_vacation":0,
     "is_agency":0,
-    "tech_stack":0,
     "offers_equity":0,
     "family_leave":0,
     "healthcare":0,
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "uses_slack?":0,
-    "slug":"Patients-Know-Best"
+    "slug":"Patients-Know-Best",
+    "communication_methods": [],
+    "collaboration_methods": [],
+    "technologies": []
   }
 ]

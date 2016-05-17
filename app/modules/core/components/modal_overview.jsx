@@ -65,8 +65,8 @@ const ModalOverview = ({company, isActive}) => (
             </span>
           </li>
           <li className="trait-item">
+            <i className="fa fa-clock-o fa-fw"></i>
             <span className="item-name">
-              <i className="fa fa-clock-o fa-fw"></i>
               Async Collaboration
               <OverlayTrigger
                 overlay={<Tooltip>Can you work in your own timezone?</Tooltip>} placement="bottom">
@@ -113,8 +113,7 @@ const ModalOverview = ({company, isActive}) => (
                   {company.healthcare ?
                     <span className="rb-label rb-label-hoverable">
                       healthcare
-                    </span> :
-                  ''}
+                    </span> : ''}
                   {company.family_leave ?
                     <span className="rb-label rb-label-hoverable">
                       Family leave

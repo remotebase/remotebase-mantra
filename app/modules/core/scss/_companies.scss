@@ -241,6 +241,16 @@
     }
   }
 
+  .tab-work, .tab-tech {
+    .trait-item {
+      .item-name {
+        display: block;
+        margin-bottom: 14px;
+        border-bottom: 0;
+      }
+    }
+  }
+
   .trait-item {
     margin-bottom: 23px;
 
