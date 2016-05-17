@@ -64,6 +64,20 @@ const ModalOverview = ({company, isActive}) => (
               {company.location_based_salary ? 'Yes' : 'No'}
             </span>
           </li>
+          <li className="trait-item">
+            <span className="item-name">
+              <i className="fa fa-clock-o fa-fw"></i>
+              Async Collaboration
+              <OverlayTrigger
+                overlay={<Tooltip>Can you work in your own timezone?</Tooltip>} placement="bottom">
+                <span className="tooltip-trigger">[?]</span>
+              </OverlayTrigger>
+              :
+            </span>
+            <span className="item-value">
+              {company.asynchronous_collaboration ? 'Yes' : 'No'}
+            </span>
+          </li>
         </ul>
       </div>
 
