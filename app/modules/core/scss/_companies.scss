@@ -156,6 +156,10 @@
     }
   }
 
+  .modal-body {
+    padding: 0;
+  }
+
   .company-link {
     color: #949494;
     margin-left: 9px;
@@ -223,7 +227,7 @@
     }
   }
 
-  .modal-body {
+  .tab {
     padding: 1.2em 2.9em;
   }
 
@@ -232,22 +236,41 @@
   }
 
   .tab-overview {
-    // margin-top: 28px;
+    .overview-list {
+      padding-top: 23px;
+    }
   }
 
   .trait-item {
+    margin-bottom: 23px;
+
+    .fa {
+      margin-right: 12px;
+    }
 
     .item-name {
-      font-size: 17px;
-      font-weight: 400;
+      font-size: 15px;
+      font-weight: 600;
       margin-right: 11px;
       text-transform: uppercase;
-      text-decoration: underline;
+      border-bottom: 1px solid black;
+      padding-bottom: 3px;
     }
 
     .item-value {
-      font-size: 21px;
+      font-size: 16px;
       font-weight: 500;
+    }
+
+    .tooltip-trigger {
+      padding: 0 5px 5px;
+      font-size: 11px;
+      -webkit-user-select: none; /* Chrome/Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+ */
+      -o-user-select: none;
+      user-select: none;
+      cursor: default;
     }
   }
 }
