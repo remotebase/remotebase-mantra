@@ -911,5 +911,37 @@
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": []
+  },
+  {
+    "name":"Tortuga Backpacks",
+    "slug":"tortuga-backpacks",
+    "logo_url": "/images/companies/tortuga_backpacks.png",
+    "headquarters":"",
+    "short_description": "Gear for Urban Travel",
+    "description":"Gear for Urban Travel",
+    "website":"http://www.tortugabackpacks.com",
+    "founded_year":2010,
+    "vc_funded":false,
+    "team_size":9,
+    "fully_distributed":true,
+    "non_remote_team_size":0,
+    "is_hiring":true,
+    "salary_lower_bound":0,
+    "salary_upper_bound":0,
+    "num_retreats_per_year":0,
+    "location_based_salary":true,
+    "funded_vacation":false,
+    "is_agency":false,
+    "offers_equity":0,
+    "family_leave":0,
+    "healthcare":true,
+    "unlimited_vacation":true,
+    "sex_ratio":0,
+    "communication_methods": [
+      "Asana", "Slack", "Email", "Skype"
+    ],
+    "collaboration_methods": [],
+    "technologies": [],
+    "note":"non-tech"
   }
 ]
