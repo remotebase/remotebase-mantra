@@ -4,7 +4,7 @@ import {mount} from 'react-mounter';
 import MainLayout from './components/main_layout.jsx';
 import Home from './containers/home';
 
-export default function (injectDeps, {FlowRouter, _, DocHead, Meteor}) {
+export default function (injectDeps, {FlowRouter, _, DocHead, Meteor, Case}) {
   const MainLayoutCtx = injectDeps(MainLayout);
 
   FlowRouter.route('/', {
@@ -33,7 +33,7 @@ export default function (injectDeps, {FlowRouter, _, DocHead, Meteor}) {
   FlowRouter.route('/:companySlug', {
     name: 'company',
     action({companySlug}, {tab}) {
-      let companyName = _.capitalize(companySlug);
+      let companyName = Case.title(companySlug);
       let title = `RemoteBase - ${companyName} for remote jobs`;
       DocHead.removeDocHeadAddedTags();
       DocHead.setTitle(title);

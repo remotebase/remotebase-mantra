@@ -5,6 +5,7 @@ import {ReactiveDict} from 'meteor/reactive-dict';
 import {Tracker} from 'meteor/tracker';
 import _ from 'lodash';
 import {DocHead} from 'meteor/kadira:dochead';
+import Case from 'case';
 
 export default function () {
   return {
@@ -15,5 +16,6 @@ export default function () {
     Tracker,
     _,
     DocHead,
+    Case,
   };
 }
