@@ -231,6 +231,13 @@
       display: inline-block;
       margin-right: 74px;
 
+      @media (max-width: 499px) {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 7px;
+      }
+
       a {
         text-decoration: none;
         color: inherit;

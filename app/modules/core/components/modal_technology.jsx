@@ -4,14 +4,16 @@ import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 import UnknownNotice from './unknown_notice.jsx';
 
 const TechBadges = ({company}) => (
-  company.technologies.map((technology, idx) => {
-    return (
-      <span className="rb-label rb-label-hoverable"
-        key={idx}>
-        {technology}
-      </span>
-    );
-  })
+  <div>
+    {company.technologies.map((technology, idx) => {
+      return (
+        <span className="rb-label rb-label-hoverable"
+          key={idx}>
+          {technology}
+        </span>
+      );
+    })}
+  </div>
 );
 
 const ModalTechnology = ({company, isActive}) => (
