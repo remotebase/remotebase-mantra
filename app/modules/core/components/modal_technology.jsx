@@ -1,7 +1,18 @@
 import React from 'react';
 import classnames from 'classnames';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
+import UnknownNotice from './unknown_notice.jsx';
 
+const TechBadges = ({company}) => (
+  company.technologies.map((technology, idx) => {
+    return (
+      <span className="rb-label rb-label-hoverable"
+        key={idx}>
+        {technology}
+      </span>
+    );
+  })
+);
 
 const ModalTechnology = ({company, isActive}) => (
   <div className={classnames('tab', 'tab-work', {active: isActive})}>
@@ -18,14 +29,7 @@ const ModalTechnology = ({company, isActive}) => (
               :
             </span>
             <span className="item-value">
-              {company.technologies.map((technology, idx) => {
-                return (
-                  <span className="rb-label rb-label-hoverable"
-                    key={idx}>
-                    {technology}
-                  </span>
-                );
-              })}
+              {company.technologies.length > 0 ? <TechBadges company={company}/> : <UnknownNotice />}
             </span>
           </li>
         </ul>

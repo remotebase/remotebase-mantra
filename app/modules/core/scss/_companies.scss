@@ -294,3 +294,26 @@
     -o-transform: translate(25%, 0);
   }
 }
+
+.not-known-yet {
+  font-size: 21px;
+  font-weight: 300;
+  border: 1px solid rgba(64, 67, 92, 0.22);
+  padding: 0.5em;
+  border-radius: 7px;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
+
+  &:hover {
+    background-color: #F1F1F1;
+  }
+
+  img {
+    width: 49px;
+    margin-bottom: 10px;
+  }
+}

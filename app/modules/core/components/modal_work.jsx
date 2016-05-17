@@ -2,6 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
+import UnknownNotice from './unknown_notice.jsx';
 
 const ModalWork = ({company, isActive}) => (
   <div className={classnames('tab', 'tab-work', {active: isActive})}>
@@ -18,14 +19,16 @@ const ModalWork = ({company, isActive}) => (
               :
             </span>
             <span className="item-value">
-              {company.communication_methods.map((method_name, idx) => {
-                return (
-                  <span className="rb-label rb-label-hoverable"
-                    key={idx}>
-                    {method_name}
-                  </span>
-                );
-              })}
+              {company.communication_methods.length > 0 ?
+                company.communication_methods.map((method_name, idx) => {
+                  return (
+                    <span className="rb-label rb-label-hoverable"
+                      key={idx}>
+                      {method_name}
+                    </span>
+                  );
+                }) : <UnknownNotice />
+              }
             </span>
           </li>
           <li className="trait-item">
@@ -38,14 +41,16 @@ const ModalWork = ({company, isActive}) => (
               :
             </span>
             <span className="item-value">
-              {company.collaboration_methods.map((method_name, idx) => {
-                return (
-                  <span className="rb-label rb-label-hoverable"
-                    key={idx}>
-                    {method_name}
-                  </span>
-                );
-              })}
+              {company.collaboration_methods.length > 0 ?
+                company.collaboration_methods.map((method_name, idx) => {
+                  return (
+                    <span className="rb-label rb-label-hoverable"
+                      key={idx}>
+                      {method_name}
+                    </span>
+                  );
+                }) : <UnknownNotice />
+              }
             </span>
           </li>
         </ul>

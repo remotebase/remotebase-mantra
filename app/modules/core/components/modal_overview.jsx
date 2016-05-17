@@ -2,7 +2,6 @@ import React from 'react';
 import classnames from 'classnames';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
-
 const ModalOverview = ({company, isActive}) => (
   <div className={classnames('tab', 'tab-overview', {active: isActive})}>
     <div className="row">
