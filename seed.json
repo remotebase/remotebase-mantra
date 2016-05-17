@@ -56,13 +56,13 @@
     "sex_ratio":0,
     "slug":"Ghost",
     "communication_methods": [
-      "slack", "email", "skype", "hangout"
+      "Slack"
     ],
     "collaboration_methods": [
-      "git", "google docs", "GoToMeetings"
+      "Trello", "Asana"
     ],
     "technologies": [
-      "node.js", "ember.js", "HTML", "CSS", "JavaScript"
+      "nginx", "MySQL", "SQLite", "Handlebars.js", "Ember.js", "Node.js", "Markdown", "ExpressJS", "GitHub", "BrowserStack", "Atom", "Code Climate", "npm", "Grunt", "Git", "SourceTree", "Javascript"
     ]
   },
   {
@@ -92,8 +92,12 @@
     "sex_ratio":0,
     "slug":"DuckDuckGo",
     "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "collaboration_methods": [
+      "Desk.com"
+    ],
+    "technologies": [
+      "nginx", "Socket.IO", "Underscore", "Handlebars.js", "Backbone.js", "Node.js", "Authy", "Perl", "Javascript"
+    ]
   },
   {
     "name":"Toggl",
@@ -151,9 +155,13 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"TopTal",
-    "communication_methods": [],
+    "communication_methods": [
+      "Google Apps"
+    ],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "nginx", "Passenger", "Underscore", "Backbone.js"
+    ]
   },
   {
     "name":"GitHub",
@@ -183,7 +191,9 @@
     "slug":"GitHub",
     "communication_methods": [],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "Unicorn", "MySQL", "Ruby on Rails", "Ruby", "Markdown", "C", "Sinatra", "Elasticsearch", "Atom", "Git"
+    ]
   },
   {
     "name":"Treehouse",
@@ -211,9 +221,15 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Treehouse",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "communication_methods": [
+      "Google Apps"
+    ],
+    "collaboration_methods": [
+      "Help Scout", "Olark", "Trello"
+    ],
+    "technologies": [
+      "nginx", "Highcharts", "Ruby on Rails", "Ruby", "CodeMirror"
+    ]
   },
   {
     "name":"Baremetrics",
@@ -241,9 +257,15 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Baremetrics",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "communication_methods": [
+      "Google Apps"
+    ],
+    "collaboration_methods": [
+      "Trello", "Basecamp"
+    ],
+    "technologies": [
+      "Redis", "Sidekiq", "PostgreSQL", "Ruby", "Ruby on Rails"
+    ]
   },
   {
     "name":"Buffer",
@@ -275,7 +297,7 @@
       "HipChat"
     ],
     "collaboration_methods": [
-      "Google Apps", "Trello"
+      "Google Apps", "Trello", "iDoneThis", "Blossom"
     ],
     "technologies": [
       "PHP", "MongoDB", "React", "JavaScript", "Python", "Backbone.js"
@@ -307,9 +329,15 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Spotify",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "communication_methods": [
+      "Google Apps"
+    ],
+    "collaboration_methods": [
+      "Desk.com", "Blossom"
+    ],
+    "technologies": [
+      "nginx", "Kafka", "Storm", "PostgreSQL", "Cassandra", "Hadoop", "Python", "Java", "Twitter Bootstrap", "Objective-C"
+    ]
   },
   {
     "name":"CleverTech",
@@ -337,9 +365,13 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"CleverTech",
-    "communication_methods": [],
+    "communication_methods": [
+      "Google Apps"
+    ],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "Apache HTTP Server", "Twitter Bootstrap"
+    ]
   },
   {
     "name":"Twilio",
@@ -367,9 +399,15 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Twilio",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "communication_methods": [
+      "Google Apps"
+    ],
+    "collaboration_methods": [
+      "Zendesk", "Braintree"
+    ],
+    "technologies": [
+      "Swiftype", "Runscope"
+    ]
   },
   {
     "name":"Prezi",
@@ -397,9 +435,13 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Prezi",
-    "communication_methods": [],
+    "communication_methods": [
+      "Google Apps"
+    ],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "Underscore", "Backbone.js", "Twitter Bootstrap"
+    ]
   },
   {
     "name":"Zapier",
@@ -428,8 +470,12 @@
     "sex_ratio":0,
     "slug":"Zapier",
     "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "collaboration_methods": [
+      "Help Scout", "iDoneThis"
+    ],
+    "technologies": [
+      "Rainforest QA"
+    ]
   },
   {
     "name":"Automattic",
@@ -459,7 +505,9 @@
     "slug":"Automattic",
     "communication_methods": [],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "nginx", "PHP"
+    ]
   },
   {
     "name":"Olark",
@@ -487,9 +535,15 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Olark",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "communication_methods": [
+      "Google Apps"
+    ],
+    "collaboration_methods": [
+      "Olark", "Desk.com", "iDoneThis"
+    ],
+    "technologies": [
+      "Apache HTTP Server", "React", "PHP", "RequireJS", "Webpack"
+    ]
   },
   {
     "name":"Basecamp",
@@ -547,9 +601,13 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Stack-Exchange",
-    "communication_methods": [],
+    "communication_methods": [
+      "Google Apps"
+    ],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "Apache HTTP Server", "jQuery", "Redis", "Microsoft SQL Server", "Cassandra", ".NET", "Android SDK", "JavaScript", "Java", "Go", "C#"
+    ]
   },
   {
     "name":"Product Hunt",
@@ -577,10 +635,14 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Product-Hunt",
-    "communication_methods": [],
-    "collaboration_methods": [],
+    "communication_methods": [
+      "Slack"
+    ],
+    "collaboration_methods": [
+      "Gusto", "Trello"
+    ],
     "technologies": [
-      "Ruby on Rails"
+      "Puma", "Pusher", "React", "Amazon Redshift", "RabbitMQ", "MemCachier", "Redis", "Sidekiq", "PostgreSQL", "Node.js", "Ruby on Rails", "Javascript", "Ruby", "imgix", "Algolia", "GitHub"
     ]
   },
   {
@@ -609,9 +671,13 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Fortumo",
-    "communication_methods": [],
+    "communication_methods": [
+      "Google Apps"
+    ],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "nginx"
+    ]
   },
   {
     "name":"LivingSocial",
@@ -639,9 +705,13 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"LivingSocial",
-    "communication_methods": [],
+    "communication_methods": [
+      "Google Apps"
+    ],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "nginx", "Mustache", "Ruby on Rails", "Ruby"
+    ]
   },
   {
     "name":"Teleport",
@@ -671,7 +741,9 @@
     "slug":"Teleport",
     "communication_methods": [],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "PostgreSQL", "Python", "JavaScript", "PostGIS"
+    ]
   },
   {
     "name":"Mozilla",
@@ -699,9 +771,15 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Mozilla",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "communication_methods": [
+      "Google Apps"
+    ],
+    "collaboration_methods": [
+      "iDoneThis"
+    ],
+    "technologies": [
+      "Apache HTTP Server", "Python", "Elasticsearch", "AppThwack", "GitHub", "Sauce Labs", "Grunt", "Cloud9 IDE"
+    ]
   },
   {
     "name":"KissMetrics",
@@ -729,9 +807,15 @@
     "unlimited_vacation":true,
     "sex_ratio":0,
     "slug":"KissMetrics",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "communication_methods": [
+      "Google Apps"
+    ],
+    "collaboration_methods": [
+      "Help Scout", "Front"
+    ],
+    "technologies": [
+      "nginx", "Swiftype", "Ruby", "Python", "Objective-C", "Javascript", "Ruby on Rails"
+    ]
   },
   {
     "name":"Harvest",
@@ -791,7 +875,9 @@
     "slug":"Parsely",
     "communication_methods": [],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "Kafka", "MongoDB", "Cassandra", "Hadoop", "Python", "Javascript"
+    ]
   },
   {
     "name":"Shopify",
@@ -819,9 +905,15 @@
     "unlimited_vacation":0,
     "sex_ratio":0,
     "slug":"Shopify",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
+    "communication_methods": [
+      "Slack", "Flowdock"
+    ],
+    "collaboration_methods": [
+      "Olark", "iDoneThis"
+    ],
+    "technologies": [
+      "nginx", "Unicorn", "Kafka", "Redis", "MySQL", "Hadoop", "Apache Spark", "Ruby on Rails", "Ruby", "Aviary", "Elasticsearch", "Swiftype", "GitHub", "Git", "Javascript"
+    ]
   },
   {
     "name":"Upworthy",
@@ -849,12 +941,17 @@
     "unlimited_vacation":true,
     "sex_ratio":0,
     "slug":"Upworthy",
-    "communication_methods": [],
+    "communication_methods": [
+      "Google Apps"
+    ],
     "collaboration_methods": [],
-    "technologies": []
+    "technologies": [
+      "Twitter Bootstrap", "Varnish"
+    ]
   },
   {
     "name":"Roger CPA Review",
+    "logo_url": "/images/companies/roger_cpa_review.png",
     "headquarters":0,
     "short_description": "Online course for accounting students",
     "description":"Online course for accounting students. Entire web dev team works remotely. Oldest member of the team has been part of the company for 12 years.",
