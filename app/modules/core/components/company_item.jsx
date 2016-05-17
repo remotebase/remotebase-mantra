@@ -23,10 +23,10 @@ const CompanyItem = ({company, navToCompany}) => (
         </div>
       </div>
 
-      <div className="hover-info-container container">
+      <div className="hover-info-container">
         <div className="hover-info">
           <div className="row">
-            <div className="col-xs-12 col-sm-12">
+            <div className="col-xs-12">
               <h2 className="company-name">
                 {company.name}
               </h2>
@@ -47,7 +47,6 @@ const CompanyItem = ({company, navToCompany}) => (
               <div className="salary-range">
                 {company.salary_lower_bound} ~ {company.salary_upper_bound}
               </div>
-
             </div>
           </div>
         </div>

@@ -1,9 +1,11 @@
-.company-item-container {
+@mixin card {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 198px;
+  height: 234px;
   border: 1px solid #E8E8E8;
   border-radius: 2px;
   margin-bottom: 10px;
@@ -13,6 +15,10 @@
   -ms-user-select: none; /* IE10+ */
   -o-user-select: none;
   user-select: none;
+}
+
+.company-item-container {
+  @include card;
 
   .company-item, .hover-info-container {
     -webkit-transition: all 0.3s ease;
@@ -28,6 +34,10 @@
     top:0;
     width: 100%;
     margin-left:-598px;
+    background: #40435C;
+    color: #ffffff;
+    opacity: 0.98;
+    height: 234px;
   }
 
   .hover-info {
@@ -35,17 +45,31 @@
     background: #40435C;
     color: #ffffff;
     opacity: 0.98;
+    height: 100%;
+
+    @media (max-width: 499px) {
+          padding: 2em 1em;
+    }
 
     .company-name {
       display: block;
       text-align: center;
       font-size: 1.6em;
       text-decoration: underline;
+
+      @media (max-width: 499px) {
+        font-size: 17px;
+      }
     }
 
     .salary-range {
       margin-top: 11px;
       font-size: 1.1em;
+
+      @media (max-width: 499px) {
+        font-size: 11.5px;
+      }
+
     }
 
     .summary-list {
@@ -53,6 +77,10 @@
 
       li {
         font-size: 18px;
+
+        @media (max-width: 499px) {
+          font-size: 13px;
+        }
 
         .fa {
           margin-right: 4px;
@@ -63,7 +91,8 @@
 
   &:hover {
     .hover-info-container {
-      margin-left: -15px;
+      margin-left: 0px;
+      border: none;
     }
   }
 }
