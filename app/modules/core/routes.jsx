@@ -40,6 +40,7 @@ export default function (injectDeps, {FlowRouter, _, DocHead, Meteor, Case}) {
       DocHead.addMeta({name: 'twitter:card', content: 'summary'});
       DocHead.addMeta({name: 'twitter:site', content: '@remotebase'});
       DocHead.addMeta({name: 'twitter:title', content: `${companyName} - RemoteBase`});
+      DocHead.addMeta({name: 'twitter:image', content: Meteor.absoluteUrl('images/logo.png')});
       DocHead.addMeta({name: 'twitter:description', content: `How is ${companyName} for a remote job?`});
 
       mount(MainLayoutCtx, {
