@@ -43,6 +43,16 @@ html {
   body {
     color: #1E1F2A;
     font-family: 'Lato', sans-serif;
+
+    // Following styles are nested to overwrite some default rules
+    // provided by other librareis such as bootstrap and fontawesome
+
+    // check icon that displays the company's profile is managed by the company itself
+    .official-icon {
+      font-size: 18px;
+      color: #519Eb0;
+      margin-left: 4px;
+    }
   }
 }
 

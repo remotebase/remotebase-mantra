@@ -1,5 +1,7 @@
 import React from 'react';
 
+import OfficialIcon from './official_icon.jsx';
+
 const CompanyItem = ({company, navToCompany}) => (
   <li className="col-xs-6 col-sm-4" onClick={navToCompany.bind(this, company.slug)}>
     <div className="company-item-container">
@@ -11,6 +13,7 @@ const CompanyItem = ({company, navToCompany}) => (
           <div className="col-xs-12 text-xs-center">
             <h2 className="company-name">
               {company.name}
+              <OfficialIcon company={company} />
             </h2>
           </div>
         </div>
@@ -30,6 +33,10 @@ const CompanyItem = ({company, navToCompany}) => (
               <h2 className="company-name">
                 {company.name}
               </h2>
+              {company.official ? <div className="official-info">
+                  <i className="fa fa-check-circle official-icon"></i>
+                  official
+                </div> : <span></span>}
               <ul className="list-unstyled summary-list">
                 <li>
                   <i className="fa fa-flag fa-fw"></i> Founded: {company.founded_year}

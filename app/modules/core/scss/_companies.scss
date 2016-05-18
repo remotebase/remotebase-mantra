@@ -73,7 +73,7 @@
     }
 
     .summary-list {
-      margin-top: 19px;
+      margin-top: 5px;
 
       li {
         font-size: 18px;
@@ -86,6 +86,20 @@
           margin-right: 4px;
         }
       }
+    }
+
+    .official-icon {
+      color: inherit;
+      margin-right: 4px;
+      margin-left: 0;
+      font-size: inherit;
+    }
+
+    .official-info {
+      font-size: 13px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #F38282;
     }
   }
 

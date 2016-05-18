@@ -1,6 +1,7 @@
 [
   {
     "name":"Plex",
+    "official": false,
     "logo_url": "/images/companies/plex.png",
     "headquarters":"Troy, Michigan",
     "short_description": "Your media on all your devices",
@@ -31,6 +32,7 @@
   },
   {
     "name":"Ghost",
+    "official": false,
     "logo_url": "/images/companies/ghost.png",
     "headquarters":"London, UK",
     "short_description": "Just a blogging platform",
@@ -67,6 +69,7 @@
   },
   {
     "name":"DuckDuckGo",
+    "official": false,
     "logo_url": "/images/companies/duckduckgo.png",
     "headquarters":"Paoli, PA",
     "short_description": "The search engine that doesn't track you",
@@ -101,6 +104,7 @@
   },
   {
     "name":"Toggl",
+    "official": false,
     "logo_url": "/images/companies/toggl.png",
     "headquarters":"Tallinn, Estonia",
     "short_description": "Time tracker & timesheet software",
@@ -131,6 +135,7 @@
   },
   {
     "name":"TopTal",
+    "official": false,
     "logo_url": "/images/companies/toptal.png",
     "headquarters":"San Francisco, California",
     "short_description": "Vetted freelance developers and designers",
@@ -165,6 +170,7 @@
   },
   {
     "name":"GitHub",
+    "official": false,
     "logo_url": "/images/companies/github.png",
     "headquarters":"San Francisco, CA",
     "short_description": "Online project hosting using Git",
@@ -197,6 +203,7 @@
   },
   {
     "name":"Treehouse",
+    "official": false,
     "logo_url": "/images/companies/treehouse.png",
     "headquarters":"Portland, Oregon",
     "short_description": "An online technology school",
@@ -233,6 +240,7 @@
   },
   {
     "name":"Baremetrics",
+    "official": false,
     "logo_url": "/images/companies/baremetrics.jpg",
     "headquarters":0,
     "short_description": "Analytics & Insights for Stripe",
@@ -269,6 +277,7 @@
   },
   {
     "name":"Buffer",
+    "official": false,
     "logo_url": "/images/companies/buffer.png",
     "headquarters":"San Francisco",
     "short_description": "Schedule social media posts",
@@ -305,6 +314,7 @@
   },
   {
     "name":"Spotify",
+    "official": false,
     "logo_url": "/images/companies/spotify.png",
     "headquarters":"Stockholm, Sweden",
     "short_description": "Music for everyone",
@@ -341,6 +351,7 @@
   },
   {
     "name":"CleverTech",
+    "official": false,
     "logo_url": "/images/companies/clevertech.png",
     "headquarters":"New York, NY",
     "short_description": "An web agency",
@@ -375,6 +386,7 @@
   },
   {
     "name":"Twilio",
+    "official": false,
     "logo_url": "/images/companies/twilio.png",
     "headquarters":"San Francisco, CA",
     "short_description": "APIs for Text Messaging, VoIP, and voice",
@@ -411,6 +423,7 @@
   },
   {
     "name":"Prezi",
+    "official": false,
     "logo_url": "/images/companies/prezi.png",
     "headquarters":"San Francisco, California",
     "short_description": "Interactive web presentation platform",
@@ -445,6 +458,7 @@
   },
   {
     "name":"Zapier",
+    "official": false,
     "logo_url": "/images/companies/zapier.png",
     "headquarters":"Sunnyvale, California.",
     "short_description": "Task automation between web apps",
@@ -479,6 +493,7 @@
   },
   {
     "name":"Automattic",
+    "official": false,
     "logo_url": "/images/companies/automattic.png",
     "headquarters":"San Francisco",
     "short_description": "People who built Wordpress",
@@ -511,6 +526,7 @@
   },
   {
     "name":"Olark",
+    "official": false,
     "logo_url": "/images/companies/olark.png",
     "headquarters":"San Francisco",
     "short_description": "Live chat for websites",
@@ -547,6 +563,7 @@
   },
   {
     "name":"Basecamp",
+    "official": false,
     "logo_url": "/images/companies/basecamp.png",
     "headquarters":"Chicago",
     "short_description": "Project management and collaboration tools",
@@ -577,6 +594,7 @@
   },
   {
     "name":"Stack Exchange",
+    "official": false,
     "logo_url": "/images/companies/stackexchange.png",
     "headquarters":"New York, NY",
     "short_description": "Community-driven question and answer sites",
@@ -611,6 +629,7 @@
   },
   {
     "name":"Product Hunt",
+    "official": false,
     "logo_url": "/images/companies/product_hunt.png",
     "headquarters":"San Francisco",
     "short_description": "A curation of the best new products, every day",
@@ -647,6 +666,7 @@
   },
   {
     "name":"Fortumo",
+    "official": false,
     "logo_url": "/images/companies/fortumo.png",
     "headquarters":"Tartumaa, Estonia",
     "short_description": "A mobile payments company",
@@ -681,6 +701,7 @@
   },
   {
     "name":"LivingSocial",
+    "official": false,
     "logo_url": "/images/companies/livingsocial.png",
     "headquarters":"Washington, D.C., United States",
     "short_description": "Best deals in your city",
@@ -715,6 +736,7 @@
   },
   {
     "name":"Teleport",
+    "official": false,
     "logo_url": "/images/companies/teleport.png",
     "headquarters":"Palo Alto, California",
     "short_description": "Move to Your Best Place to Live and Work",
@@ -747,6 +769,7 @@
   },
   {
     "name":"Mozilla",
+    "official": false,
     "logo_url": "/images/companies/mozilla.png",
     "headquarters":"California",
     "short_description": "A free-software community",
@@ -783,6 +806,7 @@
   },
   {
     "name":"KissMetrics",
+    "official": false,
     "logo_url": "/images/companies/kissmetrics.png",
     "headquarters":"San Francisco, CA",
     "short_description": "Analytics software for digital marketing",
@@ -819,6 +843,7 @@
   },
   {
     "name":"Harvest",
+    "official": false,
     "logo_url": "/images/companies/harvest.png",
     "headquarters":"New York, NY",
     "short_description": "Time tracking, invoicing software",
@@ -849,6 +874,7 @@
   },
   {
     "name":"Parse.ly",
+    "official": false,
     "logo_url": "/images/companies/parsely.png",
     "headquarters":"New York, NY",
     "short_description": "Analytics for Digital Media Publishers",
@@ -881,6 +907,7 @@
   },
   {
     "name":"Shopify",
+    "official": false,
     "logo_url": "/images/companies/shopify.png",
     "headquarters":"Ottawa, Toronto",
     "short_description": "An e-commerce platform",
@@ -917,6 +944,7 @@
   },
   {
     "name":"Upworthy",
+    "official": false,
     "logo_url": "/images/companies/upworthy.png",
     "headquarters":"New York, NY",
     "short_description": "Viral content platform",
@@ -951,6 +979,7 @@
   },
   {
     "name":"Roger CPA Review",
+    "official": false,
     "logo_url": "/images/companies/roger_cpa_review.png",
     "headquarters":0,
     "short_description": "Online course for accounting students",
@@ -981,6 +1010,7 @@
   },
   {
     "name":"Patients Know Best",
+    "official": false,
     "logo_url": "/images/companies/patients_know_best.png",
     "headquarters":"Cambridge, UK",
     "short_description": "Patient-controlled Medical Record",
@@ -1011,6 +1041,7 @@
   },
   {
     "name":"Tortuga Backpacks",
+    "official": true,
     "slug":"tortuga-backpacks",
     "logo_url": "/images/companies/tortuga_backpacks.png",
     "headquarters":"",
