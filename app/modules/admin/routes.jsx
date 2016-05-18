@@ -17,15 +17,15 @@ export default function (injectDeps, {FlowRouter, DocHead}) {
     }
   });
 
-  FlowRouter.route('/admin/dashboard', {
+  FlowRouter.route('/admin/dashboard/:section?', {
     name: 'admin_dashboard',
-    action() {
+    action({section}) {
       let title = 'RemoteBase - Admin dashboard';
       DocHead.removeDocHeadAddedTags();
       DocHead.setTitle(title);
 
       mount(AdminLayoutCtx, {
-        content: () => (<Dashboard />)
+        content: () => (<Dashboard section={section} />)
       });
     }
   });

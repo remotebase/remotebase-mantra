@@ -5,5 +5,9 @@ export default {
 
   redirect({FlowRouter}, routeName) {
     FlowRouter.go(routeName);
+  },
+
+  logout({Meteor}) {
+    Meteor.logout();
   }
 };

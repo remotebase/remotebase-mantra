@@ -1,6 +1,6 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
-import DashboardMenu from '../components/dashboard_menu.jsx';
+import TabJobs from '../components/tab_jobs.jsx';
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
@@ -9,11 +9,10 @@ export const composer = ({context}, onData) => {
 };
 
 export const depsMapper = (context, actions) => ({
-  context: () => context,
-  logout: actions.users.logout
+  context: () => context
 });
 
 export default composeAll(
   composeWithTracker(composer),
   useDeps(depsMapper)
-)(DashboardMenu);
+)(TabJobs);

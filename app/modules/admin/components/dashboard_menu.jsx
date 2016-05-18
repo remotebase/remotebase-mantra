@@ -1,9 +1,23 @@
 import React from 'react';
+import classnames from 'classnames';
 
-const DashboardMenu = () => (
+import {pathFor} from '/app/modules/core/libs/helpers';
+
+const DashboardMenu = ({section, logout}) => (
   <div className="list-group">
-    <a href="#" className="list-group-item active">Profile</a>
-    <a href="#" className="list-group-item">Jobs</a>
+    <a href={pathFor('admin_dashboard')}
+      className={classnames('list-group-item', {active: !section})}>
+      Profile
+    </a>
+    <a href={pathFor('admin_dashboard', {section: 'jobs'})}
+      className={classnames('list-group-item', {active: section === 'jobs'})}>
+      Jobs
+    </a>
+    <a href="#"
+      className="list-group-item"
+      onClick={logout}>
+      Logout
+    </a>
   </div>
 );
 
