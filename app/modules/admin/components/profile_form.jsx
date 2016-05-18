@@ -42,8 +42,6 @@ class ProfileForm extends React.Component {
       technologies: makeArray(this.refs.technologies.value)
     };
 
-    console.log(companyDoc);
-
     updateCompany(company._id, companyDoc, () => {
       this.setState({successMessage: 'The company profile was saved'});
 
