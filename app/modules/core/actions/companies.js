@@ -5,5 +5,9 @@ export default {
 
   navToHome({FlowRouter}) {
     FlowRouter.go('home');
+  },
+
+  updateCompany({Meteor}, companyId, companyDoc, done) {
+    Meteor.call('companies.updateCompany', companyId, companyDoc, done);
   }
 };

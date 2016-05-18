@@ -8,6 +8,12 @@ export default function () {
   });
 
   Meteor.publish('company', function (slug) {
+    check(slug, String);
     return Companies.find({slug});
+  });
+
+  Meteor.publish('companyById', function (companyId) {
+    check(companyId, String);
+    return Companies.find(companyId);
   });
 }

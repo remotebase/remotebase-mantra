@@ -1,0 +1,20 @@
+.dashboard {
+  border: 1px solid #E4E4E4;
+  border-radius: 3px;
+  padding: 1.5em 1.8em;
+
+  label {
+    font-size: 1.1em;
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+
+  .field {
+    margin: 15px 0;
+    overflow: auto;
+  }
+
+  .fa {
+    margin-right: 4px;
+  }
+}

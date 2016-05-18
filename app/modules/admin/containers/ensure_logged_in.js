@@ -1,6 +1,7 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
+import {authComposer} from 'meteor-auth';
 
-import Login from '../components/login.jsx';
+import EnsureLoggedin from '../components/ensure_logged_in.jsx';
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
@@ -9,12 +10,11 @@ export const composer = ({context}, onData) => {
 };
 
 export const depsMapper = (context, actions) => ({
-  context: () => context,
-  companyLogin: actions.users.companyLogin,
-  redirect: actions.users.redirect
+  context: () => context
 });
 
 export default composeAll(
+  composeWithTracker(authComposer),
   composeWithTracker(composer),
   useDeps(depsMapper)
-)(Login);
+)(EnsureLoggedin);

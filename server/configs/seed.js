@@ -1,3 +1,5 @@
+import {Accounts} from 'meteor/accounts-base';
+import {Meteor} from 'meteor/meteor';
 import {Companies} from '/lib/collections';
 import faker from 'faker';
 import _ from 'lodash';
@@ -37,5 +39,28 @@ export function generateFixtures() {
     }
 
     console.log('Done generating companies');
+  }
+}
+
+export function generateUsers() {
+  if (Meteor.users.find().count() === 0) {
+    console.log('Generating user');
+    Accounts.createUser({
+      username: 'totuga-backpacks',
+      password: 'pass1234',
+      profile: {}
+    });
+    console.log('Done generating user');
+  }
+}
+
+export function populateSeed() {
+  if (Companies.find().count() === 0) {
+    console.log('Populating company seed');
+    let companies = JSON.parse(Assets.getText('seed.json'));
+    companies.forEach(company => {
+      Companies.insert(company);
+    });
+    console.log('Done populating company seed');
   }
 }

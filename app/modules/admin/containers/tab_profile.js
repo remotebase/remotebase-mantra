@@ -1,6 +1,6 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
-import Login from '../components/login.jsx';
+import TabProfile from '../components/tab_profile.jsx';
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
@@ -10,11 +10,10 @@ export const composer = ({context}, onData) => {
 
 export const depsMapper = (context, actions) => ({
   context: () => context,
-  companyLogin: actions.users.companyLogin,
-  redirect: actions.users.redirect
+  updateCompany: actions.companies.updateCompany
 });
 
 export default composeAll(
   composeWithTracker(composer),
   useDeps(depsMapper)
-)(Login);
+)(TabProfile);
