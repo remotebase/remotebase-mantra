@@ -1,0 +1,15 @@
+.admin-login {
+  text-align: center;
+
+  .rb-cat {
+    width: 308px;
+
+    @media (max-width: 499px) {
+      width: 193px;
+    }
+  }
+
+  .login-btn {
+    margin-top: 24px;
+  }
+}
