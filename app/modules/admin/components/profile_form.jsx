@@ -22,25 +22,27 @@ class ProfileForm extends React.Component {
       short_description: this.refs.short_description.value,
       website: this.refs.website.value,
       founded_year: this.refs.founded_year.value,
-      vc_funded: this.refs.vc_funded.value,
+      vc_funded: this.refs.vc_funded.checked,
       team_size: this.refs.team_size.value,
-      fully_distributed: this.refs.fully_distributed.value,
+      fully_distributed: this.refs.fully_distributed.checked,
       non_remote_team_size: this.refs.non_remote_team_size.value,
-      is_hiring: this.refs.is_hiring.value,
+      is_hiring: this.refs.is_hiring.checked,
       salary_lower_bound: this.refs.salary_lower_bound.value,
       salary_upper_bound: this.refs.salary_upper_bound.value,
       num_retreats_per_year: this.refs.num_retreats_per_year.value,
-      location_based_salary: this.refs.location_based_salary.value,
-      funded_vacation: this.refs.funded_vacation.value,
-      is_agency: this.refs.is_agency.value,
-      offers_equity: this.refs.offers_equity.value,
-      family_leave: this.refs.family_leave.value,
-      healthcare: this.refs.healthcare.value,
-      unlimited_vacation: this.refs.unlimited_vacation.value,
+      location_based_salary: this.refs.location_based_salary.checked,
+      funded_vacation: this.refs.funded_vacation.checked,
+      is_agency: this.refs.is_agency.checked,
+      offers_equity: this.refs.offers_equity.checked,
+      family_leave: this.refs.family_leave.checked,
+      healthcare: this.refs.healthcare.checked,
+      unlimited_vacation: this.refs.unlimited_vacation.checked,
       communication_methods: makeArray(this.refs.communication_methods.value),
       collaboration_methods: makeArray(this.refs.collaboration_methods.value),
       technologies: makeArray(this.refs.technologies.value)
     };
+
+    console.log(companyDoc);
 
     updateCompany(company._id, companyDoc, () => {
       this.setState({successMessage: 'The company profile was saved'});
