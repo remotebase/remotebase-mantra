@@ -24,7 +24,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Plex",
+    "slug":"plex",
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": []
@@ -54,7 +54,7 @@
     "note":0,
     "unlimited_vacation":true,
     "sex_ratio":0,
-    "slug":"Ghost",
+    "slug":"ghost",
     "communication_methods": [
       "Slack"
     ],
@@ -90,7 +90,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"DuckDuckGo",
+    "slug":"duckduckgo",
     "communication_methods": [],
     "collaboration_methods": [
       "Desk.com"
@@ -124,7 +124,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Toggl",
+    "slug":"toggl",
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": []
@@ -154,7 +154,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"TopTal",
+    "slug":"toptal",
     "communication_methods": [
       "Google Apps"
     ],
@@ -188,7 +188,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"GitHub",
+    "slug":"github",
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": [
@@ -220,7 +220,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Treehouse",
+    "slug":"treehouse",
     "communication_methods": [
       "Google Apps"
     ],
@@ -256,7 +256,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Baremetrics",
+    "slug":"baremetrics",
     "communication_methods": [
       "Google Apps"
     ],
@@ -292,7 +292,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Buffer",
+    "slug":"buffer",
     "communication_methods": [
       "HipChat"
     ],
@@ -328,7 +328,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Spotify",
+    "slug":"spotify",
     "communication_methods": [
       "Google Apps"
     ],
@@ -364,7 +364,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"CleverTech",
+    "slug":"clevertech",
     "communication_methods": [
       "Google Apps"
     ],
@@ -398,7 +398,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Twilio",
+    "slug":"twilio",
     "communication_methods": [
       "Google Apps"
     ],
@@ -434,7 +434,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Prezi",
+    "slug":"prezi",
     "communication_methods": [
       "Google Apps"
     ],
@@ -468,7 +468,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Zapier",
+    "slug":"zapier",
     "communication_methods": [],
     "collaboration_methods": [
       "Help Scout", "iDoneThis"
@@ -502,7 +502,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Automattic",
+    "slug":"automattic",
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": [
@@ -534,7 +534,7 @@
     "note":"only allows remote in usa and canada",
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Olark",
+    "slug":"olark",
     "communication_methods": [
       "Google Apps"
     ],
@@ -570,7 +570,7 @@
     "note":0,
     "unlimited_vacation":true,
     "sex_ratio":0,
-    "slug":"Basecamp",
+    "slug":"basecamp",
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": []
@@ -600,7 +600,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Stack-Exchange",
+    "slug":"stack-exchange",
     "communication_methods": [
       "Google Apps"
     ],
@@ -634,7 +634,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Product-Hunt",
+    "slug":"producthunt",
     "communication_methods": [
       "Slack"
     ],
@@ -670,7 +670,7 @@
     "note":"only select location",
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Fortumo",
+    "slug":"fortumo",
     "communication_methods": [
       "Google Apps"
     ],
@@ -704,7 +704,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"LivingSocial",
+    "slug":"livingsocial",
     "communication_methods": [
       "Google Apps"
     ],
@@ -738,7 +738,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Teleport",
+    "slug":"teleport",
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": [
@@ -770,7 +770,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Mozilla",
+    "slug":"mozilla",
     "communication_methods": [
       "Google Apps"
     ],
@@ -806,7 +806,7 @@
     "note":0,
     "unlimited_vacation":true,
     "sex_ratio":0,
-    "slug":"KissMetrics",
+    "slug":"kissmetrics",
     "communication_methods": [
       "Google Apps"
     ],
@@ -842,7 +842,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Harvest",
+    "slug":"harvest",
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": []
@@ -872,7 +872,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Parsely",
+    "slug":"parsely",
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": [
@@ -904,7 +904,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Shopify",
+    "slug":"shopify",
     "communication_methods": [
       "Slack", "Flowdock"
     ],
@@ -940,7 +940,7 @@
     "note":0,
     "unlimited_vacation":true,
     "sex_ratio":0,
-    "slug":"Upworthy",
+    "slug":"upworthy",
     "communication_methods": [
       "Google Apps"
     ],
@@ -1004,7 +1004,7 @@
     "note":0,
     "unlimited_vacation":0,
     "sex_ratio":0,
-    "slug":"Patients-Know-Best",
+    "slug":"patients-know-best",
     "communication_methods": [],
     "collaboration_methods": [],
     "technologies": []

@@ -20,9 +20,9 @@ const CompanyModal = ({company, navToHome, companyTab}) => {
           className="company-modal"
           onHide={navToHome.bind(this)} >
         <Modal.Header closeButton>
-          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popover}>
-            <Button bsStyle="default" className="edit-btn">Edit</Button>
-          </OverlayTrigger>
+          {
+            company.is_hiring ? <div className="hiring-label">Hiring</div> : <span></span>
+          }
           <div className="text-xs-center">
             <img src={company.getLogoUrl()} alt="company" className="company-logo" />
             <Modal.Title>
