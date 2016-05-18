@@ -7,7 +7,11 @@ const Home = ({companies, companySlug, companyTab}) => (
   <div>
     <MailchimpSignup />
     <CompanyList companies={companies} />
-    <CompanyModal companySlug={companySlug} companyTab={companyTab} />
+
+    {
+      companySlug ?
+      <CompanyModal companySlug={companySlug} companyTab={companyTab} /> : <span></span>
+    }
   </div>
 );
 
