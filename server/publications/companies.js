@@ -3,8 +3,9 @@ import {Meteor} from 'meteor/meteor';
 import {check} from 'meteor/check';
 
 export default function () {
-  Meteor.publish('companies', function () {
-    return Companies.find();
+  Meteor.publish('companies', function (query) {
+    console.log('query', query);
+    return Companies.find(query);
   });
 
   Meteor.publish('company', function (slug) {

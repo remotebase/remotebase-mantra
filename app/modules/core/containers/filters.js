@@ -1,6 +1,6 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
-import Home from '../components/home.jsx';
+import Filter from '../components/filters.jsx';
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
@@ -15,4 +15,4 @@ export const depsMapper = (context, actions) => ({
 export default composeAll(
   composeWithTracker(composer),
   useDeps(depsMapper)
-)(Home);
+)(Filter);

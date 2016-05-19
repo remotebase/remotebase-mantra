@@ -1,0 +1,56 @@
+.finder {
+  .counter {
+    text-align: center;
+    color: #8A8A8A;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  .filter-label {
+    padding: 16px 21px;
+    border: 1px solid #40435C;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    -o-user-select: none;
+    user-select: none;
+
+    &.active {
+      border: 1px solid #f02c41;
+      background-color: #f02c41;
+      color: #ffffff;
+    }
+
+    &:not(:first-of-type) {
+      margin-left: 3px;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+  }
+
+  .radio-filter {
+    display: inline-block;
+
+    &.team-size-filter {
+      margin-left: 3px;
+
+      .filter-label:not(:first-of-type) {
+        border-left: 0;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .filter-label {
+      margin-left: 0;
+    }
+  }
+}
