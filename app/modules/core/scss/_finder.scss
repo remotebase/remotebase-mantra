@@ -9,18 +9,29 @@
 
   .filter-label {
     padding: 16px 21px;
-    border: 1px solid #40435C;
+    border: 2px solid #828282;
     cursor: pointer;
     display: inline-block;
     text-transform: uppercase;
-    -webkit-user-select: none; /* Chrome/Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    padding-left: 33px;
+    padding-right: 33px;
+    margin-bottom: 9px;
+    color: #828282;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: #40435c;
+      border-color: #40435c;
+      color: #eef8ef;
+    }
 
     &.active {
-      border: 1px solid #f02c41;
+      border: 2px solid #f02c41;
       background-color: #f02c41;
       color: #ffffff;
     }
@@ -51,6 +62,8 @@
 
     .filter-label {
       margin-left: 0;
+      padding-left: 26px;
+      padding-right: 26px;
     }
   }
 }

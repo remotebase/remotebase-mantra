@@ -31,11 +31,13 @@ class Filters extends React.Component {
       <div>
         <div className="row">
           <div className="col-xs-12">
-            <Filter label="Fully distributed" ref="fullyDistributed" />
-            <Filter label="Hiring" ref="isHiring" />
-            <TeamSizeFilter ref="teamSize" />
-            <Filter label="Has retreats" ref="hasRetreats" />
-            <Filter label="VC backed" ref="vcBacked" />
+            <div className="filter-row">
+              <Filter label="Fully distributed" ref="fullyDistributed" />
+              <Filter label="Hiring" ref="isHiring" />
+              <TeamSizeFilter ref="teamSize" />
+              <Filter label="Has retreats" ref="hasRetreats" />
+              <Filter label="VC backed" ref="vcBacked" />
+            </div>
           </div>
         </div>
         <div className="row">
