@@ -29,14 +29,16 @@ class Filters extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="filters">
         <div className="row">
           <div className="col-xs-12">
             <div className="filter-row">
               <Filter label="Fully distributed" ref="fullyDistributed" />
               <Filter label="Hiring" ref="isHiring" />
               <TeamSizeFilter ref="teamSize" />
-              <Filter label="Has retreats" ref="hasRetreats" />
+              <Filter label="Has retreats"
+                ref="hasRetreats"
+                tooltipText="Does the team sometimes get together physically?" />
               <Filter label="VC backed" ref="vcBacked" />
             </div>
           </div>
@@ -52,9 +54,17 @@ class Filters extends React.Component {
 
 
         <div className="row">
-          <div className="col-xs-12">
+          <div className="col-xs-12 col-sm-8">
             <button onClick={this.handleSearch.bind(this)}
-              className="btn btn-md btn-success">Find</button>
+              className="btn search-btn">Find</button>
+          </div>
+          <div className="col-xs-12 col-sm-4">
+            <a className="btn add-company-btn typeform-share"
+              href="https://mike706.typeform.com/to/o6eSiQ"
+              data-mode="1"
+              target="_blank">
+              Add company
+            </a>
           </div>
         </div>
       </div>

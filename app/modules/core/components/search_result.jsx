@@ -3,7 +3,7 @@ import React from 'react';
 import CompanyList from '../containers/company_list';
 
 const SearchResult = ({companies}) => (
-  <div>
+  <div className="search-result">
     <div className="row">
       <div className="col-xs-12">
         <div className="counter">
