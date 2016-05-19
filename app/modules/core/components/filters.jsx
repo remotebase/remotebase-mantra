@@ -1,4 +1,5 @@
 import React from 'react';
+import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 import {filterToQuery} from '../libs/query_helpers';
 import Filter from './filter.jsx';
@@ -43,7 +44,9 @@ class Filters extends React.Component {
         <div className="row">
           <div className="col-xs-12">
             <Filter label="Agency" ref="is_agency" />
-            <Filter label="Async collaboration" ref="asyncCollaboration" />
+            <Filter label="Async collaboration"
+              ref="asyncCollaboration"
+              tooltipText="Can you work in your own timezone?" />
           </div>
         </div>
 

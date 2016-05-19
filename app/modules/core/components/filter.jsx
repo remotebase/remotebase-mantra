@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 class Filter extends React.Component {
   constructor(props) {
@@ -17,15 +18,26 @@ class Filter extends React.Component {
   }
 
   render() {
-    const {label} = this.props;
-
-    return (
+    const {label, tooltipText} = this.props;
+    const FilterComponent = (
       <div className={classnames('filter-label', {active: this.state.selected})}
         onClick={this.toggleSelected.bind(this)}>
         {label}
         <input type="checkbox" ref="filter" checked={this.state.selected} />
       </div>
     );
+
+    if (tooltipText) {
+      const tooltip = <Tooltip>{tooltipText}</Tooltip>;
+      return (
+        <OverlayTrigger
+          overlay={tooltip} placement="bottom">
+          {FilterComponent}
+        </OverlayTrigger>
+      );
+    } else {
+      return FilterComponent;
+    }
   }
 }
 
