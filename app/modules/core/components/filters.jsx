@@ -4,44 +4,46 @@ import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 import {filterToQuery} from '../libs/query_helpers';
 import Filter from './filter.jsx';
 import TeamSizeFilter from './filter_team_size.jsx';
+import CommunicationFilters from './communication_filters.jsx';
 import FilterGroup from './filter_group.jsx';
 
 class Filters extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      filterSelection: {
+        fully_distributed: false,
+        is_hiring: false,
+        official: false,
+        team_size: null,
+        has_retreats: false,
+        vc_backed: false,
+        is_agency: false,
+        asynchronous_collaboration: false,
+        communication_methods: [],
+        collaboration_methods: [],
+        technologies: []
+      }
+    };
+  }
+
   handleSearch() {
     const {changeQuery} = this.props;
-    let query = this.makeQuery();
+    let {filterSelection} = this.state;
 
+    let query = filterToQuery(filterSelection);
     changeQuery(query);
   }
 
-  makeQuery() {
-    let filterSelection = {
-      fully_distributed: this.refs.fullyDistributed.getValue(),
-      is_hiring: this.refs.isHiring.getValue(),
-      official: this.refs.official.getValue(),
-      team_size: this.refs.teamSize.getValue(),
-      has_retreats: this.refs.hasRetreats.getValue(),
-      vc_backed: this.refs.vcBacked.getValue(),
-      is_agency: this.refs.is_agency.getValue(),
-      asynchronous_collaboration: this.refs.asyncCollaboration.getValue(),
-      communication_methods: this.refs.communicationMethods.getValue(),
-      collaboration_methods: this.refs.collaborationMethods.getValue(),
-      technologies: this.refs.technologies.getValue()
-    };
+  updateFilter(key, val) {
+    let {filterSelection} = this.state;
+    filterSelection[key] = val;
 
-    return filterToQuery(filterSelection);
+    this.setState({filterSelection});
   }
 
   render() {
-    let communicationMethods = [
-      'Slack',
-      'Google Apps',
-      'HipChat',
-      'Flowdock',
-      'Email',
-      'Skype'
-    ];
-
     let collaborationMethods = [
       'Trello',
       'Basecamp',
@@ -65,53 +67,73 @@ class Filters extends React.Component {
       'Python',
       'React',
       'Java'
-    ]
+    ];
 
     return (
       <div className="filters">
         <div className="row">
           <div className="col-xs-12">
-            <div className="filter-row">
-              <Filter label="Fully distributed" ref="fullyDistributed" />
-              <Filter label="Hiring" ref="isHiring" />
-              <TeamSizeFilter ref="teamSize" />
+            <div className="hidden-sm-up mobile-view-filters">
+              <div className="filter-row">
+                <Filter label="Fully distributed"
+                  updateFilter={this.updateFilter.bind(this, 'fully_distributed')}
+                  klass="filter-fully-distributed" />
+                <Filter label="Hiring"
+                  updateFilter={this.updateFilter.bind(this, 'is_hiring')}
+                  klass="filter-is-hiring" />
+                <Filter label="Has retreats"
+                  updateFilter={this.updateFilter.bind(this, 'has_retreats')}
+                  tooltipText="Does the team sometimes get together physically?"
+                  klass="filter-has-retreats" />
+              </div>
+              <div className="filter-row">
+                <TeamSizeFilter updateFilter={this.updateFilter.bind(this, 'team_size')} />
+              </div>
+              <div className="filter-row">
+                <Filter label="VC backed"
+                  updateFilter={this.updateFilter.bind(this, 'vc_backed')}
+                  klass="filter-vc-backed" />
+                <Filter label="Agency"
+                  updateFilter={this.updateFilter.bind(this, 'is_agency')}
+                  klass="filter-agency" />
+                <Filter label="Async collaboration"
+                  updateFilter={this.updateFilter.bind(this, 'asynchronous_collaboration')}
+                  tooltipText="Can you work in your own timezone?"
+                  klass="filter-async-collaboration" />
+              </div>
+              <div className="filter-row">
+                <Filter label="Official"
+                  updateFilter={this.updateFilter.bind(this, 'official')}
+                  tooltipText="Only show the official profiles managed by companies" />
+              </div>
+            </div>
+
+
+            <div className="hidden-sm-down">
+              <Filter label="Fully distributed"
+                updateFilter={this.updateFilter.bind(this, 'fully_distributed')} />
+              <Filter label="Hiring"
+                updateFilter={this.updateFilter.bind(this, 'is_hiring')} />
               <Filter label="Has retreats"
-                ref="hasRetreats"
+                updateFilter={this.updateFilter.bind(this, 'has_retreats')}
                 tooltipText="Does the team sometimes get together physically?" />
-              <Filter label="VC backed" ref="vcBacked" />
+              <TeamSizeFilter updateFilter={this.updateFilter.bind(this, 'team_size')} />
+              <Filter label="Has retreats"
+                updateFilter={this.updateFilter.bind(this, 'has_retreats')}
+                tooltipText="Does the team sometimes get together physically?" />
+              <Filter label="VC backed"
+                updateFilter={this.updateFilter.bind(this, 'vc_backed')} />
+              <Filter label="Agency"
+                updateFilter={this.updateFilter.bind(this, 'is_agency')} />
+              <Filter label="Async collaboration"
+                updateFilter={this.updateFilter.bind(this, 'asynchronous_collaboration')}
+                tooltipText="Can you work in your own timezone?" />
+              <Filter label="Official"
+                updateFilter={this.updateFilter.bind(this, 'official')}
+                tooltipText="Only show the official profiles managed by companies" />
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <Filter label="Agency" ref="is_agency" />
-            <Filter label="Async collaboration"
-              ref="asyncCollaboration"
-              tooltipText="Can you work in your own timezone?" />
-            <Filter label="Official"
-              ref="official"
-              tooltipText="Only show the official profiles managed by companies" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="filter-definition">Communication methods</div>
-            <FilterGroup items={communicationMethods} ref="communicationMethods" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="filter-definition">Collaboration methods</div>
-            <FilterGroup items={collaborationMethods} ref="collaborationMethods" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="filter-definition">Technologies</div>
-            <FilterGroup items={technologies} ref="technologies" />
-          </div>
-        </div>
-
 
         <div className="row">
           <div className="col-xs-12 col-sm-8">

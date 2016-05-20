@@ -3,10 +3,6 @@ import React from 'react';
 import Filter from './filter.jsx';
 
 class FilterGroup extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   getValue() {
     const {items} = this.props;
     let values = [];

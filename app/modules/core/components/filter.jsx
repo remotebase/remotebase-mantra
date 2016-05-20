@@ -8,22 +8,23 @@ class Filter extends React.Component {
     this.state = {selected: false};
   }
 
-  // Public method called by <Filters> component to get the value of the input
-  getValue() {
-    return this.refs.filter.checked;
-  }
-
   toggleSelected() {
-    this.setState({selected: !this.state.selected});
+    const {updateFilter} = this.props;
+    let toggledState = !this.state.selected;
+
+    this.setState({selected: toggledState});
+
+    if (updateFilter) {
+      updateFilter(toggledState);
+    }
   }
 
   render() {
     const {label, tooltipText, klass} = this.props;
     const FilterComponent = (
-      <div className={classnames('filter-label', {active: this.state.selected})}
+      <div className={classnames('filter-label', klass, {active: this.state.selected})}
         onClick={this.toggleSelected.bind(this)}>
         {label}
-        <input type="checkbox" ref="filter" checked={this.state.selected} />
       </div>
     );
 
