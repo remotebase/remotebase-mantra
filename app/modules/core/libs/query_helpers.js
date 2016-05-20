@@ -46,6 +46,10 @@ export function filterToQuery(filterSelection) {
       query['collaboration_methods'] = {$in: val};
     }
 
+    if (key === 'technologies' && val.length > 0) {
+      query['technologies'] = {$in: val};
+    }
+
   });
 
   return query;

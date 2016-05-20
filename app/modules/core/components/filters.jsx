@@ -18,16 +18,16 @@ class Filters extends React.Component {
     let filterSelection = {
       fully_distributed: this.refs.fullyDistributed.getValue(),
       is_hiring: this.refs.isHiring.getValue(),
+      official: this.refs.official.getValue(),
       team_size: this.refs.teamSize.getValue(),
       has_retreats: this.refs.hasRetreats.getValue(),
       vc_backed: this.refs.vcBacked.getValue(),
       is_agency: this.refs.is_agency.getValue(),
       asynchronous_collaboration: this.refs.asyncCollaboration.getValue(),
       communication_methods: this.refs.communicationMethods.getValue(),
-      collaboration_methods: this.refs.collaborationMethods.getValue()
+      collaboration_methods: this.refs.collaborationMethods.getValue(),
+      technologies: this.refs.technologies.getValue()
     };
-
-    console.log('filter selection', filterSelection);
 
     return filterToQuery(filterSelection);
   }
@@ -53,6 +53,18 @@ class Filters extends React.Component {
       'Blossom',
       'Zendesk',
       'Front'
+    ];
+
+    let technologies = [
+      'Node.js',
+      'MySQL',
+      'MongoDB',
+      'Javascript',
+      'Ruby on Rails',
+      'C',
+      'Python',
+      'React',
+      'Java'
     ]
 
     return (
@@ -76,6 +88,9 @@ class Filters extends React.Component {
             <Filter label="Async collaboration"
               ref="asyncCollaboration"
               tooltipText="Can you work in your own timezone?" />
+            <Filter label="Official"
+              ref="official"
+              tooltipText="Only show the official profiles managed by companies" />
           </div>
         </div>
         <div className="row">
@@ -88,6 +103,12 @@ class Filters extends React.Component {
           <div className="col-xs-12">
             <div className="filter-definition">Collaboration methods</div>
             <FilterGroup items={collaborationMethods} ref="collaborationMethods" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-xs-12">
+            <div className="filter-definition">Technologies</div>
+            <FilterGroup items={technologies} ref="technologies" />
           </div>
         </div>
 

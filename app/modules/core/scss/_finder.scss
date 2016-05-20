@@ -12,10 +12,15 @@
     color: #5A5A5A;
     padding-bottom: 6px;
     font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
   }
 
   .filter-label {
-    padding: 16px 21px;
+    padding: 6px 12px;
     border: 2px solid #828282;
     cursor: pointer;
     display: inline-block;
@@ -29,12 +34,12 @@
     padding-right: 33px;
     margin-bottom: 9px;
     color: #828282;
-    border-radius: 2px;
+    border-radius: 3px;
 
     &:hover {
-      background-color: #40435c;
-      border-color: #40435c;
-      color: #eef8ef;
+      background-color: #FBFBFB;
+      border-color: #828282;
+      color: #40435c;
     }
 
     &.active {
