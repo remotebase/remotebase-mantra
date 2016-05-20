@@ -4,6 +4,7 @@ import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 import {filterToQuery} from '../libs/query_helpers';
 import Filter from './filter.jsx';
 import TeamSizeFilter from './filter_team_size.jsx';
+import FilterGroup from './filter_group.jsx';
 
 class Filters extends React.Component {
   handleSearch() {
@@ -22,12 +23,38 @@ class Filters extends React.Component {
       vc_backed: this.refs.vcBacked.getValue(),
       is_agency: this.refs.is_agency.getValue(),
       asynchronous_collaboration: this.refs.asyncCollaboration.getValue(),
+      communication_methods: this.refs.communicationMethods.getValue(),
+      collaboration_methods: this.refs.collaborationMethods.getValue()
     };
+
+    console.log('filter selection', filterSelection);
 
     return filterToQuery(filterSelection);
   }
 
   render() {
+    let communicationMethods = [
+      'Slack',
+      'Google Apps',
+      'HipChat',
+      'Flowdock',
+      'Email',
+      'Skype'
+    ];
+
+    let collaborationMethods = [
+      'Trello',
+      'Basecamp',
+      'Asana',
+      'Desk.com',
+      'Help Scout',
+      'Google Apps',
+      'iDoneThis',
+      'Blossom',
+      'Zendesk',
+      'Front'
+    ]
+
     return (
       <div className="filters">
         <div className="row">
@@ -49,6 +76,18 @@ class Filters extends React.Component {
             <Filter label="Async collaboration"
               ref="asyncCollaboration"
               tooltipText="Can you work in your own timezone?" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-xs-12">
+            <div className="filter-definition">Communication methods</div>
+            <FilterGroup items={communicationMethods} ref="communicationMethods" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-xs-12">
+            <div className="filter-definition">Collaboration methods</div>
+            <FilterGroup items={collaborationMethods} ref="collaborationMethods" />
           </div>
         </div>
 

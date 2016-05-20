@@ -37,6 +37,15 @@ export function filterToQuery(filterSelection) {
     if (key === 'has_retreats' && val === true) {
       query['num_retreats_per_year'] = {$gte: 1};
     }
+
+    if (key === 'communication_methods' && val.length > 0) {
+      query['communication_methods'] = {$in: val};
+    }
+
+    if (key === 'collaboration_methods' && val.length > 0) {
+      query['collaboration_methods'] = {$in: val};
+    }
+
   });
 
   return query;

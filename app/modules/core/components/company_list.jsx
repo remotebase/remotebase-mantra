@@ -15,13 +15,13 @@ const CompanyList = ({companies}) => {
   return (
     <ul className="list-unstyled row">
       {
-        sections.map((section) => {
+        sections.map((section, idx) => {
           if (section._adSection) {
-            return <section.component/>;
+            return <section.component key={idx} />;
           }
 
           return <CompanyItem company={section}
-            key={section._id} />;
+            key={idx} />;
         })
       }
     </ul>

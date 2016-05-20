@@ -7,6 +7,13 @@
     font-size: 1.2em;
   }
 
+  .filter-definition {
+    text-transform: uppercase;
+    color: #5A5A5A;
+    padding-bottom: 6px;
+    font-size: 16px;
+  }
+
   .filter-label {
     padding: 16px 21px;
     border: 2px solid #828282;
@@ -42,6 +49,12 @@
 
     input[type="checkbox"] {
       display: none;
+    }
+  }
+
+  .filter-group {
+    .filter-label:not(:first-of-type) {
+      margin-left: -2px;
     }
   }
 

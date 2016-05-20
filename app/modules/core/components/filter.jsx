@@ -18,7 +18,7 @@ class Filter extends React.Component {
   }
 
   render() {
-    const {label, tooltipText} = this.props;
+    const {label, tooltipText, klass} = this.props;
     const FilterComponent = (
       <div className={classnames('filter-label', {active: this.state.selected})}
         onClick={this.toggleSelected.bind(this)}>
