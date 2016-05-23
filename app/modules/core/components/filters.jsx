@@ -5,7 +5,7 @@ import {filterToQuery} from '../libs/query_helpers';
 import Filter from './filter.jsx';
 import TeamSizeFilter from './filter_team_size.jsx';
 import CommunicationFilters from './communication_filters.jsx';
-import FilterGroup from './filter_group.jsx';
+import TechnologyFilters from './technology_filters.jsx';
 
 class Filters extends React.Component {
   constructor(props) {
@@ -57,18 +57,6 @@ class Filters extends React.Component {
       'Front'
     ];
 
-    let technologies = [
-      'Node.js',
-      'MySQL',
-      'MongoDB',
-      'Javascript',
-      'Ruby on Rails',
-      'C',
-      'Python',
-      'React',
-      'Java'
-    ];
-
     return (
       <div className="filters">
         <div className="row">
@@ -109,6 +97,9 @@ class Filters extends React.Component {
               <div className="filter-definition">Communication methods</div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this, 'communication_methods')} />
+              <div className="filter-definition">Technologies</div>
+              <TechnologyFilters
+                updateFilter={this.updateFilter.bind(this, 'technologies')} />
             </div>
 
 
@@ -138,6 +129,9 @@ class Filters extends React.Component {
               <div className="filter-definition">Communication methods</div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this, 'communication_methods')} />
+              <div className="filter-definition">Technologies</div>
+              <TechnologyFilters
+                updateFilter={this.updateFilter.bind(this, 'technologies')} />
             </div>
           </div>
         </div>
