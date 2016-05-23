@@ -5,15 +5,15 @@ import NewsletterAd from '../containers/ad_newsletter';
 const CompanyList = ({companies}) => {
   let sections = companies;
 
-  if (sections.length > 2) {
-    sections.splice(2, 0, {
-      _adSection: true,
-      component: NewsletterAd
-    });
-  }
+  // if (sections.length > 2) {
+  //   sections.splice(2, 0, {
+  //     _adSection: true,
+  //     component: NewsletterAd
+  //   });
+  // }
 
   return (
-    <ul className="list-unstyled row">
+    <ul className="list-unstyled row company-view-list">
       {
         sections.map((section, idx) => {
           if (section._adSection) {

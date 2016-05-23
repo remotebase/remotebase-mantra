@@ -17,143 +17,226 @@
   user-select: none;
 }
 
-.company-item-container {
-  @include card;
-
-  .company-item, .hover-info-container {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+.company-view-list {
+  .company-logo  {
+    width: 43px;
   }
 
-  .company-item {
-    margin-left: 0;
-  }
+  .company-item-container {
+    margin-bottom: 4px;
+    border: 1px solid rgba(130, 130, 130, 0.43);
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 61px;
 
-  .hover-info-container {
-    position:absolute;
-    top:0;
-    width: 100%;
-    margin-left:-598px;
-    background: #40435C;
-    color: #ffffff;
-    opacity: 0.98;
-    height: 234px;
-  }
+    @media(max-width: 499px) {
+      height: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
 
-  .hover-info {
-    padding: 1.3em 3em;
-    background: #40435C;
-    color: #ffffff;
-    opacity: 0.98;
-    height: 100%;
+      .company-meta {
+        margin-bottom: 7px;
+      }
+    }
 
-    @media (max-width: 769px) {
-          padding: 2em 1em;
+    &:hover {
+      background: #F0F7F9;
+    }
+
+    .company-item {
+      @media(min-width: 1200px) {
+        display: flex;
+        flex: 1;
+        align-items: center;
+      }
+
+      .company-label {
+        margin-right: 24px;
+
+        &.employee-label {
+          width: 144px;
+          text-align: center;
+          display: inline-block;
+        }
+
+        &.distributed-ratio-label {
+          width: 144px;
+          text-align: center;
+          display: inline-block;
+        }
+
+        @media(max-width: 499px) {
+          margin-right: 3px;
+
+          &.employee-label {
+            width: auto;
+            text-align: center;
+            display: inline-block;
+          }
+
+          &.distributed-ratio-label {
+            width: auto;
+            text-align: center;
+            display: inline-block;
+          }
+        }
+
+      }
     }
 
     .company-name {
-      display: block;
-      text-align: center;
-      font-size: 1.6em;
-      text-decoration: underline;
-
-      @media (max-width: 769px) {
-        font-size: 17px;
-      }
-    }
-
-    .salary-range {
-      margin-top: 11px;
-      font-size: 1.1em;
-
-      @media (max-width: 769px) {
-        font-size: 11.5px;
-      }
-
-    }
-
-    .summary-list {
-      margin-top: 5px;
-
-      li {
-        font-size: 18px;
-
-        @media (max-width: 769px) {
-          font-size: 13px;
-        }
-
-        .fa {
-          margin-right: 4px;
-        }
-      }
-    }
-
-    .official-icon {
-      color: inherit;
-      margin-right: 4px;
-      margin-left: 0;
-      font-size: inherit;
-    }
-
-    .official-info {
-      font-size: 13px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #F38282;
-    }
-  }
-
-  &:hover {
-    .hover-info-container {
-      margin-left: 0px;
-      border: none;
+      display: inline-block;
+      margin-left: 24px;
+      font-size: 17px;
+      font-weight: 600;
     }
   }
 }
 
-.company-item, .hover-info {
-  padding: 2em 0em;
-  // height: 234px;
+// company list card view
+.company-view-card {
+  .company-item-container {
+    @include card;
 
-  @media (max-width: 499px) {
-    padding: 0.5em 0;
-    // height: 198px;
-    overflow: hidden;
-  }
+    .company-item, .hover-info-container {
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
 
-  .company-heading {
-    margin-bottom: 8px;
-  }
+    .company-item {
+      margin-left: 0;
+    }
 
-  .company-logo {
-    width: 66px;
-    margin-bottom: 14px;
+    .hover-info-container {
+      position:absolute;
+      top:0;
+      width: 100%;
+      margin-left:-598px;
+      background: #40435C;
+      color: #ffffff;
+      opacity: 0.98;
+      height: 234px;
+    }
 
-    @media (max-width: 499px) {
-      width: 64px;
-      margin-bottom: 0;
-      width: 48px;
+    .hover-info {
+      padding: 1.3em 3em;
+      background: #40435C;
+      color: #ffffff;
+      opacity: 0.98;
+      height: 100%;
+
+      @media (max-width: 769px) {
+            padding: 2em 1em;
+      }
+
+      .company-name {
+        display: block;
+        text-align: center;
+        font-size: 1.6em;
+        text-decoration: underline;
+
+        @media (max-width: 769px) {
+          font-size: 17px;
+        }
+      }
+
+      .salary-range {
+        margin-top: 11px;
+        font-size: 1.1em;
+
+        @media (max-width: 769px) {
+          font-size: 11.5px;
+        }
+
+      }
+
+      .summary-list {
+        margin-top: 5px;
+
+        li {
+          font-size: 18px;
+
+          @media (max-width: 769px) {
+            font-size: 13px;
+          }
+
+          .fa {
+            margin-right: 4px;
+          }
+        }
+      }
+
+      .official-icon {
+        color: inherit;
+        margin-right: 4px;
+        margin-left: 0;
+        font-size: inherit;
+      }
+
+      .official-info {
+        font-size: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #F38282;
+      }
+    }
+
+    &:hover {
+      .hover-info-container {
+        margin-left: 0px;
+        border: none;
+      }
     }
   }
 
-  .company-name {
-    font-size: 25px;
-    font-weight: 600;
-    display: inline-block;
-    margin-top: 6px;
+  .company-item, .hover-info {
+    padding: 2em 0em;
+    // height: 234px;
 
     @media (max-width: 499px) {
-      font-size: 1em;
+      padding: 0.5em 0;
+      // height: 198px;
+      overflow: hidden;
     }
-  }
 
-  .short-desc {
-    text-transform: uppercase;
-    padding: 0 0.7em;
+    .company-heading {
+      margin-bottom: 8px;
+    }
 
-    @media (max-width: 499px) {
-      font-size: 13px;
-      margin-bottom: 0;
+    .company-logo {
+      width: 66px;
+      margin-bottom: 14px;
+
+      @media (max-width: 499px) {
+        width: 64px;
+        margin-bottom: 0;
+        width: 48px;
+      }
+    }
+
+    .company-name {
+      font-size: 25px;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 6px;
+
+      @media (max-width: 499px) {
+        font-size: 1em;
+      }
+    }
+
+    .short-desc {
+      text-transform: uppercase;
+      padding: 0 0.7em;
+
+      @media (max-width: 499px) {
+        font-size: 13px;
+        margin-bottom: 0;
+      }
     }
   }
 }
