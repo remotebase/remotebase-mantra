@@ -65,6 +65,31 @@ class CommunicationFilters extends React.Component {
               </div>
             </div>
           </div>
+
+          <div className="hidden-sm-down">
+            <div className="filter-group">
+              <div className="filter-row">
+                <Filter label="Slack"
+                  isChecked={this.checkIfSelected.call(this, 'Slack')}
+                  handleClick={this.updateSelectedValues.bind(this, 'Slack')} />
+                <Filter label="Google Apps"
+                  isChecked={this.checkIfSelected.call(this, 'Google Apps')}
+                  handleClick={this.updateSelectedValues.bind(this, 'Google Apps')} />
+                <Filter label="Email"
+                  isChecked={this.checkIfSelected.call(this, 'Email')}
+                  handleClick={this.updateSelectedValues.bind(this, 'Email')} />
+                <Filter label="Skype"
+                  isChecked={this.checkIfSelected.call(this, 'Skype')}
+                  handleClick={this.updateSelectedValues.bind(this, 'Skype')} />
+                <Filter label="HipChat"
+                  isChecked={this.checkIfSelected.call(this, 'HipChat')}
+                  handleClick={this.updateSelectedValues.bind(this, 'HipChat')} />
+                <Filter label="Flowdock"
+                  isChecked={this.checkIfSelected.call(this, 'Flowdock')}
+                  handleClick={this.updateSelectedValues.bind(this, 'Flowdock')} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

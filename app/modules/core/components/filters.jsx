@@ -112,28 +112,32 @@ class Filters extends React.Component {
             </div>
 
 
-            <div className="hidden-sm-down">
-              <Filter label="Fully distributed"
-                updateFilter={this.updateFilter.bind(this, 'fully_distributed')} />
-              <Filter label="Hiring"
-                updateFilter={this.updateFilter.bind(this, 'is_hiring')} />
-              <Filter label="Has retreats"
-                updateFilter={this.updateFilter.bind(this, 'has_retreats')}
-                tooltipText="Does the team sometimes get together physically?" />
-              <TeamSizeFilter updateFilter={this.updateFilter.bind(this, 'team_size')} />
-              <Filter label="Has retreats"
-                updateFilter={this.updateFilter.bind(this, 'has_retreats')}
-                tooltipText="Does the team sometimes get together physically?" />
-              <Filter label="VC backed"
-                updateFilter={this.updateFilter.bind(this, 'vc_backed')} />
-              <Filter label="Agency"
-                updateFilter={this.updateFilter.bind(this, 'is_agency')} />
-              <Filter label="Async collaboration"
-                updateFilter={this.updateFilter.bind(this, 'asynchronous_collaboration')}
-                tooltipText="Can you work in your own timezone?" />
-              <Filter label="Official"
-                updateFilter={this.updateFilter.bind(this, 'official')}
-                tooltipText="Only show the official profiles managed by companies" />
+            <div className="hidden-sm-down desktop-view-filters">
+              <div className="filter-row">
+                <Filter label="Fully distributed"
+                  updateFilter={this.updateFilter.bind(this, 'fully_distributed')} />
+                <Filter label="Hiring"
+                  updateFilter={this.updateFilter.bind(this, 'is_hiring')} />
+                <TeamSizeFilter updateFilter={this.updateFilter.bind(this, 'team_size')} />
+                <Filter label="Has retreats"
+                  updateFilter={this.updateFilter.bind(this, 'has_retreats')}
+                  tooltipText="Does the team sometimes get together physically?" />
+                <Filter label="VC backed"
+                  updateFilter={this.updateFilter.bind(this, 'vc_backed')} />
+              </div>
+              <div className="filter-row">
+                <Filter label="Agency"
+                  updateFilter={this.updateFilter.bind(this, 'is_agency')} />
+                <Filter label="Async collaboration"
+                  updateFilter={this.updateFilter.bind(this, 'asynchronous_collaboration')}
+                  tooltipText="Can you work in your own timezone?" />
+                <Filter label="Official"
+                  updateFilter={this.updateFilter.bind(this, 'official')}
+                  tooltipText="Only show the official profiles managed by companies" />
+              </div>
+              <div className="filter-definition">Communication methods</div>
+              <CommunicationFilters
+                updateFilter={this.updateFilter.bind(this, 'communication_methods')} />
             </div>
           </div>
         </div>
