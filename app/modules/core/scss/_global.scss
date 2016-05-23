@@ -81,15 +81,16 @@ html {
 }
 
 .mailchimp-banner {
-  background-color: #F02C41;
-  padding: 1.4em 2.1em;
-  margin-bottom: 28px;
-  border-radius: 6px;
+  background-color: #FFFFFF;
+  padding: 15px 18px;
+  border: 1px solid rgba(130, 130, 130, 0.43);
+  margin-bottom: 5px;
+  border-radius: 3px;
 
   .cta {
-    color: #ffffff;
-    font-size: 19px;
-    margin-top: 4px;
+    // color: #ffffff;
+    font-size: 18px;
+    margin-top: 6px;
     padding-left: 36px;
 
     @media (max-width: 499px) {
@@ -98,8 +99,8 @@ html {
   }
 
   .signup-btn {
-    background: #eef8fe;
-    color: #1E1F2A;
+    background: #1E1F2A;
+    color: #ffffff;
 
     @media (max-width: 499px) {
       width: 100%;
