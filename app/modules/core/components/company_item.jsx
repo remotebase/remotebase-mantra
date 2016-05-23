@@ -12,16 +12,17 @@ const CompanyItem = ({company, navToCompany}) => (
             <img src={company.getLogoUrl()} alt="company" className="company-logo"/>
             <div className="company-name">
               {company.name}
+              <OfficialIcon company={company} />
             </div>
           </div>
         </div>
         <div className="col-xs-12 col-sm-9">
           <span className="rb-label company-label distributed-ratio-label">
             <span className="hidden-sm-up">
-              100% <i className="fa fa-globe"></i>
+              {company.getDistrbituedPercent()}% <i className="fa fa-globe"></i>
             </span>
             <span className="hidden-sm-down">
-              100% distributed
+              {company.getDistrbituedPercent()}% distributed
             </span>
           </span>
           <span className="rb-label company-label employee-label">
