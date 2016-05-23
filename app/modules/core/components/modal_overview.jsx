@@ -86,6 +86,18 @@ const ModalOverview = ({company, isActive}) => (
             <ul className="list-unstyled overview-list">
               <li className="trait-item">
                 <span className="item-name">
+                  Hiring?:
+                </span>
+                <span className="item-value">
+                  {
+                    company.is_hiring ?
+                    <span>Yes. <a target="_blank" href={company.job_page + '?utm_source=remotebase.io'}>See all jobs.</a></span> :
+                    <span>No.</span>
+                  }
+                </span>
+              </li>
+              <li className="trait-item">
+                <span className="item-name">
                   VC backed?
                   <OverlayTrigger
                     overlay={<Tooltip>Are they funded by venture capitals?</Tooltip>} placement="bottom">

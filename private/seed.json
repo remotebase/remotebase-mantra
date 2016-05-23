@@ -253,6 +253,7 @@
     "short_description": "Analytics & Insights for Stripe",
     "description":"Analytics & Insights for Stripe",
     "website":"https://baremetrics.com",
+    "job_page": "https://baremetrics.com/jobs",
     "founded_year":2013,
     "vc_funded":false,
     "team_size":7,
