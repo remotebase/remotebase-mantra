@@ -12,6 +12,7 @@
     color: #5A5A5A;
     padding-bottom: 6px;
     font-size: 16px;
+    font-weight: 600;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -30,16 +31,16 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    padding-left: 33px;
-    padding-right: 33px;
-    margin-bottom: 9px;
+    // padding-left: 33px;
+    // padding-right: 33px;
+    // margin-bottom: 9px;
     color: #828282;
     border-radius: 3px;
 
     @media(max-width: 499px) {
-      padding: 4px 9px;
-      font-size: 14px;
-      margin-bottom: 3px;
+      // padding: 4px 9px;
+      // font-size: 14px;
+      // margin-bottom: 3px;
     }
 
     &:hover {
@@ -111,8 +112,9 @@
 
     .filter-label {
       margin-left: 0;
-      padding-left: 26px;
-      padding-right: 26px;
+      // padding-left: 26px;
+      // padding-right: 26px;
+      text-align: center;
       border-radius: 0;
 
       &:first-of-type {
@@ -127,8 +129,8 @@
 
 
       @media(max-width: 499px) {
-        padding-left: 24px;
-        padding-right: 24px;
+        // padding-left: 24px;
+        // padding-right: 24px;
       }
     }
   }
@@ -162,32 +164,59 @@
   }
 
   .mobile-view-filters {
-    .filter-fully-distributed {
-      padding: 4px 14px;
+    .filter-group {
+      .filter-row {
+        margin-bottom: -1px;
+      }
     }
 
-    .filter-is-hiring {
-      padding: 4px 16px;
-    }
+    .filter-row {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 3px;
 
-    .filter-has-retreats {
-      padding: 4px 13px;
-    }
+      .filter-label {
+        flex: 1;
+        text-align: center;
 
-    .filter-gt100, .filter-lt10 {
-      padding-left: 28px;
-      padding-right: 28px;
-    }
+        @media(max-width: 499px) {
+          font-size: 14px;
+        }
+      }
 
-    .filter-agency {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+      .team-size-filter {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+      }
 
-    .filter-async-collaboration {
-      padding-left: 13px;
-      padding-right: 13px;
     }
+    // .filter-fully-distributed {
+    //   padding: 4px 14px;
+    // }
+    //
+    // .filter-is-hiring {
+    //   padding: 4px 16px;
+    // }
+    //
+    // .filter-has-retreats {
+    //   padding: 4px 13px;
+    // }
+    //
+    // .filter-gt100, .filter-lt10 {
+    //   padding-left: 28px;
+    //   padding-right: 28px;
+    // }
+    //
+    // .filter-agency {
+    //   padding-left: 10px;
+    //   padding-right: 10px;
+    // }
+    //
+    // .filter-async-collaboration {
+    //   padding-left: 13px;
+    //   padding-right: 13px;
+    // }
   }
 }
 
@@ -197,4 +226,12 @@
 
 .filters {
   padding-bottom: 1.7em;
+}
+
+.search-actions {
+  margin-top: 8px;
+
+  @media(max-width: 499px) {
+    margin-top: 4px;
+  }
 }

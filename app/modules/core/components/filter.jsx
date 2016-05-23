@@ -5,17 +5,23 @@ import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 class Filter extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {selected: false};
+
+    let selected = Boolean(props.isSelected);
+    this.state = {selected};
   }
 
   toggleSelected() {
-    const {updateFilter} = this.props;
+    const {updateFilter, handleClick} = this.props;
     let toggledState = !this.state.selected;
 
     this.setState({selected: toggledState});
 
-    if (updateFilter) {
+    if (updateFilter) { // TODO: Remove this
       updateFilter(toggledState);
+    }
+
+    if (handleClick) {
+      handleClick();
     }
   }
 

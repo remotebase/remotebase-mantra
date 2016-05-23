@@ -106,6 +106,9 @@ class Filters extends React.Component {
                   updateFilter={this.updateFilter.bind(this, 'official')}
                   tooltipText="Only show the official profiles managed by companies" />
               </div>
+              <div className="filter-definition">Communication methods</div>
+              <CommunicationFilters
+                updateFilter={this.updateFilter.bind(this, 'communication_methods')} />
             </div>
 
 
@@ -135,7 +138,7 @@ class Filters extends React.Component {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row search-actions">
           <div className="col-xs-12 col-sm-8">
             <button onClick={this.handleSearch.bind(this)}
               className="btn search-btn">Find</button>
