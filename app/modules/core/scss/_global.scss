@@ -118,3 +118,18 @@ html {
 .hidden {
   display: none;
 }
+
+.main-footer {
+  text-align: center;
+  background-color: #1e1f2a;
+  color: #eef8fe;
+  padding: 2em 0;
+
+  a {
+    color: #519eb0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

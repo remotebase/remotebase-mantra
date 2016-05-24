@@ -91,7 +91,10 @@ const ModalOverview = ({company, isActive}) => (
                 <span className="item-value">
                   {
                     company.is_hiring ?
-                    <span>Yes. <a target="_blank" href={company.job_page + '?utm_source=remotebase.io'}>See all jobs.</a></span> :
+                    <span>
+                      Yes.
+                      {company.job_page ? <a target="_blank" href={company.job_page + '?utm_source=remotebase.io'}>See all jobs.</a>: <span></span>}
+                    </span> :
                     <span>No.</span>
                   }
                 </span>

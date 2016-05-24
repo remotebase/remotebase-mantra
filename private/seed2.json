@@ -1,1140 +1,5 @@
 [
   {
-    "name":"Plex",
-    "official": false,
-    "logo_url": "/images/companies/plex.png",
-    "headquarters":"Troy, Michigan",
-    "short_description": "Your media on all your devices",
-    "description":"Plex organizes your video, music, and photo collections and streams them to all of your screens.",
-    "website":"https://plex.tv/",
-    "job_page": "",
-    "founded_year":1995,
-    "vc_funded":true,
-    "team_size":60,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":26000,
-    "salary_upper_bound":260000,
-    "num_retreats_per_year":0,
-    "location_based_salary":true,
-    "funded_vacation":true,
-    "is_agency":0,
-    "offers_equity":true,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"plex",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
-  },
-  {
-    "name":"Ghost",
-    "official": false,
-    "logo_url": "/images/companies/ghost.png",
-    "headquarters":"London, UK",
-    "short_description": "Just a blogging platform",
-    "description":"Ghost is a proud non-profit organisation building modern open source technology to power the future of online publishing.",
-    "website":"https://ghost.org/",
-    "job_page": "https://ghost.org/careers/",
-    "founded_year":2013,
-    "vc_funded":true,
-    "team_size":9,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": true,
-    "salary_lower_bound":40000,
-    "salary_upper_bound":110000,
-    "num_retreats_per_year":1,
-    "location_based_salary":true,
-    "funded_vacation":true,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":true,
-    "sex_ratio":0,
-    "slug":"ghost",
-    "communication_methods": [
-      "Slack"
-    ],
-    "collaboration_methods": [
-      "Trello", "Asana"
-    ],
-    "technologies": [
-      "nginx", "MySQL", "SQLite", "Handlebars.js", "Ember.js", "Node.js", "Markdown", "ExpressJS", "GitHub", "BrowserStack", "Atom", "Code Climate", "npm", "Grunt", "Git", "SourceTree", "Javascript"
-    ]
-  },
-  {
-    "name":"DuckDuckGo",
-    "official": false,
-    "logo_url": "/images/companies/duckduckgo.png",
-    "headquarters":"Paoli, PA",
-    "short_description": "The search engine that doesn't track you",
-    "description":"DuckDuckGo is an internet search engine that protects web searchers' privacy.",
-    "website":"https://duckduckgo.com",
-    "job_page": "https://duckduckgo.com/hiring/",
-    "founded_year":2008,
-    "vc_funded":true,
-    "team_size":40,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":35000,
-    "salary_upper_bound":105000,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":0,
-    "is_agency":false,
-    "offers_equity":true,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"duckduckgo",
-    "communication_methods": [],
-    "collaboration_methods": [
-      "Desk.com"
-    ],
-    "technologies": [
-      "nginx", "Socket.IO", "Underscore", "Handlebars.js", "Backbone.js", "Node.js", "Authy", "Perl", "Javascript"
-    ]
-  },
-  {
-    "name":"Toggl",
-    "official": false,
-    "logo_url": "/images/companies/toggl.png",
-    "headquarters":"Tallinn, Estonia",
-    "short_description": "Time tracker & timesheet software",
-    "description":"Best time tracking system for a small business.",
-    "website":"http://www.toggl.com",
-    "job_page": "https://jobs.toggl.com/",
-    "founded_year":2006,
-    "vc_funded":false,
-    "team_size":25,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":44554,
-    "salary_upper_bound":51409,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"toggl",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
-  },
-  {
-    "name":"TopTal",
-    "official": false,
-    "logo_url": "/images/companies/toptal.png",
-    "headquarters":"San Francisco, California",
-    "short_description": "Vetted freelance developers and designers",
-    "description":"Hire the top 3% of freelance developers and designers.",
-    "website":"https://www.toptal.com/",
-    "job_page": "https://www.toptal.com/careers",
-    "founded_year":2010,
-    "vc_funded":true,
-    "team_size":2000,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":49942,
-    "salary_upper_bound":133381,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":true,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"toptal",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [],
-    "technologies": [
-      "nginx", "Passenger", "Underscore", "Backbone.js"
-    ]
-  },
-  {
-    "name":"GitHub",
-    "official": false,
-    "logo_url": "/images/companies/github.png",
-    "headquarters":"San Francisco, CA",
-    "short_description": "Online project hosting using Git",
-    "description":"GitHub is a web-based Git repository hosting service offering distributed revision control and source code management functionality of Git.",
-    "website":"https://github.com/",
-    "job_page": "https://jobs.github.com/",
-    "founded_year":2008,
-    "vc_funded":true,
-    "team_size":568,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":49969,
-    "salary_upper_bound":217452,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":0,
-    "is_agency":false,
-    "offers_equity":true,
-    "family_leave":4,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"github",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": [
-      "Unicorn", "MySQL", "Ruby on Rails", "Ruby", "Markdown", "C", "Sinatra", "Elasticsearch", "Atom", "Git"
-    ]
-  },
-  {
-    "name":"Treehouse",
-    "official": false,
-    "logo_url": "/images/companies/treehouse.png",
-    "headquarters":"Portland, Oregon",
-    "short_description": "An online technology school",
-    "description":"Treehouse is an online technology school that guides students from zero to job-ready for the tech industry in 6-12 months.",
-    "website":"http://teamtreehouse.com",
-    "job_page": "https://teamtreehouse.com/jobs",
-    "founded_year":2011,
-    "vc_funded":true,
-    "team_size":150,
-    "fully_distributed":false,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":50000,
-    "salary_upper_bound":119000,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":true,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"treehouse",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [
-      "Help Scout", "Olark", "Trello"
-    ],
-    "technologies": [
-      "nginx", "Highcharts", "Ruby on Rails", "Ruby", "CodeMirror"
-    ]
-  },
-  {
-    "name":"Baremetrics",
-    "official": false,
-    "logo_url": "/images/companies/baremetrics.jpg",
-    "headquarters":0,
-    "short_description": "Analytics & Insights for Stripe",
-    "description":"Analytics & Insights for Stripe",
-    "website":"https://baremetrics.com",
-    "job_page": "https://baremetrics.com/jobs",
-    "founded_year":2013,
-    "vc_funded":false,
-    "team_size":7,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": true,
-    "salary_lower_bound":60000,
-    "salary_upper_bound":120000,
-    "num_retreats_per_year":1,
-    "location_based_salary":false,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":false,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"baremetrics",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [
-      "Trello", "Basecamp"
-    ],
-    "technologies": [
-      "Redis", "Sidekiq", "PostgreSQL", "Ruby", "Ruby on Rails"
-    ]
-  },
-  {
-    "name":"Buffer",
-    "official": false,
-    "logo_url": "/images/companies/buffer.png",
-    "headquarters":"San Francisco",
-    "short_description": "Schedule social media posts",
-    "description":"Buffer helps users share social media content by scheduling online posts throughout the day.",
-    "website":"https://buffer.com/app",
-    "job_page": "https://buffer.com/journey",
-    "founded_year":2010,
-    "vc_funded":true,
-    "team_size":50,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": true,
-    "salary_lower_bound":65000,
-    "salary_upper_bound":140000,
-    "num_retreats_per_year":2,
-    "location_based_salary":false,
-    "funded_vacation":true,
-    "is_agency":false,
-    "offers_equity":true,
-    "family_leave":3,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"buffer",
-    "communication_methods": [
-      "HipChat"
-    ],
-    "collaboration_methods": [
-      "Google Apps", "Trello", "iDoneThis", "Blossom"
-    ],
-    "technologies": [
-      "PHP", "MongoDB", "React", "JavaScript", "Python", "Backbone.js"
-    ]
-  },
-  {
-    "name":"Spotify",
-    "official": false,
-    "logo_url": "/images/companies/spotify.png",
-    "headquarters":"Stockholm, Sweden",
-    "short_description": "Music for everyone",
-    "description":"Spotify, it's easy to find the right music for every moment on your phone, your computer, your tablet and more.",
-    "website":"https://www.spotify.com",
-    "job_page": "https://www.spotify.com/us/jobs/",
-    "founded_year":2006,
-    "vc_funded":true,
-    "team_size":2000,
-    "fully_distributed":false,
-    "non_remote_team_size":1900,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":66698,
-    "salary_upper_bound":171871,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":0,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":0,
-    "note":"Does not relly hire remotely",
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"spotify",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [
-      "Desk.com", "Blossom"
-    ],
-    "technologies": [
-      "nginx", "Kafka", "Storm", "PostgreSQL", "Cassandra", "Hadoop", "Python", "Java", "Twitter Bootstrap", "Objective-C"
-    ]
-  },
-  {
-    "name":"CleverTech",
-    "official": false,
-    "logo_url": "/images/companies/clevertech.png",
-    "headquarters":"New York, NY",
-    "short_description": "An web agency",
-    "description":"We help the world's most sophisticated founders, serial entrepreneurs, VC backed organizations & family held growth businesses build incredible, game changing technology.",
-    "website":"https://clevertech.biz/",
-    "job_page": "https://hire.clevertech.biz/",
-    "founded_year":2000,
-    "vc_funded":false,
-    "team_size":125,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":66825,
-    "salary_upper_bound":131844,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":0,
-    "is_agency":true,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"clevertech",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [],
-    "technologies": [
-      "Apache HTTP Server", "Twitter Bootstrap"
-    ]
-  },
-  {
-    "name":"Twilio",
-    "official": false,
-    "logo_url": "/images/companies/twilio.png",
-    "headquarters":"San Francisco, CA",
-    "short_description": "APIs for Text Messaging, VoIP, and voice",
-    "description":"Twilio is a cloud communication company that enables users to use standard web languages to build voice, VoIP and SMS apps via a web API.",
-    "website":"http://www.twilio.com",
-    "job_page": "https://www.twilio.com/company/jobs",
-    "founded_year":2008,
-    "vc_funded":true,
-    "team_size":750,
-    "fully_distributed":false,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":71301,
-    "salary_upper_bound":222908,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":true,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"twilio",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [
-      "Zendesk", "Braintree"
-    ],
-    "technologies": [
-      "Swiftype", "Runscope"
-    ]
-  },
-  {
-    "name":"Prezi",
-    "official": false,
-    "logo_url": "/images/companies/prezi.png",
-    "headquarters":"San Francisco, California",
-    "short_description": "Interactive web presentation platform",
-    "description":"Prezi is the interactive, cloud-based presentation platform that helps you connect more powerfully with your audience.",
-    "website":"http://prezi.com",
-    "job_page": "http://prezi.com/jobs/",
-    "founded_year":2009,
-    "vc_funded":true,
-    "team_size":150,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":73302,
-    "salary_upper_bound":145600,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":0,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":true,
-    "note":"Only SF and Budapest",
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"prezi",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [],
-    "technologies": [
-      "Underscore", "Backbone.js", "Twitter Bootstrap"
-    ]
-  },
-  {
-    "name":"Zapier",
-    "official": false,
-    "logo_url": "/images/companies/zapier.png",
-    "headquarters":"Sunnyvale, California.",
-    "short_description": "Task automation between web apps",
-    "description":"Zapier makes it easy to automate tasks between web apps",
-    "website":"https://zapier.com/",
-    "job_page": "https://zapier.com/about/",
-    "founded_year":2011,
-    "vc_funded":true,
-    "team_size":38,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":74000,
-    "salary_upper_bound":153000,
-    "num_retreats_per_year":3,
-    "location_based_salary":false,
-    "funded_vacation":0,
-    "is_agency":0,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"zapier",
-    "communication_methods": [],
-    "collaboration_methods": [
-      "Help Scout", "iDoneThis"
-    ],
-    "technologies": [
-      "Rainforest QA"
-    ]
-  },
-  {
-    "name":"Automattic",
-    "official": false,
-    "logo_url": "/images/companies/automattic.png",
-    "headquarters":"San Francisco",
-    "short_description": "People who built Wordpress",
-    "description":"A web development corporation known for Wordpress",
-    "website":"https://automattic.com/",
-    "job_page": "https://automattic.com/work-with-us/",
-    "founded_year":2005,
-    "vc_funded":true,
-    "team_size":456,
-    "fully_distributed":0,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":91000,
-    "salary_upper_bound":124000,
-    "num_retreats_per_year":1,
-    "location_based_salary":false,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"automattic",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": [
-      "nginx", "PHP"
-    ]
-  },
-  {
-    "name":"Olark",
-    "official": false,
-    "logo_url": "/images/companies/olark.png",
-    "headquarters":"San Francisco",
-    "short_description": "Live chat for websites",
-    "description":"Olark is a tool for website hosts to chat with their website visitors using their existing instant messaging client.",
-    "website":"https://www.olark.com/",
-    "job_page": "https://www.olark.com/jobs",
-    "founded_year":2008,
-    "vc_funded":true,
-    "team_size":25,
-    "fully_distributed":false,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":93000,
-    "salary_upper_bound":137000,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":true,
-    "family_leave":3,
-    "healthcare":true,
-    "note":"only allows remote in usa and canada",
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"olark",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [
-      "Olark", "Desk.com", "iDoneThis"
-    ],
-    "technologies": [
-      "Apache HTTP Server", "React", "PHP", "RequireJS", "Webpack"
-    ]
-  },
-  {
-    "name":"Basecamp",
-    "official": false,
-    "logo_url": "/images/companies/basecamp.png",
-    "headquarters":"Chicago",
-    "short_description": "Project management and collaboration tools",
-    "description":"A web-based project management and collaboration tool",
-    "website":"https://basecamp.com",
-    "job_page": "https://basecamp.com/about/jobs",
-    "founded_year":1999,
-    "vc_funded":true,
-    "team_size":50,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":95328,
-    "salary_upper_bound":246605,
-    "num_retreats_per_year":2,
-    "location_based_salary":false,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":true,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":true,
-    "sex_ratio":0,
-    "slug":"basecamp",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
-  },
-  {
-    "name":"Stack Exchange",
-    "official": false,
-    "logo_url": "/images/companies/stackexchange.png",
-    "headquarters":"New York, NY",
-    "short_description": "Community-driven question and answer sites",
-    "description":"Stack Exchange is an online network of community-driven question and answer sites for programmers and software developers.",
-    "website":"http://stackexchange.com",
-    "job_page": "http://stackoverflow.com/company/work-here",
-    "founded_year":2008,
-    "vc_funded":true,
-    "team_size":1,
-    "fully_distributed":false,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":100000,
-    "salary_upper_bound":135000,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":true,
-    "is_agency":false,
-    "offers_equity":true,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"stack-exchange",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [],
-    "technologies": [
-      "Apache HTTP Server", "jQuery", "Redis", "Microsoft SQL Server", "Cassandra", ".NET", "Android SDK", "JavaScript", "Java", "Go", "C#"
-    ]
-  },
-  {
-    "name":"Product Hunt",
-    "official": false,
-    "logo_url": "/images/companies/product_hunt.png",
-    "headquarters":"San Francisco",
-    "short_description": "A curation of the best new products, every day",
-    "description":"A curation of the best new products, every day.",
-    "website":"http://producthunt.com/",
-    "job_page": "",
-    "founded_year":2013,
-    "vc_funded":true,
-    "team_size":22,
-    "fully_distributed":false,
-    "non_remote_team_size":0,
-    "is_hiring":false,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":0,
-    "salary_upper_bound":0,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":0,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"producthunt",
-    "communication_methods": [
-      "Slack"
-    ],
-    "collaboration_methods": [
-      "Gusto", "Trello"
-    ],
-    "technologies": [
-      "Puma", "Pusher", "React", "Amazon Redshift", "RabbitMQ", "MemCachier", "Redis", "Sidekiq", "PostgreSQL", "Node.js", "Ruby on Rails", "Javascript", "Ruby", "imgix", "Algolia", "GitHub"
-    ]
-  },
-  {
-    "name":"Fortumo",
-    "official": false,
-    "logo_url": "/images/companies/fortumo.png",
-    "headquarters":"Tartumaa, Estonia",
-    "short_description": "A mobile payments company",
-    "description":"a mobile payments company that enables direct carrier billing with more than 350 mobile operators in 90+ countries",
-    "website":"https://fortumo.com/",
-    "job_page": "https://careers.fortumo.com/",
-    "founded_year":2007,
-    "vc_funded":true,
-    "team_size":75,
-    "fully_distributed":false,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":0,
-    "salary_upper_bound":0,
-    "num_retreats_per_year":0,
-    "location_based_salary":false,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":false,
-    "family_leave":0,
-    "healthcare":0,
-    "note":"only select location",
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"fortumo",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [],
-    "technologies": [
-      "nginx"
-    ]
-  },
-  {
-    "name":"LivingSocial",
-    "official": false,
-    "logo_url": "/images/companies/livingsocial.png",
-    "headquarters":"Washington, D.C., United States",
-    "short_description": "Best deals in your city",
-    "description":"LivingSocial features deals on the best things to do in your city, including restaurants and travel, and great gift ideas for friends and family, all with discounts up",
-    "website":"https://www.livingsocial.com/",
-    "job_page": "http://jobs.livingsocial.com/",
-    "founded_year":2007,
-    "vc_funded":true,
-    "team_size":250,
-    "fully_distributed":false,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":44000,
-    "salary_upper_bound":194000,
-    "num_retreats_per_year":0,
-    "location_based_salary":0,
-    "funded_vacation":true,
-    "is_agency":0,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":true,
-    "note":"only uk and usa select locations",
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"livingsocial",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [],
-    "technologies": [
-      "nginx", "Mustache", "Ruby on Rails", "Ruby"
-    ]
-  },
-  {
-    "name":"Teleport",
-    "official": false,
-    "logo_url": "/images/companies/teleport.png",
-    "headquarters":"Palo Alto, California",
-    "short_description": "Move to Your Best Place to Live and Work",
-    "description":"A platform building infrastructure to help nomadic workers seamlessly move from place to place.",
-    "website":"https://teleport.org",
-    "job_page": "https://teleport.org/jobs/",
-    "founded_year":2004,
-    "vc_funded":true,
-    "team_size":25,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":false,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":45827,
-    "salary_upper_bound":172179,
-    "num_retreats_per_year":0,
-    "location_based_salary":0,
-    "funded_vacation":0,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"teleport",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": [
-      "PostgreSQL", "Python", "JavaScript", "PostGIS"
-    ]
-  },
-  {
-    "name":"Mozilla",
-    "official": false,
-    "logo_url": "/images/companies/mozilla.png",
-    "headquarters":"California",
-    "short_description": "A free-software community",
-    "description":"a free-software community, created in 1998 by members of Netscape.",
-    "website":"https://www.mozilla.org",
-    "job_page": "https://careers.mozilla.org/",
-    "founded_year":1998,
-    "vc_funded":true,
-    "team_size":1,
-    "fully_distributed":false,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":48000,
-    "salary_upper_bound":148000,
-    "num_retreats_per_year":0,
-    "location_based_salary":0,
-    "funded_vacation":0,
-    "is_agency":false,
-    "offers_equity":false,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"mozilla",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [
-      "iDoneThis"
-    ],
-    "technologies": [
-      "Apache HTTP Server", "Python", "Elasticsearch", "AppThwack", "GitHub", "Sauce Labs", "Grunt", "Cloud9 IDE"
-    ]
-  },
-  {
-    "name":"KissMetrics",
-    "official": false,
-    "logo_url": "/images/companies/kissmetrics.png",
-    "headquarters":"San Francisco, CA",
-    "short_description": "Analytics software for digital marketing",
-    "description":"Track, analyze and optimize your digital marketing.",
-    "website":"https://www.kissmetrics.com/",
-    "job_page": "https://www.kissmetrics.com/careers/",
-    "founded_year":2008,
-    "vc_funded":true,
-    "team_size":1,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":55000,
-    "salary_upper_bound":229000,
-    "num_retreats_per_year":0,
-    "location_based_salary":0,
-    "funded_vacation":0,
-    "is_agency":false,
-    "offers_equity":false,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":true,
-    "sex_ratio":0,
-    "slug":"kissmetrics",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [
-      "Help Scout", "Front"
-    ],
-    "technologies": [
-      "nginx", "Swiftype", "Ruby", "Python", "Objective-C", "Javascript", "Ruby on Rails"
-    ]
-  },
-  {
-    "name":"Harvest",
-    "official": false,
-    "logo_url": "/images/companies/harvest.png",
-    "headquarters":"New York, NY",
-    "short_description": "Time tracking, invoicing software",
-    "description":"Simple time tracking, fast online invoicing, and powerful reporting software. Simplify employee timesheets and billing",
-    "website":"https://www.getharvest.com/",
-    "job_page": "https://www.getharvest.com/careers",
-    "founded_year":2006,
-    "vc_funded":true,
-    "team_size":750,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":56000,
-    "salary_upper_bound":119000,
-    "num_retreats_per_year":0,
-    "location_based_salary":0,
-    "funded_vacation":0,
-    "is_agency":0,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"harvest",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
-  },
-  {
-    "name":"Parse.ly",
-    "official": false,
-    "logo_url": "/images/companies/parsely.png",
-    "headquarters":"New York, NY",
-    "short_description": "Analytics for Digital Media Publishers",
-    "description":"Parse.ly partners with digital publishers to provide clear audience insights through an intuitive analytics platform.",
-    "website":"http://www.parsely.com/",
-    "job_page": "https://angel.co/parse-ly/jobs",
-    "founded_year":2009,
-    "vc_funded":true,
-    "team_size":25,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":58000,
-    "salary_upper_bound":203000,
-    "num_retreats_per_year":0,
-    "location_based_salary":0,
-    "funded_vacation":0,
-    "is_agency":0,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"parsely",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": [
-      "Kafka", "MongoDB", "Cassandra", "Hadoop", "Python", "Javascript"
-    ]
-  },
-  {
-    "name":"Shopify",
-    "official": false,
-    "logo_url": "/images/companies/shopify.png",
-    "headquarters":"Ottawa, Toronto",
-    "short_description": "An e-commerce platform",
-    "description":"Shopify is a leading cloud-based, multichannel commerce platform designed for small and medium-sized businesses.",
-    "website":"https://www.shopify.com.au/",
-    "job_page": "https://www.shopify.com/careers",
-    "founded_year":2004,
-    "vc_funded":true,
-    "team_size":750,
-    "fully_distributed":false,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":60307,
-    "salary_upper_bound":219487,
-    "num_retreats_per_year":0,
-    "location_based_salary":0,
-    "funded_vacation":0,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"shopify",
-    "communication_methods": [
-      "Slack", "Flowdock"
-    ],
-    "collaboration_methods": [
-      "Olark", "iDoneThis"
-    ],
-    "technologies": [
-      "nginx", "Unicorn", "Kafka", "Redis", "MySQL", "Hadoop", "Apache Spark", "Ruby on Rails", "Ruby", "Aviary", "Elasticsearch", "Swiftype", "GitHub", "Git", "Javascript"
-    ]
-  },
-  {
-    "name":"Upworthy",
-    "official": false,
-    "logo_url": "/images/companies/upworthy.png",
-    "headquarters":"New York, NY",
-    "short_description": "Viral content platform",
-    "description":"Make important issues as shareable as a video of someone jumping on his bed and falling out the window.",
-    "website":"http://www.upworthy.com/",
-    "job_page": "http://www.upworthy.com/jobs",
-    "founded_year":2012,
-    "vc_funded":true,
-    "team_size":30,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":69000,
-    "salary_upper_bound":193000,
-    "num_retreats_per_year":0,
-    "location_based_salary":0,
-    "funded_vacation":0,
-    "is_agency":0,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":true,
-    "note":0,
-    "unlimited_vacation":true,
-    "sex_ratio":0,
-    "slug":"upworthy",
-    "communication_methods": [
-      "Google Apps"
-    ],
-    "collaboration_methods": [],
-    "technologies": [
-      "Twitter Bootstrap", "Varnish"
-    ]
-  },
-  {
-    "name":"Roger CPA Review",
-    "official": false,
-    "logo_url": "/images/companies/roger_cpa_review.png",
-    "headquarters":0,
-    "short_description": "Online course for accounting students",
-    "description":"Online course for accounting students. Entire web dev team works remotely. Oldest member of the team has been part of the company for 12 years.",
-    "website":"http://rogercpareview.com/",
-    "job_page": "",
-    "founded_year":2001,
-    "vc_funded":true,
-    "team_size":45,
-    "fully_distributed":false,
-    "non_remote_team_size":10,
-    "is_hiring":0,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":50000,
-    "salary_upper_bound":100000,
-    "num_retreats_per_year":"0-1",
-    "location_based_salary":true,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":false,
-    "family_leave":0,
-    "healthcare":false,
-    "note":"10 non-tech employees are not remote",
-    "unlimited_vacation":false,
-    "sex_ratio":"1/3 women in tech team; almost entirely women in non-tech teams",
-    "slug":"roger-cpa-review",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
-  },
-  {
-    "name":"Patients Know Best",
-    "official": false,
-    "logo_url": "/images/companies/patients_know_best.png",
-    "headquarters":"Cambridge, UK",
-    "short_description": "Patient-controlled Medical Record",
-    "description":"Patient-controlled Medical Records",
-    "website":"http://www.patientsknowbest.com/",
-    "job_page": "https://www.patientsknowbest.com/careers.html",
-    "founded_year":2008,
-    "vc_funded":true,
-    "team_size":1,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":0,
-    "salary_upper_bound":0,
-    "num_retreats_per_year":0,
-    "location_based_salary":0,
-    "funded_vacation":0,
-    "is_agency":0,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":0,
-    "note":0,
-    "unlimited_vacation":0,
-    "sex_ratio":0,
-    "slug":"patients-know-best",
-    "communication_methods": [],
-    "collaboration_methods": [],
-    "technologies": []
-  },
-  {
-    "name":"Tortuga Backpacks",
-    "official": true,
-    "slug":"tortuga-backpacks",
-    "logo_url": "/images/companies/tortuga_backpacks.png",
-    "headquarters":"",
-    "short_description": "Gear for Urban Travel",
-    "description":"Gear for Urban Travel",
-    "website":"http://www.tortugabackpacks.com",
-    "job_page": "http://blog.tortugabackpacks.com/jobs-concierge/",
-    "founded_year":2010,
-    "vc_funded":false,
-    "team_size":9,
-    "fully_distributed":true,
-    "non_remote_team_size":0,
-    "is_hiring":true,
-    "asynchronous_collaboration": false,
-    "salary_lower_bound":0,
-    "salary_upper_bound":0,
-    "num_retreats_per_year":0,
-    "location_based_salary":true,
-    "funded_vacation":false,
-    "is_agency":false,
-    "offers_equity":0,
-    "family_leave":0,
-    "healthcare":true,
-    "unlimited_vacation":true,
-    "sex_ratio":0,
-    "communication_methods": [
-      "Asana", "Slack", "Email", "Skype"
-    ],
-    "collaboration_methods": [],
-    "technologies": [],
-    "note":"non-tech"
-  },
-  {
     "name": "10up Inc.",
     "headquarters": "Portland, OR",
     "description": "Content publishing made easy, maybe even fun. WordPress focused, global, distributed digital agency.",
@@ -1163,7 +28,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "10-up-inc",
-    "logo_url": "/images/companies/10_up_inc.png"
+    "logo_url": "/images/companies/10_up_inc.png",
+    "logo_file_name": "10_up_inc"
   },
   {
     "name": "Acceleration Partners",
@@ -1194,7 +60,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "acceleration-partners",
-    "logo_url": "/images/companies/acceleration_partners.png"
+    "logo_url": "/images/companies/acceleration_partners.png",
+    "logo_file_name": "acceleration_partners"
   },
   {
     "name": "AgileBits",
@@ -1231,7 +98,8 @@
       "Google Apps"
     ],
     "slug": "agile-bits",
-    "logo_url": "/images/companies/agile_bits.png"
+    "logo_url": "/images/companies/agile_bits.png",
+    "logo_file_name": "agile_bits"
   },
   {
     "name": "Aha!",
@@ -1262,7 +130,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "aha",
-    "logo_url": "/images/companies/aha.png"
+    "logo_url": "/images/companies/aha.png",
+    "logo_file_name": "aha"
   },
   {
     "name": "American Express",
@@ -1275,6 +144,7 @@
     "team_size": 53500,
     "fully_distributed": false,
     "non_remote_team_size": 0,
+    "remote_worker_percentage": 0,
     "is_hiring": true,
     "salary_lower_bound": 27000,
     "salary_upper_bound": 160000,
@@ -1292,7 +162,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "american-express",
-    "logo_url": "/images/companies/american_express.png"
+    "logo_url": "/images/companies/american_express.png",
+    "logo_file_name": "american_express"
   },
   {
     "name": "AnswerConnect",
@@ -1323,7 +194,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "answer-connect",
-    "logo_url": "/images/companies/answer_connect.png"
+    "logo_url": "/images/companies/answer_connect.png",
+    "logo_file_name": "answer_connect"
   },
   {
     "name": "Appen",
@@ -1354,7 +226,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "appen",
-    "logo_url": "/images/companies/appen.png"
+    "logo_url": "/images/companies/appen.png",
+    "logo_file_name": "appen"
   },
   {
     "name": "Articulate, Inc.",
@@ -1396,7 +269,8 @@
       "Google Apps"
     ],
     "slug": "articulate-inc",
-    "logo_url": "/images/companies/articulate_inc.png"
+    "logo_url": "/images/companies/articulate_inc.png",
+    "logo_file_name": "articulate_inc"
   },
   {
     "name": "Attentiv",
@@ -1427,7 +301,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "attentiv",
-    "logo_url": "/images/companies/attentiv.png"
+    "logo_url": "/images/companies/attentiv.png",
+    "logo_file_name": "attentiv"
   },
   {
     "name": "Authentic Form & Function",
@@ -1458,7 +333,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "authentic-form-function",
-    "logo_url": "/images/companies/authentic_form_function.png"
+    "logo_url": "/images/companies/authentic_form_function.png",
+    "logo_file_name": "authentic_form_function"
   },
   {
     "name": "Balsamiq",
@@ -1501,7 +377,8 @@
       "HipChat"
     ],
     "slug": "balsamiq",
-    "logo_url": "/images/companies/balsamiq.png"
+    "logo_url": "/images/companies/balsamiq.png",
+    "logo_file_name": "balsamiq"
   },
   {
     "name": "Batchbook",
@@ -1532,7 +409,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "batchbook",
-    "logo_url": "/images/companies/batchbook.png"
+    "logo_url": "/images/companies/batchbook.png",
+    "logo_file_name": "batchbook"
   },
   {
     "name": "Beutler Ink",
@@ -1563,7 +441,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "beutler-ink",
-    "logo_url": "/images/companies/beutler_ink.png"
+    "logo_url": "/images/companies/beutler_ink.png",
+    "logo_file_name": "beutler_ink"
   },
   {
     "name": "Big Universe, Inc.",
@@ -1594,7 +473,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "big-universe-inc",
-    "logo_url": "/images/companies/big_universe_inc.png"
+    "logo_url": "/images/companies/big_universe_inc.png",
+    "logo_file_name": "big_universe_inc"
   },
   {
     "name": "Blossom",
@@ -1638,7 +518,8 @@
       "Slack"
     ],
     "slug": "blossom",
-    "logo_url": "/images/companies/blossom.png"
+    "logo_url": "/images/companies/blossom.png",
+    "logo_file_name": "blossom"
   },
   {
     "name": "Canonical",
@@ -1669,7 +550,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "canonical",
-    "logo_url": "/images/companies/canonical.png"
+    "logo_url": "/images/companies/canonical.png",
+    "logo_file_name": "canonical"
   },
   {
     "name": "Chargify",
@@ -1710,7 +592,8 @@
       "Google Apps"
     ],
     "slug": "chargify",
-    "logo_url": "/images/companies/chargify.png"
+    "logo_url": "/images/companies/chargify.png",
+    "logo_file_name": "chargify"
   },
   {
     "name": "Ciao Bambino! Inc.",
@@ -1741,7 +624,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "ciao-bambino-inc",
-    "logo_url": "/images/companies/ciao_bambino_inc.png"
+    "logo_url": "/images/companies/ciao_bambino_inc.png",
+    "logo_file_name": "ciao_bambino_inc"
   },
   {
     "name": "CloudPeeps",
@@ -1781,7 +665,8 @@
       "Stripe"
     ],
     "slug": "cloud-peeps",
-    "logo_url": "/images/companies/cloud_peeps.png"
+    "logo_url": "/images/companies/cloud_peeps.png",
+    "logo_file_name": "cloud_peeps"
   },
   {
     "name": "Codebusters, Inc.",
@@ -1812,7 +697,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "codebusters-inc",
-    "logo_url": "/images/companies/codebusters_inc.png"
+    "logo_url": "/images/companies/codebusters_inc.png",
+    "logo_file_name": "codebusters_inc"
   },
   {
     "name": "Collage.com",
@@ -1843,7 +729,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "collage-com",
-    "logo_url": "/images/companies/collage_com.png"
+    "logo_url": "/images/companies/collage_com.png",
+    "logo_file_name": "collage_com"
   },
   {
     "name": "DataStax",
@@ -1882,7 +769,8 @@
       "Google Apps"
     ],
     "slug": "data-stax",
-    "logo_url": "/images/companies/data_stax.png"
+    "logo_url": "/images/companies/data_stax.png",
+    "logo_file_name": "data_stax"
   },
   {
     "name": "Doist",
@@ -1913,7 +801,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "doist",
-    "logo_url": "/images/companies/doist.png"
+    "logo_url": "/images/companies/doist.png",
+    "logo_file_name": "doist"
   },
   {
     "name": "DVMelite",
@@ -1944,7 +833,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "dv-melite",
-    "logo_url": "/images/companies/dv_melite.png"
+    "logo_url": "/images/companies/dv_melite.png",
+    "logo_file_name": "dv_melite"
   },
   {
     "name": "Edgar",
@@ -1975,7 +865,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "edgar",
-    "logo_url": "/images/companies/edgar.png"
+    "logo_url": "/images/companies/edgar.png",
+    "logo_file_name": "edgar"
   },
   {
     "name": "Envato",
@@ -2006,7 +897,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "envato",
-    "logo_url": "/images/companies/envato.png"
+    "logo_url": "/images/companies/envato.png",
+    "logo_file_name": "envato"
   },
   {
     "name": "Fire Engine RED",
@@ -2037,7 +929,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "fire-engine-red",
-    "logo_url": "/images/companies/fire_engine_red.png"
+    "logo_url": "/images/companies/fire_engine_red.png",
+    "logo_file_name": "fire_engine_red"
   },
   {
     "name": "Five Q",
@@ -2068,7 +961,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "five-q",
-    "logo_url": "/images/companies/five_q.png"
+    "logo_url": "/images/companies/five_q.png",
+    "logo_file_name": "five_q"
   },
   {
     "name": "FlexJobs",
@@ -2099,7 +993,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "flex-jobs",
-    "logo_url": "/images/companies/flex_jobs.png"
+    "logo_url": "/images/companies/flex_jobs.png",
+    "logo_file_name": "flex_jobs"
   },
   {
     "name": "FlexProfessionals, LLC",
@@ -2130,7 +1025,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "flex-professionals-llc",
-    "logo_url": "/images/companies/flex_professionals_llc.png"
+    "logo_url": "/images/companies/flex_professionals_llc.png",
+    "logo_file_name": "flex_professionals_llc"
   },
   {
     "name": "Formstack",
@@ -2161,7 +1057,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "formstack",
-    "logo_url": "/images/companies/formstack.png"
+    "logo_url": "/images/companies/formstack.png",
+    "logo_file_name": "formstack"
   },
   {
     "name": "GitLab",
@@ -2194,7 +1091,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "git-lab",
-    "logo_url": "/images/companies/git_lab.png"
+    "logo_url": "/images/companies/git_lab.png",
+    "logo_file_name": "git_lab"
   },
   {
     "name": "Go Fish Digital",
@@ -2225,7 +1123,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "go-fish-digital",
-    "logo_url": "/images/companies/go_fish_digital.png"
+    "logo_url": "/images/companies/go_fish_digital.png",
+    "logo_file_name": "go_fish_digital"
   },
   {
     "name": "GobySavvy",
@@ -2256,7 +1155,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "goby-savvy",
-    "logo_url": "/images/companies/goby_savvy.png"
+    "logo_url": "/images/companies/goby_savvy.png",
+    "logo_file_name": "goby_savvy"
   },
   {
     "name": "Goodway Group",
@@ -2287,7 +1187,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "goodway-group",
-    "logo_url": "/images/companies/goodway_group.png"
+    "logo_url": "/images/companies/goodway_group.png",
+    "logo_file_name": "goodway_group"
   },
   {
     "name": "Greenback Expat Tax Services",
@@ -2318,7 +1219,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "greenback-expat-tax-services",
-    "logo_url": "/images/companies/greenback_expat_tax_services.png"
+    "logo_url": "/images/companies/greenback_expat_tax_services.png",
+    "logo_file_name": "greenback_expat_tax_services"
   },
   {
     "name": "Groove",
@@ -2349,7 +1251,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "groove",
-    "logo_url": "/images/companies/groove.png"
+    "logo_url": "/images/companies/groove.png",
+    "logo_file_name": "groove"
   },
   {
     "name": "Hanno",
@@ -2380,7 +1283,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "hanno",
-    "logo_url": "/images/companies/hanno.png"
+    "logo_url": "/images/companies/hanno.png",
+    "logo_file_name": "hanno"
   },
   {
     "name": "Help Scout",
@@ -2425,7 +1329,8 @@
     ],
     "communication_methods": 0,
     "slug": "help-scout",
-    "logo_url": "/images/companies/help_scout.png"
+    "logo_url": "/images/companies/help_scout.png",
+    "logo_file_name": "help_scout"
   },
   {
     "name": "Hippo Education",
@@ -2456,7 +1361,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "hippo-education",
-    "logo_url": "/images/companies/hippo_education.png"
+    "logo_url": "/images/companies/hippo_education.png",
+    "logo_file_name": "hippo_education"
   },
   {
     "name": "Hubstaff",
@@ -2487,7 +1393,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "hubstaff",
-    "logo_url": "/images/companies/hubstaff.png"
+    "logo_url": "/images/companies/hubstaff.png",
+    "logo_file_name": "hubstaff"
   },
   {
     "name": "ICUC",
@@ -2518,7 +1425,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "icuc",
-    "logo_url": "/images/companies/icuc.png"
+    "logo_url": "/images/companies/icuc.png",
+    "logo_file_name": "icuc"
   },
   {
     "name": "iDoneThis",
@@ -2559,7 +1467,8 @@
       "Google Apps"
     ],
     "slug": "i-done-this",
-    "logo_url": "/images/companies/i_done_this.png"
+    "logo_url": "/images/companies/i_done_this.png",
+    "logo_file_name": "i_done_this"
   },
   {
     "name": "Incsub",
@@ -2590,7 +1499,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "incsub",
-    "logo_url": "/images/companies/incsub.png"
+    "logo_url": "/images/companies/incsub.png",
+    "logo_file_name": "incsub"
   },
   {
     "name": "Inspired HR",
@@ -2621,7 +1531,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "inspired-hr",
-    "logo_url": "/images/companies/inspired_hr.png"
+    "logo_url": "/images/companies/inspired_hr.png",
+    "logo_file_name": "inspired_hr"
   },
   {
     "name": "Intridea/Mobomo",
@@ -2658,7 +1569,8 @@
       "'Google Apps''"
     ],
     "slug": "intridea-mobomo",
-    "logo_url": "/images/companies/intridea_mobomo.png"
+    "logo_url": "/images/companies/intridea_mobomo.png",
+    "logo_file_name": "intridea_mobomo"
   },
   {
     "name": "InVisionApp",
@@ -2689,7 +1601,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "in-vision-app",
-    "logo_url": "/images/companies/in_vision_app.png"
+    "logo_url": "/images/companies/in_vision_app.png",
+    "logo_file_name": "in_vision_app"
   },
   {
     "name": "Jackson River",
@@ -2720,7 +1633,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "jackson-river",
-    "logo_url": "/images/companies/jackson_river.png"
+    "logo_url": "/images/companies/jackson_river.png",
+    "logo_file_name": "jackson_river"
   },
   {
     "name": "LoveToKnow",
@@ -2751,7 +1665,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "love-to-know",
-    "logo_url": "/images/companies/love_to_know.png"
+    "logo_url": "/images/companies/love_to_know.png",
+    "logo_file_name": "love_to_know"
   },
   {
     "name": "Lullabot",
@@ -2782,7 +1697,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "lullabot",
-    "logo_url": "/images/companies/lullabot.png"
+    "logo_url": "/images/companies/lullabot.png",
+    "logo_file_name": "lullabot"
   },
   {
     "name": "Mokriya",
@@ -2813,7 +1729,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "mokriya",
-    "logo_url": "/images/companies/mokriya.png"
+    "logo_url": "/images/companies/mokriya.png",
+    "logo_file_name": "mokriya"
   },
   {
     "name": "MomsRising.org",
@@ -2844,7 +1761,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "moms-rising-org",
-    "logo_url": "/images/companies/moms_rising_org.png"
+    "logo_url": "/images/companies/moms_rising_org.png",
+    "logo_file_name": "moms_rising_org"
   },
   {
     "name": "NodeSource",
@@ -2886,7 +1804,8 @@
       "Google Apps"
     ],
     "slug": "node-source",
-    "logo_url": "/images/companies/node_source.png"
+    "logo_url": "/images/companies/node_source.png",
+    "logo_file_name": "node_source"
   },
   {
     "name": "OnTheGoSystems",
@@ -2917,7 +1836,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "on-the-go-systems",
-    "logo_url": "/images/companies/on_the_go_systems.png"
+    "logo_url": "/images/companies/on_the_go_systems.png",
+    "logo_file_name": "on_the_go_systems"
   },
   {
     "name": "Origin Eight",
@@ -2948,7 +1868,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "origin-eight",
-    "logo_url": "/images/companies/origin_eight.png"
+    "logo_url": "/images/companies/origin_eight.png",
+    "logo_file_name": "origin_eight"
   },
   {
     "name": "PeopleG2",
@@ -2979,7 +1900,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "people-g-2",
-    "logo_url": "/images/companies/people_g_2.png"
+    "logo_url": "/images/companies/people_g_2.png",
+    "logo_file_name": "people_g_2"
   },
   {
     "name": "Sanborn Media Factory",
@@ -3010,7 +1932,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "sanborn-media-factory",
-    "logo_url": "/images/companies/sanborn_media_factory.png"
+    "logo_url": "/images/companies/sanborn_media_factory.png",
+    "logo_file_name": "sanborn_media_factory"
   },
   {
     "name": "Scrapinghub",
@@ -3052,10 +1975,11 @@
       "amazon ec2"
     ],
     "communication_methods": [
-      "Slack"
+      "slack"
     ],
     "slug": "scrapinghub",
-    "logo_url": "/images/companies/scrapinghub.png"
+    "logo_url": "/images/companies/scrapinghub.png",
+    "logo_file_name": "scrapinghub"
   },
   {
     "name": "Seeq",
@@ -3095,7 +2019,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "seeq",
-    "logo_url": "/images/companies/seeq.png"
+    "logo_url": "/images/companies/seeq.png",
+    "logo_file_name": "seeq"
   },
   {
     "name": "Simple [A]",
@@ -3126,7 +2051,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "simple-a",
-    "logo_url": "/images/companies/simple_a.png"
+    "logo_url": "/images/companies/simple_a.png",
+    "logo_file_name": "simple_a"
   },
   {
     "name": "Simple Texting",
@@ -3157,7 +2083,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "simple-texting",
-    "logo_url": "/images/companies/simple_texting.png"
+    "logo_url": "/images/companies/simple_texting.png",
+    "logo_file_name": "simple_texting"
   },
   {
     "name": "SitePen",
@@ -3191,7 +2118,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "site-pen",
-    "logo_url": "/images/companies/site_pen.png"
+    "logo_url": "/images/companies/site_pen.png",
+    "logo_file_name": "site_pen"
   },
   {
     "name": "Sococo",
@@ -3229,7 +2157,8 @@
       "Google Apps"
     ],
     "slug": "sococo",
-    "logo_url": "/images/companies/sococo.png"
+    "logo_url": "/images/companies/sococo.png",
+    "logo_file_name": "sococo"
   },
   {
     "name": "SoftwareMill",
@@ -3266,7 +2195,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "software-mill",
-    "logo_url": "/images/companies/software_mill.png"
+    "logo_url": "/images/companies/software_mill.png",
+    "logo_file_name": "software_mill"
   },
   {
     "name": "Speak",
@@ -3297,7 +2227,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "speak",
-    "logo_url": "/images/companies/speak.png"
+    "logo_url": "/images/companies/speak.png",
+    "logo_file_name": "speak"
   },
   {
     "name": "Stack Overflow",
@@ -3344,7 +2275,8 @@
       "Google Apps"
     ],
     "slug": "stack-overflow",
-    "logo_url": "/images/companies/stack_overflow.png"
+    "logo_url": "/images/companies/stack_overflow.png",
+    "logo_file_name": "stack_overflow"
   },
   {
     "name": "Sticker Mule",
@@ -3379,7 +2311,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "sticker-mule",
-    "logo_url": "/images/companies/sticker_mule.png"
+    "logo_url": "/images/companies/sticker_mule.png",
+    "logo_file_name": "sticker_mule"
   },
   {
     "name": "StudySoup",
@@ -3414,7 +2347,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "study-soup",
-    "logo_url": "/images/companies/study_soup.png"
+    "logo_url": "/images/companies/study_soup.png",
+    "logo_file_name": "study_soup"
   },
   {
     "name": "Summit CPA Group",
@@ -3445,7 +2379,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "summit-cpa-group",
-    "logo_url": "/images/companies/summit_cpa_group.png"
+    "logo_url": "/images/companies/summit_cpa_group.png",
+    "logo_file_name": "summit_cpa_group"
   },
   {
     "name": "Sutherland Global Services",
@@ -3476,7 +2411,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "sutherland-global-services",
-    "logo_url": "/images/companies/sutherland_global_services.png"
+    "logo_url": "/images/companies/sutherland_global_services.png",
+    "logo_file_name": "sutherland_global_services"
   },
   {
     "name": "Taksa Technology Solutions",
@@ -3507,7 +2443,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "taksa-technology-solutions",
-    "logo_url": "/images/companies/taksa_technology_solutions.png"
+    "logo_url": "/images/companies/taksa_technology_solutions.png",
+    "logo_file_name": "taksa_technology_solutions"
   },
   {
     "name": "TeamGantt",
@@ -3542,7 +2479,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "team-gantt",
-    "logo_url": "/images/companies/team_gantt.png"
+    "logo_url": "/images/companies/team_gantt.png",
+    "logo_file_name": "team_gantt"
   },
   {
     "name": "TeamSnap",
@@ -3582,7 +2520,8 @@
       "Google Apps"
     ],
     "slug": "team-snap",
-    "logo_url": "/images/companies/team_snap.png"
+    "logo_url": "/images/companies/team_snap.png",
+    "logo_file_name": "team_snap"
   },
   {
     "name": "The Cheat Sheet",
@@ -3613,7 +2552,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "the-cheat-sheet",
-    "logo_url": "/images/companies/the_cheat_sheet.png"
+    "logo_url": "/images/companies/the_cheat_sheet.png",
+    "logo_file_name": "the_cheat_sheet"
   },
   {
     "name": "The Geller Law Group",
@@ -3644,7 +2584,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "the-geller-law-group",
-    "logo_url": "/images/companies/the_geller_law_group.png"
+    "logo_url": "/images/companies/the_geller_law_group.png",
+    "logo_file_name": "the_geller_law_group"
   },
   {
     "name": "ThirdPath Institute",
@@ -3675,7 +2616,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "third-path-institute",
-    "logo_url": "/images/companies/third_path_institute.png"
+    "logo_url": "/images/companies/third_path_institute.png",
+    "logo_file_name": "third_path_institute"
   },
   {
     "name": "Timely",
@@ -3706,7 +2648,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "timely",
-    "logo_url": "/images/companies/timely.png"
+    "logo_url": "/images/companies/timely.png",
+    "logo_file_name": "timely"
   },
   {
     "name": "TNTP",
@@ -3737,7 +2680,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "tntp",
-    "logo_url": "/images/companies/tntp.png"
+    "logo_url": "/images/companies/tntp.png",
+    "logo_file_name": "tntp"
   },
   {
     "name": "Trello",
@@ -3779,7 +2723,8 @@
       "Google Apps"
     ],
     "slug": "trello",
-    "logo_url": "/images/companies/trello.png"
+    "logo_url": "/images/companies/trello.png",
+    "logo_file_name": "trello"
   },
   {
     "name": "Tropical Travelers",
@@ -3810,7 +2755,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "tropical-travelers",
-    "logo_url": "/images/companies/tropical_travelers.png"
+    "logo_url": "/images/companies/tropical_travelers.png",
+    "logo_file_name": "tropical_travelers"
   },
   {
     "name": "Universal Mind, Inc.",
@@ -3841,7 +2787,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "universal-mind-inc",
-    "logo_url": "/images/companies/universal_mind_inc.png"
+    "logo_url": "/images/companies/universal_mind_inc.png",
+    "logo_file_name": "universal_mind_inc"
   },
   {
     "name": "Ushahidi",
@@ -3875,7 +2822,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "ushahidi",
-    "logo_url": "/images/companies/ushahidi.png"
+    "logo_url": "/images/companies/ushahidi.png",
+    "logo_file_name": "ushahidi"
   },
   {
     "name": "WAKA Kickball & Social Sports",
@@ -3906,7 +2854,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "waka-kickball-social-sports",
-    "logo_url": "/images/companies/waka_kickball_social_sports.png"
+    "logo_url": "/images/companies/waka_kickball_social_sports.png",
+    "logo_file_name": "waka_kickball_social_sports"
   },
   {
     "name": "WooThemes",
@@ -3937,7 +2886,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "woo-themes",
-    "logo_url": "/images/companies/woo_themes.png"
+    "logo_url": "/images/companies/woo_themes.png",
+    "logo_file_name": "woo_themes"
   },
   {
     "name": "Wordfence",
@@ -3968,7 +2918,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "wordfence",
-    "logo_url": "/images/companies/wordfence.png"
+    "logo_url": "/images/companies/wordfence.png",
+    "logo_file_name": "wordfence"
   },
   {
     "name": "Workfrom",
@@ -3999,7 +2950,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "workfrom",
-    "logo_url": "/images/companies/workfrom.png"
+    "logo_url": "/images/companies/workfrom.png",
+    "logo_file_name": "workfrom"
   },
   {
     "name": "Working Solutions",
@@ -4030,7 +2982,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "working-solutions",
-    "logo_url": "/images/companies/working_solutions.png"
+    "logo_url": "/images/companies/working_solutions.png",
+    "logo_file_name": "working_solutions"
   },
   {
     "name": "World Wide Web Hosting",
@@ -4065,7 +3018,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "world-wide-web-hosting",
-    "logo_url": "/images/companies/world_wide_web_hosting.png"
+    "logo_url": "/images/companies/world_wide_web_hosting.png",
+    "logo_file_name": "world_wide_web_hosting"
   },
   {
     "name": "Worldwide101",
@@ -4096,7 +3050,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "worldwide-101",
-    "logo_url": "/images/companies/worldwide_101.png"
+    "logo_url": "/images/companies/worldwide_101.png",
+    "logo_file_name": "worldwide_101"
   },
   {
     "name": "X-Team",
@@ -4127,6 +3082,7 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "x-team",
-    "logo_url": "/images/companies/x_team.png"
+    "logo_url": "/images/companies/x_team.png",
+    "logo_file_name": "x_team"
   }
 ]

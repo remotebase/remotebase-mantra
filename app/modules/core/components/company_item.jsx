@@ -7,7 +7,7 @@ const CompanyItem = ({company, navToCompany}) => (
     onClick={navToCompany.bind(this, company.slug)}>
     <div className="company-item-container">
       <div className="row company-item">
-        <div className="col-xs-12 col-sm-3">
+        <div className="col-xs-12 col-sm-4">
           <div className="company-meta">
             <img src={company.getLogoUrl()} alt="company" className="company-logo"/>
             <div className="company-name">
