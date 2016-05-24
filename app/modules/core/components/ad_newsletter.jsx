@@ -41,7 +41,7 @@ class AdNewsLetter extends React.Component {
                 <input type="email" name="EMAIL" className="form-control" placeholder="Email" required />
               </div>
               <div className="col-xs-12 col-sm-2">
-                <input type="submit" value="Get it" className="btn signup-btn" />
+                <input type="submit" value="Subscribe" className="btn signup-btn" />
               </div>
 
               {/*real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}

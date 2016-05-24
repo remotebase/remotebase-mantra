@@ -5,6 +5,7 @@ import {ReactiveDict} from 'meteor/reactive-dict';
 import {Tracker} from 'meteor/tracker';
 import _ from 'lodash';
 import {DocHead} from 'meteor/kadira:dochead';
+import {Counts} from 'meteor/tmeasday:publish-counts';
 import Case from 'case';
 
 export default function () {
@@ -17,5 +18,6 @@ export default function () {
     _,
     DocHead,
     Case,
+    Counts
   };
 }

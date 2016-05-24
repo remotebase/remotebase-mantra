@@ -133,3 +133,26 @@ html {
     margin-bottom: 0;
   }
 }
+
+.rb-btn-primary {
+  background: #F02C41;
+  color: #ffffff;
+  border: 2px solid #F02C41;
+  border-radius: 2px;
+  width: 100%;
+  outline: none;
+
+  &:hover {
+    background: rgba(240, 44, 65, 0.77);
+    border-color: rgba(255, 91, 109, 0.77);
+  }
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+.loader-spin {
+  -webkit-animation: fa-spin 0.8s infinite linear;
+  animation: fa-spin 0.8s infinite linear;
+}

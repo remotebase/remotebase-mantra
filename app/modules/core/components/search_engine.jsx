@@ -1,31 +1,30 @@
 import React from 'react';
 
-import CompanyList from '../containers/company_list';
+import SearchResult from '../containers/search_result';
 import LoadMoreBtn from '../containers/load_more_button';
 import Loading from '../containers/loading';
 
-class SearchResult extends React.Component {
+class SearchEngine extends React.Component {
   constructor(props) {
     super(props);
   }
 
   handleLoadMore() {
-    const {onLoadMore, loadMore} = this.props;
-    loadMore();
+    const {onLoadMore} = this.props;
     onLoadMore();
   }
 
   render() {
-    const {searchResultCount, limit, companies, isSearching} = this.props;
+    const {searchResultCount, currentLimit, isSearching} = this.props;
 
     return (
       <div className="search-result">
-        <CompanyList companies={companies} />
+        <SearchResult isSearching={isSearching} />
         {
-          isSearching ? <Loading /> : <span></span>
+          isSearching ? <Loading /> : <span>Not loading</span>
         }
         {
-          limit < searchResultCount && !isSearching ?
+          currentLimit < searchResultCount && !isSearching ?
           <LoadMoreBtn onLoadMore={this.handleLoadMore.bind(this)}/> : <span></span>
         }
       </div>
@@ -33,4 +32,4 @@ class SearchResult extends React.Component {
   }
 }
 
-export default SearchResult;
+export default SearchEngine;

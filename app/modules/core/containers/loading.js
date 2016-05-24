@@ -1,12 +1,11 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
-import Finder from '../components/finder.jsx';
+import Loading from '../components/loading.jsx';
 
 export const composer = ({context}, onData) => {
-  const {Counts} = context();
-  let companyResultCount = Counts.get('companies-counter');
+  const {Meteor, Collections} = context();
 
-  onData(null, {companyResultCount});
+  onData(null, {});
 };
 
 export const depsMapper = (context, actions) => ({
@@ -16,4 +15,4 @@ export const depsMapper = (context, actions) => ({
 export default composeAll(
   composeWithTracker(composer),
   useDeps(depsMapper)
-)(Finder);
+)(Loading);

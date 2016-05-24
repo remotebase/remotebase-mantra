@@ -1,11 +1,13 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
 import SearchResult from '../components/search_result.jsx';
+import Loading from '../containers/loading';
 
-export const composer = ({context, query}, onData) => {
+export const composer = ({context, query, limit}, onData) => {
   const {Meteor, Collections} = context();
+  let isSearching;
 
-  if (Meteor.subscribe('companies', query).ready()) {
+  function passData() {
     let companies = Collections.Companies.find({}, {sort: {name: 1}}).fetch();
 
     // transform manually to use helpers in SSR
@@ -14,7 +16,17 @@ export const composer = ({context, query}, onData) => {
       return Collections.Companies._transform(company);
     });
 
-    onData(null, {companies});
+    onData(null, {companies, isSearching, loadMore});
+  }
+
+  function loadMore() {
+    isSearching = true;
+    passData();
+  }
+
+  if (Meteor.subscribe('companies', query, limit).ready()) {
+    isSearching = false;
+    passData();
   }
 };
 
@@ -23,6 +35,6 @@ export const depsMapper = (context, actions) => ({
 });
 
 export default composeAll(
-  composeWithTracker(composer),
+  composeWithTracker(composer, Loading),
   useDeps(depsMapper)
 )(SearchResult);
