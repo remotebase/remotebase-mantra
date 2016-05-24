@@ -20,6 +20,7 @@ class SearchResult extends React.Component {
 
     return (
       <div className="search-result">
+        <div className="counter">{searchResultCount} companies found</div>
         <CompanyList companies={companies} />
         {
           isSearching ? <Loading /> : <span></span>
