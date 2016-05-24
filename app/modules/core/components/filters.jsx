@@ -114,7 +114,7 @@ class Filters extends React.Component {
                   updateFilter={this.updateFilter.bind(this, 'has_retreats')}
                   tooltipText="Does the team sometimes get together physically?" />
                 <Filter label="VC backed"
-                  updateFilter={this.updateFilter.bind(this, 'vc_backed')} />
+                  updateFilter={this.updateFilter.bind(this, 'vc_funded')} />
               </div>
               <div className="filter-row">
                 <Filter label="Agency"
