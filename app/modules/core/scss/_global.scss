@@ -81,7 +81,8 @@ html {
 }
 
 .mailchimp-banner {
-  background-color: #FFFFFF;
+  background-color: #F02C41;
+  color: white;
   padding: 15px 18px;
   border: 1px solid rgba(130, 130, 130, 0.43);
   margin-bottom: 5px;
@@ -110,7 +111,6 @@ html {
     &:hover {
       color: #ffffff;
       background: #40435C;
-      padding: .375rem 1.09rem;
     }
   }
 }

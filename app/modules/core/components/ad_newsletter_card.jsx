@@ -44,7 +44,7 @@ const AdNewsLetterCard = () => (
           Best remote companies and jobs in your inbox
         </p>
         <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popover}>
-          <Button bsStyle="success" className="btn-md">Get it</Button>
+          <Button bsStyle="success" className="btn-md">Subscribe</Button>
         </OverlayTrigger>
       </div>
     </div>
