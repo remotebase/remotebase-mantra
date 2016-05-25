@@ -6,7 +6,10 @@ const Header = () => (
       <div className="navbar-brand-container">
         <a className="navbar-brand" href="/">
           <img src="/images/logo.png" className="logo" alt="logo"/>
-          <span className="name">RemoteBase</span>
+          <div className="brand-wrapper">
+            <div className="name">RemoteBase</div>
+            <div className="tagline">Find the best remote companies</div>
+          </div>
         </a>
       </div>
     </div>

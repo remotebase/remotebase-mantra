@@ -1,5 +1,8 @@
 .header {
-  margin-bottom: 21px;
+  @media (min-width: 499px) {
+    margin-bottom: 21px;
+  }
+
 
   .navbar-brand-container {
     @media (max-width: 499px) {
@@ -12,19 +15,35 @@
 
     @media (max-width: 499px) {
       float: none;
+      display: block;
     }
 
     .logo {
-      width: 50px;
+      width: 56px;
       display: inline-block;
       vertical-align: middle;
       margin-right: 10px;
     }
 
     .name {
-      font-size: 29px;
+      font-size: 26px;
       vertical-align: middle;
       color: #1E1F2A;
+    }
+
+    .brand-wrapper {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -4px;
+
+      @media (max-width: 499px) {
+        display: block;
+        margin-top: 5px;
+      }
+
+      .tagline {
+        font-size: 15px;
+      }
     }
   }
 
@@ -131,6 +150,10 @@ html {
 
   p {
     margin-bottom: 0;
+  }
+
+  .mail {
+    margin-top: 30px;
   }
 }
 

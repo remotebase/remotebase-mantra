@@ -1355,7 +1355,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "appen",
-    "logo_url": "/images/companies/appen.png"
+    "logo_url": "/images/companies/appen.png",
+    "hidden": true
   },
   {
     "name": "Articulate, Inc.",

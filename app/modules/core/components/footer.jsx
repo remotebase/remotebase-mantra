@@ -8,6 +8,9 @@ const Footer = () => (
     <p>
       You can follow RemoteBase on <a target="_blank" href="https://twitter.com/remotebase">@remotebase</a>.
     </p>
+    <p className="mail">
+      <a href="mailto:hello@remotebase.io">hello@remotebase.io</a>
+    </p>
   </footer>
 );
 
