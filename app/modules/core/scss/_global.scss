@@ -108,6 +108,10 @@ html {
   margin-bottom: 27px;
   border-radius: 3px;
 
+  @media(max-width: 499px) {
+    margin-bottom: 14px;
+  }
+
   .cta {
     // color: #ffffff;
     font-size: 18px;
