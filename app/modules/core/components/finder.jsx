@@ -1,7 +1,6 @@
 import React from 'react';
 
 import SearchResult from '../containers/search_result';
-import SearchEngine from '../containers/search_engine';
 import Filters from '../containers/filters';
 
 class Finder extends React.Component {

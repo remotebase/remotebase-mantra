@@ -8,8 +8,11 @@ export default function () {
     check(query, Object);
     check(limit, Number);
 
+    query['hidden'] = {$ne: true};
+
     console.log('query', query);
     console.log('limit', limit);
+
 
     Counts.publish(this, 'companies-counter', Companies.find(query), {noReady: true});
     return Companies.find(query, {limit, sort: {name: 1}});

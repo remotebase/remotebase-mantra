@@ -1149,7 +1149,7 @@
     "is_hiring": true,
     "salary_lower_bound": 54000,
     "salary_upper_bound": 157000,
-    "num_retreats_per_year": 0,
+    "num_retreats_per_year": 1,
     "location_based_salary": false,
     "funded_vacation": false,
     "is_agency": false,
@@ -1255,7 +1255,7 @@
     "offers_equity": true,
     "family_leave": 0,
     "healthcare": 0,
-    "note": 0,
+    "note": "USA and a few select location only",
     "unlimited_vacation": 0,
     "sex_ratio": 0,
     "technologies": 0,
@@ -1292,7 +1292,8 @@
     "collaboration_methods": 0,
     "communication_methods": 0,
     "slug": "american-express",
-    "logo_url": "/images/companies/american_express.png"
+    "logo_url": "/images/companies/american_express.png",
+    "hidden": true
   },
   {
     "name": "AnswerConnect",
