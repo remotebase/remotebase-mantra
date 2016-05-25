@@ -1,5 +1,5 @@
 import React from 'react';
-import {OverlayTrigger, Tooltip} from 'react-bootstrap';
+import classnames from 'classnames';
 
 import {filterToQuery} from '../libs/query_helpers';
 import Filter from './filter.jsx';
@@ -12,6 +12,8 @@ class Filters extends React.Component {
     super(props);
 
     this.state = {
+      lastSearchFilter: {},
+      filterIsDirty: false, // has the user interacted with filter since last search?
       filterSelection: {
         fully_distributed: false,
         is_hiring: false,
@@ -34,13 +36,14 @@ class Filters extends React.Component {
 
     let query = filterToQuery(filterSelection);
     changeQuery(query);
+    this.setState({filterIsDirty: false});
   }
 
   updateFilter(key, val) {
     let {filterSelection} = this.state;
     filterSelection[key] = val;
 
-    this.setState({filterSelection});
+    this.setState({filterSelection, filterIsDirty: true});
   }
 
   render() {
@@ -139,7 +142,10 @@ class Filters extends React.Component {
         <div className="row search-actions">
           <div className="col-xs-12 col-sm-8">
             <button onClick={this.handleSearch.bind(this)}
-              className="btn search-btn">Find</button>
+              className={classnames('btn search-btn',
+                {'search-btn-flash': this.state.filterIsDirty})}>
+              Find
+            </button>
           </div>
           <div className="col-xs-12 col-sm-4">
             <a className="btn add-company-btn typeform-share"

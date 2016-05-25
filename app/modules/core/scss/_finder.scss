@@ -143,9 +143,21 @@
     width: 100%;
     outline: none;
 
+    &:focus {
+      outline: none;
+    }
+
     &:hover {
       color: #ffffff;
       background: #F02C41;
+    }
+
+    &.search-btn-flash {
+      @keyframes blinker {
+        50% { opacity: 0.0; }
+      }
+
+      animation: blinker 1s linear infinite;
     }
   }
 

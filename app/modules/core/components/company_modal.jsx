@@ -16,7 +16,7 @@ const CompanyModal = ({company, navToHome, companyTab}) => {
           className="company-modal"
           onHide={navToHome.bind(this)} >
         <Modal.Header closeButton>
-          <a className="typeform-share link edit-label"
+          <a className="typeform-share edit-label"
             href="https://mike706.typeform.com/to/zEPKEa" data-mode="1" target="_blank">Edit</a>
           <div className="text-xs-center">
             <img src={company.getLogoUrl()} alt="company" className="company-logo" />
