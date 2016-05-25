@@ -6,7 +6,7 @@ let popover = (
     <div className="row">
       <form action="//remotebase.us13.list-manage.com/subscribe/post?u=7435b0b28de119d328c0583bb&amp;id=d21d3fc1f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
         <div className="col-xs-12 cta">
-          Get weekly digests of best remote companies and jobs.
+          Best remote companies and jobs in your inbox every month.
         </div>
         <div className="col-xs-12">
           <input type="text" name="NAME" className="form-control" placeholder="Name" required />
