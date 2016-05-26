@@ -6,6 +6,7 @@ import Filter from './filter.jsx';
 import TeamSizeFilter from './filter_team_size.jsx';
 import CommunicationFilters from './communication_filters.jsx';
 import TechnologyFilters from './technology_filters.jsx';
+import CollaborationFilters from './collaboration_filters.jsx';
 
 class Filters extends React.Component {
   constructor(props) {
@@ -47,19 +48,6 @@ class Filters extends React.Component {
   }
 
   render() {
-    let collaborationMethods = [
-      'Trello',
-      'Basecamp',
-      'Asana',
-      'Desk.com',
-      'Help Scout',
-      'Google Apps',
-      'iDoneThis',
-      'Blossom',
-      'Zendesk',
-      'Front'
-    ];
-
     return (
       <div className="filters">
         <div className="row">
@@ -132,6 +120,9 @@ class Filters extends React.Component {
               <div className="filter-definition">Communication methods</div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this, 'communication_methods')} />
+              <div className="filter-definition">Collaboration methods</div>
+              <CollaborationFilters
+                updateFilter={this.updateFilter.bind(this, 'collaboration_methods')} />
               <div className="filter-definition">Technologies</div>
               <TechnologyFilters
                 updateFilter={this.updateFilter.bind(this, 'technologies')} />

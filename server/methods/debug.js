@@ -16,12 +16,12 @@ export default function () {
   });
 
   Meteor.methods({
-    'debug.getTechCounts'() {
+    'debug.getCounts'(column) { // technologies, collaboration_methods, communication_methods
       let companies = Companies.find().fetch();
       let counts = {};
 
       companies.forEach(company => {
-        company.technologies.forEach(tech => {
+        company[column].forEach(tech => {
           if (counts[tech]) {
             counts[tech]++;
           } else {
@@ -30,8 +30,7 @@ export default function () {
         });
       });
 
-      let sorted = Object.keys(counts).sort(function(a,b){return counts[a]-counts[b]});
-      console.log(sorted);
+      console.log(counts);
     }
   });
 }
