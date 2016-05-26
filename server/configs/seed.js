@@ -1,6 +1,6 @@
 import {Accounts} from 'meteor/accounts-base';
 import {Meteor} from 'meteor/meteor';
-import {Companies} from '/lib/collections';
+import {Companies, Filters} from '/lib/collections';
 import faker from 'faker';
 import _ from 'lodash';
 
@@ -62,5 +62,86 @@ export function populateSeed() {
       Companies.insert(company);
     });
     console.log('Done populating company seed');
+  }
+}
+
+export function populateFilters() {
+  if (Filters.find().count() === 0) {
+    console.log('Populating filters');
+    Filters.remove({});
+
+    let technologies = [
+      'JavaScript',
+      'Ruby',
+      'HTML',
+      'CSS',
+      'Android',
+      'Ruby on Rails',
+      'Java',
+      'PHP',
+      'MySQL',
+      'Python',
+      'iOS',
+      'AngularJS',
+      'Node.js',
+      'Scala',
+      'MongoDB',
+      'PostgreSQL',
+      'C',
+      'C++',
+      'MeteorJS',
+      'EnberJS',
+      'Backbone.js',
+      'Apache',
+      'ReactJS',
+      'Swift',
+      'Golang',
+      'Clojure',
+      'Haskell',
+      'AWS',
+      'nginx',
+      'Django',
+      'Groovy'
+    ];
+
+    let communication_methods = [
+      'Slack',
+      'HipChat',
+      'Email',
+      'Skype',
+      'FlowDock'
+    ];
+
+    let collaboration_methods = [
+      'Google Apps',
+      'Pivotal Tracker',
+      'Desk.com',
+      'Blossom',
+      'DropBox',
+      'Google Drive'
+    ];
+
+    technologies.forEach(tech => {
+      Filters.insert({
+        type: 'technology',
+        value: tech
+      });
+    });
+
+    communication_methods.forEach(comm_method => {
+      Filters.insert({
+        type: 'communication_method',
+        value: comm_method
+      });
+    });
+
+    collaboration_methods.forEach(collab_method => {
+      Filters.insert({
+        type: 'collaboration_method',
+        value: collab_method
+      });
+    });
+
+    console.log('Done populating filters');
   }
 }
