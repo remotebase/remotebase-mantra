@@ -12,4 +12,4 @@ services: mongodb
 script:
 - echo 'hello world'
 after_success:
-- mup deploy
+- mupx deploy
