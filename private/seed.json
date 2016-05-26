@@ -2803,8 +2803,8 @@
     "sex_ratio": 0,
     "technologies": [
       "Ruby on Rails",
-      "''Ruby''",
-      "''Twitter Bootstrap''"
+      "Ruby",
+      "Twitter Bootstrap"
     ],
     "collaboration_methods": [],
     "communication_methods": [

@@ -64,6 +64,12 @@ class TechnologyFilters extends React.Component {
                 <Filter label="Java"
                   isChecked={this.checkIfSelected.call(this, 'Java')}
                   handleClick={this.updateSelectedValues.bind(this, 'Java')} />
+                <Filter label="Python"
+                  isChecked={this.checkIfSelected.call(this, 'Python')}
+                  handleClick={this.updateSelectedValues.bind(this, 'Python')} />
+                <Filter label="PHP"
+                  isChecked={this.checkIfSelected.call(this, 'PHP')}
+                  handleClick={this.updateSelectedValues.bind(this, 'PHP')} />
               </div>
             </div>
           </div>
@@ -89,6 +95,12 @@ class TechnologyFilters extends React.Component {
                 <Filter label="Java"
                   isChecked={this.checkIfSelected.call(this, 'Java')}
                   handleClick={this.updateSelectedValues.bind(this, 'Java')} />
+                <Filter label="Python"
+                  isChecked={this.checkIfSelected.call(this, 'Python')}
+                  handleClick={this.updateSelectedValues.bind(this, 'Python')} />
+                <Filter label="PHP"
+                  isChecked={this.checkIfSelected.call(this, 'PHP')}
+                  handleClick={this.updateSelectedValues.bind(this, 'PHP')} />
               </div>
             </div>
           </div>
