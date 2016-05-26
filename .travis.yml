@@ -7,7 +7,7 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_4e82acf74cae_key -iv $encrypted_4e82acf74cae_iv
   -in secrets.tar.enc -out secrets.tar -d
 - mkdir .deploy
-- tar xvf secrets.tar ./.deploy
+- tar xvf secrets.tar -C ./.deploy
 - curl https://install.meteor.com/ | sh
 services: mongodb
 script:
