@@ -1225,7 +1225,7 @@
     "job_page": "https://www.patientsknowbest.com/careers.html",
     "founded_year": 2008,
     "vc_funded": true,
-    "team_size": 1,
+    "team_size": 42,
     "fully_distributed": true,
     "non_remote_team_size": 0,
     "is_hiring": true,
@@ -1239,7 +1239,7 @@
     "offers_equity": 0,
     "family_leave": 0,
     "healthcare": 0,
-    "note": 0,
+    "note": "Must work during London working hours",
     "unlimited_vacation": 0,
     "sex_ratio": 0,
     "slug": "patients-know-best",
@@ -1314,7 +1314,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "10-up-inc",
-    "logo_url": "/images/companies/10_up_inc.png"
+    "logo_url": "/images/companies/10_up_inc.png",
+    "short_description": "No description found"
   },
   {
     "name": "Acceleration Partners",
@@ -1345,7 +1346,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "acceleration-partners",
-    "logo_url": "/images/companies/acceleration_partners.png"
+    "logo_url": "/images/companies/acceleration_partners.png",
+    "short_description": "No description found"
   },
   {
     "name": "AgileBits",
@@ -1382,7 +1384,8 @@
       "Google Apps"
     ],
     "slug": "agile-bits",
-    "logo_url": "/images/companies/agile_bits.png"
+    "logo_url": "/images/companies/agile_bits.png",
+    "short_description": "No description found"
   },
   {
     "name": "Aha!",
@@ -1413,7 +1416,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "aha",
-    "logo_url": "/images/companies/aha.png"
+    "logo_url": "/images/companies/aha.png",
+    "short_description": "No description found"
   },
   {
     "name": "American Express",
@@ -1444,7 +1448,8 @@
     "communication_methods": [],
     "slug": "american-express",
     "logo_url": "/images/companies/american_express.png",
-    "hidden": true
+    "hidden": true,
+    "short_description": "No description found"
   },
   {
     "name": "AnswerConnect",
@@ -1475,7 +1480,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "answer-connect",
-    "logo_url": "/images/companies/answer_connect.png"
+    "logo_url": "/images/companies/answer_connect.png",
+    "short_description": "No description found"
   },
   {
     "name": "Appen",
@@ -1507,7 +1513,8 @@
     "communication_methods": [],
     "slug": "appen",
     "logo_url": "/images/companies/appen.png",
-    "hidden": true
+    "hidden": true,
+    "short_description": "No description found"
   },
   {
     "name": "Articulate, Inc.",
@@ -1549,7 +1556,8 @@
       "Google Apps"
     ],
     "slug": "articulate-inc",
-    "logo_url": "/images/companies/articulate_inc.png"
+    "logo_url": "/images/companies/articulate_inc.png",
+    "short_description": "No description found"
   },
   {
     "name": "Attentiv",
@@ -1580,7 +1588,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "attentiv",
-    "logo_url": "/images/companies/attentiv.png"
+    "logo_url": "/images/companies/attentiv.png",
+    "short_description": "No description found"
   },
   {
     "name": "Authentic Form & Function",
@@ -1611,7 +1620,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "authentic-form-function",
-    "logo_url": "/images/companies/authentic_form_function.png"
+    "logo_url": "/images/companies/authentic_form_function.png",
+    "short_description": "No description found"
   },
   {
     "name": "Balsamiq",
@@ -1654,7 +1664,8 @@
       "HipChat"
     ],
     "slug": "balsamiq",
-    "logo_url": "/images/companies/balsamiq.png"
+    "logo_url": "/images/companies/balsamiq.png",
+    "short_description": "No description found"
   },
   {
     "name": "Batchbook",
@@ -1685,7 +1696,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "batchbook",
-    "logo_url": "/images/companies/batchbook.png"
+    "logo_url": "/images/companies/batchbook.png",
+    "short_description": "No description found"
   },
   {
     "name": "Beutler Ink",
@@ -1716,7 +1728,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "beutler-ink",
-    "logo_url": "/images/companies/beutler_ink.png"
+    "logo_url": "/images/companies/beutler_ink.png",
+    "short_description": "No description found"
   },
   {
     "name": "Big Universe, Inc.",
@@ -1747,7 +1760,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "big-universe-inc",
-    "logo_url": "/images/companies/big_universe_inc.png"
+    "logo_url": "/images/companies/big_universe_inc.png",
+    "short_description": "No description found"
   },
   {
     "name": "Blossom",
@@ -1791,7 +1805,8 @@
       "Slack"
     ],
     "slug": "blossom",
-    "logo_url": "/images/companies/blossom.png"
+    "logo_url": "/images/companies/blossom.png",
+    "short_description": "No description found"
   },
   {
     "name": "Canonical",
@@ -1822,7 +1837,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "canonical",
-    "logo_url": "/images/companies/canonical.png"
+    "logo_url": "/images/companies/canonical.png",
+    "short_description": "No description found"
   },
   {
     "name": "Chargify",
@@ -1863,7 +1879,8 @@
       "Google Apps"
     ],
     "slug": "chargify",
-    "logo_url": "/images/companies/chargify.png"
+    "logo_url": "/images/companies/chargify.png",
+    "short_description": "No description found"
   },
   {
     "name": "Ciao Bambino! Inc.",
@@ -1894,7 +1911,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "ciao-bambino-inc",
-    "logo_url": "/images/companies/ciao_bambino_inc.jpg"
+    "logo_url": "/images/companies/ciao_bambino_inc.jpg",
+    "short_description": "No description found"
   },
   {
     "name": "CloudPeeps",
@@ -1934,7 +1952,8 @@
       "Stripe"
     ],
     "slug": "cloud-peeps",
-    "logo_url": "/images/companies/cloud_peeps.png"
+    "logo_url": "/images/companies/cloud_peeps.png",
+    "short_description": "No description found"
   },
   {
     "name": "Codebusters, Inc.",
@@ -1965,7 +1984,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "codebusters-inc",
-    "logo_url": "/images/companies/codebusters_inc.png"
+    "logo_url": "/images/companies/codebusters_inc.png",
+    "short_description": "No description found"
   },
   {
     "name": "Collage.com",
@@ -1996,7 +2016,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "collage-com",
-    "logo_url": "/images/companies/collage_com.png"
+    "logo_url": "/images/companies/collage_com.png",
+    "short_description": "No description found"
   },
   {
     "name": "DataStax",
@@ -2035,7 +2056,8 @@
       "Google Apps"
     ],
     "slug": "data-stax",
-    "logo_url": "/images/companies/data_stax.png"
+    "logo_url": "/images/companies/data_stax.png",
+    "short_description": "No description found"
   },
   {
     "name": "Doist",
@@ -2066,7 +2088,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "doist",
-    "logo_url": "/images/companies/doist.png"
+    "logo_url": "/images/companies/doist.png",
+    "short_description": "No description found"
   },
   {
     "name": "DVMelite",
@@ -2097,7 +2120,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "dv-melite",
-    "logo_url": "/images/companies/dv_melite.png"
+    "logo_url": "/images/companies/dv_melite.png",
+    "short_description": "No description found"
   },
   {
     "name": "Edgar",
@@ -2128,7 +2152,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "edgar",
-    "logo_url": "/images/companies/edgar.png"
+    "logo_url": "/images/companies/edgar.png",
+    "short_description": "No description found"
   },
   {
     "name": "Envato",
@@ -2159,7 +2184,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "envato",
-    "logo_url": "/images/companies/envato.png"
+    "logo_url": "/images/companies/envato.png",
+    "short_description": "No description found"
   },
   {
     "name": "Fire Engine RED",
@@ -2190,7 +2216,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "fire-engine-red",
-    "logo_url": "/images/companies/fire_engine_red.png"
+    "logo_url": "/images/companies/fire_engine_red.png",
+    "short_description": "No description found"
   },
   {
     "name": "Five Q",
@@ -2221,7 +2248,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "five-q",
-    "logo_url": "/images/companies/five_q.png"
+    "logo_url": "/images/companies/five_q.png",
+    "short_description": "No description found"
   },
   {
     "name": "FlexJobs",
@@ -2252,7 +2280,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "flex-jobs",
-    "logo_url": "/images/companies/flex_jobs.png"
+    "logo_url": "/images/companies/flex_jobs.png",
+    "short_description": "No description found"
   },
   {
     "name": "FlexProfessionals, LLC",
@@ -2283,7 +2312,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "flex-professionals-llc",
-    "logo_url": "/images/companies/flex_professionals_llc.png"
+    "logo_url": "/images/companies/flex_professionals_llc.png",
+    "short_description": "No description found"
   },
   {
     "name": "Formstack",
@@ -2314,7 +2344,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "formstack",
-    "logo_url": "/images/companies/formstack.png"
+    "logo_url": "/images/companies/formstack.png",
+    "short_description": "No description found"
   },
   {
     "name": "GitLab",
@@ -2347,7 +2378,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "git-lab",
-    "logo_url": "/images/companies/git_lab.png"
+    "logo_url": "/images/companies/git_lab.png",
+    "short_description": "No description found"
   },
   {
     "name": "Go Fish Digital",
@@ -2378,7 +2410,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "go-fish-digital",
-    "logo_url": "/images/companies/go_fish_digital.png"
+    "logo_url": "/images/companies/go_fish_digital.png",
+    "short_description": "No description found"
   },
   {
     "name": "GobySavvy",
@@ -2409,7 +2442,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "goby-savvy",
-    "logo_url": "/images/companies/goby_savvy.png"
+    "logo_url": "/images/companies/goby_savvy.png",
+    "short_description": "No description found"
   },
   {
     "name": "Goodway Group",
@@ -2440,7 +2474,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "goodway-group",
-    "logo_url": "/images/companies/goodway_group.png"
+    "logo_url": "/images/companies/goodway_group.png",
+    "short_description": "No description found"
   },
   {
     "name": "Greenback Expat Tax Services",
@@ -2471,7 +2506,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "greenback-expat-tax-services",
-    "logo_url": "/images/companies/greenback_expat_tax_services.png"
+    "logo_url": "/images/companies/greenback_expat_tax_services.png",
+    "short_description": "No description found"
   },
   {
     "name": "Groove",
@@ -2502,7 +2538,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "groove",
-    "logo_url": "/images/companies/groove.png"
+    "logo_url": "/images/companies/groove.png",
+    "short_description": "No description found"
   },
   {
     "name": "Hanno",
@@ -2533,7 +2570,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "hanno",
-    "logo_url": "/images/companies/hanno.png"
+    "logo_url": "/images/companies/hanno.png",
+    "short_description": "No description found"
   },
   {
     "name": "Help Scout",
@@ -2578,7 +2616,8 @@
     ],
     "communication_methods": [],
     "slug": "help-scout",
-    "logo_url": "/images/companies/help_scout.png"
+    "logo_url": "/images/companies/help_scout.png",
+    "short_description": "No description found"
   },
   {
     "name": "Hippo Education",
@@ -2609,7 +2648,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "hippo-education",
-    "logo_url": "/images/companies/hippo_education.png"
+    "logo_url": "/images/companies/hippo_education.png",
+    "short_description": "No description found"
   },
   {
     "name": "Hubstaff",
@@ -2640,7 +2680,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "hubstaff",
-    "logo_url": "/images/companies/hubstaff.png"
+    "logo_url": "/images/companies/hubstaff.png",
+    "short_description": "No description found"
   },
   {
     "name": "ICUC",
@@ -2671,7 +2712,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "icuc",
-    "logo_url": "/images/companies/icuc.png"
+    "logo_url": "/images/companies/icuc.png",
+    "short_description": "No description found"
   },
   {
     "name": "iDoneThis",
@@ -2712,7 +2754,8 @@
       "Google Apps"
     ],
     "slug": "i-done-this",
-    "logo_url": "/images/companies/i_done_this.png"
+    "logo_url": "/images/companies/i_done_this.png",
+    "short_description": "No description found"
   },
   {
     "name": "Incsub",
@@ -2743,7 +2786,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "incsub",
-    "logo_url": "/images/companies/incsub.png"
+    "logo_url": "/images/companies/incsub.png",
+    "short_description": "No description found"
   },
   {
     "name": "Inspired HR",
@@ -2774,7 +2818,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "inspired-hr",
-    "logo_url": "/images/companies/inspired_hr.png"
+    "logo_url": "/images/companies/inspired_hr.png",
+    "short_description": "No description found"
   },
   {
     "name": "Intridea/Mobomo",
@@ -2811,7 +2856,8 @@
       "Google Apps"
     ],
     "slug": "intridea-mobomo",
-    "logo_url": "/images/companies/intridea_mobomo.png"
+    "logo_url": "/images/companies/intridea_mobomo.png",
+    "short_description": "No description found"
   },
   {
     "name": "InVisionApp",
@@ -2842,7 +2888,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "in-vision-app",
-    "logo_url": "/images/companies/in_vision_app.png"
+    "logo_url": "/images/companies/in_vision_app.png",
+    "short_description": "No description found"
   },
   {
     "name": "Jackson River",
@@ -2873,7 +2920,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "jackson-river",
-    "logo_url": "/images/companies/jackson_river.png"
+    "logo_url": "/images/companies/jackson_river.png",
+    "short_description": "No description found"
   },
   {
     "name": "LoveToKnow",
@@ -2904,7 +2952,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "love-to-know",
-    "logo_url": "/images/companies/love_to_know.png"
+    "logo_url": "/images/companies/love_to_know.png",
+    "short_description": "No description found"
   },
   {
     "name": "Lullabot",
@@ -2935,7 +2984,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "lullabot",
-    "logo_url": "/images/companies/lullabot.png"
+    "logo_url": "/images/companies/lullabot.png",
+    "short_description": "No description found"
   },
   {
     "name": "Mokriya",
@@ -2966,7 +3016,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "mokriya",
-    "logo_url": "/images/companies/mokriya.png"
+    "logo_url": "/images/companies/mokriya.png",
+    "short_description": "No description found"
   },
   {
     "name": "MomsRising.org",
@@ -2997,7 +3048,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "moms-rising-org",
-    "logo_url": "/images/companies/moms_rising_org.png"
+    "logo_url": "/images/companies/moms_rising_org.png",
+    "short_description": "No description found"
   },
   {
     "name": "NodeSource",
@@ -3039,7 +3091,8 @@
       "Google Apps"
     ],
     "slug": "node-source",
-    "logo_url": "/images/companies/node_source.png"
+    "logo_url": "/images/companies/node_source.png",
+    "short_description": "No description found"
   },
   {
     "name": "OnTheGoSystems",
@@ -3070,7 +3123,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "on-the-go-systems",
-    "logo_url": "/images/companies/on_the_go_systems.png"
+    "logo_url": "/images/companies/on_the_go_systems.png",
+    "short_description": "No description found"
   },
   {
     "name": "Origin Eight",
@@ -3101,7 +3155,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "origin-eight",
-    "logo_url": "/images/companies/origin_eight.png"
+    "logo_url": "/images/companies/origin_eight.png",
+    "short_description": "No description found"
   },
   {
     "name": "PeopleG2",
@@ -3132,7 +3187,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "people-g-2",
-    "logo_url": "/images/companies/people_g_2.png"
+    "logo_url": "/images/companies/people_g_2.png",
+    "short_description": "No description found"
   },
   {
     "name": "Sanborn Media Factory",
@@ -3163,7 +3219,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "sanborn-media-factory",
-    "logo_url": "/images/companies/sanborn_media_factory.png"
+    "logo_url": "/images/companies/sanborn_media_factory.png",
+    "short_description": "No description found"
   },
   {
     "name": "Scrapinghub",
@@ -3207,7 +3264,8 @@
       "Slack"
     ],
     "slug": "scrapinghub",
-    "logo_url": "/images/companies/scrapinghub.png"
+    "logo_url": "/images/companies/scrapinghub.png",
+    "short_description": "No description found"
   },
   {
     "name": "Seeq",
@@ -3247,7 +3305,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "seeq",
-    "logo_url": "/images/companies/seeq.png"
+    "logo_url": "/images/companies/seeq.png",
+    "short_description": "No description found"
   },
   {
     "name": "Simple [A]",
@@ -3278,7 +3337,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "simple-a",
-    "logo_url": "/images/companies/simple_a.png"
+    "logo_url": "/images/companies/simple_a.png",
+    "short_description": "No description found"
   },
   {
     "name": "Simple Texting",
@@ -3309,7 +3369,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "simple-texting",
-    "logo_url": "/images/companies/simple_texting.png"
+    "logo_url": "/images/companies/simple_texting.png",
+    "short_description": "No description found"
   },
   {
     "name": "SitePen",
@@ -3343,7 +3404,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "site-pen",
-    "logo_url": "/images/companies/site_pen.png"
+    "logo_url": "/images/companies/site_pen.png",
+    "short_description": "No description found"
   },
   {
     "name": "Sococo",
@@ -3381,7 +3443,8 @@
       "Google Apps"
     ],
     "slug": "sococo",
-    "logo_url": "/images/companies/sococo.png"
+    "logo_url": "/images/companies/sococo.png",
+    "short_description": "No description found"
   },
   {
     "name": "SoftwareMill",
@@ -3418,7 +3481,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "software-mill",
-    "logo_url": "/images/companies/software_mill.png"
+    "logo_url": "/images/companies/software_mill.png",
+    "short_description": "No description found"
   },
   {
     "name": "Speak",
@@ -3449,7 +3513,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "speak",
-    "logo_url": "/images/companies/speak.png"
+    "logo_url": "/images/companies/speak.png",
+    "short_description": "No description found"
   },
   {
     "name": "Stack Overflow",
@@ -3496,7 +3561,8 @@
       "Google Apps"
     ],
     "slug": "stack-overflow",
-    "logo_url": "/images/companies/stack_overflow.png"
+    "logo_url": "/images/companies/stack_overflow.png",
+    "short_description": "No description found"
   },
   {
     "name": "Sticker Mule",
@@ -3531,7 +3597,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "sticker-mule",
-    "logo_url": "/images/companies/sticker_mule.png"
+    "logo_url": "/images/companies/sticker_mule.png",
+    "short_description": "No description found"
   },
   {
     "name": "StudySoup",
@@ -3566,7 +3633,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "study-soup",
-    "logo_url": "/images/companies/study_soup.png"
+    "logo_url": "/images/companies/study_soup.png",
+    "short_description": "No description found"
   },
   {
     "name": "Summit CPA Group",
@@ -3597,7 +3665,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "summit-cpa-group",
-    "logo_url": "/images/companies/summit_cpa_group.png"
+    "logo_url": "/images/companies/summit_cpa_group.png",
+    "short_description": "No description found"
   },
   {
     "name": "Sutherland Global Services",
@@ -3628,7 +3697,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "sutherland-global-services",
-    "logo_url": "/images/companies/sutherland_global_services.png"
+    "logo_url": "/images/companies/sutherland_global_services.png",
+    "short_description": "No description found"
   },
   {
     "name": "Taksa Technology Solutions",
@@ -3659,7 +3729,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "taksa-technology-solutions",
-    "logo_url": "/images/companies/taksa_technology_solutions.png"
+    "logo_url": "/images/companies/taksa_technology_solutions.png",
+    "short_description": "No description found"
   },
   {
     "name": "TeamGantt",
@@ -3694,7 +3765,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "team-gantt",
-    "logo_url": "/images/companies/team_gantt.png"
+    "logo_url": "/images/companies/team_gantt.png",
+    "short_description": "No description found"
   },
   {
     "name": "TeamSnap",
@@ -3734,7 +3806,8 @@
       "Google Apps"
     ],
     "slug": "team-snap",
-    "logo_url": "/images/companies/team_snap.png"
+    "logo_url": "/images/companies/team_snap.png",
+    "short_description": "No description found"
   },
   {
     "name": "The Cheat Sheet",
@@ -3765,7 +3838,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "the-cheat-sheet",
-    "logo_url": "/images/companies/the_cheat_sheet.png"
+    "logo_url": "/images/companies/the_cheat_sheet.png",
+    "short_description": "No description found"
   },
   {
     "name": "The Geller Law Group",
@@ -3796,7 +3870,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "the-geller-law-group",
-    "logo_url": "/images/companies/the_geller_law_group.png"
+    "logo_url": "/images/companies/the_geller_law_group.png",
+    "short_description": "No description found"
   },
   {
     "name": "ThirdPath Institute",
@@ -3827,7 +3902,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "third-path-institute",
-    "logo_url": "/images/companies/third_path_institute.png"
+    "logo_url": "/images/companies/third_path_institute.png",
+    "short_description": "No description found"
   },
   {
     "name": "Timely",
@@ -3858,7 +3934,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "timely",
-    "logo_url": "/images/companies/timely.png"
+    "logo_url": "/images/companies/timely.png",
+    "short_description": "No description found"
   },
   {
     "name": "TNTP",
@@ -3889,7 +3966,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "tntp",
-    "logo_url": "/images/companies/tntp.png"
+    "logo_url": "/images/companies/tntp.png",
+    "short_description": "No description found"
   },
   {
     "name": "Trello",
@@ -3931,7 +4009,8 @@
       "Google Apps"
     ],
     "slug": "trello",
-    "logo_url": "/images/companies/trello.png"
+    "logo_url": "/images/companies/trello.png",
+    "short_description": "No description found"
   },
   {
     "name": "Tropical Travelers",
@@ -3962,7 +4041,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "tropical-travelers",
-    "logo_url": "/images/companies/tropical_travelers.png"
+    "logo_url": "/images/companies/tropical_travelers.png",
+    "short_description": "No description found"
   },
   {
     "name": "Universal Mind, Inc.",
@@ -3993,7 +4073,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "universal-mind-inc",
-    "logo_url": "/images/companies/universal_mind_inc.png"
+    "logo_url": "/images/companies/universal_mind_inc.png",
+    "short_description": "No description found"
   },
   {
     "name": "Ushahidi",
@@ -4027,7 +4108,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "ushahidi",
-    "logo_url": "/images/companies/ushahidi.png"
+    "logo_url": "/images/companies/ushahidi.png",
+    "short_description": "No description found"
   },
   {
     "name": "WAKA Kickball & Social Sports",
@@ -4058,7 +4140,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "waka-kickball-social-sports",
-    "logo_url": "/images/companies/waka_kickball_social_sports.png"
+    "logo_url": "/images/companies/waka_kickball_social_sports.png",
+    "short_description": "No description found"
   },
   {
     "name": "WooThemes",
@@ -4089,7 +4172,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "woo-themes",
-    "logo_url": "/images/companies/woo_themes.png"
+    "logo_url": "/images/companies/woo_themes.png",
+    "short_description": "No description found"
   },
   {
     "name": "Wordfence",
@@ -4099,7 +4183,7 @@
     "job_page": "https://www.wordfence.com/careers/",
     "founded_year": 0,
     "vc_funded": false,
-    "team_size": 8,
+    "team_size": 12,
     "fully_distributed": true,
     "non_remote_team_size": 0,
     "remote_worker_percentage": 100,
@@ -4118,9 +4202,12 @@
     "sex_ratio": 0,
     "technologies": [],
     "collaboration_methods": [],
-    "communication_methods": [],
+    "communication_methods": [
+      "Slack"
+    ],
     "slug": "wordfence",
-    "logo_url": "/images/companies/wordfence.png"
+    "logo_url": "/images/companies/wordfence.png",
+    "short_description": "No description found"
   },
   {
     "name": "Workfrom",
@@ -4151,7 +4238,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "workfrom",
-    "logo_url": "/images/companies/workfrom.png"
+    "logo_url": "/images/companies/workfrom.png",
+    "short_description": "No description found"
   },
   {
     "name": "Working Solutions",
@@ -4182,7 +4270,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "working-solutions",
-    "logo_url": "/images/companies/working_solutions.png"
+    "logo_url": "/images/companies/working_solutions.png",
+    "short_description": "No description found"
   },
   {
     "name": "World Wide Web Hosting",
@@ -4217,7 +4306,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "world-wide-web-hosting",
-    "logo_url": "/images/companies/world_wide_web_hosting.png"
+    "logo_url": "/images/companies/world_wide_web_hosting.png",
+    "short_description": "No description found"
   },
   {
     "name": "Worldwide101",
@@ -4248,7 +4338,8 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "worldwide-101",
-    "logo_url": "/images/companies/worldwide_101.jpg"
+    "logo_url": "/images/companies/worldwide_101.jpg",
+    "short_description": "No description found"
   },
   {
     "name": "X-Team",
@@ -4279,6 +4370,7 @@
     "collaboration_methods": [],
     "communication_methods": [],
     "slug": "x-team",
-    "logo_url": "/images/companies/x_team.png"
+    "logo_url": "/images/companies/x_team.png",
+    "short_description": "No description found"
   }
 ]

@@ -38,7 +38,9 @@ const ModalOverview = ({company, isActive}) => (
             <span className="item-name">
               Team size:
             </span>
-            <span className="item-value">{company.team_size}</span>
+            <span className="item-value">
+              {company.team_size} <small className="text-muted">(Non-remote: {company.non_remote_team_size})</small>
+            </span>
           </li>
           <li className="trait-item">
             <i className="fa fa-money fa-fw"></i>
