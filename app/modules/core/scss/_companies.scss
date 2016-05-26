@@ -336,6 +336,12 @@
         color: #F02C41;
         font-weight: 600;
       }
+
+      @media(max-width: 499px) {
+        margin-top: 0;
+        margin-bottom: 9px;
+        text-align: center;
+      }
     }
 
     .company-logo {

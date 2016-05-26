@@ -70,6 +70,10 @@ const CompanyModal = ({company, navToHome, companyTab}) => {
                 Technology
               </a>
             </li>
+            <li className="menu-item">
+              <a className="typeform-share link"
+                href="https://mike706.typeform.com/to/zEPKEa" data-mode="1" target="_blank">Edit</a>
+            </li>
           </ul>
         </div>
 
