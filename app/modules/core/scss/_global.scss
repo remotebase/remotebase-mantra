@@ -113,7 +113,6 @@ html {
     background-color: #EAEAEA;
     color: #1E1F2A;
     border: 2px solid #EAEAEA;
-
   }
 
   .cta {
@@ -128,13 +127,13 @@ html {
   }
 
   .signup-btn {
-    // background: #1E1F2A;
-    background-color: #f02c41;
+    background: #1E1F2A;
     color: #ffffff;
 
     @media (max-width: 499px) {
       width: 100%;
       margin-top: 6px;
+      background-color: #f02c41;
     }
 
     &:hover {
