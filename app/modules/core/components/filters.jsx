@@ -1,5 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
+import _ from 'lodash';
 
 import {filterToQuery} from '../libs/query_helpers';
 import Filter from './filter.jsx';
@@ -7,27 +7,29 @@ import TeamSizeFilter from './filter_team_size.jsx';
 import CommunicationFilters from './communication_filters.jsx';
 import TechnologyFilters from './technology_filters.jsx';
 import CollaborationFilters from './collaboration_filters.jsx';
+import SearchBtn from '../containers/search_button';
 
 class Filters extends React.Component {
   constructor(props) {
     super(props);
 
+    let defaultFilter = {
+      fully_distributed: false,
+      is_hiring: false,
+      official: false,
+      team_size: null,
+      has_retreats: false,
+      vc_backed: false,
+      is_agency: false,
+      asynchronous_collaboration: false,
+      communication_methods: [],
+      collaboration_methods: [],
+      technologies: []
+    };
+
     this.state = {
-      lastSearchFilter: {},
-      filterIsDirty: false, // has the user interacted with filter since last search?
-      filterSelection: {
-        fully_distributed: false,
-        is_hiring: false,
-        official: false,
-        team_size: null,
-        has_retreats: false,
-        vc_backed: false,
-        is_agency: false,
-        asynchronous_collaboration: false,
-        communication_methods: [],
-        collaboration_methods: [],
-        technologies: []
-      }
+      lastSearchedFilter: _.cloneDeep(defaultFilter),
+      filterSelection: _.cloneDeep(defaultFilter)
     };
   }
 
@@ -37,14 +39,14 @@ class Filters extends React.Component {
 
     let query = filterToQuery(filterSelection);
     changeQuery(query);
-    this.setState({filterIsDirty: false});
+    this.setState({lastSearchedFilter: _.cloneDeep(filterSelection)});
   }
 
   updateFilter(key, val) {
     let {filterSelection} = this.state;
     filterSelection[key] = val;
 
-    this.setState({filterSelection, filterIsDirty: true});
+    this.setState({filterSelection});
   }
 
   render() {
@@ -135,11 +137,9 @@ class Filters extends React.Component {
 
         <div className="row search-actions">
           <div className="col-xs-12 col-sm-8">
-            <button onClick={this.handleSearch.bind(this)}
-              className={classnames('btn search-btn',
-                {'search-btn-flash': this.state.filterIsDirty})}>
-              Find
-            </button>
+            <SearchBtn onSearch={this.handleSearch.bind(this)}
+              filterSelection={this.state.filterSelection}
+              lastSearchedFilter={this.state.lastSearchedFilter} />
           </div>
           <div className="col-xs-12 col-sm-4">
             <a className="btn add-company-btn typeform-share"
