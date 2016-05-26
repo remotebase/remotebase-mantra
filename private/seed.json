@@ -42,7 +42,7 @@
     "website": "https://ghost.org/",
     "job_page": "https://ghost.org/careers/",
     "founded_year": 2013,
-    "vc_funded": true,
+    "vc_funded": false,
     "team_size": 9,
     "fully_distributed": true,
     "non_remote_team_size": 0,
