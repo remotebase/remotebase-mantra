@@ -3,14 +3,16 @@ import React from 'react';
 import SearchResult from '../containers/search_result';
 import Filters from '../containers/filters';
 
+const default_limit = 30;
+
 class Finder extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {query: {}, limit: 30};
+    this.state = {query: {}, limit: default_limit};
   }
 
   changeQuery(query) {
-    this.setState({query});
+    this.setState({query, limit: default_limit});
   }
 
   handleLoadMore(done) {
