@@ -15,6 +15,11 @@ class MailchimpSignup extends React.Component {
     Cookie.set(cookieName, 'yes');
   }
 
+  hideBanner() {
+    this.setState({hidden: true});
+    Cookie.set(cookieName, 'yes');
+  }
+
   render() {
     if (this.state.hidden) {
       return <span></span>;
@@ -24,6 +29,9 @@ class MailchimpSignup extends React.Component {
       <div className="mailchimp-banner">
         <div className="row">
           <form action="//remotebase.us13.list-manage.com/subscribe/post?u=7435b0b28de119d328c0583bb&amp;id=d21d3fc1f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate onSubmit={this.handleSubscribe.bind(this)}>
+            <a className="close-btn" onClick={this.hideBanner.bind(this)}>
+              x
+            </a>
             <div className="col-xs-12 col-sm-6 cta">
               Get weekly digests of best remote companies and jobs.
             </div>

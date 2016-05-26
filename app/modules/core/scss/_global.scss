@@ -115,6 +115,18 @@ html {
     border: 2px solid #EAEAEA;
   }
 
+  .close-btn {
+    position: absolute;
+    right: 35px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+
+    @media(max-width: 499px) {
+      color: #1E1F2A
+    }
+  }
+
   .cta {
     // color: #ffffff;
     font-size: 18px;

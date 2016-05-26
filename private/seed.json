@@ -1585,7 +1585,9 @@
     "unlimited_vacation": 0,
     "sex_ratio": 0,
     "technologies": [],
-    "collaboration_methods": [],
+    "collaboration_methods": [
+      "Sqwiggle"
+    ],
     "communication_methods": [],
     "slug": "attentiv",
     "logo_url": "/images/companies/attentiv.png",
