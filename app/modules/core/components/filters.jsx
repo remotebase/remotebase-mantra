@@ -88,6 +88,9 @@ class Filters extends React.Component {
               <div className="filter-definition">Communication methods</div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this, 'communication_methods')} />
+              <div className="filter-definition">Collaboration methods</div>
+              <CollaborationFilters
+                updateFilter={this.updateFilter.bind(this, 'collaboration_methods')} />
               <div className="filter-definition">Technologies</div>
               <TechnologyFilters
                 updateFilter={this.updateFilter.bind(this, 'technologies')} />

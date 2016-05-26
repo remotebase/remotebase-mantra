@@ -103,13 +103,17 @@ html {
   background-color: #F02C41;
   color: white;
   padding: 15px 18px;
-  border: 1px solid rgba(130, 130, 130, 0.43);
+  // border: 1px solid rgba(130, 130, 130, 0.43);
   // margin-bottom: 5px;
   margin-bottom: 27px;
   border-radius: 3px;
 
   @media(max-width: 499px) {
     margin-bottom: 14px;
+    background-color: #EAEAEA;
+    color: #1E1F2A;
+    border: 2px solid #EAEAEA;
+
   }
 
   .cta {
@@ -124,7 +128,8 @@ html {
   }
 
   .signup-btn {
-    background: #1E1F2A;
+    // background: #1E1F2A;
+    background-color: #f02c41;
     color: #ffffff;
 
     @media (max-width: 499px) {
