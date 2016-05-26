@@ -3,14 +3,12 @@ language: node_js
 node_js:
 - '0.12'
 before_install:
-- npm install -g mupx
 - openssl aes-256-cbc -K $encrypted_4e82acf74cae_key -iv $encrypted_4e82acf74cae_iv
   -in secrets.tar.enc -out secrets.tar -d
+- npm install -g mupx
 - mkdir .deploy
 - tar xvf secrets.tar -C ./.deploy
-# - curl https://install.meteor.com/ | sh
-# services: mongodb
 script:
 - echo 'hello world'
 after_success:
-- (cd .deploy && mupx deploy)
+- "(cd .deploy && mupx deploy)"
