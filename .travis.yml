@@ -12,4 +12,4 @@ before_install:
 script:
 - echo 'hello world'
 after_success:
-- "(cd .deploy && mupx deploy)"
+- ./deploy.sh
