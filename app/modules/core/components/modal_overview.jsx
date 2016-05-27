@@ -74,6 +74,13 @@ const ModalOverview = ({company, isActive}) => (
             <i className="fa fa-check-circle-o fa-fw"></i> Listed on RemoteBase
           </li>
           {
+            company.official ? (
+              <li className="checked-item">
+                <i className="fa fa-check-circle-o fa-fw"></i> Official profile
+              </li>
+            ) : <span></span>
+          }
+          {
             company.location_based_salary ? (
               <li className="checked-item">
                 <i className="fa fa-check-circle-o fa-fw"></i> Location based salary
