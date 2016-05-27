@@ -9,8 +9,8 @@ configureSitemap();
 
 // Generate data
 populateFilters();
+generateUsers();
 
 if (process.env.NODE_ENV !== 'production') {
-  generateUsers();
   populateSeed();
 }
