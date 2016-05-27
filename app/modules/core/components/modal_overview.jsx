@@ -2,6 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 import CountUp from './count_up.jsx';
+import MockSubBtn from '../containers/mock_subscribe_button';
 
 const ModalOverview = ({company, isActive}) => (
   <div className={classnames('tab', 'tab-overview', {active: isActive})}>
@@ -65,6 +66,8 @@ const ModalOverview = ({company, isActive}) => (
               }
             </li>
           ) : <span></span>}
+
+          <MockSubBtn />
         </ul>
       </div>
 
