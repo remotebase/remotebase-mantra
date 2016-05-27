@@ -61,7 +61,7 @@ const ModalOverview = ({company, isActive}) => (
                 Hiring
               </span>
               {
-                company.job_page ? <a href={company.job_page} target="_blank">See all jobs</a> : <span></span>
+                 <a href={company.job_page || company.website} target="_blank">See all jobs</a>
               }
             </li>
           ) : <span></span>}
