@@ -1,6 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
+import CountUp from './count_up.jsx';
 
 const ModalOverview = ({company, isActive}) => (
   <div className={classnames('tab', 'tab-overview', {active: isActive})}>
@@ -8,147 +9,133 @@ const ModalOverview = ({company, isActive}) => (
       <div className="col-xs-12 col-sm-6">
         <ul className="list-unstyled overview-list">
           <li className="trait-item">
-            <i className="fa fa-flag fa-fw"></i>
-            <span className="item-name">
-              Founded:
-            </span>
-            <span className="item-value">{company.founded_year}</span>
-          </li>
-          <li className="trait-item">
-
             <i className="fa fa-globe fa-fw"></i>
             <span className="item-name">
-              Fully distributed
-              <OverlayTrigger
-                overlay={<Tooltip>Does everyone work remotely?</Tooltip>} placement="bottom">
-                <span className="tooltip-trigger">[?]</span>
-              </OverlayTrigger>
-              :
+              <CountUp start={0} end={company.getDistrbituedPercent()} suffix="%" duration={2}/> remote
             </span>
-            <span className="item-value">{company.fully_distributed ? 'Yes' : 'No'}</span>
-          </li>
-          <li className="trait-item">
-            <i className="fa fa-building fa-fw"></i>
-            <span className="item-name">
-              Agency:</span>
-            <span className="item-value">{company.is_agency ? 'Yes' : 'No'}</span>
           </li>
           <li className="trait-item">
             <i className="fa fa-users fa-fw"></i>
             <span className="item-name">
-              Team size:
+              <CountUp start={0} end={company.team_size} duration={2}/> people
             </span>
-            <span className="item-value">
-              {company.team_size} <small className="text-muted">(Non-remote: {company.non_remote_team_size})</small>
-            </span>
+            <small className="text-muted">(Non-remote: {company.non_remote_team_size})</small>
           </li>
+
           <li className="trait-item">
-            <i className="fa fa-money fa-fw"></i>
+            <i className="fa fa-home fa-fw"></i>
             <span className="item-name">
-              Salary range:
-            </span>
-            <span className="item-value">
-              {company.salary_lower_bound} ~ {company.salary_upper_bound}
-            </span>
-          </li>
-          <li className="trait-item">
-            <i className="fa fa-map fa-fw"></i>
-            <span className="item-name">
-              Location based salary?
+              Retreats per year
               <OverlayTrigger
-                overlay={<Tooltip>Do they offer salary adjusted for your cost of living?</Tooltip>} placement="bottom">
+                overlay={<Tooltip>How many times do they meet in person per year?</Tooltip>} placement="bottom">
                 <span className="tooltip-trigger">[?]</span>
               </OverlayTrigger>
               :
             </span>
             <span className="item-value">
-              {company.location_based_salary ? 'Yes' : 'No'}
+              <CountUp start={0} end={company.num_retreats_per_year} duration={5}/>
             </span>
           </li>
+
           <li className="trait-item">
-            <i className="fa fa-clock-o fa-fw"></i>
+            <i className="fa fa-flag fa-fw"></i>
             <span className="item-name">
-              Async Collaboration
-              <OverlayTrigger
-                overlay={<Tooltip>Can you work in your own timezone?</Tooltip>} placement="bottom">
-                <span className="tooltip-trigger">[?]</span>
-              </OverlayTrigger>
-              :
+              {company.vc_funded ? 'VC funded' : 'Bootstrapped'}
             </span>
-            <span className="item-value">
-              {company.asynchronous_collaboration ? 'Yes' : 'No'}
-            </span>
+            <small className="text-muted">(Founded {company.founded_year})</small>
           </li>
+
+          {company.is_hiring ? (
+            <li className="trait-item">
+              <i className="fa fa-bullhorn fa-fw"></i>
+              <span className="item-name">
+                Hiring
+              </span>
+              {
+                company.job_page ? <a href={company.job_page} target="_blank">See all jobs</a> : <span></span>
+              }
+            </li>
+          ) : <span></span>}
         </ul>
       </div>
 
       <div className="col-xs-12 col-sm-6">
-        <div className="row">
-          <div className="col-xs-12">
-            <ul className="list-unstyled overview-list">
-              <li className="trait-item">
-                <span className="item-name">
-                  Hiring?:
-                </span>
-                <span className="item-value">
-                  {
-                    company.is_hiring ?
-                    <span>
-                      Yes.
-                    </span> :
-                    <span>No.</span>
-                  }
-                </span>
+        <ul className="list-unstyled check-list">
+          <li className="checked-item">
+            <i className="fa fa-check-circle-o fa-fw"></i> Listed on RemoteBase
+          </li>
+          {
+            company.location_based_salary ? (
+              <li className="checked-item">
+                <i className="fa fa-check-circle-o fa-fw"></i> Location based salary
               </li>
-              <li className="trait-item">
-                <span className="item-name">
-                  VC backed?
-                  <OverlayTrigger
-                    overlay={<Tooltip>Are they funded by venture capitals?</Tooltip>} placement="bottom">
-                    <span className="tooltip-trigger">[?]</span>
-                  </OverlayTrigger>
-                  :
-                </span>
-                <span className="item-value">{company.vc_funded ? 'Yes' : 'No'}</span>
+            ) : <span></span>
+          }
+          {
+            company.asynchronous_collaboration ? (
+              <li className="checked-item">
+                <i className="fa fa-check-circle-o fa-fw"></i> Flexible timezone
               </li>
-              <li className="trait-item">
-                <span className="item-name">
-                  Retreats per year
-                  <OverlayTrigger
-                    overlay={<Tooltip>How many times do they meet in person per year?</Tooltip>} placement="bottom">
-                    <span className="tooltip-trigger">[?]</span>
-                  </OverlayTrigger>
-                  :
-                </span>
-                <span className="item-value">{company.num_retreats_per_year}</span>
+            ) : <span></span>
+          }
+          {
+            company.offers_equity ? (
+              <li className="checked-item">
+                <i className="fa fa-check-circle-o fa-fw"></i> Offers equity
               </li>
-              <li className="trait-item">
-                <span className="item-name">Benefits:</span>
-                <span className="item-value">
-                  {company.healthcare ?
-                    <span className="rb-label rb-label-hoverable">
-                      healthcare
-                    </span> : ''}
-                  {company.family_leave ?
-                    <span className="rb-label rb-label-hoverable">
-                      Family leave
-                    </span> : ''}
-                  {company.unlimited_vacation ?
-                    <span className="rb-label rb-label-hoverable">
-                      Unlimited vacation
-                    </span> : ''}
-                  {company.funded_vacation ?
-                    <span className="rb-label rb-label-hoverable">
-                      Funded vacation
-                    </span> : ''}
-                </span>
+            ) : <span></span>
+          }
+          {
+            company.funded_vacation ? (
+              <li className="checked-item">
+                <i className="fa fa-check-circle-o fa-fw"></i> Funded vacation
               </li>
-            </ul>
-          </div>
-          <div className="col-xs-12">
+            ) : <span></span>
+          }
+          {
+            company.unlimited_vacation ? (
+              <li className="checked-item">
+                <i className="fa fa-check-circle-o fa-fw"></i> Unlimited vacation
+              </li>
+            ) : <span></span>
+          }
+          {
+            company.healthcare ? (
+              <li className="checked-item">
+                <i className="fa fa-check-circle-o fa-fw"></i> Healthcare
+              </li>
+            ) : <span></span>
+          }
+          {
+            company.family_leave ? (
+              <li className="checked-item">
+                <i className="fa fa-check-circle-o fa-fw"></i> Family leave
+              </li>
+            ) : <span></span>
+          }
 
-          </div>
-        </div>
+          {
+            !company.location_based_salary ? (
+              <li className="unchecked-item">
+                <i className="fa fa-circle-o fa-fw"></i> Location based salary
+              </li>
+            ) : <span></span>
+          }
+          {
+            !company.asynchronous_collaboration ? (
+              <li className="unchecked-item">
+                <i className="fa fa-circle-o fa-fw"></i> Flexible timezone
+              </li>
+            ) : <span></span>
+          }
+          {
+            !company.official ? (
+              <li className="unchecked-item">
+                <i className="fa fa-circle-o fa-fw"></i> Official profile
+              </li>
+            ) : <span></span>
+          }
+        </ul>
       </div>
     </div>
   </div>

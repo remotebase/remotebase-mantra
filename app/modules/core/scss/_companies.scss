@@ -450,7 +450,7 @@
   }
 
   .tab {
-    padding: 1.2em 2.9em;
+    padding: 2.2em 2.9em;
   }
 
   .tab:not(.active) {
@@ -459,7 +459,21 @@
 
   .tab-overview {
     .overview-list {
-      padding-top: 23px;
+      // padding-top: 23px;
+    }
+
+    .check-list {
+      li {
+        margin-bottom: 5px;
+      }
+
+      .checked-item {
+        color: green;
+      }
+
+      .unchecked-item {
+        color: gray;
+      }
     }
   }
 
