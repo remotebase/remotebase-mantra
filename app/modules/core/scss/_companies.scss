@@ -27,11 +27,17 @@
     border: 1px solid rgba(130, 130, 130, 0.43);
     border-radius: 2px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     padding-left: 18px;
     padding-right: 18px;
     height: 61px;
+
+    .company-item-section {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
 
     @media(max-width: 499px) {
       height: auto;
@@ -48,6 +54,8 @@
     }
 
     .company-item {
+      height: 100%;
+
       @media(min-width: 1200px) {
         display: flex;
         flex: 1;
@@ -58,7 +66,8 @@
         margin-right: 24px;
 
         &.employee-label {
-          width: 144px;
+          // width: 144px;
+          width: 98px;
           text-align: center;
           display: inline-block;
         }

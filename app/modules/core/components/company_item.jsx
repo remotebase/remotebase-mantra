@@ -7,7 +7,7 @@ const CompanyItem = ({company, navToCompany}) => (
     onClick={navToCompany.bind(this, company.slug)}>
     <div className="company-item-container">
       <div className="row company-item">
-        <div className="col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4 company-item-section">
           <div className="company-meta">
             <img src={company.getLogoUrl()} alt="company" className="company-logo"/>
             <div className="company-name">
@@ -16,7 +16,7 @@ const CompanyItem = ({company, navToCompany}) => (
             </div>
           </div>
         </div>
-        <div className="col-xs-12 col-sm-9">
+        <div className="col-xs-12 col-sm-8 company-item-section">
           <span className="rb-label company-label distributed-ratio-label">
             <span className="hidden-sm-up">
               {company.getDistrbituedPercent()}% <i className="fa fa-globe"></i>
@@ -30,7 +30,7 @@ const CompanyItem = ({company, navToCompany}) => (
               {company.team_size} <i className="fa fa-users"></i>
             </span>
             <span className="hidden-sm-down">
-              {company.team_size} employees
+              {company.team_size} people
             </span>
           </span>
           <span className="rb-label company-label hiring-label">
