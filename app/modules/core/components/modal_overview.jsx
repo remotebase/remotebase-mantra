@@ -12,7 +12,7 @@ const ModalOverview = ({company, isActive}) => (
           <li className="trait-item">
             <i className="fa fa-globe fa-fw"></i>
             <span className="item-name">
-              <CountUp start={0} end={company.getDistrbituedPercent()} suffix="%" duration={2}/> remote
+              <CountUp start={0} end={company.getDistrbituedPercent()} suffix="%" duration={2.8}/> remote
             </span>
           </li>
           <li className="trait-item">
