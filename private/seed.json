@@ -4398,7 +4398,7 @@
     "offers_equity": 0,
     "family_leave": 0,
     "healthcare": 0,
-    "note": 0,
+    "note": "listed 5/27/2016",
     "sex_ratio": 0,
     "technologies": [
       "JavaScript",
@@ -4410,8 +4410,7 @@
       "Google Hangout"
     ],
     "slug": "ok-grow",
-    "logo_url": "/images/companies/ok_grow.png",
-    "short_description": "No description found",
+    "logo_url": "/images/companies/ok_grow.png"
   },
   {
     "name": "Bithive Tech",
@@ -4436,7 +4435,7 @@
     "offers_equity": 0,
     "family_leave": 0,
     "healthcare": true,
-    "note": "Submitted design, ux in technology",
+    "note": "Submitted design, ux in technology. listed 5/27/2016",
     "sex_ratio": 0,
     "technologies": [
       "Node.js",
@@ -4452,8 +4451,7 @@
       "Slack",
       "Mattermost"
     ],
-    "slug": "ok-grow",
-    "logo_url": "/images/companies/ok_grow.png",
-    "short_description": "No description found",
+    "slug": "bithive-tech",
+    "logo_url": "/images/companies/bithive_tech.png"
   }
 ]
