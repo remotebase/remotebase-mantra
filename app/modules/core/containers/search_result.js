@@ -8,7 +8,7 @@ export const composer = ({context, query, limit}, onData) => {
   let isSearching;
 
   function passData() {
-    let companies = Collections.Companies.find({}, {sort: {name: 1}}).fetch();
+    let companies = Collections.Companies.find({}, {sort: {official: -1, name: 1}}).fetch();
 
     // transform manually to use helpers in SSR
     // https://github.com/dburles/meteor-collection-helpers/issues/60

@@ -13,9 +13,8 @@ export default function () {
     console.log('query', query);
     console.log('limit', limit);
 
-
     Counts.publish(this, 'companies-counter', Companies.find(query), {noReady: true});
-    return Companies.find(query, {limit, sort: {name: 1}});
+    return Companies.find(query, {limit, sort: {official: -1, name: 1}});
   });
 
   Meteor.publish('company', function (slug) {
