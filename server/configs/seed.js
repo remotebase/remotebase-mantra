@@ -119,7 +119,9 @@ export function populateFilters() {
       'Blossom',
       'DropBox',
       'Google Drive',
-      'Trello'
+      'Trello',
+      'Taiga',
+      'Jira'
     ];
 
     technologies.forEach(tech => {
