@@ -34,7 +34,7 @@
   },
   {
     "name": "Ghost",
-    "official": false,
+    "official": true,
     "logo_url": "/images/companies/ghost.png",
     "headquarters": "London, UK",
     "short_description": "Just a blogging platform",
@@ -4377,6 +4377,7 @@
   },
   {
     "name": "OK GROW!",
+    "official": false,
     "headquarters": "Toronto",
     "short_description": "Consulting",
     "website": "http://okgrow.com",
@@ -4413,6 +4414,7 @@
   },
   {
     "name": "Bithive Tech",
+    "official": true,
     "headquarters": "Toronto",
     "short_description": "Build startups and projects",
     "website": "http://bithive.io",

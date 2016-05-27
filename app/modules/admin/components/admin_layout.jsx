@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Header from './header.jsx';
+import Welcome from './welcome.jsx';
 
 const AdminLayout = ({content}) => (
   <div>
@@ -11,6 +13,7 @@ const AdminLayout = ({content}) => (
         </div>
       </div>
     </main>
+    <Welcome />
   </div>
 );
 

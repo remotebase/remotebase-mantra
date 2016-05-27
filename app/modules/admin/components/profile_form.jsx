@@ -24,9 +24,9 @@ class ProfileForm extends React.Component {
       founded_year: this.refs.founded_year.value,
       vc_funded: this.refs.vc_funded.checked,
       team_size: this.refs.team_size.value,
-      fully_distributed: this.refs.fully_distributed.checked,
       non_remote_team_size: this.refs.non_remote_team_size.value,
       is_hiring: this.refs.is_hiring.checked,
+      job_page: this.refs.job_page.value,
       salary_lower_bound: this.refs.salary_lower_bound.value,
       salary_upper_bound: this.refs.salary_upper_bound.value,
       num_retreats_per_year: this.refs.num_retreats_per_year.value,
@@ -140,18 +140,6 @@ class ProfileForm extends React.Component {
           <div className="field">
             <div className="col-xs-12 col-sm-4">
               <label>
-                Agency?
-              </label>
-            </div>
-            <div className="col-xs-12 col-sm-8">
-              <input type="checkbox" defaultChecked={company.is_agency}
-                className="form-control" ref="is_agency" />
-            </div>
-          </div>
-
-          <div className="field">
-            <div className="col-xs-12 col-sm-4">
-              <label>
                 Non-remote team size
               </label>
             </div>
@@ -164,24 +152,24 @@ class ProfileForm extends React.Component {
           <div className="field">
             <div className="col-xs-12 col-sm-4">
               <label>
-                Retreats per year
+                Are you an agency?
               </label>
             </div>
             <div className="col-xs-12 col-sm-8">
-              <input type="text" defaultValue={company.num_retreats_per_year}
-                className="form-control" ref="num_retreats_per_year" />
+              <input type="checkbox" defaultChecked={company.is_agency}
+                className="form-control" ref="is_agency" />
             </div>
           </div>
 
           <div className="field">
             <div className="col-xs-12 col-sm-4">
               <label>
-                Fully distributed?
+                Retreats per year
               </label>
             </div>
             <div className="col-xs-12 col-sm-8">
-              <input type="checkbox" defaultChecked={company.fully_distributed}
-                className="form-control" ref="fully_distributed" />
+              <input type="text" defaultValue={company.num_retreats_per_year}
+                className="form-control" ref="num_retreats_per_year" />
             </div>
           </div>
 
@@ -206,6 +194,18 @@ class ProfileForm extends React.Component {
             <div className="col-xs-12 col-sm-8">
               <input type="checkbox" defaultChecked={company.is_hiring}
                 className="form-control" ref="is_hiring" />
+            </div>
+          </div>
+
+          <div className="field">
+            <div className="col-xs-12 col-sm-4">
+              <label>
+                Job page
+              </label>
+            </div>
+            <div className="col-xs-12 col-sm-8">
+              <input type="text" defaultValue={company.job_page}
+                className="form-control" ref="job_page" />
             </div>
           </div>
 

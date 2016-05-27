@@ -45,11 +45,30 @@ export function generateFixtures() {
 export function generateUsers() {
   if (Meteor.users.find().count() === 0) {
     console.log('Generating user');
-    Accounts.createUser({
-      username: 'totuga-backpacks',
-      password: 'pass1234',
-      profile: {}
+    let userId1 = Accounts.createUser({
+      username: 'tortuga-backpacks',
+      password: 'da394f2c'
     });
+    Meteor.users.update(userId1, {$set: {companySlug: 'tortuga-backpacks'}});
+
+    let userId2 = Accounts.createUser({
+      username: 'ghost',
+      password: '7da5d551'
+    });
+    Meteor.users.update(userId2, {$set: {companySlug: 'ghost'}});
+
+    let userId3 = Accounts.createUser({
+      username: 'okgrow',
+      password: '4850d6f9'
+    });
+    Meteor.users.update(userId3, {$set: {companySlug: 'ok-grow'}});
+
+    let userId4 = Accounts.createUser({
+      username: 'bithive_tech',
+      password: 'c8d1ee76'
+    });
+    Meteor.users.update(userId4, {$set: {companySlug: 'bithive-tech'}});
+
     console.log('Done generating user');
   }
 }
