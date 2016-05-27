@@ -45,6 +45,15 @@ const ModalOverview = ({company, isActive}) => (
             <small className="text-muted">(Founded {company.founded_year})</small>
           </li>
 
+          {company.is_agency ? (
+            <li className="trait-item">
+              <i className="fa fa-building fa-fw"></i>
+              <span className="item-name">
+                Agency
+              </span>
+            </li>
+          ) : <span></span>}
+
           {company.is_hiring ? (
             <li className="trait-item">
               <i className="fa fa-bullhorn fa-fw"></i>
