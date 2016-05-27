@@ -4433,7 +4433,7 @@
     "funded_vacation": false,
     "offers_equity": 0,
     "family_leave": 0,
-    "healthcare": true,
+    "healthcare": false,
     "note": "Submitted design, ux in technology. listed 5/27/2016",
     "sex_ratio": 0,
     "technologies": [
