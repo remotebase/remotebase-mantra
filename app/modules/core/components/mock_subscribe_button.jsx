@@ -31,7 +31,7 @@ class MockSubscribeButton extends React.Component {
           </OverlayTrigger>
         </span>
         {
-          this.state.hidden ? <div>This feature is not here yet. Thanks for your interest.</div> :
+          this.state.hidden ? <div className="text-muted">This feature is not here yet. Thanks for your interest.</div> :
           <a href="#" onClick={this.hide.bind(this)}>Subscribe</a>
         }
       </li>
