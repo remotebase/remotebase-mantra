@@ -312,20 +312,38 @@
       z-index: 1;
     }
 
-    .meta {
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 24px;
-      margin-top: 19px;
+    .modal-header-container {
+      display: flex;
 
-      .company-name {
-        font-size: 23px;
-        font-weight: 500;
+      .section-container {
+        display: flex;
+
+        .section {
+          display: flex;
+          align-items: center;
+          padding: 13px 13px;
+        }
+      }
+
+      .description {
+        margin-bottom: 0;
       }
     }
 
+    .company-name {
+      font-size: 23px;
+      font-weight: 500;
+    }
+
+    .company-logo {
+      height: 72px;
+      margin-right: 19px;
+      // width: 80px;
+      // display: inline-block;
+      // margin: 13px;
+    }
+
     .summary {
-      margin-top: 16px;
       margin-bottom: 0;
 
       li.unchecked {
@@ -342,12 +360,6 @@
         margin-bottom: 9px;
         text-align: center;
       }
-    }
-
-    .company-logo {
-      width: 80px;
-      display: inline-block;
-      margin: 13px;
     }
 
     .edit-btn {
