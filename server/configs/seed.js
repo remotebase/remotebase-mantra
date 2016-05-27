@@ -47,7 +47,7 @@ export function generateUsers() {
     console.log('Generating user');
     let userId1 = Accounts.createUser({
       username: 'tortuga-backpacks',
-      password: 'da394f2c'
+      password: '75c26068'
     });
     Meteor.users.update(userId1, {$set: {companySlug: 'tortuga-backpacks'}});
 
