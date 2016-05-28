@@ -7,10 +7,12 @@ import _ from 'lodash';
 import {DocHead} from 'meteor/kadira:dochead';
 import {Counts} from 'meteor/tmeasday:publish-counts';
 import Case from 'case';
+import {Accounts} from 'meteor/accounts-base'
 
 export default function () {
   return {
     Meteor,
+    Accounts,
     FlowRouter,
     Collections,
     LocalState: new ReactiveDict(),

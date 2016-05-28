@@ -13,6 +13,10 @@ const DashboardMenu = ({section, logout}) => (
       className={classnames('list-group-item', {active: section === 'jobs'})}>
       Jobs
     </a>
+    <a href={pathFor('admin_dashboard', {section: 'settings'})}
+      className={classnames('list-group-item', {active: section === 'settings'})}>
+      Account Settings
+    </a>
     <a href="#"
       className="list-group-item"
       onClick={logout}>

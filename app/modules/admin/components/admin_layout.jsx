@@ -4,7 +4,7 @@ import Header from './header.jsx';
 import Welcome from './welcome.jsx';
 
 const AdminLayout = ({content}) => (
-  <div>
+  <div className="admin">
     <Header />
     <main className="container">
       <div className="row">

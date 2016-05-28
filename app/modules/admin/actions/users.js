@@ -9,5 +9,9 @@ export default {
 
   logout({Meteor}) {
     Meteor.logout();
+  },
+
+  changePassword({Meteor, Accounts}, currentPassword, newPassword, done) {
+    Accounts.changePassword(currentPassword, newPassword, done);
   }
 };
