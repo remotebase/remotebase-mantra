@@ -67,7 +67,7 @@ const ModalOverview = ({company, isActive}) => (
             </li>
           ) : <span></span>}
 
-          <MockSubBtn />
+          <MockSubBtn company={company} />
         </ul>
       </div>
 

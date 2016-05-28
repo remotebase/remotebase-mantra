@@ -1,5 +1,5 @@
 export default {
-  recordClick({Meteor}, target) {
-    Meteor.call('analytics.recordClick', target);
+  recordClick({Meteor}, target, meta) {
+    Meteor.call('analytics.recordClick', target, meta);
   }
 };

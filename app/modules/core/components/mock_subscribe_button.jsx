@@ -13,9 +13,9 @@ class MockSubscribeButton extends React.Component {
   hide(e) {
     e.preventDefault();
 
-    const {recordClick} = this.props;
+    const {recordClick, company} = this.props;
     this.setState({hidden: true});
-    recordClick('companySubscription');
+    recordClick('companySubscription', {companyName: company.name});
     Cookie.set(cookieName, 'yes');
   }
 

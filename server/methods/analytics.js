@@ -4,11 +4,13 @@ import {check} from 'meteor/check';
 
 export default function () {
   Meteor.methods({
-    'analytics.recordClick'(target) {
+    'analytics.recordClick'(target, meta = {}) {
       check(target, String);
+      check(meta, Object);
 
       ClickCounts.insert({
         target,
+        meta,
         createdAt: new Date()
       });
     }

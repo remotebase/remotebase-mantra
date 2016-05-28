@@ -12,7 +12,7 @@ const DashboardView = ({company, section}) => (
     </div>
     <div className="col-xs-12 col-sm-9">
       <ProfileTab company={company} isActive={!section} />
-      <JobsTab isActive={section === 'jobs'} />
+      <JobsTab isActive={section === 'jobs'} company={company} />
       <SettingsTab isActive={section === 'settings'} />
     </div>
   </div>
