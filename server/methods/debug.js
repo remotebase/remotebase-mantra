@@ -4,16 +4,16 @@ import {check} from 'meteor/check';
 import _ from 'lodash';
 
 export default function () {
-  Meteor.methods({
-    'debug.replaceCompanyData'() {
-      Companies.remove({});
-      let companies = JSON.parse(Assets.getText('seed.json'));
-      companies.forEach(company => {
-        Companies.insert(company);
-      });
-      console.log('Done debug.replaceCompanyData');
-    }
-  });
+  // Meteor.methods({
+  //   'debug.replaceCompanyData'() {
+  //     Companies.remove({});
+  //     let companies = JSON.parse(Assets.getText('seed.json'));
+  //     companies.forEach(company => {
+  //       Companies.insert(company);
+  //     });
+  //     console.log('Done debug.replaceCompanyData');
+  //   }
+  // });
 
   Meteor.methods({
     'debug.getCounts'(column) { // technologies, collaboration_methods, communication_methods

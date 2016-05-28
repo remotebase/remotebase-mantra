@@ -1,99 +1,69 @@
 import React from 'react';
-import _ from 'lodash';
 
 import Filter from './filter.jsx';
 
-// slack
-// googleApps
-// hipchat
-// flowdock
-// email
-// skype
-
-class CommunicationFilters extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {selectedValues: []};
+const CommunicationFilters = ({communicationFilters, updateFilter}) => {
+  function handleUpdate(key, val) {
+    updateFilter(key, val);
   }
 
-  checkIfSelected(val) {
-    return this.state.selectedValues.indexOf(val) > -1;
-  }
-
-  updateSelectedValues(val) {
-    const {updateFilter} = this.props;
-    let newState = this.state.selectedValues;
-
-    // If already selected, unselect
-    if (this.state.selectedValues.indexOf(val) > -1) {
-      newState = _.remove(newState, val);
-    } else {
-      newState.push(val);
-    }
-
-    this.setState({selectedValues: newState});
-    updateFilter(newState);
-  }
-
-  render() {
-    return (
-      <div className="row">
-        <div className="col-xs-12">
-          <div className="hidden-sm-up">
-            <div className="filter-group">
-              <div className="filter-row">
-                <Filter label="Slack"
-                  isChecked={this.checkIfSelected.call(this, 'Slack')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Slack')} />
-                <Filter label="Google Apps"
-                  isChecked={this.checkIfSelected.call(this, 'Google Apps')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Google Apps')} />
-                <Filter label="Email"
-                  isChecked={this.checkIfSelected.call(this, 'Email')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Email')} />
-                <Filter label="Skype"
-                  isChecked={this.checkIfSelected.call(this, 'Skype')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Skype')} />
-              </div>
-              <div className="filter-row">
-                <Filter label="HipChat"
-                  isChecked={this.checkIfSelected.call(this, 'HipChat')}
-                  handleClick={this.updateSelectedValues.bind(this, 'HipChat')} />
-                <Filter label="Flowdock"
-                  isChecked={this.checkIfSelected.call(this, 'Flowdock')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Flowdock')} />
-              </div>
+  return (
+    <div className="row">
+      <div className="col-xs-12">
+        <div className="hidden-sm-up">
+          <div className="filter-group">
+            <div className="filter-row">
+              <Filter label="Slack"
+                isSelected={communicationFilters.Slack}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.Slack')} />
+              <Filter label="Google Apps"
+                isSelected={communicationFilters.GoogleApps}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.GoogleApps')} />
+              <Filter label="Email"
+                isSelected={communicationFilters.Email}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.Email')} />
+              <Filter label="Skype"
+                isSelected={communicationFilters.Skype}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.Skype')} />
+            </div>
+            <div className="filter-row">
+              <Filter label="HipChat"
+                isSelected={communicationFilters.HipChat}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.HipChat')} />
+              <Filter label="Flowdock"
+                isSelected={communicationFilters.FlowDock}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.FlowDock')} />
             </div>
           </div>
+        </div>
 
-          <div className="hidden-sm-down">
-            <div className="filter-group">
-              <div className="filter-row">
-                <Filter label="Slack"
-                  isChecked={this.checkIfSelected.call(this, 'Slack')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Slack')} />
-                <Filter label="Google Apps"
-                  isChecked={this.checkIfSelected.call(this, 'Google Apps')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Google Apps')} />
-                <Filter label="Email"
-                  isChecked={this.checkIfSelected.call(this, 'Email')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Email')} />
-                <Filter label="Skype"
-                  isChecked={this.checkIfSelected.call(this, 'Skype')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Skype')} />
-                <Filter label="HipChat"
-                  isChecked={this.checkIfSelected.call(this, 'HipChat')}
-                  handleClick={this.updateSelectedValues.bind(this, 'HipChat')} />
-                <Filter label="Flowdock"
-                  isChecked={this.checkIfSelected.call(this, 'Flowdock')}
-                  handleClick={this.updateSelectedValues.bind(this, 'Flowdock')} />
-              </div>
+        <div className="hidden-sm-down">
+          <div className="filter-group">
+            <div className="filter-row">
+              <Filter label="Slack"
+                isSelected={communicationFilters.Slack}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.Slack')} />
+              <Filter label="Google Apps"
+                isSelected={communicationFilters.GoogleApps}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.GoogleApps')} />
+              <Filter label="Email"
+                isSelected={communicationFilters.Email}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.Email')} />
+              <Filter label="Skype"
+                isSelected={communicationFilters.Skype}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.Skype')} />
+              <Filter label="HipChat"
+                isSelected={communicationFilters.HipChat}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.HipChat')} />
+              <Filter label="Flowdock"
+                isSelected={communicationFilters.FlowDock}
+                updateFilter={handleUpdate.bind(this, 'communication_methods.FlowDock')} />
             </div>
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default CommunicationFilters;

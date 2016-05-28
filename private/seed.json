@@ -4413,7 +4413,7 @@
     "logo_url": "/images/companies/ok_grow.png"
   },
   {
-    "name": "Bithive Tech",
+    "name": "Bithive",
     "official": true,
     "headquarters": "",
     "short_description": "Build startups and projects",
@@ -4456,7 +4456,7 @@
       "Slack",
       "Mattermost"
     ],
-    "slug": "bithive-tech",
+    "slug": "bithive",
     "logo_url": "/images/companies/bithive_tech.jpg"
   }
 ]

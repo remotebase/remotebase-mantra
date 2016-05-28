@@ -1,6 +1,23 @@
 import _ from 'lodash';
 
 /**
+ * Turns an object with boolean values to an array whose elements are keys of
+ * the object whose values are true.
+ * e.g. {Slack: true, HipChat: false, Email: true} becomes ['Slack', 'Email']
+ */
+export function booleanObjToArray(obj) {
+  let selected = [];
+
+  _.forOwn(obj, (isSelected, filterName) => {
+    if (isSelected) {
+      selected.push(filterName);
+    }
+  });
+
+  return selected;
+}
+
+/**
  * Translates a filter selection into a MongoDB query object
  */
 export function filterToQuery(filterSelection) {
@@ -38,19 +55,31 @@ export function filterToQuery(filterSelection) {
       query['num_retreats_per_year'] = {$gte: 1};
     }
 
-    if (key === 'communication_methods' && val.length > 0) {
-      query['communication_methods'] = {$in: val};
+    if (key === 'communication_methods') {
+      let selected = booleanObjToArray(filterSelection[key]);
+
+      if (selected.length > 0) {
+        query['communication_methods'] = {$in: selected};
+      }
     }
 
-    if (key === 'collaboration_methods' && val.length > 0) {
-      query['collaboration_methods'] = {$in: val};
+    if (key === 'collaboration_methods') {
+      let selected = booleanObjToArray(filterSelection[key]);
+
+      if (selected.length > 0) {
+        query['collaboration_methods'] = {$in: selected};
+      }
     }
 
-    if (key === 'technologies' && val.length > 0) {
-      query['technologies'] = {$in: val};
+    if (key === 'technologies') {
+      let selected = booleanObjToArray(filterSelection[key]);
+
+      if (selected.length > 0) {
+        query['technologies'] = {$in: selected};
+      }
     }
 
   });
-
+  console.log(query);
   return query;
 }
