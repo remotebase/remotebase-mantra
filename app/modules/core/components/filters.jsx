@@ -100,10 +100,9 @@ class Filters extends React.Component {
                 <Filter label="Agency"
                   updateFilter={this.updateFilter.bind(this, 'is_agency')}
                   isSelected={this.state.filterSelection.is_agency} />
-                <Filter label="Async collaboration"
+                <Filter label="Flexible timezone"
                   updateFilter={this.updateFilter.bind(this, 'asynchronous_collaboration')}
-                  isSelected={this.state.filterSelection.asynchronous_collaboration}
-                  tooltipText="Can you work in your own timezone?" />
+                  isSelected={this.state.filterSelection.asynchronous_collaboration} />
               </div>
               <div className="filter-row">
                 <Filter label="Official"
@@ -148,10 +147,9 @@ class Filters extends React.Component {
                 <Filter label="Agency"
                   updateFilter={this.updateFilter.bind(this, 'is_agency')}
                   isSelected={this.state.filterSelection.is_agency} />
-                <Filter label="Async collaboration"
+                <Filter label="Flexible timezone"
                   updateFilter={this.updateFilter.bind(this, 'asynchronous_collaboration')}
-                  isSelected={this.state.filterSelection.asynchronous_collaboration}
-                  tooltipText="Can you work in your own timezone?" />
+                  isSelected={this.state.filterSelection.asynchronous_collaboration} />
                 <Filter label="Official"
                   updateFilter={this.updateFilter.bind(this, 'official')}
                   isSelected={this.state.filterSelection.official}
