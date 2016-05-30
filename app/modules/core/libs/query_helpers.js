@@ -40,10 +40,10 @@ export function filterToQuery(filterSelection) {
           query['team_size'] = {$lt: 10};
           break;
         case 'tenToFifty':
-          query['team_size'] = {$gt: 10, $lt: 50};
+          query['team_size'] = {$gte: 10, $lt: 50};
           break;
         case 'fiftyToHundred':
-          query['team_size'] = {$gt: 50, $lt: 100};
+          query['team_size'] = {$gte: 50, $lt: 100};
           break;
         case 'gt100':
           query['team_size'] = {$gt: 100};
