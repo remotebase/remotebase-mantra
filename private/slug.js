@@ -4,7 +4,7 @@ var fs = require('fs');
 var slug = require('slug');
 var _ = require('lodash');
 
-var content = fs.readFileSync('./seed-batch2.json', 'utf-8');
+var content = fs.readFileSync('./addition-053016-raw.json', 'utf-8');
 var data = JSON.parse(content);
 
 function dollarToNumber(dollar) {
@@ -20,6 +20,10 @@ function dollarToNumber(dollar) {
 }
 
 function makeArray(str) {
+  if (str === 0) {
+    return [];
+  }
+
   var arr = str.split(',').map(function (elm) {
     var output = elm;
 
@@ -41,22 +45,37 @@ data.map(company => {
     company.salary_upper_bound = Number(dollarToNumber(company.salary_upper_bound));
   }
 
-  if (company.team_size) {
-    company.team_size = Number(company.team_size.replace(/\D/g, ''));
-  }
+  // if (company.team_size) {
+  //   company.team_size = Number(company.team_size.replace(/\D/g, ''));
+  // }
 
-  if (company.remote_worker_percentage) {
-    company.remote_worker_percentage = Number(company.remote_worker_percentage.replace(/\%/g, ''));
-  }
+  // if (company.remote_worker_percentage) {
+  //   company.remote_worker_percentage = Number(company.remote_worker_percentage.replace(/\%/g, ''));
+  // }
 
-  if (company.technologies && typeof company.technologies === 'string' ) {
+  if (company.technologies === 0 ||
+    (company.technologies && !_.isArray(company.technologies))) {
     company.technologies = makeArray(company.technologies);
   }
-  if (company.communication_methods && typeof company.communication_methods === 'string' ) {
+  if (company.communication_methods === 0 ||
+    (company.communication_methods && !_.isArray(company.communication_methods))) {
     company.communication_methods = makeArray(company.communication_methods);
   }
-  if (company.collaboration_methods && typeof company.collaboration_methods === 'string' ) {
+  if (company.collaboration_methods === 0 ||
+    (company.collaboration_methods && !_.isArray(company.collaboration_methods))) {
     company.collaboration_methods = makeArray(company.collaboration_methods);
+  }
+  if (company.official === undefined) {
+    company.official = false;
+  }
+  if (company.asynchronous_collaboration === undefined) {
+    company.asynchronous_collaboration = false;
+  }
+  if (company.note === 0) {
+    company.note = '';
+  }
+  if (company.sex_ratio === 0) {
+    company.sex_ratio = '';
   }
 
   _.forOwn(company, function (val, key) {
@@ -64,6 +83,9 @@ data.map(company => {
       company[key] = true;
     }
     if (val === 'NO') {
+      company[key] = false;
+    }
+    if (val === 0 && !_.includes(['non_remote_team_size', 'salary_lower_bound', 'salary_upper_bound', 'note', 'sex_ratio', 'family_leave', 'num_retreats_per_year', 'founded_year'], key)) {
       company[key] = false;
     }
   });
@@ -74,4 +96,4 @@ data.map(company => {
   return company;
 });
 
-fs.writeFileSync('./seed2.json', JSON.stringify(data, null, 2));
+fs.writeFileSync('./addition-053016.json', JSON.stringify(data, null, 2));

@@ -7,9 +7,6 @@ export function configureSitemap() {
     let sitemap = companies.map(company => {
       return {
         page: `/${company.slug}`,
-        images: [
-          {loc: company.logo_url}
-        ],
         lastmod: new Date()};
     });
 
