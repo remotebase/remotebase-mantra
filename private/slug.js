@@ -79,7 +79,7 @@ data.map(company => {
   }
 
   if (company.short_description.length > 70) {
-    company.short_description = '';
+    delete company.short_description;
   }
 
   _.forOwn(company, function (val, key) {

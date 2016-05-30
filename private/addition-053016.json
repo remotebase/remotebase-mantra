@@ -2,7 +2,6 @@
   {
     "name": "Civic Actions",
     "headquarters": "Berkeley, CA",
-    "short_description": "",
     "website": "https://civicactions.com",
     "job_page": "https://civicactions.com/careers/",
     "founded_year": 2004,
@@ -37,7 +36,6 @@
   {
     "name": "Colivre",
     "headquarters": "Salvador, Brazil",
-    "short_description": "",
     "website": "http://www.colivre.coop.br",
     "job_page": false,
     "founded_year": 2006,
@@ -72,7 +70,6 @@
   {
     "name": "Conta Systemer AS",
     "headquarters": false,
-    "short_description": "",
     "website": "http://www.contasystemer.no",
     "job_page": false,
     "founded_year": 2009,
@@ -107,7 +104,6 @@
   {
     "name": "Continu",
     "headquarters": "San Francisco, CA",
-    "short_description": "",
     "website": "https://continu.co",
     "job_page": "https://www.continu.co/careers/",
     "founded_year": 2012,
@@ -142,7 +138,6 @@
   {
     "name": "Copass",
     "headquarters": "Paris, France",
-    "short_description": "",
     "website": "http://copass.org",
     "job_page": "https://copass.org/jobs",
     "founded_year": 2013,
@@ -224,7 +219,6 @@
   {
     "name": "Core-Apps",
     "headquarters": "Arnold, MD",
-    "short_description": "",
     "website": "http://www.core-apps.com",
     "job_page": "https://core-apps.workable.com/",
     "founded_year": 2009,
@@ -294,7 +288,6 @@
   {
     "name": "CROmetrics",
     "headquarters": "Ross, CA",
-    "short_description": "",
     "website": "http://www.CROmetrics.com",
     "job_page": "http://crometrics.com/jobs/",
     "founded_year": 2011,
@@ -329,7 +322,6 @@
   {
     "name": "Crossover.com",
     "headquarters": false,
-    "short_description": "",
     "website": "https://www.crossover.com",
     "job_page": "https://www.crossover.com/x/#/marketplace/available-jobs",
     "founded_year": 2008,
@@ -399,7 +391,6 @@
   {
     "name": "Discourse",
     "headquarters": false,
-    "short_description": "",
     "website": "http://www.discourse.org",
     "job_page": "https://www.wfh.io/companies/724-discourse",
     "founded_year": 0,
@@ -469,7 +460,6 @@
   {
     "name": "Divshot",
     "headquarters": "Santa Monica, CA",
-    "short_description": "",
     "website": "http://www.divshot.com/",
     "job_page": false,
     "founded_year": 2012,
@@ -504,7 +494,6 @@
   {
     "name": "DNSimple",
     "headquarters": "Orlando, Florida",
-    "short_description": "",
     "website": "https://dnsimple.com",
     "job_page": false,
     "founded_year": 2010,
@@ -539,7 +528,6 @@
   {
     "name": "ElevenYellow",
     "headquarters": "Bali, Indonesia",
-    "short_description": "",
     "website": "http://www.elevenyellow.com",
     "job_page": false,
     "founded_year": 2013,
@@ -574,7 +562,6 @@
   {
     "name": "Emetech",
     "headquarters": "San Antonio, Texas",
-    "short_description": "",
     "website": "http://www.emetech.net/",
     "job_page": false,
     "founded_year": 2004,
@@ -644,7 +631,6 @@
   {
     "name": "Fetlife",
     "headquarters": false,
-    "short_description": "",
     "website": "http://www.fetlife.com",
     "job_page": false,
     "founded_year": 2008,
@@ -720,7 +706,6 @@
   {
     "name": "Fuel Made",
     "headquarters": false,
-    "short_description": "",
     "website": "http://fuelmade.com",
     "job_page": "http://fuelmade.com/pages/jobs",
     "founded_year": 2000,
@@ -755,7 +740,6 @@
   {
     "name": "Functionite",
     "headquarters": false,
-    "short_description": "",
     "website": "http://functionite.com/",
     "job_page": false,
     "founded_year": 2013,
@@ -790,7 +774,6 @@
   {
     "name": "Funnely",
     "headquarters": "Brooklyn, New York",
-    "short_description": "",
     "website": "http://www.funne.ly",
     "job_page": "http://funne.ly/jobs.html",
     "founded_year": 2013,
@@ -964,7 +947,6 @@
   {
     "name": "Gridium",
     "headquarters": "Menlo Park, CA",
-    "short_description": "",
     "website": "http://www.gridium.com",
     "job_page": "https://gridium.com/about/working-at-gridium/",
     "founded_year": 2011,
@@ -1005,7 +987,6 @@
   {
     "name": "Hackevents",
     "headquarters": false,
-    "short_description": "",
     "website": "http://www.hackevents.co",
     "job_page": false,
     "founded_year": 0,
@@ -1040,7 +1021,6 @@
   {
     "name": "Happy Bear Software",
     "headquarters": "Hertfordshire",
-    "short_description": "",
     "website": "https://www.happybearsoftware.com",
     "job_page": false,
     "founded_year": 2012,
@@ -1075,7 +1055,6 @@
   {
     "name": "Hypothesis",
     "headquarters": "San Francisco, CA",
-    "short_description": "",
     "website": "http://hypothes.is",
     "job_page": "https://hypothes.is/jobs/",
     "founded_year": 2011,
