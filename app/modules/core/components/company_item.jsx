@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import OfficialIcon from './official_icon.jsx';
 
@@ -17,28 +18,31 @@ const CompanyItem = ({company, navToCompany}) => (
           </div>
         </div>
         <div className="col-xs-12 col-sm-8 company-item-section">
-          <span className="rb-label company-label distributed-ratio-label">
-            <span className="hidden-sm-up">
-              {company.getDistrbituedPercent()}% <i className="fa fa-globe"></i>
+          <div className="distributed-ratio-label-container">
+            <span className="company-label">
+              <span className="hidden-sm-up">
+                {company.getDistrbituedPercent()}% <i className="fa fa-globe"></i>
+              </span>
+              <span className="hidden-sm-down">
+                {company.getDistrbituedPercent()}% distributed
+              </span>
             </span>
-            <span className="hidden-sm-down">
-              {company.getDistrbituedPercent()}% distributed
+          </div>
+          <div className="team-size-label-container">
+            <span className="company-label">
+              <span className="hidden-sm-up">
+                {company.team_size} <i className="fa fa-users"></i>
+              </span>
+              <span className="hidden-sm-down">
+                {company.team_size} people
+              </span>
             </span>
-          </span>
-          <span className="rb-label company-label employee-label">
-            <span className="hidden-sm-up">
-              {company.team_size} <i className="fa fa-users"></i>
+          </div>
+          <div className="hiring-label-container">
+            <span className={classnames('company-label', {'label-hiring': company.is_hiring, 'label-not-hiring': !company.is_hiring})}>
+              {company.is_hiring ? 'Hiring' : 'Not hiring'}
             </span>
-            <span className="hidden-sm-down">
-              {company.team_size} people
-            </span>
-          </span>
-          <span className="rb-label company-label hiring-label">
-            {company.is_hiring ? 'Hiring' : 'Not hiring'}
-          </span>
-          <span className="rb-label company-label vc-label">
-            {company.vc_funded ? 'VC backed' : 'Bootstrapped'}
-          </span>
+          </div>
         </div>
       </div>
     </div>

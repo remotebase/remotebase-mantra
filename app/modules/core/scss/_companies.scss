@@ -56,44 +56,58 @@
     .company-item {
       height: 100%;
 
-      @media(min-width: 1200px) {
-        display: flex;
-        flex: 1;
-        align-items: center;
+      // @media(min-width: 1200px) {
+      //   display: flex;
+      //   flex: 1;
+      //   align-items: center;
+      // }
+
+      .hiring-label-container {
+        width: 148px;
+        text-align: center;
+
+        @media(max-width: 499px) {
+          width: auto;
+          margin-right: 6px;
+        }
+      }
+
+      .distributed-ratio-label-container {
+        width: 200px;
+        text-align: center;
+
+        @media(max-width: 499px) {
+          width: auto;
+          margin-right: 6px;
+        }
+      }
+
+      .team-size-label-container {
+        width: 160px;
+        text-align: center;
+
+        @media(max-width: 499px) {
+          width: auto;
+          margin-right: 6px;
+        }
       }
 
       .company-label {
-        margin-right: 24px;
+        border: 1px solid #40435C;
+        padding: 5px 16px;
+        color: #40435C;
 
-        &.employee-label {
-          // width: 144px;
-          width: 98px;
-          text-align: center;
-          display: inline-block;
+        &.label-hiring {
+          background-color: #F02C41;
+          border-color: #F02C41;
+          color: white;
         }
 
-        &.distributed-ratio-label {
-          width: 144px;
-          text-align: center;
-          display: inline-block;
+        &.label-not-hiring {
+          background-color: #40435C;
+          border-color: #40435C;
+          color: white;
         }
-
-        @media(max-width: 499px) {
-          margin-right: 3px;
-
-          &.employee-label {
-            width: auto;
-            text-align: center;
-            display: inline-block;
-          }
-
-          &.distributed-ratio-label {
-            width: auto;
-            text-align: center;
-            display: inline-block;
-          }
-        }
-
       }
     }
 
