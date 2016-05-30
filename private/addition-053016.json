@@ -554,7 +554,7 @@
     "num_retreats_per_year": 0,
     "location_based_salary": false,
     "funded_vacation": false,
-    "is_agency": false,
+    "is_agency": true,
     "offers_equity": false,
     "family_leave": 0,
     "healthcare": false,
