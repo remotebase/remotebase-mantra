@@ -2,7 +2,7 @@
   {
     "name": "Civic Actions",
     "headquarters": "Berkeley, CA",
-    "short_description": "CivicActions works closely with public sector institutions to help strategize and execute on large-scale software projects.",
+    "short_description": "",
     "website": "https://civicactions.com",
     "job_page": "https://civicactions.com/careers/",
     "founded_year": 2004,
@@ -37,7 +37,7 @@
   {
     "name": "Colivre",
     "headquarters": "Salvador, Brazil",
-    "short_description": "COLIVRE supplies solutions for Internet, development and consultancy in free software focused in the objectives of the client with differential of quality.",
+    "short_description": "",
     "website": "http://www.colivre.coop.br",
     "job_page": false,
     "founded_year": 2006,
@@ -72,7 +72,7 @@
   {
     "name": "Conta Systemer AS",
     "headquarters": false,
-    "short_description": "Conta Systems specializes in user-friendly software for the SME market in Norway.",
+    "short_description": "",
     "website": "http://www.contasystemer.no",
     "job_page": false,
     "founded_year": 2009,
@@ -107,7 +107,7 @@
   {
     "name": "Continu",
     "headquarters": "San Francisco, CA",
-    "short_description": "Continu is Learning, On-Boarding, Recruitment & Analytics Software built for the modern workplace.",
+    "short_description": "",
     "website": "https://continu.co",
     "job_page": "https://www.continu.co/careers/",
     "founded_year": 2012,
@@ -142,7 +142,7 @@
   {
     "name": "Copass",
     "headquarters": "Paris, France",
-    "short_description": "Copass is a global membership that lets you access a network of independent coworking spaces, fablabs, hacker spaces or any type of collaborative spaces and people with one single account.",
+    "short_description": "",
     "website": "http://copass.org",
     "job_page": "https://copass.org/jobs",
     "founded_year": 2013,
@@ -224,7 +224,7 @@
   {
     "name": "Core-Apps",
     "headquarters": "Arnold, MD",
-    "short_description": "Core-apps was founded in March 2009 to focus solely on technology for the event industry.",
+    "short_description": "",
     "website": "http://www.core-apps.com",
     "job_page": "https://core-apps.workable.com/",
     "founded_year": 2009,
@@ -294,7 +294,7 @@
   {
     "name": "CROmetrics",
     "headquarters": "Ross, CA",
-    "short_description": "CROmetrics quickly and effectively accelerates the growth of companies by helping them employ data-driven marketing, resulting in systematic growth through focus on key metrics such as revenue, engagement and user growth.",
+    "short_description": "",
     "website": "http://www.CROmetrics.com",
     "job_page": "http://crometrics.com/jobs/",
     "founded_year": 2011,
@@ -329,7 +329,7 @@
   {
     "name": "Crossover.com",
     "headquarters": false,
-    "short_description": "Crossover is redefining the way people work. We believe that brick and mortar offices are artefacts of ancient history.",
+    "short_description": "",
     "website": "https://www.crossover.com",
     "job_page": "https://www.crossover.com/x/#/marketplace/available-jobs",
     "founded_year": 2008,
@@ -399,7 +399,7 @@
   {
     "name": "Discourse",
     "headquarters": false,
-    "short_description": "Discourse offers an open source platform for running discussion forums.",
+    "short_description": "",
     "website": "http://www.discourse.org",
     "job_page": "https://www.wfh.io/companies/724-discourse",
     "founded_year": 0,
@@ -469,7 +469,7 @@
   {
     "name": "Divshot",
     "headquarters": "Santa Monica, CA",
-    "short_description": "Divshot is an HTML5 web hosting platform tailored for performance and developer productivity.",
+    "short_description": "",
     "website": "http://www.divshot.com/",
     "job_page": false,
     "founded_year": 2012,
@@ -504,7 +504,7 @@
   {
     "name": "DNSimple",
     "headquarters": "Orlando, Florida",
-    "short_description": "DNSimple provides hosted DNS and domain management via a web interface, REST API and iPhone application.",
+    "short_description": "",
     "website": "https://dnsimple.com",
     "job_page": false,
     "founded_year": 2010,
@@ -539,12 +539,12 @@
   {
     "name": "ElevenYellow",
     "headquarters": "Bali, Indonesia",
-    "short_description": "A software laboratory focused on SaaS",
+    "short_description": "",
     "website": "http://www.elevenyellow.com",
     "job_page": false,
     "founded_year": 2013,
     "vc_funded": false,
-    "team_size": 11,
+    "team_size": 5,
     "fully_distributed": true,
     "non_remote_team_size": 0,
     "remote_worker_percentage": 100,
@@ -554,20 +554,14 @@
     "num_retreats_per_year": 0,
     "location_based_salary": false,
     "funded_vacation": false,
-    "is_agency": true,
+    "is_agency": false,
     "offers_equity": false,
     "family_leave": 0,
     "healthcare": false,
     "note": "",
     "unlimited_vacation": false,
     "sex_ratio": "",
-    "technologies": [
-      "Python",
-      "Django",
-      "AngularJS",
-      "MeteorJS",
-      "Node.js"
-    ],
+    "technologies": [],
     "collaboration_methods": [],
     "communication_methods": [],
     "twitter_handle": false,
@@ -580,7 +574,7 @@
   {
     "name": "Emetech",
     "headquarters": "San Antonio, Texas",
-    "short_description": "Creating software and hardware to provide complete electronic solutions.",
+    "short_description": "",
     "website": "http://www.emetech.net/",
     "job_page": false,
     "founded_year": 2004,
@@ -650,7 +644,7 @@
   {
     "name": "Fetlife",
     "headquarters": false,
-    "short_description": "FetLife is the world�s largest free kinky social network. Similar to Facebook but built and run by kinksters, for kinksters. It�s our mission to help make people feel comfortable with who they are sexually so that they don't have to ever feel alone.",
+    "short_description": "",
     "website": "http://www.fetlife.com",
     "job_page": false,
     "founded_year": 2008,
@@ -726,7 +720,7 @@
   {
     "name": "Fuel Made",
     "headquarters": false,
-    "short_description": "We are an ecommerce development agency specialized on the Shopify Plus platform. We custom design and build ecommerce solutions for our clients on the incredible Shopify Plus platform.",
+    "short_description": "",
     "website": "http://fuelmade.com",
     "job_page": "http://fuelmade.com/pages/jobs",
     "founded_year": 2000,
@@ -761,7 +755,7 @@
   {
     "name": "Functionite",
     "headquarters": false,
-    "short_description": "Functionite is focusing on the state-of-the-art user experiences for the web applications. We build advanced cross-device web interfaces in JavaScript and HTML5.",
+    "short_description": "",
     "website": "http://functionite.com/",
     "job_page": false,
     "founded_year": 2013,
@@ -796,7 +790,7 @@
   {
     "name": "Funnely",
     "headquarters": "Brooklyn, New York",
-    "short_description": "Funnely is an online assistant that helps online stores' owners create, manage and optimize their online campaigns.",
+    "short_description": "",
     "website": "http://www.funne.ly",
     "job_page": "http://funne.ly/jobs.html",
     "founded_year": 2013,
@@ -970,7 +964,7 @@
   {
     "name": "Gridium",
     "headquarters": "Menlo Park, CA",
-    "short_description": "Gridium provides smart meter data analytics to building operators and owners and customer engagement and analysis tools to utilities.",
+    "short_description": "",
     "website": "http://www.gridium.com",
     "job_page": "https://gridium.com/about/working-at-gridium/",
     "founded_year": 2011,
@@ -1011,7 +1005,7 @@
   {
     "name": "Hackevents",
     "headquarters": false,
-    "short_description": "Hackevents is the leading search engine and platform for Hackathons in Germany.",
+    "short_description": "",
     "website": "http://www.hackevents.co",
     "job_page": false,
     "founded_year": 0,
@@ -1046,7 +1040,7 @@
   {
     "name": "Happy Bear Software",
     "headquarters": "Hertfordshire",
-    "short_description": "We are a technical consultancy that helps businesses understand and build better custom software that fits their needs.",
+    "short_description": "",
     "website": "https://www.happybearsoftware.com",
     "job_page": false,
     "founded_year": 2012,
@@ -1081,7 +1075,7 @@
   {
     "name": "Hypothesis",
     "headquarters": "San Francisco, CA",
-    "short_description": "Our team is building an open platform for discussion on the web. It leverages annotation to enable sentence-level critique or note-taking on top of news, scientific articles, books, and more. We're a small non-profit building open source software.",
+    "short_description": "",
     "website": "http://hypothes.is",
     "job_page": "https://hypothes.is/jobs/",
     "founded_year": 2011,

@@ -78,6 +78,10 @@ data.map(company => {
     company.sex_ratio = '';
   }
 
+  if (company.short_description.length > 70) {
+    company.short_description = '';
+  }
+
   _.forOwn(company, function (val, key) {
     if (val === 'YES') {
       company[key] = true;
