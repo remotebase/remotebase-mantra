@@ -544,7 +544,7 @@
     "job_page": false,
     "founded_year": 2013,
     "vc_funded": false,
-    "team_size": 5,
+    "team_size": 11,
     "fully_distributed": true,
     "non_remote_team_size": 0,
     "remote_worker_percentage": 100,
@@ -561,7 +561,13 @@
     "note": "",
     "unlimited_vacation": false,
     "sex_ratio": "",
-    "technologies": [],
+    "technologies": [
+      "Python",
+      "Django",
+      "AngularJS",
+      "MeteorJS",
+      "Node.js"
+    ],
     "collaboration_methods": [],
     "communication_methods": [],
     "twitter_handle": false,
