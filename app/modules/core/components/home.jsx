@@ -6,13 +6,12 @@ import MailchimpSignup from './mailchimp_signup.jsx';
 
 const Home = ({companySlug, companyTab}) => (
   <div>
-    <MailchimpSignup />
-    <Finder />
-
     {
       companySlug ?
       <CompanyModal companySlug={companySlug} companyTab={companyTab} /> : <span></span>
     }
+    <MailchimpSignup />
+    <Finder />
   </div>
 );
 

@@ -12,9 +12,9 @@ const ModalHeader = ({company}) => (
             <h2 className="company-name">
               {company.name} <OfficialIcon company={company} /> <a className="company-link" href={company.website} target="_blank"><i className="fa fa-external-link"></i></a>
             </h2>
-            <p className="description">
+            <h3 className="description">
               {company.short_description || 'No description found'}
-            </p>
+            </h3>
           </div>
         </div>
       </div>

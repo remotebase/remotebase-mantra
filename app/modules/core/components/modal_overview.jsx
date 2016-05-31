@@ -11,28 +11,28 @@ const ModalOverview = ({company, isActive}) => (
         <ul className="list-unstyled overview-list">
           <li className="trait-item">
             <i className="fa fa-globe fa-fw"></i>
-            <span className="item-name">
+            <h4 className="item-name">
               <CountUp start={0} end={company.getDistrbituedPercent()} suffix="%" duration={2.8}/> remote
-            </span>
+            </h4>
           </li>
           <li className="trait-item">
             <i className="fa fa-users fa-fw"></i>
-            <span className="item-name">
+            <h4 className="item-name">
               <CountUp start={0} end={company.team_size} duration={2}/> people
-            </span>
+            </h4>
             <small className="text-muted">(Non-remote: {company.non_remote_team_size})</small>
           </li>
 
           <li className="trait-item">
             <i className="fa fa-home fa-fw"></i>
-            <span className="item-name">
+            <h4 className="item-name">
               Retreats per year
               <OverlayTrigger
                 overlay={<Tooltip>How many times do they meet in person per year?</Tooltip>} placement="bottom">
                 <span className="tooltip-trigger">[?]</span>
               </OverlayTrigger>
               :
-            </span>
+            </h4>
             <span className="item-value">
               <CountUp start={0} end={company.num_retreats_per_year} duration={5}/>
             </span>
@@ -40,27 +40,27 @@ const ModalOverview = ({company, isActive}) => (
 
           <li className="trait-item">
             <i className="fa fa-flag fa-fw"></i>
-            <span className="item-name">
+            <h4 className="item-name">
               {company.vc_funded ? 'VC funded' : 'Bootstrapped'}
-            </span>
+            </h4>
             <small className="text-muted">(Founded {company.founded_year})</small>
           </li>
 
           {company.is_agency ? (
             <li className="trait-item">
               <i className="fa fa-building fa-fw"></i>
-              <span className="item-name">
+              <h4 className="item-name">
                 Consultancy
-              </span>
+              </h4>
             </li>
           ) : <span></span>}
 
           {company.is_hiring ? (
             <li className="trait-item">
               <i className="fa fa-bullhorn fa-fw"></i>
-              <span className="item-name">
+              <h4 className="item-name">
                 Hiring
-              </span>
+              </h4>
               {
                  <a href={company.getJobPage()} target="_blank">See all jobs</a>
               }

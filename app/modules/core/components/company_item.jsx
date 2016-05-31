@@ -11,11 +11,11 @@ const CompanyItem = ({company, navToCompany}) => (
         <div className="row company-item">
           <div className="col-xs-12 col-sm-4 company-item-section">
             <div className="company-meta">
-              <img src={company.getLogoUrl()} alt="company" className="company-logo"/>
-              <div className="company-name">
+              <img src={company.getLogoUrl()} alt={`${company.name}-logo`} className="company-logo"/>
+              <h3 className="company-name">
                 {company.name}
                 <OfficialIcon company={company} />
-              </div>
+              </h3>
             </div>
           </div>
           <div className="col-xs-12 col-sm-8 company-item-section">
