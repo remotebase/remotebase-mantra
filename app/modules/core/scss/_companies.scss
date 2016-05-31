@@ -22,6 +22,13 @@
     width: 43px;
   }
 
+  .company-item-link {
+    display: inline-block;
+    width: 100%;
+    color: inherit;
+    text-decoration: inherit;
+  }
+
   .company-item-container {
     margin-bottom: 4px;
     border: 1px solid rgba(130, 130, 130, 0.43);
