@@ -97,7 +97,7 @@ class Filters extends React.Component {
                 <Filter label="VC backed"
                   updateFilter={this.updateFilter.bind(this, 'vc_funded')}
                   isSelected={this.state.filterSelection.vc_funded} />
-                <Filter label="Agency"
+                <Filter label="Consultancy"
                   updateFilter={this.updateFilter.bind(this, 'is_agency')}
                   isSelected={this.state.filterSelection.is_agency} />
                 <Filter label="Flexible timezone"
@@ -144,7 +144,7 @@ class Filters extends React.Component {
                   isSelected={this.state.filterSelection.vc_funded} />
               </div>
               <div className="filter-row">
-                <Filter label="Agency"
+                <Filter label="Consultancy"
                   updateFilter={this.updateFilter.bind(this, 'is_agency')}
                   isSelected={this.state.filterSelection.is_agency} />
                 <Filter label="Flexible timezone"

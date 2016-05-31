@@ -50,7 +50,7 @@ const ModalOverview = ({company, isActive}) => (
             <li className="trait-item">
               <i className="fa fa-building fa-fw"></i>
               <span className="item-name">
-                Agency
+                Consultancy
               </span>
             </li>
           ) : <span></span>}
