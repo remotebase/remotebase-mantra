@@ -4,11 +4,12 @@ import SearchResult from '../components/search_result.jsx';
 import Loading from '../containers/loading';
 
 export const composer = ({context, query, limit}, onData) => {
-  const {Meteor, Collections} = context();
+  const {Meteor, Collections, Counts} = context();
   let cursor = Meteor.subscribe('companies', query, limit);
 
   function passData(isLoadingMore, isSearching) {
-    let companies = Collections.Companies.find({}, {sort: {official: -1, name: 1}}).fetch();
+    let companies = Collections.Companies.find(query, {sort: {official: -1, name: 1}}).fetch();
+    let numResults = Counts.get('companies-counter');
 
     // transform manually to use helpers in SSR
     // https://github.com/dburles/meteor-collection-helpers/issues/60
@@ -16,7 +17,7 @@ export const composer = ({context, query, limit}, onData) => {
       return Collections.Companies._transform(company);
     });
 
-    onData(null, {companies, loadMore, isLoadingMore, isSearching});
+    onData(null, {companies, loadMore, isLoadingMore, isSearching, numResults});
   }
 
   function loadMore() {

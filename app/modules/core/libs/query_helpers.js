@@ -80,6 +80,6 @@ export function filterToQuery(filterSelection) {
     }
 
   });
-  console.log(query);
+
   return query;
 }

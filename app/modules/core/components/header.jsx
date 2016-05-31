@@ -7,8 +7,8 @@ const Header = () => (
         <a className="navbar-brand" href="/">
           <img src="/images/logo.png" className="logo" alt="logo"/>
           <div className="brand-wrapper">
-            <div className="name">RemoteBase</div>
-            <h1 className="tagline">Find the best remote companies</h1>
+            <h1 className="name">RemoteBase</h1>
+            <h2 className="tagline">Find the best remote companies</h2>
           </div>
         </a>
       </div>
