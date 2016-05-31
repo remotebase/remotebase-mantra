@@ -5,9 +5,9 @@ import Loading from '../containers/loading';
 
 export const composer = ({context, query, limit}, onData) => {
   const {Meteor, Collections} = context();
-  let isSearching;
+  let cursor = Meteor.subscribe('companies', query, limit);
 
-  function passData() {
+  function passData(isLoadingMore, isSearching) {
     let companies = Collections.Companies.find({}, {sort: {official: -1, name: 1}}).fetch();
 
     // transform manually to use helpers in SSR
@@ -16,17 +16,17 @@ export const composer = ({context, query, limit}, onData) => {
       return Collections.Companies._transform(company);
     });
 
-    onData(null, {companies, isSearching, loadMore});
+    onData(null, {companies, loadMore, isLoadingMore, isSearching});
   }
 
   function loadMore() {
-    isSearching = true;
-    passData();
+    passData(true, false);
   }
 
-  if (Meteor.subscribe('companies', query, limit).ready()) {
-    isSearching = false;
-    passData();
+  if (cursor.ready()) {
+    passData(false, false);
+  } else if (!cursor.ready() && limit === 30) {
+    passData(false, true);
   }
 };
 

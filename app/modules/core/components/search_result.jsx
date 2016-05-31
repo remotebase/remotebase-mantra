@@ -16,17 +16,21 @@ class SearchResult extends React.Component {
   }
 
   render() {
-    const {searchResultCount, limit, companies, isSearching} = this.props;
+    const {searchResultCount, limit, companies, isLoadingMore, isSearching} = this.props;
+
+    if (isSearching) {
+      return <Loading />;
+    }
 
     return (
       <div className="search-result">
         <div className="counter">{searchResultCount} companies found</div>
         <CompanyList companies={companies} />
         {
-          isSearching ? <Loading /> : <span></span>
+          isLoadingMore ? <Loading /> : <span></span>
         }
         {
-          limit < searchResultCount && !isSearching ?
+          limit < searchResultCount && !isLoadingMore ?
           <LoadMoreBtn onLoadMore={this.handleLoadMore.bind(this)}/> : <span></span>
         }
       </div>
