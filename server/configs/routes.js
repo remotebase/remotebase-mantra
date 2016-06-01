@@ -7,8 +7,13 @@ export function configureSitemap() {
     let sitemap = companies.map(company => {
       return {
         page: `/${company.slug}`,
-        lastmod: new Date()};
+        lastmod: new Date()
+      };
     });
+
+    sitemap.push(
+      {page: '/', lastmod: new Date()}
+    );
 
     return sitemap;
   });
