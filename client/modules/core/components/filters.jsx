@@ -9,47 +9,52 @@ import TechnologyFilters from './technology_filters.jsx';
 import CollaborationFilters from './collaboration_filters.jsx';
 import SearchBtn from '../containers/search_button';
 
+const defaultFilter = {
+  fully_distributed: false,
+  is_hiring: false,
+  official: false,
+  team_size: null,
+  has_retreats: false,
+  vc_funded: false,
+  is_agency: false,
+  asynchronous_collaboration: false,
+  communication_methods: {
+    Slack: false,
+    HipChat: false,
+    Email: false,
+    Skype: false,
+    FlowDock: false
+  },
+  collaboration_methods: {
+    Blossom: false,
+    Basecamp: false,
+    iDoneThis: false,
+    Trello: false
+  },
+  technologies: {
+    NodeJS: false,
+    MySQL: false,
+    MongoDB: false,
+    JavaScript: false,
+    RubyOnRails: false,
+    Java: false,
+    Python: false,
+    PHP: false
+  }
+};
+
 class Filters extends React.Component {
   constructor(props) {
     super(props);
 
-    let defaultFilter = {
-      fully_distributed: false,
-      is_hiring: false,
-      official: false,
-      team_size: null,
-      has_retreats: false,
-      vc_funded: false,
-      is_agency: false,
-      asynchronous_collaboration: false,
-      communication_methods: {
-        Slack: false,
-        HipChat: false,
-        Email: false,
-        Skype: false,
-        FlowDock: false
-      },
-      collaboration_methods: {
-        Blossom: false,
-        Basecamp: false,
-        iDoneThis: false,
-        Trello: false
-      },
-      technologies: {
-        NodeJS: false,
-        MySQL: false,
-        MongoDB: false,
-        JavaScript: false,
-        RubyOnRails: false,
-        Java: false,
-        Python: false,
-        PHP: false
-      }
-    };
-
     this.state = {
       lastSearchedFilter: _.cloneDeep(defaultFilter),
-      filterSelection: _.cloneDeep(defaultFilter)
+      filterSelection: _.cloneDeep(defaultFilter),
+      filtersShowing: {
+        communication_methods: true,
+        collaboration_methods: true,
+        technologies: true,
+      }
     };
   }
 
@@ -69,24 +74,29 @@ class Filters extends React.Component {
     this.setState({filterSelection});
   }
 
+  resetFilter() {
+    this.setState({filterSelection: _.cloneDeep(defaultFilter)});
+  }
+
   render() {
     return (
       <div className="filters">
         <div className="row">
           <div className="col-xs-12">
-
             <div className="hidden-sm-up mobile-view-filters">
               <div className="filter-row">
-                <Filter label="Fully distributed"
+                <Filter label="Fully remote"
                   updateFilter={this.updateFilter.bind(this, 'fully_distributed')}
                   isSelected={this.state.filterSelection.fully_distributed} />
                 <Filter label="Hiring"
                   updateFilter={this.updateFilter.bind(this, 'is_hiring')}
-                  isSelected={this.state.filterSelection.is_hiring} />
-                <Filter label="Has retreats"
+                  isSelected={this.state.filterSelection.is_hiring}
+                  klass="hiring-filter" />
+                <Filter label="Retreats"
                   updateFilter={this.updateFilter.bind(this, 'has_retreats')}
                   isSelected={this.state.filterSelection.has_retreats}
-                  tooltipText="Does the team sometimes get together physically?" />
+                  tooltipText="Does the team sometimes get together physically?"
+                  klass="retreats-filter" />
               </div>
               <div className="filter-row">
                 <TeamSizeFilter selectedValue={this.state.filterSelection.team_size}
@@ -110,15 +120,12 @@ class Filters extends React.Component {
                   isSelected={this.state.filterSelection.official}
                   tooltipText="Only show the official profiles managed by companies" />
               </div>
-              <div className="filter-definition">Communication methods</div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this)}
                 communicationFilters={this.state.filterSelection.communication_methods} />
-              <div className="filter-definition">Collaboration methods</div>
               <CollaborationFilters
                 updateFilter={this.updateFilter.bind(this)}
                 collaborationFilters={this.state.filterSelection.collaboration_methods} />
-              <div className="filter-definition">Technologies</div>
               <TechnologyFilters
                 updateFilter={this.updateFilter.bind(this)}
                 technologyFilters={this.state.filterSelection.technologies} />
@@ -127,7 +134,7 @@ class Filters extends React.Component {
 
             <div className="hidden-sm-down desktop-view-filters">
               <div className="filter-row">
-                <Filter label="Fully distributed"
+                <Filter label="Fully remote"
                   updateFilter={this.updateFilter.bind(this, 'fully_distributed')}
                   isSelected={this.state.filterSelection.fully_distributed} />
                 <Filter label="Hiring"
@@ -155,18 +162,18 @@ class Filters extends React.Component {
                   isSelected={this.state.filterSelection.official}
                   tooltipText="Only show the official profiles managed by companies" />
               </div>
-              <div className="filter-definition">Communication methods</div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this)}
-                communicationFilters={this.state.filterSelection.communication_methods} />
-              <div className="filter-definition">Collaboration methods</div>
+                communicationFilters={this.state.filterSelection.communication_methods}
+                isShowing={this.state.filtersShowing.communication_methods} />
               <CollaborationFilters
                 updateFilter={this.updateFilter.bind(this)}
-                collaborationFilters={this.state.filterSelection.collaboration_methods} />
-              <div className="filter-definition">Technologies</div>
+                collaborationFilters={this.state.filterSelection.collaboration_methods}
+                isShowing={this.state.filtersShowing.collaboration_methods} />
               <TechnologyFilters
                 updateFilter={this.updateFilter.bind(this)}
-                technologyFilters={this.state.filterSelection.technologies} />
+                technologyFilters={this.state.filterSelection.technologies}
+                isShowing={this.state.filtersShowing.technologies} />
             </div>
           </div>
         </div>
@@ -178,11 +185,8 @@ class Filters extends React.Component {
               lastSearchedFilter={this.state.lastSearchedFilter} />
           </div>
           <div className="col-xs-12 col-sm-4">
-            <a className="btn add-company-btn typeform-share"
-              href="https://mike706.typeform.com/to/o6eSiQ"
-              data-mode="1"
-              target="_blank">
-              Add company
+            <a className="btn rb-btn-primary" onClick={this.resetFilter.bind(this)}>
+              Unselect all
             </a>
           </div>
         </div>
