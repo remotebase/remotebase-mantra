@@ -5,7 +5,7 @@
     }
   },
   "PrerenderIO": {
-    "prerenderServiceUrl": "http://localhost:2300/",
+    "prerenderServiceUrl": "http://localhost:3000/",
     "token": "tG62lX6ZU7oviw7Vm9L2"
   }
 }

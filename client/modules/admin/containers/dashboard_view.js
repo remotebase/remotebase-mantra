@@ -8,7 +8,6 @@ export const composer = ({context}, onData) => {
   if (Meteor.subscribe('currentUser').ready()) {
     let user = Meteor.user();
     let companySlug = user.companySlug;
-    console.log('logged in:', user);
 
     if (Meteor.subscribe('company', companySlug).ready()) {
       let company = Collections.Companies.findOne({slug: companySlug});
