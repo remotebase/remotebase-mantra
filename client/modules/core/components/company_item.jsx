@@ -25,7 +25,7 @@ const CompanyItem = ({company, navToCompany}) => (
                   {company.getDistrbituedPercent()}% <i className="fa fa-globe"></i>
                 </span>
                 <span className="hidden-sm-down">
-                  {company.getDistrbituedPercent()}% distributed
+                  {company.getDistrbituedPercent()}% remote
                 </span>
               </span>
             </div>
