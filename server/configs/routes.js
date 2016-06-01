@@ -3,7 +3,7 @@ import {Companies} from '/lib/collections';
 
 export function configureSitemap() {
   sitemaps.add('/sitemap.xml', function () {
-    let companies = Companies.find().fetch();
+    let companies = Companies.find({hidden: {$ne: true}}).fetch();
     let sitemap = companies.map(company => {
       return {
         page: `/${company.slug}`,
