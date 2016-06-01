@@ -4,9 +4,9 @@ import Finder from '../components/finder.jsx';
 
 export const composer = ({context}, onData) => {
   const {Counts} = context();
-  // let companyResultCount = Counts.get('companies-counter');
+  let companyResultCount = Counts.get('companies-counter');
 
-  onData(null, {});
+  onData(null, {companyResultCount});
 };
 
 export const depsMapper = (context, actions) => ({

@@ -30,6 +30,7 @@ class Finder extends React.Component {
 
   render() {
     let {query, limit} = this.state;
+    const {companyResultCount} = this.props;
 
     return (
       <div className="finder">
@@ -37,7 +38,7 @@ class Finder extends React.Component {
         <SearchResult query={query}
           limit={limit}
           onLoadMore={this.handleLoadMore.bind(this)}
-          currentLimit={limit} />
+          companyResultCount={companyResultCount} />
       </div>
     );
   }

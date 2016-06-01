@@ -9,7 +9,6 @@ export const composer = ({context, query, limit}, onData) => {
 
   function passData(isLoadingMore, isSearching) {
     let companies = Collections.Companies.find(query, {sort: {official: -1, name: 1}}).fetch();
-    let numResults = Counts.get('companies-counter');
 
     // transform manually to use helpers in SSR
     // https://github.com/dburles/meteor-collection-helpers/issues/60
@@ -17,7 +16,7 @@ export const composer = ({context, query, limit}, onData) => {
       return Collections.Companies._transform(company);
     });
 
-    onData(null, {companies, loadMore, isLoadingMore, isSearching, numResults});
+    onData(null, {companies, loadMore, isLoadingMore, isSearching});
   }
 
   function loadMore() {
