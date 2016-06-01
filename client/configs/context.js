@@ -7,7 +7,8 @@ import _ from 'lodash';
 import {DocHead} from 'meteor/kadira:dochead';
 import {Counts} from 'meteor/tmeasday:publish-counts';
 import Case from 'case';
-import {Accounts} from 'meteor/accounts-base'
+import {Accounts} from 'meteor/accounts-base';
+import {setCompanyMeta} from '/client/modules/core/libs/seo_helpers';
 
 export default function () {
   return {
@@ -20,6 +21,7 @@ export default function () {
     _,
     DocHead,
     Case,
-    Counts
+    Counts,
+    setCompanyMeta
   };
 }

@@ -34,17 +34,17 @@ export default function (injectDeps, {FlowRouter, _, DocHead, Meteor, Case}) {
   FlowRouter.route('/:companySlug', {
     name: 'company',
     action({companySlug}, {tab}) {
-      let companyName = Case.title(companySlug);
-      let title = `${companyName} for Remote Jobs | RemoteBase`;
-      let description = `See what it's like working remotely at ${companyName}, and check for open positions.`;
-      DocHead.removeDocHeadAddedTags();
-      DocHead.setTitle(title);
-      DocHead.addMeta({name: 'description', content: description});
-      DocHead.addMeta({name: 'twitter:card', content: 'summary'});
-      DocHead.addMeta({name: 'twitter:site', content: '@remotebase'});
-      DocHead.addMeta({name: 'twitter:title', content: `${companyName} - RemoteBase`});
-      DocHead.addMeta({name: 'twitter:image', content: Meteor.absoluteUrl('images/logo.png')});
-      DocHead.addMeta({name: 'twitter:description', content: description});
+      // let companyName = Case.title(companySlug);
+      // let title = `${companyName} for Remote Jobs | RemoteBase`;
+      // let description = `See what it's like working remotely at ${companyName}, and check for open positions.`;
+      // DocHead.removeDocHeadAddedTags();
+      // DocHead.setTitle(title);
+      // DocHead.addMeta({name: 'description', content: description});
+      // DocHead.addMeta({name: 'twitter:card', content: 'summary'});
+      // DocHead.addMeta({name: 'twitter:site', content: '@remotebase'});
+      // DocHead.addMeta({name: 'twitter:title', content: `${companyName} - RemoteBase`});
+      // DocHead.addMeta({name: 'twitter:image', content: Meteor.absoluteUrl('images/logo.png')});
+      // DocHead.addMeta({name: 'twitter:description', content: description});
 
       mount(MainLayoutCtx, {
         content: () => (<Home companySlug={companySlug} companyTab={tab} />)

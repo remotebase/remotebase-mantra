@@ -3,13 +3,13 @@ import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 import CompanyModal from '../components/company_modal.jsx';
 
 export const composer = ({context, companySlug}, onData) => {
-  const {Meteor, Collections} = context();
+  const {Meteor, Collections, setCompanyMeta} = context();
+
 
   if (Meteor.subscribe('company', companySlug).ready()) {
     let company = Collections.Companies.findOne({slug: companySlug});
-    if (company) {
-      company = Collections.Companies._transform(company);
-    }
+
+    setCompanyMeta(company);
     onData(null, {company});
   }
 };
