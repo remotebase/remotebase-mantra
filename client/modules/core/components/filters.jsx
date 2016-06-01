@@ -8,6 +8,7 @@ import CommunicationFilters from './communication_filters.jsx';
 import TechnologyFilters from './technology_filters.jsx';
 import CollaborationFilters from './collaboration_filters.jsx';
 import SearchBtn from '../containers/search_button';
+import UnselectAllButton from '../containers/unselect_all_button';
 
 const defaultFilter = {
   fully_distributed: false,
@@ -178,17 +179,26 @@ class Filters extends React.Component {
           </div>
         </div>
 
-        <div className="row search-actions">
-          <div className="col-xs-12 col-sm-8">
-            <SearchBtn onSearch={this.handleSearch.bind(this)}
-              filterSelection={this.state.filterSelection}
-              lastSearchedFilter={this.state.lastSearchedFilter} />
+        <div className="hidden-sm-down">
+          <div className="row search-actions">
+            <div className="col-xs-12 col-sm-8">
+              <SearchBtn onSearch={this.handleSearch.bind(this)}
+                filterSelection={this.state.filterSelection}
+                lastSearchedFilter={this.state.lastSearchedFilter}
+                klass="rb-btn-stretch" />
+            </div>
+            <div className="col-xs-12 col-sm-4">
+              <UnselectAllButton onUnselectAll={this.resetFilter.bind(this)}
+                klass="rb-btn-stretch" />
+            </div>
           </div>
-          <div className="col-xs-12 col-sm-4">
-            <a className="btn rb-btn-primary" onClick={this.resetFilter.bind(this)}>
-              Unselect all
-            </a>
-          </div>
+        </div>
+
+        <div className="hidden-sm-up mobile-view-actions">
+          <SearchBtn onSearch={this.handleSearch.bind(this)}
+            filterSelection={this.state.filterSelection}
+            lastSearchedFilter={this.state.lastSearchedFilter} />
+          <UnselectAllButton onUnselectAll={this.resetFilter.bind(this)} />
         </div>
       </div>
     );

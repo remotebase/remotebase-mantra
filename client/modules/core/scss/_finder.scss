@@ -135,42 +135,12 @@
     }
   }
 
-  .search-btn {
-    color: #F02C41;
-    background: white;
-    border: 2px solid #F02C41;
-    border-radius: 2px;
-    width: 100%;
-    outline: none;
-
-    &:focus {
-      outline: none;
-    }
-
-    &:hover {
-      color: #ffffff;
-      background: #F02C41;
-    }
-
-    @media(max-width: 499px) {
-      margin-bottom: 3px;
-    }
-
-    &.search-btn-flash {
-      @keyframes blinker {
-        50% { opacity: 0.0; }
-      }
-
-      animation: blinker 1s linear infinite;
-    }
-  }
-
   .rb-btn-primary {
     background: #F02C41;
     color: #ffffff;
     border: 2px solid #F02C41;
     border-radius: 2px;
-    width: 100%;
+    // width: 100%;
     outline: none;
 
     &:hover {
@@ -236,10 +206,20 @@
       }
     }
   }
-}
 
-.search-result {
+  .mobile-view-actions {
+    display: flex;
+    flex-direction: row;
 
+    .search-btn {
+      flex: 0.8;
+      margin-right: 3px;
+    }
+
+    .unselect-all-btn {
+      flex: 0.2;
+    }
+  }
 }
 
 .filters {
