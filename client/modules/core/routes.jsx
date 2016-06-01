@@ -11,7 +11,7 @@ export default function (injectDeps, {FlowRouter, _, DocHead, Meteor, Case}) {
     name: 'home',
     action() {
       let title = 'RemoteBase - Find the Best Remote Companies and Jobs';
-      let description = 'RemoteBase is a collection of 150+ remote companies and their profiles. See how these companies work and who\'s hiring.';
+      let description = 'RemoteBase is a collection of 190+ remote companies and their profiles. See how these companies work and who\'s hiring.';
       DocHead.removeDocHeadAddedTags();
       DocHead.setTitle(title);
       DocHead.addMeta({name: 'description', content: description});
