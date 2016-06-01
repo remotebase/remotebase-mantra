@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import {pathFor} from '/app/modules/core/libs/helpers';
+import {pathFor} from '/client/modules/core/libs/helpers';
 
 const DashboardMenu = ({section, logout}) => (
   <div className="list-group">

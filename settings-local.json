@@ -3,5 +3,9 @@
     "analyticsSettings": {
       "Google Analytics" : {"trackingId": "testGoogleAnalyticsKey"}
     }
+  },
+  "PrerenderIO": {
+    "prerenderServiceUrl": "http://localhost:2300/",
+    "token": "tG62lX6ZU7oviw7Vm9L2"
   }
 }

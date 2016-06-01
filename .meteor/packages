@@ -22,9 +22,9 @@ fourseven:scss
 kadira:dochead
 force-ssl
 dburles:collection-helpers
-spiderable
-kadira:flow-router-ssr
+kadira:flow-router
 okgrow:analytics
 accounts-password
 gadicohen:sitemaps
 tmeasday:publish-counts
+dfischer:prerenderio

@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import {pathFor} from '/app/modules/core/libs/helpers';
+import {pathFor} from '/client/modules/core/libs/helpers';
 import OfficialIcon from './official_icon.jsx';
 
 const CompanyItem = ({company, navToCompany}) => (

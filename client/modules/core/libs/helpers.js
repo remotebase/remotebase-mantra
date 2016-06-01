@@ -1,4 +1,4 @@
-import {FlowRouter} from 'meteor/kadira:flow-router-ssr';
+import {FlowRouter} from 'meteor/kadira:flow-router';
 import {Meteor} from 'meteor/meteor';
 import qs from 'qs';
 
