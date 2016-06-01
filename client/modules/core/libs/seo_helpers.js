@@ -2,8 +2,8 @@ import {DocHead} from 'meteor/kadira:dochead';
 import {Meteor} from 'meteor/meteor';
 
 export function getDescription(company) {
-  let overviewPhrase = `${company.name} is a ${company.getDistrbituedPercent()}% remote team of ${company.team_size} people.`;
-  let hiringPhrase = company.is_hiring ? ' They are currently hiring. ' : '';
+  let overviewPhrase = `${company.name} is a ${company.getDistrbituedPercent()}% remote team of ${company.team_size} people. `;
+  let hiringPhrase = company.is_hiring ? 'They are currently hiring. ' : '';
   let ctaPhrase = `Check out their profile and see available remote job positions.`;
 
   return `${overviewPhrase}${hiringPhrase}${ctaPhrase}`;
