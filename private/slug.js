@@ -4,7 +4,7 @@ var fs = require('fs');
 var slug = require('slug');
 var _ = require('lodash');
 
-var content = fs.readFileSync('./addition-053016-raw.json', 'utf-8');
+var content = fs.readFileSync('./addition-060116-raw.json', 'utf-8');
 var data = JSON.parse(content);
 
 function dollarToNumber(dollar) {
@@ -100,4 +100,4 @@ data.map(company => {
   return company;
 });
 
-fs.writeFileSync('./addition-053016.json', JSON.stringify(data, null, 2));
+fs.writeFileSync('./addition-060116.json', JSON.stringify(data, null, 2));

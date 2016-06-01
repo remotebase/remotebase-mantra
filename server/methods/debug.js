@@ -18,6 +18,20 @@ export default function () {
         Companies.remove({name: company.name});
       });
       console.log('Done debug.undo-import053016');
+    },
+    'debug.import060116'() {
+      let companies = JSON.parse(Assets.getText('addition-060116.json'));
+      companies.forEach(company => {
+        Companies.insert(company);
+      });
+      console.log('Done debug.import060116');
+    },
+    'debug.undo-import060116'() {
+      let companies = JSON.parse(Assets.getText('addition-060116.json'));
+      companies.forEach(company => {
+        Companies.remove({name: company.name});
+      });
+      console.log('Done debug.undo-import053016');
     }
   });
 
