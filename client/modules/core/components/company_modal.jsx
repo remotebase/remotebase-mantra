@@ -6,6 +6,7 @@ import ModalMenu from '../containers/modal_menu';
 import ModalOverview from '../containers/modal_overview';
 import ModalWork from '../containers/modal_work';
 import ModalTechnology from '../containers/modal_technology';
+import ModalJob from '../containers/modal_job';
 
 const CompanyModal = ({company, navToHome, companyTab}) => {
   if (company) {
@@ -23,6 +24,7 @@ const CompanyModal = ({company, navToHome, companyTab}) => {
           <ModalOverview company={company} isActive={!companyTab} />
           <ModalWork company={company} isActive={companyTab === 'work'} />
           <ModalTechnology company={company} isActive={companyTab === 'tech'} />
+          <ModalJob company={company} isActive={companyTab === 'jobs'} />
         </Modal.Body>
       </Modal>
     );
