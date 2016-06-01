@@ -123,13 +123,16 @@ class Filters extends React.Component {
               </div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this)}
-                communicationFilters={this.state.filterSelection.communication_methods} />
+                communicationFilters={this.state.filterSelection.communication_methods}
+                isShowing={this.state.filtersShowing.communication_methods} />
               <CollaborationFilters
                 updateFilter={this.updateFilter.bind(this)}
-                collaborationFilters={this.state.filterSelection.collaboration_methods} />
+                collaborationFilters={this.state.filterSelection.collaboration_methods}
+                isShowing={this.state.filtersShowing.collaboration_methods} />
               <TechnologyFilters
                 updateFilter={this.updateFilter.bind(this)}
-                technologyFilters={this.state.filterSelection.technologies} />
+                technologyFilters={this.state.filterSelection.technologies}
+                isShowing={this.state.filtersShowing.technologies} />
             </div>
 
 
