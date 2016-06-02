@@ -10,8 +10,8 @@ const TechnologyFilters = ({updateFilter, technologyFilters, isShowing}) => {
   }
 
   return (
-    <div className={classnames({hidden: !isShowing})}>
-      <div className="filter-definition">Technologies</div>
+    <div className={classnames('filter-context-group', {hidden: !isShowing})}>
+      <h3 className="filter-definition">Technologies</h3>
 
       <div className="row">
         <div className="col-xs-12">

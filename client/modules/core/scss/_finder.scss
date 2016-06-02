@@ -10,10 +10,11 @@
   .filter-definition {
     text-transform: uppercase;
     color: #5A5A5A;
-    padding-bottom: 6px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 4px;
     -webkit-user-select: none;
+    padding-left: 1px;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
@@ -87,53 +88,49 @@
       }
     }
   }
-
-  .radio-filter {
-    display: inline-block;
-
-    &.team-size-filter {
-      .filter-label:first-of-type {
-        border-right-width: 1px;
-      }
-
-      .filter-label:last-of-type {
-        border-left-width: 1px;
-      }
-
-      .filter-label:not(:first-of-type):not(:last-of-type) {
-        border-left-width: 1px;
-        border-right-width: 1px;
-      }
-    }
-
-    input[type="radio"] {
-      display: none;
-    }
-
-    .filter-label {
-      margin-left: 0;
-      // padding-left: 26px;
-      // padding-right: 26px;
-      text-align: center;
-      border-radius: 0;
-
-      &:first-of-type {
-        border-top-left-radius: 2px;
-        border-bottom-left-radius: 2px;
-      }
-
-      &:last-of-type {
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-      }
-
-
-      @media(max-width: 499px) {
-        // padding-left: 24px;
-        // padding-right: 24px;
-      }
-    }
-  }
+  //
+  // .radio-filter {
+  //   display: inline-block;
+  //
+  //   &.team-size-filter {
+  //     .filter-label:first-of-type {
+  //       border-right-width: 1px;
+  //     }
+  //
+  //     .filter-label:last-of-type {
+  //       border-left-width: 1px;
+  //     }
+  //
+  //     .filter-label:not(:first-of-type):not(:last-of-type) {
+  //       border-left-width: 1px;
+  //       border-right-width: 1px;
+  //     }
+  //   }
+  //
+  //   .filter-label {
+  //     margin-left: 0;
+  //     // padding-left: 26px;
+  //     // padding-right: 26px;
+  //     text-align: center;
+  //     border-radius: 0;
+  //
+  //     &:first-of-type {
+  //       border-top-left-radius: 2px;
+  //       border-bottom-left-radius: 2px;
+  //     }
+  //
+  //     &:last-of-type {
+  //       border-top-right-radius: 2px;
+  //       border-bottom-right-radius: 2px;
+  //     }
+  //
+  //
+  //     @media(max-width: 499px) {
+  //       // padding-left: 24px;
+  //       // padding-right: 24px;
+  //     }
+  //   }
+  // }
 
   .mobile-view-filters {
     .filter-group {
@@ -167,28 +164,63 @@
     .retreats-filter {
       flex: 0.7;
     }
+
+    .filter-context-group {
+      margin-top: 6px;
+    }
+
+    // .filter-definition {
+    //   text-align: center;
+    //   font-size: 14px;
+    // }
   }
 
   .desktop-view-filters {
     .filter-row {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     .filter-label {
-      padding: 9px 14px;
+      // padding: 9px 23px;
+      padding: 9px 19px;
 
       &:not(:first-of-type) {
-        margin-left: 4px;
+        margin-left: 3px;
       }
     }
 
-    .radio-filter:not(:first-child) {
-      margin-left: 4px;
+    .filter-group {
+      display: flex;
+      text-align: center;
+    }
+
+    .radio-filter {
+      width: 100%;
+      display: flex;
+
+      // &:not(:first-child) {
+      //   margin-left: 4px;
+      // }
     }
 
     .radio-filter, .filter-group {
       .filter-label {
         margin-left: 0;
+        flex: 1;
+      }
+    }
+
+    .team-size-filter {
+      .filter-lt10 {
+        flex: 0.5;
+      }
+
+      .filter-gt100 {
+        flex: 0.7;
+      }
+
+      .filter-label {
+        padding: 8px 8px;
       }
     }
   }

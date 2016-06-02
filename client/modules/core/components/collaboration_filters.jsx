@@ -9,8 +9,8 @@ const CollaborationFilters = ({updateFilter, collaborationFilters, isShowing}) =
   }
 
   return (
-    <div className={classnames({hidden: !isShowing})}>
-      <div className="filter-definition">Collaboration methods</div>
+    <div className={classnames('filter-context-group', {hidden: !isShowing})}>
+      <h3 className="filter-definition">Collaboration</h3>
 
         <div className="row">
           <div className="col-xs-12">
@@ -30,6 +30,14 @@ const CollaborationFilters = ({updateFilter, collaborationFilters, isShowing}) =
                     isSelected={collaborationFilters.Trello}
                     updateFilter={handleUpdate.bind(this, 'collaboration_methods.Trello')} />
                 </div>
+                <div className="filter-row">
+                  <Filter label="Trello"
+                    isSelected={collaborationFilters.Trello}
+                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.Trello')} />
+                  <Filter label="Google Apps"
+                    isSelected={collaborationFilters.GoogleApps}
+                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.GoogleApps')} />
+                </div>
               </div>
             </div>
 
@@ -48,6 +56,9 @@ const CollaborationFilters = ({updateFilter, collaborationFilters, isShowing}) =
                   <Filter label="Trello"
                     isSelected={collaborationFilters.Trello}
                     updateFilter={handleUpdate.bind(this, 'collaboration_methods.Trello')} />
+                  <Filter label="Google Apps"
+                    isSelected={collaborationFilters.GoogleApps}
+                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.GoogleApps')} />
                 </div>
               </div>
             </div>

@@ -15,7 +15,7 @@ const FilterTeamSize = ({updateFilter, selectedValue}) => {
   }
 
   return (
-    <div className="radio-filter team-size-filter">
+    <div className="filter-group team-size-filter">
       <div className={classnames('filter-label filter-lt10', {active: selectedValue === 'lt10'})}
         onClick={handleSelect.bind(this, 'lt10')}>
         &lt; 10
@@ -34,6 +34,6 @@ const FilterTeamSize = ({updateFilter, selectedValue}) => {
       </div>
     </div>
   );
-}
+};
 
 export default FilterTeamSize;

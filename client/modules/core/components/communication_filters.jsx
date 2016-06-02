@@ -9,8 +9,8 @@ const CommunicationFilters = ({communicationFilters, updateFilter, isShowing}) =
   }
 
   return (
-    <div className={classnames({hidden: !isShowing})}>
-      <div className="filter-definition">Communication methods</div>
+    <div className={classnames('filter-context-group', {hidden: !isShowing})}>
+      <h3 className="filter-definition">Communication</h3>
 
         <div className="row">
           <div className="col-xs-12">
@@ -20,9 +20,6 @@ const CommunicationFilters = ({communicationFilters, updateFilter, isShowing}) =
                   <Filter label="Slack"
                     isSelected={communicationFilters.Slack}
                     updateFilter={handleUpdate.bind(this, 'communication_methods.Slack')} />
-                  <Filter label="Google Apps"
-                    isSelected={communicationFilters.GoogleApps}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.GoogleApps')} />
                   <Filter label="Email"
                     isSelected={communicationFilters.Email}
                     updateFilter={handleUpdate.bind(this, 'communication_methods.Email')} />
@@ -34,9 +31,6 @@ const CommunicationFilters = ({communicationFilters, updateFilter, isShowing}) =
                   <Filter label="HipChat"
                     isSelected={communicationFilters.HipChat}
                     updateFilter={handleUpdate.bind(this, 'communication_methods.HipChat')} />
-                  <Filter label="Flowdock"
-                    isSelected={communicationFilters.FlowDock}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.FlowDock')} />
                 </div>
               </div>
             </div>
@@ -47,9 +41,6 @@ const CommunicationFilters = ({communicationFilters, updateFilter, isShowing}) =
                   <Filter label="Slack"
                     isSelected={communicationFilters.Slack}
                     updateFilter={handleUpdate.bind(this, 'communication_methods.Slack')} />
-                  <Filter label="Google Apps"
-                    isSelected={communicationFilters.GoogleApps}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.GoogleApps')} />
                   <Filter label="Email"
                     isSelected={communicationFilters.Email}
                     updateFilter={handleUpdate.bind(this, 'communication_methods.Email')} />
@@ -59,9 +50,6 @@ const CommunicationFilters = ({communicationFilters, updateFilter, isShowing}) =
                   <Filter label="HipChat"
                     isSelected={communicationFilters.HipChat}
                     updateFilter={handleUpdate.bind(this, 'communication_methods.HipChat')} />
-                  <Filter label="Flowdock"
-                    isSelected={communicationFilters.FlowDock}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.FlowDock')} />
                 </div>
               </div>
             </div>

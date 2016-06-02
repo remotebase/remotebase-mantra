@@ -2,9 +2,19 @@ import React from 'react';
 import classnames from 'classnames';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
-const Filter = ({label, tooltipText, klass, isSelected, updateFilter}) => {
+const Filter = ({
+  label, tooltipText, klass, isSelected, updateFilter, filterKey, mutuallyExclusiveFilters
+}) => {
   function toggleSelected() {
-    updateFilter(!isSelected);
+    let isSelectedNow = !isSelected;
+
+    updateFilter(filterKey, isSelectedNow);
+
+    if (mutuallyExclusiveFilters && isSelectedNow) {
+      mutuallyExclusiveFilters.forEach(filter => {
+        updateFilter(filter, false);
+      });
+    }
   }
 
   const FilterComponent = (

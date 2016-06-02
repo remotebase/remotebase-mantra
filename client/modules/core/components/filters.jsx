@@ -17,7 +17,9 @@ const defaultFilter = {
   team_size: null,
   has_retreats: false,
   vc_funded: false,
+  bootstrapped: false,
   is_agency: false,
+  is_standalone: false,
   asynchronous_collaboration: false,
   communication_methods: {
     Slack: false,
@@ -30,7 +32,8 @@ const defaultFilter = {
     Blossom: false,
     Basecamp: false,
     iDoneThis: false,
-    Trello: false
+    Trello: false,
+    GoogleApps: false
   },
   technologies: {
     NodeJS: false,
@@ -68,9 +71,9 @@ class Filters extends React.Component {
     this.setState({lastSearchedFilter: _.cloneDeep(filterSelection)});
   }
 
-  updateFilter(key, val) {
+  updateFilter(key, isSelected) {
     let {filterSelection} = this.state;
-    _.set(filterSelection, key, val);
+    _.set(filterSelection, key, isSelected);
 
     this.setState({filterSelection});
   }
@@ -87,37 +90,43 @@ class Filters extends React.Component {
             <div className="hidden-sm-up mobile-view-filters">
               <div className="filter-row">
                 <Filter label="Fully remote"
-                  updateFilter={this.updateFilter.bind(this, 'fully_distributed')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="fully_distributed"
                   isSelected={this.state.filterSelection.fully_distributed} />
                 <Filter label="Hiring"
-                  updateFilter={this.updateFilter.bind(this, 'is_hiring')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="is_hiring"
                   isSelected={this.state.filterSelection.is_hiring}
                   klass="hiring-filter" />
                 <Filter label="Retreats"
-                  updateFilter={this.updateFilter.bind(this, 'has_retreats')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="has_retreats"
                   isSelected={this.state.filterSelection.has_retreats}
                   tooltipText="Does the team sometimes get together physically?"
                   klass="retreats-filter" />
               </div>
               <div className="filter-row">
                 <TeamSizeFilter selectedValue={this.state.filterSelection.team_size}
-                   selectedValue={this.state.filterSelection.team_size}
                    updateFilter={this.updateFilter.bind(this, 'team_size')} />
               </div>
               <div className="filter-row">
                 <Filter label="VC backed"
-                  updateFilter={this.updateFilter.bind(this, 'vc_funded')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="vc_funded"
                   isSelected={this.state.filterSelection.vc_funded} />
                 <Filter label="Consultancy"
-                  updateFilter={this.updateFilter.bind(this, 'is_agency')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="is_agency"
                   isSelected={this.state.filterSelection.is_agency} />
                 <Filter label="Flexible timezone"
-                  updateFilter={this.updateFilter.bind(this, 'asynchronous_collaboration')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="asynchronous_collaboration"
                   isSelected={this.state.filterSelection.asynchronous_collaboration} />
               </div>
               <div className="filter-row">
                 <Filter label="Official"
-                  updateFilter={this.updateFilter.bind(this, 'official')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="official"
                   isSelected={this.state.filterSelection.official}
                   tooltipText="Only show the official profiles managed by companies" />
               </div>
@@ -139,32 +148,68 @@ class Filters extends React.Component {
             <div className="hidden-sm-down desktop-view-filters">
               <div className="filter-row">
                 <Filter label="Fully remote"
-                  updateFilter={this.updateFilter.bind(this, 'fully_distributed')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="fully_distributed"
                   isSelected={this.state.filterSelection.fully_distributed} />
                 <Filter label="Hiring"
-                  updateFilter={this.updateFilter.bind(this, 'is_hiring')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="is_hiring"
                   isSelected={this.state.filterSelection.is_hiring} />
-                <TeamSizeFilter selectedValue={this.state.filterSelection.team_size}
-                   updateFilter={this.updateFilter.bind(this, 'team_size')} />
                 <Filter label="Has retreats"
-                  updateFilter={this.updateFilter.bind(this, 'has_retreats')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="has_retreats"
                   isSelected={this.state.filterSelection.has_retreats}
                   tooltipText="Does the team sometimes get together physically?" />
-                <Filter label="VC backed"
-                  updateFilter={this.updateFilter.bind(this, 'vc_funded')}
-                  isSelected={this.state.filterSelection.vc_funded} />
-              </div>
-              <div className="filter-row">
-                <Filter label="Consultancy"
-                  updateFilter={this.updateFilter.bind(this, 'is_agency')}
-                  isSelected={this.state.filterSelection.is_agency} />
                 <Filter label="Flexible timezone"
-                  updateFilter={this.updateFilter.bind(this, 'asynchronous_collaboration')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="asynchronous_collaboration"
                   isSelected={this.state.filterSelection.asynchronous_collaboration} />
                 <Filter label="Official"
-                  updateFilter={this.updateFilter.bind(this, 'official')}
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="official"
                   isSelected={this.state.filterSelection.official}
                   tooltipText="Only show the official profiles managed by companies" />
+              </div>
+              <div className="filter-row">
+                <div className="row">
+                  <div className="col-md-4 col-sm-6 col-xs-12">
+                    <h3 className="filter-definition hidden-sm-down">Team size</h3>
+                    <TeamSizeFilter selectedValue={this.state.filterSelection.team_size}
+                       updateFilter={this.updateFilter.bind(this, 'team_size')} />
+                  </div>
+                  <div className="col-md-4 col-sm-3 col-xs-12">
+                    <h3 className="filter-definition">Company type</h3>
+
+                    <div className="filter-group">
+                      <Filter label="Standalone"
+                        updateFilter={this.updateFilter.bind(this)}
+                        filterKey="is_standalone"
+                        isSelected={this.state.filterSelection.is_standalone}
+                        mutuallyExclusiveFilters={[ 'is_agency' ]} />
+                      <Filter label="Consultancy"
+                        updateFilter={this.updateFilter.bind(this)}
+                        filterKey="is_agency"
+                        isSelected={this.state.filterSelection.is_agency}
+                        mutuallyExclusiveFilters={[ 'is_standalone' ]} />
+                    </div>
+                  </div>
+                  <div className="col-md-4 col-sm-3 col-xs-12">
+                    <h3 className="filter-definition">Funding</h3>
+
+                  <div className="filter-group">
+                    <Filter label="Bootstrapped"
+                      updateFilter={this.updateFilter.bind(this)}
+                      filterKey="bootstrapped"
+                      isSelected={this.state.filterSelection.bootstrapped}
+                      mutuallyExclusiveFilters={[ 'vc_funded' ]} />
+                    <Filter label="VC backed"
+                      updateFilter={this.updateFilter.bind(this)}
+                      filterKey="vc_funded"
+                      isSelected={this.state.filterSelection.vc_funded}
+                      mutuallyExclusiveFilters={[ 'bootstrapped' ]} />
+                  </div>
+                  </div>
+                </div>
               </div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this)}

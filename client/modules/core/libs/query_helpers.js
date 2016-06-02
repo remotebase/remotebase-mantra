@@ -22,16 +22,14 @@ export function booleanObjToArray(obj) {
  */
 export function filterToQuery(filterSelection) {
   // keys in filterSelection that are not actually a property in mongo document
-  const non_properties = [ 'has_retreats' ];
+  const non_properties = [ 'has_retreats', 'bootstrapped', 'is_standalone' ];
 
   let query = {};
 
   _.forOwn(filterSelection, function (val, key) {
-    if (val === true) {
-
-      if (!_.includes(non_properties, key)) {
-        query[key] = true;
-      }
+    // First, go through actual properties that are set to true, and set query
+    if (val === true && !_.includes(non_properties, key)) {
+      query[key] = true;
     }
 
     if (key === 'team_size') {
@@ -77,6 +75,14 @@ export function filterToQuery(filterSelection) {
       if (selected.length > 0) {
         query['technologies'] = {$in: selected};
       }
+    }
+
+    if (key === 'bootstrapped' && val === true) {
+      query['vc_funded'] = false;
+    }
+
+    if (key === 'is_standalone' && val === true) {
+      query['is_agency'] = false;
     }
 
   });

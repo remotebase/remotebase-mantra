@@ -5,7 +5,8 @@ const LoadMoreButton = ({onLoadMore}) => {
     onLoadMore();
   }
 
-  return <button className="btn rb-btn-primary" onClick={handleLoadMore}>Load more</button>;
+  return <button className="btn rb-btn-primary rb-btn-stretch"
+    onClick={handleLoadMore}>Load more</button>;
 };
 
 export default LoadMoreButton;
