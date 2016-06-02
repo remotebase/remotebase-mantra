@@ -100,12 +100,10 @@ html {
 }
 
 .mailchimp-banner {
-  background-color: #F02C41;
-  color: white;
-  padding: 15px 18px;
-  // border: 1px solid rgba(130, 130, 130, 0.43);
-  // margin-bottom: 5px;
-  margin-bottom: 27px;
+  background-color: #C9C9C9;
+  color: #1E1F2A;
+  padding: 15px 9px;
+  margin-bottom: 10px;
   border-radius: 3px;
 
   @media(max-width: 499px) {
@@ -128,10 +126,9 @@ html {
   }
 
   .cta {
-    // color: #ffffff;
     font-size: 18px;
     margin-top: 6px;
-    padding-left: 36px;
+    text-align: center;
 
     @media (max-width: 499px) {
       margin-bottom: 7px;

@@ -31,17 +31,21 @@ class AdNewsLetter extends React.Component {
             target="_blank"
             noValidate
             onSubmit={this.hideBanner.bind(this)}>
-              <div className="col-xs-12 col-sm-6 cta">
-                Get weekly digests of best remote companies and jobs.
+              <div className="col-xs-12 col-sm-7 cta">
+                <div className="hidden-sm-down">
+                  Get weekly digests of best remote companies and jobs.
+                </div>
+                <div className="hidden-sm-up">
+                  Get RemoteBase digest weekly.
+                </div>
               </div>
-              <div className="col-xs-12 col-sm-2">
-                <input type="text" name="NAME" className="form-control" placeholder="Name" required />
-              </div>
-              <div className="col-xs-12 col-sm-2">
-                <input type="email" name="EMAIL" className="form-control" placeholder="Email" required />
-              </div>
-              <div className="col-xs-12 col-sm-2">
-                <input type="submit" value="Subscribe" className="btn signup-btn" />
+              <div className="col-xs-12 col-sm-4">
+                <div className="input-group">
+                  <input type="email" name="EMAIL" className="form-control" placeholder="Email" />
+                  <span className="input-group-btn">
+                    <input type="submit" value="Subscribe" className="btn btn-secondary" />
+                  </span>
+                </div>
               </div>
 
               {/*real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}

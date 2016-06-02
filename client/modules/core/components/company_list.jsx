@@ -9,19 +9,19 @@ class CompanyList extends React.Component {
 
     let sections = companies;
 
-    // if (sections.length > 6) {
-    //   sections.splice(6, 0, {
-    //     _adSection: true,
-    //     component: NewsletterAd
-    //   });
-    // }
-    //
-    // if (sections.length > 3 && sections.length <= 6) {
-    //   sections.splice(3, 0, {
-    //     _adSection: true,
-    //     component: NewsletterAd
-    //   });
-    // }
+    if (sections.length > 6) {
+      sections.splice(6, 0, {
+        _adSection: true,
+        component: NewsletterAd
+      });
+    }
+
+    if (sections.length > 3 && sections.length <= 6) {
+      sections.splice(3, 0, {
+        _adSection: true,
+        component: NewsletterAd
+      });
+    }
 
     return (
       <ul className="list-unstyled row company-view-list">
