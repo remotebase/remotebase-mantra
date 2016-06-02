@@ -19,24 +19,30 @@ const CollaborationFilters = ({updateFilter, collaborationFilters, isShowing}) =
                 <div className="filter-row">
                   <Filter label="Blossom"
                     isSelected={collaborationFilters.Blossom}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.Blossom')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.Blossom" />
                   <Filter label="Basecamp"
                     isSelected={collaborationFilters.Basecamp}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.Basecamp')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.Basecamp" />
                   <Filter label="iDoneThis"
                     isSelected={collaborationFilters.iDoneThis}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.iDoneThis')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.iDoneThis" />
                   <Filter label="Trello"
                     isSelected={collaborationFilters.Trello}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.Trello')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.Trello" />
                 </div>
                 <div className="filter-row">
                   <Filter label="Trello"
                     isSelected={collaborationFilters.Trello}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.Trello')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.Trello" />
                   <Filter label="Google Apps"
                     isSelected={collaborationFilters.GoogleApps}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.GoogleApps')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.GoogleApps" />
                 </div>
               </div>
             </div>
@@ -46,19 +52,24 @@ const CollaborationFilters = ({updateFilter, collaborationFilters, isShowing}) =
                 <div className="filter-row">
                   <Filter label="Blossom"
                     isSelected={collaborationFilters.Blossom}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.Blossom')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.Blossom" />
                   <Filter label="Basecamp"
                     isSelected={collaborationFilters.Basecamp}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.Basecamp')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.Basecamp" />
                   <Filter label="iDoneThis"
                     isSelected={collaborationFilters.iDoneThis}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.iDoneThis')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.iDoneThis" />
                   <Filter label="Trello"
                     isSelected={collaborationFilters.Trello}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.Trello')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.Trello" />
                   <Filter label="Google Apps"
                     isSelected={collaborationFilters.GoogleApps}
-                    updateFilter={handleUpdate.bind(this, 'collaboration_methods.GoogleApps')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="collaboration_methods.GoogleApps" />
                 </div>
               </div>
             </div>
@@ -66,6 +77,6 @@ const CollaborationFilters = ({updateFilter, collaborationFilters, isShowing}) =
         </div>
     </div>
   );
-}
+};
 
 export default CollaborationFilters;

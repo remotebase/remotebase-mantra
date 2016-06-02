@@ -20,30 +20,38 @@ const TechnologyFilters = ({updateFilter, technologyFilters, isShowing}) => {
               <div className="filter-row">
                 <Filter label="Node.js"
                   isSelected={technologyFilters['Node.js']}
-                  updateFilter={handleUpdate.bind(this, 'technologies.["Node.js"]')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.["Node.js"]' />
                 <Filter label="MySQL"
                   isSelected={technologyFilters.MySQL}
-                  updateFilter={handleUpdate.bind(this, 'technologies.MySQL')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.MySQL' />
                 <Filter label="MongoDB"
                   isSelected={technologyFilters.MongoDB}
-                  updateFilter={handleUpdate.bind(this, 'technologies.MongoDB')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.MongoDB' />
                 <Filter label="Javascript"
                   isSelected={technologyFilters.Javascript}
-                  updateFilter={handleUpdate.bind(this, 'technologies.Javascript')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.Javascript' />
               </div>
               <div className="filter-row">
                 <Filter label="Ruby on Rails"
                   isSelected={technologyFilters['Ruby on Rails']}
-                  updateFilter={handleUpdate.bind(this, 'technologies.["Ruby on Rails"]')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.["Ruby on Rails"]' />
                 <Filter label="Java"
                   isSelected={technologyFilters.Java}
-                  updateFilter={handleUpdate.bind(this, 'technologies.Java')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.Java' />
                 <Filter label="Python"
                   isSelected={technologyFilters.Python}
-                  updateFilter={handleUpdate.bind(this, 'technologies.Python')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.Python' />
                 <Filter label="PHP"
                   isSelected={technologyFilters.PHP}
-                  updateFilter={handleUpdate.bind(this, 'technologies.PHP')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.PHP' />
               </div>
             </div>
           </div>
@@ -53,28 +61,36 @@ const TechnologyFilters = ({updateFilter, technologyFilters, isShowing}) => {
               <div className="filter-row">
                 <Filter label="Node.js"
                   isSelected={technologyFilters['Node.js']}
-                  updateFilter={handleUpdate.bind(this, 'technologies.["Node.js"]')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.["Node.js"]' />
                 <Filter label="MySQL"
                   isSelected={technologyFilters.MySQL}
-                  updateFilter={handleUpdate.bind(this, 'technologies.MySQL')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.MySQL' />
                 <Filter label="MongoDB"
                   isSelected={technologyFilters.MongoDB}
-                  updateFilter={handleUpdate.bind(this, 'technologies.MongoDB')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.MongoDB' />
                 <Filter label="Javascript"
                   isSelected={technologyFilters.Javascript}
-                  updateFilter={handleUpdate.bind(this, 'technologies.Javascript')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.Javascript' />
                 <Filter label="Ruby on Rails"
                   isSelected={technologyFilters['Ruby on Rails']}
-                  updateFilter={handleUpdate.bind(this, 'technologies.["Ruby on Rails"]')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.["Ruby on Rails"]' />
                 <Filter label="Java"
                   isSelected={technologyFilters.Java}
-                  updateFilter={handleUpdate.bind(this, 'technologies.Java')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.Java' />
                 <Filter label="Python"
                   isSelected={technologyFilters.Python}
-                  updateFilter={handleUpdate.bind(this, 'technologies.Python')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.Python' />
                 <Filter label="PHP"
                   isSelected={technologyFilters.PHP}
-                  updateFilter={handleUpdate.bind(this, 'technologies.PHP')} />
+                  updateFilter={handleUpdate.bind(this)}
+                  filterKey='technologies.PHP' />
               </div>
             </div>
           </div>

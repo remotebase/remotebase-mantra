@@ -19,18 +19,22 @@ const CommunicationFilters = ({communicationFilters, updateFilter, isShowing}) =
                 <div className="filter-row">
                   <Filter label="Slack"
                     isSelected={communicationFilters.Slack}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.Slack')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="communication_methods.Slack" />
                   <Filter label="Email"
                     isSelected={communicationFilters.Email}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.Email')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="communication_methods.Email" />
                   <Filter label="Skype"
                     isSelected={communicationFilters.Skype}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.Skype')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="communication_methods.Skype" />
                 </div>
                 <div className="filter-row">
                   <Filter label="HipChat"
                     isSelected={communicationFilters.HipChat}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.HipChat')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="communication_methods.HipChat" />
                 </div>
               </div>
             </div>
@@ -40,16 +44,20 @@ const CommunicationFilters = ({communicationFilters, updateFilter, isShowing}) =
                 <div className="filter-row">
                   <Filter label="Slack"
                     isSelected={communicationFilters.Slack}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.Slack')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="communication_methods.Slack" />
                   <Filter label="Email"
                     isSelected={communicationFilters.Email}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.Email')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="communication_methods.Email" />
                   <Filter label="Skype"
                     isSelected={communicationFilters.Skype}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.Skype')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="communication_methods.Skype" />
                   <Filter label="HipChat"
                     isSelected={communicationFilters.HipChat}
-                    updateFilter={handleUpdate.bind(this, 'communication_methods.HipChat')} />
+                    updateFilter={handleUpdate.bind(this)}
+                    filterKey="communication_methods.HipChat" />
                 </div>
               </div>
             </div>
