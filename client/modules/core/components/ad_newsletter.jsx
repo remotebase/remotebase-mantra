@@ -1,7 +1,7 @@
 import React from 'react';
 import cookies from 'js-cookie';
 
-const cookieName = 'remotebase-newsletter-banner-hide';
+const cookieName = 'remotebase-doNotShowMailchimpBanner';
 
 class AdNewsLetter extends React.Component {
   constructor(props) {
