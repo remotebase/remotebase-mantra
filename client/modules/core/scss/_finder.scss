@@ -178,6 +178,23 @@
       margin-bottom: 6px;
     }
 
+    .filter-row-stretch {
+      display: flex;
+
+      .filter-label {
+        flex: 1;
+        text-align: center;
+      }
+
+      .hiring-filter {
+        flex: 0.5;
+      }
+
+      .official-filter {
+        flex: 0.5;
+      }
+    }
+
     .filter-label {
       padding: 9px 19px;
 
@@ -227,6 +244,7 @@
     .name-filter-container {
       position: relative;
       display: inline-block;
+      margin-left: 3px;
 
       .fa {
         position: absolute;
@@ -239,7 +257,6 @@
         border: 2px solid #828282;
         border-radius: 3px;
         padding: 9px 20px 9px 40px;
-        margin-left: 3px;
         font-size: 16px;
       }
     }

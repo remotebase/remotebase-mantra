@@ -169,15 +169,11 @@ class Filters extends React.Component {
 
 
             <div className="hidden-sm-down desktop-view-filters">
-              <div className="filter-row">
+              <div className="filter-row filter-row-stretch">
                 <Filter label="Fully remote"
                   updateFilter={this.updateFilter.bind(this)}
                   filterKey="fully_distributed"
                   isSelected={this.state.filterSelection.fully_distributed} />
-                <Filter label="Hiring"
-                  updateFilter={this.updateFilter.bind(this)}
-                  filterKey="is_hiring"
-                  isSelected={this.state.filterSelection.is_hiring} />
                 <Filter label="Has retreats"
                   updateFilter={this.updateFilter.bind(this)}
                   filterKey="has_retreats"
@@ -187,9 +183,15 @@ class Filters extends React.Component {
                   updateFilter={this.updateFilter.bind(this)}
                   filterKey="asynchronous_collaboration"
                   isSelected={this.state.filterSelection.asynchronous_collaboration} />
+                <Filter label="Hiring"
+                  updateFilter={this.updateFilter.bind(this)}
+                  filterKey="is_hiring"
+                  klass="hiring-filter"
+                  isSelected={this.state.filterSelection.is_hiring} />
                 <Filter label="Official"
                   updateFilter={this.updateFilter.bind(this)}
                   filterKey="official"
+                  klass="official-filter"
                   isSelected={this.state.filterSelection.official}
                   tooltipText="Only show the official profiles managed by companies" />
                 <NameFilter updateFilter={this.updateFilter.bind(this, 'name')}
