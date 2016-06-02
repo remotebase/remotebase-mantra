@@ -7,10 +7,12 @@ import TeamSizeFilter from './filter_team_size.jsx';
 import CommunicationFilters from './communication_filters.jsx';
 import TechnologyFilters from './technology_filters.jsx';
 import CollaborationFilters from './collaboration_filters.jsx';
+import NameFilter from './name_filter.jsx';
 import SearchBtn from '../containers/search_button';
 import UnselectAllButton from '../containers/unselect_all_button';
 
 const defaultFilter = {
+  name: null,
   fully_distributed: false,
   is_hiring: false,
   official: false,
@@ -147,6 +149,10 @@ class Filters extends React.Component {
                   isSelected={this.state.filterSelection.official}
                   tooltipText="Only show the official profiles managed by companies" />
               </div>
+              <div className="filter-row">
+                <NameFilter updateFilter={this.updateFilter.bind(this, 'name')}
+                  currentValue={this.state.filterSelection.name} />
+              </div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this)}
                 communicationFilters={this.state.filterSelection.communication_methods}
@@ -186,6 +192,8 @@ class Filters extends React.Component {
                   filterKey="official"
                   isSelected={this.state.filterSelection.official}
                   tooltipText="Only show the official profiles managed by companies" />
+                <NameFilter updateFilter={this.updateFilter.bind(this, 'name')}
+                  currentValue={this.state.filterSelection.name} />
               </div>
               <div className="filter-row">
                 <div className="row">

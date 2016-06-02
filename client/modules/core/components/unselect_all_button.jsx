@@ -6,7 +6,7 @@ const UnselectAllButton = ({onUnselectAll, klass}) => {
 
   return (
     <button className={buttonClass} onClick={onUnselectAll}>
-      Unselect all
+      Clear filters
     </button>
   );
 };

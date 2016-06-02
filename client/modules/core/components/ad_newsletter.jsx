@@ -12,7 +12,7 @@ class AdNewsLetter extends React.Component {
 
   hideBanner() {
     cookies.set(cookieName, 'YES');
-    this.setState({shouldHideBanner: true})
+    this.setState({shouldHideBanner: true});
   }
 
   render() {

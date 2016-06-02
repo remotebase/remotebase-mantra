@@ -32,6 +32,10 @@ export function filterToQuery(filterSelection) {
       query[key] = true;
     }
 
+    if (key === 'name' && val) {
+      query['name'] = {$regex: val, $options: 'i'};
+    }
+
     if (key === 'team_size') {
       switch (val) {
         case 'lt10':
