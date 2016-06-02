@@ -181,8 +181,12 @@
     }
 
     .filter-label {
-      // padding: 9px 23px;
       padding: 9px 19px;
+
+      @media(max-width: 1024px) {
+        font-size: 13px;
+        letter-spacing: 0.3px;
+      }
 
       &:not(:first-of-type) {
         margin-left: 3px;
