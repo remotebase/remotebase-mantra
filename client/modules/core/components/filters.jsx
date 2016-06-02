@@ -12,7 +12,7 @@ import SearchBtn from '../containers/search_button';
 import UnselectAllButton from '../containers/unselect_all_button';
 
 const defaultFilter = {
-  name: null,
+  name: '',
   fully_distributed: false,
   is_hiring: false,
   official: false,
