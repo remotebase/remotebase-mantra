@@ -29,10 +29,6 @@ const CollaborationFilters = ({updateFilter, collaborationFilters, isShowing}) =
                     isSelected={collaborationFilters.iDoneThis}
                     updateFilter={handleUpdate.bind(this)}
                     filterKey="collaboration_methods.iDoneThis" />
-                  <Filter label="Trello"
-                    isSelected={collaborationFilters.Trello}
-                    updateFilter={handleUpdate.bind(this)}
-                    filterKey="collaboration_methods.Trello" />
                 </div>
                 <div className="filter-row">
                   <Filter label="Trello"

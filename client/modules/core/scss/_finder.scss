@@ -70,85 +70,54 @@
       margin-left: 0;
       border-radius: 0;
 
-      &:first-of-type {
-        border-right-width: 1px;
-        border-top-left-radius: 2px;
+      &:only-child {
         border-bottom-left-radius: 2px;
-      }
-
-      &:last-of-type {
-        border-left-width: 1px;
-        border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
       }
 
-      &:not(:first-of-type):not(:last-of-type) {
-        border-left-width: 1px;
-        border-right-width: 1px;
+      &:not(:only-child) {
+        &:first-of-type {
+          border-right-width: 1px;
+          border-top-left-radius: 2px;
+          border-bottom-left-radius: 2px;
+        }
+
+        &:last-of-type {
+          border-left-width: 1px;
+          border-top-right-radius: 2px;
+          border-bottom-right-radius: 2px;
+        }
+
+        &:not(:first-of-type):not(:last-of-type) {
+          border-left-width: 1px;
+          border-right-width: 1px;
+        }
       }
     }
   }
-  //
-  // .radio-filter {
-  //   display: inline-block;
-  //
-  //   &.team-size-filter {
-  //     .filter-label:first-of-type {
-  //       border-right-width: 1px;
-  //     }
-  //
-  //     .filter-label:last-of-type {
-  //       border-left-width: 1px;
-  //     }
-  //
-  //     .filter-label:not(:first-of-type):not(:last-of-type) {
-  //       border-left-width: 1px;
-  //       border-right-width: 1px;
-  //     }
-  //   }
-  //
-  //   .filter-label {
-  //     margin-left: 0;
-  //     // padding-left: 26px;
-  //     // padding-right: 26px;
-  //     text-align: center;
-  //     border-radius: 0;
-  //
-  //     &:first-of-type {
-  //       border-top-left-radius: 2px;
-  //       border-bottom-left-radius: 2px;
-  //     }
-  //
-  //     &:last-of-type {
-  //       border-top-right-radius: 2px;
-  //       border-bottom-right-radius: 2px;
-  //     }
-  //
-  //
-  //     @media(max-width: 499px) {
-  //       // padding-left: 24px;
-  //       // padding-right: 24px;
-  //     }
-  //   }
-  // }
 
   .mobile-view-filters {
     .filter-group {
       .filter-row {
-        margin-bottom: -1px;
+        margin-bottom: -2px;
       }
     }
 
     .filter-row {
       display: flex;
       flex-direction: row;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
     .filter-label {
       flex: 1;
       text-align: center;
-      font-size: 14px;
+      font-size: 11px;
+
+      @media(max-width: 375px) {
+        font-size: 10px;
+        font-weight: 600;
+      }
     }
 
     .team-size-filter {
@@ -163,6 +132,16 @@
 
     .retreats-filter {
       flex: 0.7;
+    }
+
+    .funding-filters {
+      flex: 1;
+      display: flex;
+      margin-right: 2px;
+
+      .vc-filter {
+        flex: 0.2;
+      }
     }
 
     .filter-context-group {
@@ -196,6 +175,11 @@
     .filter-group {
       display: flex;
       text-align: center;
+
+      .filter-label {
+        margin-left: 0;
+        flex: 1;
+      }
     }
 
     .radio-filter {
@@ -205,13 +189,6 @@
       // &:not(:first-child) {
       //   margin-left: 4px;
       // }
-    }
-
-    .radio-filter, .filter-group {
-      .filter-label {
-        margin-left: 0;
-        flex: 1;
-      }
     }
 
     .team-size-filter {
@@ -247,6 +224,7 @@
     }
   }
 }
+
 
 .filters {
   padding-bottom: 1.7em;

@@ -110,20 +110,37 @@ class Filters extends React.Component {
                    updateFilter={this.updateFilter.bind(this, 'team_size')} />
               </div>
               <div className="filter-row">
-                <Filter label="VC backed"
-                  updateFilter={this.updateFilter.bind(this)}
-                  filterKey="vc_funded"
-                  isSelected={this.state.filterSelection.vc_funded} />
-                <Filter label="Consultancy"
-                  updateFilter={this.updateFilter.bind(this)}
-                  filterKey="is_agency"
-                  isSelected={this.state.filterSelection.is_agency} />
+                <div className="filter-group funding-filters">
+                  <Filter label="VC"
+                    updateFilter={this.updateFilter.bind(this)}
+                    filterKey="vc_funded"
+                    klass="vc-filter"
+                    isSelected={this.state.filterSelection.vc_funded}
+                    mutuallyExclusiveFilters={[ 'bootstrapped' ]} />
+                  <Filter label="Bootstrapped"
+                    updateFilter={this.updateFilter.bind(this)}
+                    filterKey="bootstrapped"
+                    isSelected={this.state.filterSelection.bootstrapped}
+                    mutuallyExclusiveFilters={[ 'vc_funded' ]} />
+                </div>
+                <div className="filter-group">
+                  <Filter label="Consulting"
+                    updateFilter={this.updateFilter.bind(this)}
+                    filterKey="is_agency"
+                    isSelected={this.state.filterSelection.is_agency}
+                    mutuallyExclusiveFilters={[ 'is_standalone' ]} />
+                  <Filter label="Standalone"
+                    updateFilter={this.updateFilter.bind(this)}
+                    filterKey="is_standalone"
+                    isSelected={this.state.filterSelection.is_standalone}
+                    mutuallyExclusiveFilters={[ 'is_agency' ]} />
+                </div>
+              </div>
+              <div className="filter-row">
                 <Filter label="Flexible timezone"
                   updateFilter={this.updateFilter.bind(this)}
                   filterKey="asynchronous_collaboration"
                   isSelected={this.state.filterSelection.asynchronous_collaboration} />
-              </div>
-              <div className="filter-row">
                 <Filter label="Official"
                   updateFilter={this.updateFilter.bind(this)}
                   filterKey="official"
