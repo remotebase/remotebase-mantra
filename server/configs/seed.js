@@ -167,3 +167,34 @@ export function populateFilters() {
     console.log('Done populating filters');
   }
 }
+
+export function generateRegion() {
+  let regions = [
+    'Unitd States',
+    'Australia',
+    'Japan',
+    'South Korea',
+    'Brazil',
+    'Germany',
+    'Canada',
+    'Europe',
+    'India',
+    'Turkey',
+    'Denmark',
+    'Romania',
+    'Russia',
+    'Poland',
+    'UK',
+    'France',
+    'The Netherlands',
+    'Spain',
+    'Chile'
+  ];
+
+  regions.forEach(region => {
+    Filters.isert({
+      type: 'region',
+      value: region
+    });
+  });
+}
