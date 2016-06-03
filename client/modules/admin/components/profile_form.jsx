@@ -259,7 +259,7 @@ class ProfileForm extends React.Component {
           <div className="field">
             <div className="col-xs-12 col-sm-4">
               <label>
-                Self-managed timeoff?
+                Self-managed timeoff (unlimited vacation)?
               </label>
             </div>
             <div className="col-xs-12 col-sm-8">
