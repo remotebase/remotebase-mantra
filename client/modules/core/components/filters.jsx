@@ -16,7 +16,12 @@ const defaultFilter = {
   fully_distributed: false,
   is_hiring: false,
   official: false,
-  team_size: null,
+  team_size: {
+    lt10: false,
+    gte10lte25: false,
+    gte25lte50: false,
+    gt50: false
+  },
   has_retreats: false,
   vc_funded: false,
   bootstrapped: false,
@@ -108,8 +113,8 @@ class Filters extends React.Component {
                   klass="retreats-filter" />
               </div>
               <div className="filter-row">
-                <TeamSizeFilter selectedValue={this.state.filterSelection.team_size}
-                   updateFilter={this.updateFilter.bind(this, 'team_size')} />
+                <TeamSizeFilter updateFilter={this.updateFilter.bind(this)}
+                  filterSelection={this.state.filterSelection} />
               </div>
               <div className="filter-row">
                 <div className="filter-group funding-filters">
@@ -201,8 +206,8 @@ class Filters extends React.Component {
                 <div className="row">
                   <div className="col-md-4 col-sm-6 col-xs-12">
                     <h3 className="filter-definition hidden-sm-down">Team size</h3>
-                    <TeamSizeFilter selectedValue={this.state.filterSelection.team_size}
-                       updateFilter={this.updateFilter.bind(this, 'team_size')} />
+                    <TeamSizeFilter updateFilter={this.updateFilter.bind(this)}
+                      filterSelection={this.state.filterSelection} />
                   </div>
                   <div className="col-md-4 col-sm-3 col-xs-12">
                     <h3 className="filter-definition">Company type</h3>

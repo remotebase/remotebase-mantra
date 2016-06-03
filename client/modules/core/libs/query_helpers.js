@@ -23,6 +23,7 @@ export function booleanObjToArray(obj) {
 export function filterToQuery(filterSelection) {
   // keys in filterSelection that are not actually a property in mongo document
   const non_properties = [ 'has_retreats', 'bootstrapped', 'is_standalone' ];
+  console.log(filterSelection);
 
   let query = {};
 
@@ -34,23 +35,6 @@ export function filterToQuery(filterSelection) {
 
     if (key === 'name' && val) {
       query['name'] = {$regex: val, $options: 'i'};
-    }
-
-    if (key === 'team_size') {
-      switch (val) {
-        case 'lt10':
-          query['team_size'] = {$lt: 10};
-          break;
-        case 'tenToFifty':
-          query['team_size'] = {$gte: 10, $lt: 50};
-          break;
-        case 'fiftyToHundred':
-          query['team_size'] = {$gte: 50, $lt: 100};
-          break;
-        case 'gt100':
-          query['team_size'] = {$gt: 100};
-          break;
-      }
     }
 
     if (key === 'has_retreats' && val === true) {
@@ -88,6 +72,31 @@ export function filterToQuery(filterSelection) {
     if (key === 'is_standalone' && val === true) {
       query['is_agency'] = false;
     }
+
+    _.forOwn(filterSelection.team_size, (isSelected, teamSizeFilterName) => {
+      switch (teamSizeFilterName) {
+        case 'lt10':
+          if (isSelected) {
+            query['team_size'] = {$lt: 10};
+          }
+          break;
+        case 'gte10lte25':
+          if (isSelected) {
+            query['team_size'] = {$gte: 10, $lte: 25};
+          }
+          break;
+        case 'gte25lte50':
+          if (isSelected) {
+            query['team_size'] = {$gte: 25, $lte: 50};
+          }
+          break;
+        case 'gt50':
+          if (isSelected) {
+            query['team_size'] = {$gt: 50};
+          }
+          break;
+      }
+    });
 
   });
 

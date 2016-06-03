@@ -1,37 +1,39 @@
 import React from 'react';
-import classnames from 'classnames';
+import Filter from './filter.jsx';
 
-const FilterTeamSize = ({updateFilter, selectedValue}) => {
-  function handleSelect(val) {
-    let newVal;
-
-    if (selectedValue === val) {
-      newVal = null;
-    } else {
-      newVal = val;
-    }
-
-    updateFilter(newVal);
-  }
-
+const FilterTeamSize = ({updateFilter, filterSelection}) => {
   return (
     <div className="filter-group team-size-filter">
-      <div className={classnames('filter-label filter-lt10', {active: selectedValue === 'lt10'})}
-        onClick={handleSelect.bind(this, 'lt10')}>
-        &lt; 10
-      </div>
-      <div className={classnames('filter-label', {active: selectedValue === 'tenToFifty'})}
-        onClick={handleSelect.bind(this, 'tenToFifty')}>
-        10 ~ 50
-      </div>
-      <div className={classnames('filter-label', {active: selectedValue === 'fiftyToHundred'})}
-        onClick={handleSelect.bind(this, 'fiftyToHundred')}>
-        50 ~ 100
-      </div>
-      <div className={classnames('filter-label filter-gt100', {active: selectedValue === 'gt100'})}
-        onClick={handleSelect.bind(this, 'gt100')}>
-        &gt; 100
-      </div>
+      <Filter label="< 10"
+        updateFilter={updateFilter}
+        filterKey="team_size.lt10"
+        klass="filter-lt10"
+        isSelected={filterSelection.team_size.lt10}
+        mutuallyExclusiveFilters={[
+          'team_size.gte10lte25', 'team_size.gte25lte50', 'team_size.gt50'
+        ]} />
+      <Filter label="10 ~ 25"
+        updateFilter={updateFilter}
+        filterKey="team_size.gte10lte25"
+        isSelected={filterSelection.team_size.gte10lte25}
+        mutuallyExclusiveFilters={[
+          'team_size.lt10', 'team_size.gte25lte50', 'team_size.gt50'
+        ]} />
+      <Filter label="25~50"
+        updateFilter={updateFilter}
+        filterKey="team_size.gte25lte50"
+        isSelected={filterSelection.team_size.gte25lte50}
+        mutuallyExclusiveFilters={[
+          'team_size.gte10lte25', 'team_size.lt10', 'team_size.gt50'
+        ]} />
+      <Filter label="> 50"
+        updateFilter={updateFilter}
+        filterKey="team_size.gt50"
+        klass="filter-gt50"
+        isSelected={filterSelection.team_size.gt50}
+        mutuallyExclusiveFilters={[
+          'team_size.gte10lte25', 'team_size.gte25lte50', 'team_size.lt10'
+        ]} />
     </div>
   );
 };
