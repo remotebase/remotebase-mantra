@@ -114,7 +114,7 @@ const ModalOverview = ({company, isActive}) => (
           {
             company.unlimited_vacation ? (
               <li className="checked-item">
-                <i className="fa fa-check-circle-o fa-fw"></i> Unlimited vacation
+                <i className="fa fa-check-circle-o fa-fw"></i> Self-managed timeoff
               </li>
             ) : <span></span>
           }
