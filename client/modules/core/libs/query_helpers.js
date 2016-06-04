@@ -73,6 +73,12 @@ export function filterToQuery(filterSelection) {
       query['is_agency'] = false;
     }
 
+    if (key === 'hiring_region') {
+      if (val !== 'Worldwide') { // Worldwide is the default value
+        query['region'] = val;
+      }
+    }
+
     _.forOwn(filterSelection.team_size, (isSelected, teamSizeFilterName) => {
       switch (teamSizeFilterName) {
         case 'lt10':
@@ -97,7 +103,6 @@ export function filterToQuery(filterSelection) {
           break;
       }
     });
-
   });
 
   return query;

@@ -191,7 +191,7 @@
         background: white;
         z-index: 1;
         overflow: auto;
-        height: 200px;
+        max-height: 200px;
         width: 100%;
         border: 2px solid #828282;
         border-top-width: 0;
@@ -322,7 +322,7 @@
         z-index: 1;
         width: 100%;
         overflow: auto;
-        height: 400px;
+        max-height: 400px;
         border: 1px solid #828282;
         border-top-width: 0;
         top: 46px;
