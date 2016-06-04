@@ -160,6 +160,10 @@ class Filters extends React.Component {
               <div className="filter-row">
                 <NameFilter updateFilter={this.updateFilter.bind(this, 'name')}
                   currentValue={this.state.filterSelection.name} />
+                <DropdownSelectFilter selectedValue={this.state.filterSelection.hiring_region}
+                  defaultValue="Worldwide"
+                  possibleOptions={regions}
+                  updateFilter={this.updateFilter.bind(this, 'hiring_region')} />
               </div>
               <CommunicationFilters
                 updateFilter={this.updateFilter.bind(this)}

@@ -151,7 +151,8 @@
     .name-filter-container {
       position: relative;
       display: inline-block;
-      width: 100%;
+      flex: 1;
+      margin-right: 2px;
 
       .fa {
         position: absolute;
@@ -169,6 +170,46 @@
         padding: 5px 12px;
         font-size: 12px;
         text-align: center;
+      }
+    }
+
+    .dropdown-select-filter {
+      position: relative;
+      flex: 1;
+
+      &:focus {
+        outline: none;
+      }
+
+      .current-option {
+        width: 100%;
+        text-align: center;
+      }
+
+      .dropdown-options-list {
+        position: absolute;
+        background: white;
+        z-index: 1;
+        overflow: auto;
+        height: 200px;
+        width: 100%;
+        border: 2px solid #828282;
+        border-top-width: 0;
+        top: 32px;
+
+        .dropdown-option {
+          text-align: center;
+          color: #828282;
+          padding: 8px 0;
+          text-transform: uppercase;
+          cursor: pointer;
+          font-size: 12px;
+
+          &:hover {
+            background-color: #FBFBFB;
+            color: #40435c;
+          }
+        }
       }
     }
   }
