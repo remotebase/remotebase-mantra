@@ -7,8 +7,12 @@ class DropdownSelectFilter extends React.Component {
     this.state = {showingOptions: false};
   }
 
-  toggleOptionsDisplay() {
-    this.setState({showingOptions: !this.state.showingOptions});
+  toggleOptionsDisplay(options = {}) {
+    if (options.show !== undefined) {
+      this.setState({showingOptions: options.show});
+    } else {
+      this.setState({showingOptions: !this.state.showingOptions});
+    }
   }
 
   updateSelectedValue(newVal) {
@@ -29,9 +33,10 @@ class DropdownSelectFilter extends React.Component {
     return (
       <div className={classnames('dropdown-select-filter', klass)}
         tabIndex="1"
-        onBlur={this.toggleOptionsDisplay.bind(this)}
+        onBlur={this.toggleOptionsDisplay.bind(this, {show: false})}
         onClick={this.toggleOptionsDisplay.bind(this)}>
-          <div className="filter-label current-option">
+          <div className={classnames('filter-label current-option',
+            {active: selectedValue !== defaultValue})}>
             {selectedValue || defaultValue}
           </div>
           <ul className={classnames('dropdown-options-list list-unstyled',
