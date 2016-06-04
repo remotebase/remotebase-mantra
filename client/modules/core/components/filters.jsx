@@ -261,6 +261,10 @@ class Filters extends React.Component {
                   </div>
                 </div>
               </div>
+              <CommunicationFilters
+                updateFilter={this.updateFilter.bind(this)}
+                communicationFilters={this.state.filterSelection.communication_methods}
+                isShowing={this.state.filtersShowing.communication_methods} />
               <CollaborationFilters
                 updateFilter={this.updateFilter.bind(this)}
                 collaborationFilters={this.state.filterSelection.collaboration_methods}
