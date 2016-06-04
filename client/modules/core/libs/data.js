@@ -1,0 +1,22 @@
+export const regions = [
+  'Worldwide',
+  'Unitd States',
+  'Australia',
+  'Japan',
+  'South Korea',
+  'Brazil',
+  'Germany',
+  'Canada',
+  'Europe',
+  'India',
+  'Turkey',
+  'Denmark',
+  'Romania',
+  'Russia',
+  'Poland',
+  'UK',
+  'France',
+  'The Netherlands',
+  'Spain',
+  'Chile'
+];

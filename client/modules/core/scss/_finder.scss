@@ -260,6 +260,47 @@
         font-size: 16px;
       }
     }
+
+    .dropdown-select-filter {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+
+      .current-option {
+        width: 100%;
+        text-align: center;
+      }
+
+      .dropdown-options-list {
+        position: absolute;
+        background: white;
+        z-index: 1;
+        width: 100%;
+        overflow: auto;
+        height: 400px;
+        border: 1px solid #828282;
+        border-top-width: 0;
+        top: 46px;
+        left: 0;
+
+        .dropdown-option {
+          text-align: center;
+          color: #828282;
+          padding: 11px 0;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #FBFBFB;
+            color: #40435c;
+          }
+        }
+      }
+    }
   }
 
   .mobile-view-actions {

@@ -1,6 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 
+import {regions} from '/client/modules/core/libs/data';
 import {filterToQuery} from '../libs/query_helpers';
 import Filter from './filter.jsx';
 import TeamSizeFilter from './filter_team_size.jsx';
@@ -8,6 +9,7 @@ import CommunicationFilters from './communication_filters.jsx';
 import TechnologyFilters from './technology_filters.jsx';
 import CollaborationFilters from './collaboration_filters.jsx';
 import NameFilter from './name_filter.jsx';
+import DropdownSelectFilter from './dropdown_select_filter.jsx';
 import SearchBtn from '../containers/search_button';
 import UnselectAllButton from '../containers/unselect_all_button';
 
@@ -22,6 +24,7 @@ const defaultFilter = {
     gte25lte50: false,
     gt50: false
   },
+  hiring_region: 'Worldwide',
   has_retreats: false,
   vc_funded: false,
   bootstrapped: false,
@@ -243,10 +246,17 @@ class Filters extends React.Component {
                   </div>
                 </div>
               </div>
-              <CommunicationFilters
-                updateFilter={this.updateFilter.bind(this)}
-                communicationFilters={this.state.filterSelection.communication_methods}
-                isShowing={this.state.filtersShowing.communication_methods} />
+              <div className="filter-row">
+                <div className="row">
+                  <div className="col-md-4 col-sm-6 col-xs-12">
+                    <h3 className="filter-definition">Hiring region</h3>
+                    <DropdownSelectFilter selectedValue={this.state.filterSelection.hiring_region}
+                      defaultValue="Worldwide"
+                      possibleOptions={regions}
+                      updateFilter={this.updateFilter.bind(this, 'hiring_region')} />
+                  </div>
+                </div>
+              </div>
               <CollaborationFilters
                 updateFilter={this.updateFilter.bind(this)}
                 collaborationFilters={this.state.filterSelection.collaboration_methods}
