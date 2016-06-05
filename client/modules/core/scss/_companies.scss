@@ -439,10 +439,11 @@
         margin-right: 13px;
       }
 
-      a {
+      .menu-link {
         text-decoration: none;
         color: inherit;
         font-weight: 300;
+        cursor: pointer;
 
         &.active {
           font-weight: 600;

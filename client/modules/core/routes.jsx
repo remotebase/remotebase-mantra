@@ -33,9 +33,9 @@ export default function (injectDeps, {FlowRouter, _, DocHead, Meteor, Case}) {
 
   FlowRouter.route('/:companySlug', {
     name: 'company',
-    action({companySlug}, {tab}) {
+    action({companySlug}) {
       mount(MainLayoutCtx, {
-        content: () => (<Home companySlug={companySlug} companyTab={tab} />)
+        content: () => (<Home companySlug={companySlug} />)
       });
     }
   });

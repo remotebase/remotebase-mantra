@@ -3,41 +3,43 @@ import classnames from 'classnames';
 
 import {pathFor} from '/client/modules/core/libs/helpers';
 
-const ModalMenu = ({company, companyTab, recordClick}) => {
-  function recordJobClick() {
-    recordClick('companyModal-job', {companyName: company.name});
+const ModalMenu = ({company, currentTab, handleTabChange, recordClick}) => {
+  function onTabChange(newTab) {
+    handleTabChange(newTab);
+    if (newTab === 'jobs') {
+      recordClick('companyModal-job', {companyName: company.name});
+    }
   }
 
   return (
     <div className="menu-bar">
       <ul className="list-unstyled menu-list">
         <li className="menu-item">
-          <a href={pathFor('company', {companySlug: company.slug})}
-            className={classnames({active: !companyTab})}>
+          <div onClick={onTabChange.bind(this, 'overview')}
+            className={classnames('menu-link', {active: currentTab === 'overview'})}>
             Overview
-          </a>
+          </div>
         </li>
         <li className="menu-item">
-          <a href={pathFor('company', {companySlug: company.slug, query: {tab: 'work'}})}
-            className={classnames({active: companyTab === 'work'})}>
+          <div onClick={onTabChange.bind(this, 'work')}
+            className={classnames('menu-link', {active: currentTab === 'work'})}>
             Work
-          </a>
+          </div>
         </li>
         <li className="menu-item">
-          <a href={pathFor('company', {companySlug: company.slug, query: {tab: 'tech'}})}
-            className={classnames({active: companyTab === 'tech'})}>
+          <div onClick={onTabChange.bind(this, 'tech')}
+            className={classnames('menu-link', {active: currentTab === 'tech'})}>
             Technology
-          </a>
+          </div>
         </li>
         <li className="menu-item">
-          <a href={pathFor('company', {companySlug: company.slug, query: {tab: 'jobs'}})}
-            className={classnames({active: companyTab === 'jobs'})}
-            onClick={recordJobClick}>
+          <div onClick={onTabChange.bind(this, 'jobs')}
+            className={classnames('menu-link', {active: currentTab === 'jobs'})}>
             Jobs
-          </a>
+          </div>
         </li>
         <li className="menu-item">
-          <a className="typeform-share link"
+          <a className="typeform-share link menu-link"
             href="https://mike706.typeform.com/to/zEPKEa" data-mode="1" target="_blank">Edit</a>
         </li>
       </ul>
