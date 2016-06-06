@@ -1,6 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
+import moment from 'moment';
+
 import CountUp from './count_up.jsx';
 import MockSubBtn from '../containers/mock_subscribe_button';
 
@@ -164,6 +166,9 @@ const ModalOverview = ({company, isActive}) => (
           }
         </ul>
       </div>
+    </div>
+    <div className="timestamp">
+      Added: {moment(company.createdAt).format('YY MMM DD')} | Updated: {moment(company.updatedAt || company.createdAt).format('YY MMM DD')}
     </div>
   </div>
 );

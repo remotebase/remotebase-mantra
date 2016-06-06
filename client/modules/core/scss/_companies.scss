@@ -313,6 +313,33 @@
       border-radius: 1px;
       height: 637px;
     }
+
+    .timestamp {
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #797979;
+    }
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-body {
+    flex: 1;
+  }
+
+
+  .timestamp {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #797979;
+    font-size: 14px;
   }
 
   .edit-label {
