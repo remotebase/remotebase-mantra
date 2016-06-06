@@ -22,20 +22,20 @@ const CompanyItem = ({company, navToCompany}) => (
             <div className="distributed-ratio-label-container">
               <span className="company-label">
                 <span className="hidden-sm-up">
-                  {company.getDistrbituedPercent()}% <i className="fa fa-globe"></i>
+                  {company.getDistrbituedPercent() || '?'}% <i className="fa fa-globe"></i>
                 </span>
                 <span className="hidden-sm-down">
-                  {company.getDistrbituedPercent()}% remote
+                  {company.getDistrbituedPercent() || '?'}% remote
                 </span>
               </span>
             </div>
             <div className="team-size-label-container">
               <span className="company-label">
                 <span className="hidden-sm-up">
-                  {company.team_size} <i className="fa fa-users"></i>
+                  {company.team_size || '?'} <i className="fa fa-users"></i>
                 </span>
                 <span className="hidden-sm-down">
-                  {company.team_size} people
+                  {company.team_size || '?'} people
                 </span>
               </span>
             </div>

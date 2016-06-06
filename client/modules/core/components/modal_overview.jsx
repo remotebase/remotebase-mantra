@@ -12,13 +12,21 @@ const ModalOverview = ({company, isActive}) => (
           <li className="trait-item">
             <i className="fa fa-globe fa-fw"></i>
             <h4 className="item-name">
-              <CountUp start={0} end={company.getDistrbituedPercent()} suffix="%" duration={2.8}/> remote
+              {
+                company.getDistrbituedPercent() ?
+                <CountUp start={0} end={company.getDistrbituedPercent()} suffix="%" duration={2.8}/> :
+                '?'
+              } remote
             </h4>
           </li>
           <li className="trait-item">
             <i className="fa fa-users fa-fw"></i>
             <h4 className="item-name">
-              <CountUp start={0} end={company.team_size} duration={2}/> people
+              {
+                company.team_size ?
+                <CountUp start={0} end={company.team_size} duration={2}/> :
+                '?'
+              } people
             </h4>
             <small className="text-muted">(Non-remote: {company.non_remote_team_size})</small>
           </li>
