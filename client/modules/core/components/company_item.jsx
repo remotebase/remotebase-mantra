@@ -11,7 +11,7 @@ const CompanyItem = ({company, navToCompany}) => (
         <div className="row company-item">
           <div className="col-xs-12 col-sm-4 company-item-section">
             <div className="company-meta">
-              <img src={company.getLogoUrl()} alt={`${company.name}-logo`} className="company-logo"/>
+              <img src={company.getLogoUrl()} alt={`${company.name}`} className="company-logo"/>
               <h3 className="company-name">
                 {company.name}
                 <OfficialIcon company={company} />
