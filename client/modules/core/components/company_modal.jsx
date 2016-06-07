@@ -25,7 +25,7 @@ class CompanyModal extends React.Component {
     if (company) {
       return (
         <Modal show={true}
-            className="company-modal"
+            className="company-modal modal-right"
             onHide={navToHome.bind(this)} >
           <Modal.Header closeButton>
             <ModalHeader company={company} />

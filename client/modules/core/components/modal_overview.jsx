@@ -4,7 +4,6 @@ import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 import moment from 'moment';
 
 import CountUp from './count_up.jsx';
-import MockSubBtn from '../containers/mock_subscribe_button';
 
 const ModalOverview = ({company, isActive}) => (
   <div className={classnames('tab', 'tab-overview', {active: isActive})}>
@@ -77,7 +76,6 @@ const ModalOverview = ({company, isActive}) => (
             </li>
           ) : <span></span>}
 
-          <MockSubBtn company={company} />
         </ul>
       </div>
 
@@ -166,9 +164,6 @@ const ModalOverview = ({company, isActive}) => (
           }
         </ul>
       </div>
-    </div>
-    <div className="timestamp">
-      Added: {moment(company.createdAt).format('YY MMM DD')} | Updated: {moment(company.updatedAt || company.createdAt).format('YY MMM DD')}
     </div>
   </div>
 );

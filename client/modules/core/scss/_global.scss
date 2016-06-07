@@ -223,6 +223,10 @@ html {
 
     animation: blinker 0.9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   }
+
+  &.rb-btn-small {
+    padding: 2px 9px;
+  }
 }
 
 main {

@@ -1,0 +1,178 @@
+// right side modal
+.modal-right {
+  .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 966px;
+    right: 0;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+
+    @include laptop-sm {
+      width: 766px;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+// Allow scrolling of body when modal is open
+.modal-open {
+  overflow: auto !important;
+}
+
+
+.company-modal {
+  .modal-content {
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-header {
+    padding: 0; // overwrite bootstrap
+    position:relative;
+    height: 144px;
+  }
+
+  // Header
+  .modal-header-container {
+    height: 100%;
+    padding: 15px;
+    position: relative; // for absolutely positioning timestamp
+
+    .company-logo {
+      width: 103px;
+    }
+
+    .meta {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 18px;
+
+      .company-name {
+        font-size: 25px;
+        margin-bottom: 3px;
+      }
+
+      .company-desc {
+        margin-bottom: 7px;
+        font-size: 17px;
+      }
+    }
+
+    .timestamp {
+      display: inline-block;
+      position: absolute;
+      bottom: 3px;
+      right: 7px;
+      color: #797979;
+      font-size: 14px;
+    }
+  }
+  // Header ends
+
+  .menu-bar {
+    background: #1E1F2A;
+    color: #fff;
+    padding: 8px 38px;
+    font-size: 17px;
+    font-weight: 600;
+
+    .menu-list {
+      margin-bottom: 0;
+    }
+
+    .menu-item {
+      display: inline-block;
+      margin-right: 74px;
+
+      @media (max-width: 499px) {
+        margin-right: 13px;
+      }
+
+      .menu-link {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 300;
+        cursor: pointer;
+
+        &.active {
+          font-weight: 600;
+          border-bottom: 1px solid #fff;
+          padding-bottom: 1px;
+        }
+
+        &:hover {
+          border-bottom: 1px solid #fff;
+          padding-bottom: 1px;
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    flex: 1;
+    padding: 30px;
+
+    .trait-item {
+      margin-bottom: 23px;
+
+      .fa {
+        margin-right: 12px;
+      }
+
+      .item-name {
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: 11px;
+        text-transform: uppercase;
+        border-bottom: 1px solid black;
+        padding-bottom: 3px;
+        display: inline;
+      }
+
+      .item-value {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .tooltip-trigger {
+        padding: 0 5px 5px;
+        font-size: 12px;
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+        -o-user-select: none;
+        user-select: none;
+        cursor: default;
+      }
+    }
+
+    .tab:not(.active) {
+      display: none;
+    }
+
+    .tab-work, .tab-tech {
+      .trait-item {
+        .item-name {
+          display: block;
+          margin-bottom: 14px;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}

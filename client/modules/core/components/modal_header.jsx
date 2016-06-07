@@ -1,23 +1,27 @@
 import React from 'react';
+import moment from 'moment';
+
+import MockSubBtn from '../containers/mock_subscribe_button';
 
 import OfficialIcon from './official_icon.jsx';
 
 const ModalHeader = ({company}) => (
-  <div className="row">
-    <div className="modal-header-container">
-      <div className="col-xs-12 section-container">
-        <div className="section">
+  <div className="modal-header-container">
+    <div className="row">
+      <div className="col-xs-12">
+        <div>
           <img src={company.getLogoUrl()} alt="company" className="company-logo" />
-          <div>
-            <h2 className="company-name">
-              {company.name} <OfficialIcon company={company} /> <a className="company-link" href={company.website} target="_blank"><i className="fa fa-external-link"></i></a>
-            </h2>
-            <h3 className="description">
-              {company.short_description || 'No description found'}
-            </h3>
+          <div className="meta">
+            <h3 className="company-name">{company.name}</h3>
+            <p className="company-desc">{company.short_description}</p>
+            <MockSubBtn company={company} />
           </div>
         </div>
       </div>
+    </div>
+
+    <div className="timestamp">
+      Added: {moment(company.createdAt).format('MMM Do YY ')} | Updated: {moment(company.updatedAt || company.createdAt).format('MMM Do YY')}
     </div>
   </div>
 );

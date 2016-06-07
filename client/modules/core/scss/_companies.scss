@@ -271,318 +271,318 @@
   }
 }
 
-.company-modal {
-
-  @media (min-width: 1167px) {
-    .modal-dialog {
-      width: 1125px;
-      margin-top: 79px;
-    }
-  }
-
-  @media (min-width: 1024px) and (max-width: 1166px) {
-    .modal-dialog {
-      width: 900px;
-      margin-top: 79px;
-    }
-  }
-
-  @media (max-width: 769px) and (min-width: 500px) {
-    .modal-dialog {
-      width: 100%;
-      margin-top: 98px;
-    }
-  }
-
-  @media (max-width: 499px) {
-    .modal-dialog {
-      width: 100%;
-      margin: 0;
-    }
-
-    .modal-content {
-      border-radius: 0;
-      border: 0;
-      min-height: 100vh;
-    }
-  }
-
-  @media (min-width: 500px) {
-    .modal-content {
-      border: 0;
-      border-radius: 1px;
-      height: 637px;
-    }
-
-    .timestamp {
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      color: #797979;
-    }
-  }
-
-  .modal-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .modal-body {
-    flex: 1;
-  }
-
-
-  .timestamp {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: #797979;
-    font-size: 14px;
-  }
-
-  .edit-label {
-    left: 16px;
-    position: absolute;
-    background: #F02C41;
-    border: 1px solid #F02C41;
-    color: #FFFFFF;
-    -webkit-user-select: none; /* Chrome/Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ */
-    -o-user-select: none;
-    user-select: none;
-    padding: 0.2em 0.8em;
-    border-radius: 2px;
-    font-size: 17px;
-  }
-
-  .modal-header {
-    padding: 0;
-
-    .close { // overwrite the close button provided by bootstrap-react
-      position: absolute;
-      right: 5px;
-      top: 0px;
-      font-size: 24px;
-      z-index: 1;
-    }
-
-    .modal-header-container {
-      display: flex;
-
-      .section-container {
-        display: flex;
-
-        .section {
-          display: flex;
-          align-items: center;
-          padding: 13px 13px;
-        }
-      }
-
-      .description {
-        margin-bottom: 0;
-        font-size: 18px;
-      }
-    }
-
-    .company-name {
-      font-size: 23px;
-      font-weight: 500;
-    }
-
-    .company-logo {
-      width: 72px;
-      margin-right: 19px;
-      // width: 80px;
-      // display: inline-block;
-      // margin: 13px;
-    }
-
-    .summary {
-      margin-bottom: 0;
-
-      li.unchecked {
-        color: #9A9A9A;
-      }
-
-      li.checked {
-        color: #F02C41;
-        font-weight: 600;
-      }
-
-      @media(max-width: 499px) {
-        margin-top: 0;
-        margin-bottom: 9px;
-        text-align: center;
-      }
-    }
-
-    .edit-btn {
-      left: 16px;
-      position: absolute;
-      background: transparent;
-      border: 1px solid #F02C41;
-      color: #F02C41;
-    }
-  }
-
-  .modal-body {
-    padding: 0;
-  }
-
-  .company-link {
-    color: #949494;
-    margin-left: 9px;
-    font-size: 18px;
-
-    &:hover {
-      color: inherit;
-    }
-  }
-
-  .company-desc {
-    text-transform: uppercase;
-  }
-
-  .menu-bar {
-    background: #F02C41;
-    color: #fff;
-    padding: 8px 38px;
-    font-size: 17px;
-    font-weight: 600;
-
-    .menu-list {
-      margin-bottom: 0;
-    }
-
-    .menu-item {
-      display: inline-block;
-      margin-right: 74px;
-
-      @media (max-width: 499px) {
-        margin-right: 13px;
-      }
-
-      .menu-link {
-        text-decoration: none;
-        color: inherit;
-        font-weight: 300;
-        cursor: pointer;
-
-        &.active {
-          font-weight: 600;
-          border-bottom: 1px solid #fff;
-          padding-bottom: 1px;
-        }
-
-        &:hover {
-          border-bottom: 1px solid #fff;
-          padding-bottom: 1px;
-        }
-      }
-    }
-  }
-
-  .hiring-banner {
-    background: #F02C41;
-
-  }
-
-  .not-hiring-banner {
-    background: #519EB0;
-  }
-
-  .category-heading {
-    font-size: 23px;
-    font-weight: 600;
-    margin-bottom: 17px;
-
-    .fa {
-      margin-right: 11px;
-    }
-  }
-
-  .tab {
-    padding: 2.2em 2.9em;
-  }
-
-  .tab:not(.active) {
-    display: none;
-  }
-
-  .tab-overview {
-    .overview-list {
-      // padding-top: 23px;
-    }
-
-    .check-list {
-      li {
-        margin-bottom: 5px;
-      }
-
-      .checked-item {
-        color: green;
-      }
-
-      .unchecked-item {
-        color: #AFAFAF;
-      }
-    }
-  }
-
-  .tab-work, .tab-tech {
-    .trait-item {
-      .item-name {
-        display: block;
-        margin-bottom: 14px;
-        border-bottom: 0;
-      }
-    }
-  }
-
-  .tab-job {
-    .not-here-yet-cat {
-      margin-top: 53px;
-    }
-  }
-
-  .trait-item {
-    margin-bottom: 23px;
-
-    .fa {
-      margin-right: 12px;
-    }
-
-    .item-name {
-      font-size: 15px;
-      font-weight: 600;
-      margin-right: 11px;
-      text-transform: uppercase;
-      border-bottom: 1px solid black;
-      padding-bottom: 3px;
-      display: inline;
-    }
-
-    .item-value {
-      font-size: 16px;
-      font-weight: 500;
-    }
-
-    .tooltip-trigger {
-      padding: 0 5px 5px;
-      font-size: 12px;
-      -webkit-user-select: none; /* Chrome/Safari */
-      -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* IE10+ */
-      -o-user-select: none;
-      user-select: none;
-      cursor: default;
-    }
-  }
-}
+// .company-modal {
+//   //
+//   // @media (min-width: 1167px) {
+//   //   .modal-dialog {
+//   //     width: 1125px;
+//   //     margin-top: 45px;
+//   //   }
+//   // }
+//   //
+//   // @media (min-width: 1024px) and (max-width: 1166px) {
+//   //   .modal-dialog {
+//   //     width: 900px;
+//   //     margin-top: 79px;
+//   //   }
+//   // }
+//   //
+//   // @media (max-width: 769px) and (min-width: 500px) {
+//   //   .modal-dialog {
+//   //     width: 100%;
+//   //     margin-top: 98px;
+//   //   }
+//   // }
+//   //
+//   // @media (max-width: 499px) {
+//   //   .modal-dialog {
+//   //     width: 100%;
+//   //     margin: 0;
+//   //   }
+//   //
+//   //   .modal-content {
+//   //     border-radius: 0;
+//   //     border: 0;
+//   //     min-height: 100vh;
+//   //   }
+//   // }
+//   //
+//   // @media (min-width: 500px) {
+//   //   .modal-content {
+//   //     border: 0;
+//   //     border-radius: 1px;
+//   //     height: 686px;
+//   //   }
+//   //
+//   //   .timestamp {
+//   //     display: inline-block;
+//   //     position: absolute;
+//   //     bottom: 0;
+//   //     right: 0;
+//   //     color: #797979;
+//   //   }
+//   // }
+//   //
+//   // .modal-content {
+//   //   display: flex;
+//   //   flex-direction: column;
+//   // }
+//   //
+//   // .modal-body {
+//   //   flex: 1;
+//   // }
+//
+//
+//   .timestamp {
+//     display: inline-block;
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     color: #797979;
+//     font-size: 14px;
+//   }
+//
+//   .edit-label {
+//     left: 16px;
+//     position: absolute;
+//     background: #F02C41;
+//     border: 1px solid #F02C41;
+//     color: #FFFFFF;
+//     -webkit-user-select: none; /* Chrome/Safari */
+//     -moz-user-select: none; /* Firefox */
+//     -ms-user-select: none; /* IE10+ */
+//     -o-user-select: none;
+//     user-select: none;
+//     padding: 0.2em 0.8em;
+//     border-radius: 2px;
+//     font-size: 17px;
+//   }
+//
+//   .modal-header {
+//     padding: 0;
+//
+//     .close { // overwrite the close button provided by bootstrap-react
+//       position: absolute;
+//       right: 5px;
+//       top: 0px;
+//       font-size: 24px;
+//       z-index: 1;
+//     }
+//
+//     .modal-header-container {
+//       display: flex;
+//
+//       .section-container {
+//         display: flex;
+//
+//         .section {
+//           display: flex;
+//           align-items: center;
+//           padding: 13px 13px;
+//         }
+//       }
+//
+//       .description {
+//         margin-bottom: 0;
+//         font-size: 18px;
+//       }
+//     }
+//
+//     .company-name {
+//       font-size: 23px;
+//       font-weight: 500;
+//     }
+//
+//     .company-logo {
+//       width: 72px;
+//       margin-right: 19px;
+//       // width: 80px;
+//       // display: inline-block;
+//       // margin: 13px;
+//     }
+//
+//     .summary {
+//       margin-bottom: 0;
+//
+//       li.unchecked {
+//         color: #9A9A9A;
+//       }
+//
+//       li.checked {
+//         color: #F02C41;
+//         font-weight: 600;
+//       }
+//
+//       @media(max-width: 499px) {
+//         margin-top: 0;
+//         margin-bottom: 9px;
+//         text-align: center;
+//       }
+//     }
+//
+//     .edit-btn {
+//       left: 16px;
+//       position: absolute;
+//       background: transparent;
+//       border: 1px solid #F02C41;
+//       color: #F02C41;
+//     }
+//   }
+//
+//   .modal-body {
+//     padding: 0;
+//   }
+//
+//   .company-link {
+//     color: #949494;
+//     margin-left: 9px;
+//     font-size: 18px;
+//
+//     &:hover {
+//       color: inherit;
+//     }
+//   }
+//
+//   .company-desc {
+//     text-transform: uppercase;
+//   }
+//
+//   .menu-bar {
+//     background: #F02C41;
+//     color: #fff;
+//     padding: 8px 38px;
+//     font-size: 17px;
+//     font-weight: 600;
+//
+//     .menu-list {
+//       margin-bottom: 0;
+//     }
+//
+//     .menu-item {
+//       display: inline-block;
+//       margin-right: 74px;
+//
+//       @media (max-width: 499px) {
+//         margin-right: 13px;
+//       }
+//
+//       .menu-link {
+//         text-decoration: none;
+//         color: inherit;
+//         font-weight: 300;
+//         cursor: pointer;
+//
+//         &.active {
+//           font-weight: 600;
+//           border-bottom: 1px solid #fff;
+//           padding-bottom: 1px;
+//         }
+//
+//         &:hover {
+//           border-bottom: 1px solid #fff;
+//           padding-bottom: 1px;
+//         }
+//       }
+//     }
+//   }
+//
+//   .hiring-banner {
+//     background: #F02C41;
+//
+//   }
+//
+//   .not-hiring-banner {
+//     background: #519EB0;
+//   }
+//
+//   .category-heading {
+//     font-size: 23px;
+//     font-weight: 600;
+//     margin-bottom: 17px;
+//
+//     .fa {
+//       margin-right: 11px;
+//     }
+//   }
+//
+//   .tab {
+//     padding: 2.2em 2.9em;
+//   }
+//
+//   .tab:not(.active) {
+//     display: none;
+//   }
+//
+//   .tab-overview {
+//     .overview-list {
+//       // padding-top: 23px;
+//     }
+//
+//     .check-list {
+//       li {
+//         margin-bottom: 5px;
+//       }
+//
+//       .checked-item {
+//         color: green;
+//       }
+//
+//       .unchecked-item {
+//         color: #AFAFAF;
+//       }
+//     }
+//   }
+//
+//   .tab-work, .tab-tech {
+//     .trait-item {
+//       .item-name {
+//         display: block;
+//         margin-bottom: 14px;
+//         border-bottom: 0;
+//       }
+//     }
+//   }
+//
+//   .tab-job {
+//     .not-here-yet-cat {
+//       margin-top: 53px;
+//     }
+//   }
+//
+//   .trait-item {
+//     margin-bottom: 23px;
+//
+//     .fa {
+//       margin-right: 12px;
+//     }
+//
+//     .item-name {
+//       font-size: 15px;
+//       font-weight: 600;
+//       margin-right: 11px;
+//       text-transform: uppercase;
+//       border-bottom: 1px solid black;
+//       padding-bottom: 3px;
+//       display: inline;
+//     }
+//
+//     .item-value {
+//       font-size: 16px;
+//       font-weight: 500;
+//     }
+//
+//     .tooltip-trigger {
+//       padding: 0 5px 5px;
+//       font-size: 12px;
+//       -webkit-user-select: none; /* Chrome/Safari */
+//       -moz-user-select: none; /* Firefox */
+//       -ms-user-select: none; /* IE10+ */
+//       -o-user-select: none;
+//       user-select: none;
+//       cursor: default;
+//     }
+//   }
+// }
 
 // make modal slide from the right
 .modal.fade:not(.in) {
