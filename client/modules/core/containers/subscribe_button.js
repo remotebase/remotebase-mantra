@@ -7,7 +7,8 @@ export const composer = ({context, company}, onData) => {
 
   if (Meteor.subscribe('currentUser').ready()) {
     let user = Meteor.user();
-    let subscribed = user.subscribedCompanyIds.indexOf(company._id) > -1;
+    let subscribedCompanyIds = user ? user.subscribedCompanyIds : [];
+    let subscribed = subscribedCompanyIds.indexOf(company._id) > -1;
 
     onData(null, {subscribed});
   }
