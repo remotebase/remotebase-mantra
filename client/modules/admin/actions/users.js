@@ -11,6 +11,10 @@ export default {
     });
   },
 
+  logout({Meteor}) {
+    Meteor.logout();
+  },
+
   redirect({FlowRouter}, routeName) {
     FlowRouter.go(routeName);
   },

@@ -1,5 +1,8 @@
 import {sitemaps} from 'meteor/gadicohen:sitemaps';
+import {WebApp} from 'meteor/webapp';
 import {Companies} from '/lib/collections';
+
+import {compileTemplate} from '../modules/digest/builder';
 
 export function configureSitemap() {
   sitemaps.add('/sitemap.xml', function () {
@@ -16,5 +19,12 @@ export function configureSitemap() {
     );
 
     return sitemap;
+  });
+}
+
+export function configureDebugRoutes() {
+  WebApp.connectHandlers.use('/debug-digest', function (req, res, next) {
+    let template = compileTemplate();
+    res.end(template);
   });
 }

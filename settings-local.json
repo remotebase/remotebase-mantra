@@ -2,10 +2,12 @@
   "public": {
     "analyticsSettings": {
       "Google Analytics" : {"trackingId": "testGoogleAnalyticsKey"}
-    }
+    },
+    "TwitterConsumerKey": "gA3lqLazrN6dKojCSo2Fuiuy0"
   },
   "PrerenderIO": {
     "prerenderServiceUrl": "http://localhost:3000/",
     "token": "tG62lX6ZU7oviw7Vm9L2"
-  }
+  },
+  "TwitterConsumerSecret": "UpUR5f9rNLLBJ4LtUd5aET59UcX1MnoROb0D10kHUBlmD6Ye5s"
 }

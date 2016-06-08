@@ -38,5 +38,22 @@
 
   .header-menu {
     margin-left: auto;
+
+    .menu-item {
+      color: gray;
+      margin-right: 7px;
+
+      &:not(:first-child) {
+        margin-left: 6px;
+      }
+
+      .fa {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .alerts-btn {
+    margin-right: 5px;
   }
 }
