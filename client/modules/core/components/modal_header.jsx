@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 
 import MockSubBtn from '../containers/mock_subscribe_button';
+import SubBtn from '../containers/subscribe_button';
 
 import OfficialIcon from './official_icon.jsx';
 
@@ -22,7 +23,7 @@ const ModalHeader = ({company}) => (
               </a>
             </h3>
             <p className="company-desc">{company.short_description}</p>
-            <MockSubBtn company={company} />
+            <SubBtn company={company} />
           </div>
         </div>
       </div>

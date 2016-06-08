@@ -1,7 +1,13 @@
 export default {
+  // Admin stuff
   companyLogin({Meteor, FlowRouter}, username, password, done) {
     Meteor.loginWithPassword(username, password, done);
   },
+
+  changePassword({Meteor, Accounts}, currentPassword, newPassword, done) {
+    Accounts.changePassword(currentPassword, newPassword, done);
+  },
+  // Admin stuff ends
 
   loginWithTwitter({Meteor}) {
     Meteor.loginWithTwitter({}, function (err) {
@@ -19,11 +25,11 @@ export default {
     FlowRouter.go(routeName);
   },
 
-  logout({Meteor}) {
-    Meteor.logout();
+  subscribeToCompany({Meteor}, companyId) {
+    Meteor.call('users.subscribeToCompany', companyId);
   },
 
-  changePassword({Meteor, Accounts}, currentPassword, newPassword, done) {
-    Accounts.changePassword(currentPassword, newPassword, done);
+  unsubscribeFromCompany({Meteor}, companyId) {
+    Meteor.call('users.unsubscribeFromCompany', companyId);
   }
 };

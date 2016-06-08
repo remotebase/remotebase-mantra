@@ -5,7 +5,8 @@ export default function () {
   Meteor.publish('currentUser', function () {
     return Meteor.users.find(this.userId, {
       fields: {
-        companySlug: 1
+        companySlug: 1,
+        subscribedCompanyIds: 1
       }
     });
   });
