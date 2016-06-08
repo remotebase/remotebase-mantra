@@ -41,13 +41,23 @@
     flex-direction: column;
   }
 
+  // Header
   .modal-header {
     padding: 0; // overwrite bootstrap
     position:relative;
     height: 144px;
+
+    .company-link {
+      color: #949494;
+      margin-left: 9px;
+      font-size: 18px;
+
+      &:hover {
+        color: inherit;
+      }
+    }
   }
 
-  // Header
   .modal-header-container {
     height: 100%;
     padding: 15px;

@@ -12,7 +12,15 @@ const ModalHeader = ({company}) => (
         <div>
           <img src={company.getLogoUrl()} alt="company" className="company-logo" />
           <div className="meta">
-            <h3 className="company-name">{company.name}</h3>
+            <h3 className="company-name">
+              {company.name}
+              <OfficialIcon company={company} />
+              <a className="company-link"
+                href={company.website}
+                target="_blank">
+                <i className="fa fa-external-link"></i>
+              </a>
+            </h3>
             <p className="company-desc">{company.short_description}</p>
             <MockSubBtn company={company} />
           </div>
