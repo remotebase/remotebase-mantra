@@ -43,6 +43,10 @@
       color: gray;
       margin-right: 7px;
 
+      @include mobile-md {
+        font-size: 12px;
+      }
+
       &:not(:first-child) {
         margin-left: 6px;
       }
