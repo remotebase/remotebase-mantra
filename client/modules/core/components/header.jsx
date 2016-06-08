@@ -2,16 +2,19 @@ import React from 'react';
 
 import {pathFor} from '/client/modules/core/libs/helpers';
 
-const Header = () => (
+const Header = ({loginWithTwitter}) => (
   <nav className="navbar navbar-light header">
-    <div className="container">
-      <div className="row">
-        <div className="col-xs-12">
-          <a className="brand" href={pathFor('home')}>
-            <img src="/images/logo.png" className="header-logo" alt="logo"/>
-            <h1 className="name">RemoteBase</h1>
-          </a>
-        </div>
+    <div className="container header-content">
+      <a className="brand" href={pathFor('home')}>
+        <img src="/images/logo.png" className="header-logo" alt="logo"/>
+        <h1 className="name">RemoteBase</h1>
+      </a>
+      <div className="header-menu">
+        <button className="btn rb-btn-secondary"
+          onClick={loginWithTwitter}>
+          <i className="fa fa-twitter"></i>
+          Login
+        </button>
       </div>
     </div>
   </nav>

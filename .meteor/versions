@@ -1,5 +1,7 @@
 accounts-base@1.2.7
+accounts-oauth@1.1.12
 accounts-password@1.1.8
+accounts-twitter@1.0.9
 aldeed:collection2@2.9.1
 aldeed:collection2-core@1.1.1
 aldeed:schema-deny@1.0.1
@@ -65,6 +67,8 @@ mongo@1.1.7
 mongo-id@1.0.4
 npm-bcrypt@0.8.5
 npm-mongo@1.4.43
+oauth@1.1.10
+oauth1@1.1.9
 observe-sequence@1.0.11
 okgrow:analytics@1.0.5
 ordered-dict@1.0.7
@@ -88,6 +92,7 @@ templating@1.1.9
 templating-tools@1.0.4
 tmeasday:publish-counts@0.7.3
 tracker@1.0.13
+twitter@1.1.9
 ui@1.0.11
 underscore@1.0.8
 url@1.0.9

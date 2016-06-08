@@ -9,7 +9,8 @@ export const composer = ({context}, onData) => {
 };
 
 export const depsMapper = (context, actions) => ({
-  context: () => context
+  context: () => context,
+  loginWithTwitter: actions.users.loginWithTwitter
 });
 
 export default composeAll(

@@ -3,6 +3,14 @@ export default {
     Meteor.loginWithPassword(username, password, done);
   },
 
+  loginWithTwitter({Meteor}) {
+    Meteor.loginWithTwitter({}, function (err) {
+      if (err) {
+        return console.log(err);
+      }
+    });
+  },
+
   redirect({FlowRouter}, routeName) {
     FlowRouter.go(routeName);
   },
