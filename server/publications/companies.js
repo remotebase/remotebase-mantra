@@ -1,20 +1,23 @@
 import {Companies} from '/lib/collections';
 import {Meteor} from 'meteor/meteor';
-import {check} from 'meteor/check';
+import {check, Match} from 'meteor/check';
 import {Counts} from 'meteor/tmeasday:publish-counts';
 
 export default function () {
-  Meteor.publish('companies', function (query, limit = 10) {
+  Meteor.publish('companies', function (query, limit) {
     check(query, Object);
-    check(limit, Number);
+    check(limit, Match.Optional(Number));
 
     query['hidden'] = {$ne: true};
 
-    console.log('query', query);
-    console.log('limit', limit);
+    let option = {sort: {official: -1, name: 1}};
+
+    if (limit) {
+      option.limit = limit;
+    }
 
     Counts.publish(this, 'companies-counter', Companies.find(query), {noReady: true});
-    return Companies.find(query, {limit, sort: {official: -1, name: 1}});
+    return Companies.find(query, option);
   });
 
   Meteor.publish('company', function (slug) {

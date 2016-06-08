@@ -1,4 +1,5 @@
 import {Meteor} from 'meteor/meteor';
+import {Accounts} from 'meteor/accounts-base';
 import {check} from 'meteor/check';
 import {Companies} from '/lib/collections'
 
@@ -16,6 +17,20 @@ export default function () {
 
       let userId = this.userId;
       Meteor.users.update(userId, {$pull: {subscribedCompanyIds: companyId}});
+    },
+
+    'users.addEmail'(email) {
+      let userId = this.userId;
+      Accounts.addEmail(userId, email);
+      Accounts.sendVerificationEmail(userId, email);
+    },
+
+    'users.removeEmail'(email) {
+      Accounts.removeEmail(this.userId, email);
+    },
+
+    'users.sendVerificationEmail'(email) {
+      Accounts.sendVerificationEmail(this.userId, email);
     }
   });
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import moment from 'moment';
 
-import MockSubBtn from '../containers/mock_subscribe_button';
 import SubBtn from '../containers/subscribe_button';
 
 import OfficialIcon from './official_icon.jsx';

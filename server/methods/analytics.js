@@ -1,6 +1,6 @@
 import {ClickCounts} from '/lib/collections';
 import {Meteor} from 'meteor/meteor';
-import {check} from 'meteor/check';
+import {check, Match} from 'meteor/check';
 
 export default function () {
   Meteor.methods({

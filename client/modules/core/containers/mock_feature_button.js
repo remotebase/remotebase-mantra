@@ -1,6 +1,6 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
-import MockSubscribeButton from '../components/mock_subscribe_button.jsx';
+import MockSubscribeButton from '../components/mock_feature_button.jsx';
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();

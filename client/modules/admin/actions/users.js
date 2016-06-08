@@ -31,5 +31,17 @@ export default {
 
   unsubscribeFromCompany({Meteor}, companyId) {
     Meteor.call('users.unsubscribeFromCompany', companyId);
-  }
+  },
+
+  addEmail({Meteor}, email) {
+    Meteor.call('users.addEmail', email);
+  },
+
+  removeEmail({Meteor}, email) {
+    Meteor.call('users.removeEmail', email);
+  },
+
+  sendVerificationEmail({Meteor}, email) {
+    Meteor.call('users.sendVerificationEmail', email);
+  },
 };

@@ -13,7 +13,7 @@ const Header = ({loginWithTwitter, currentUser, logout}) => (
         {
           currentUser ?
           <div className="header-menu">
-            <a href="#"
+            <a href={pathFor('mySubscriptions')}
               className="menu-item">
               My subscriptions
             </a>
