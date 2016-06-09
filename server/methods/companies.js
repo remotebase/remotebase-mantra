@@ -10,7 +10,7 @@ export default function () {
 
       let company = Companies.findOne(companyId);
       if (!company.is_hiring && companyDoc.is_hiring) {
-        Actions.insert({companyId, type: 'startHiring', meta: {companyName: company.name}});
+        Actions.insert({companyId, type: 'startHiring'});
       }
 
       return Companies.update(companyId, {$set: companyDoc});
