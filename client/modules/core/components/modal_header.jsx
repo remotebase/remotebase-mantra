@@ -5,7 +5,7 @@ import SubBtn from '../containers/subscribe_button';
 
 import OfficialIcon from './official_icon.jsx';
 
-const ModalHeader = ({company}) => (
+const ModalHeader = ({company, toggleSignInDialogue}) => (
   <div className="modal-header-container">
     <div className="row">
       <div className="col-xs-12">
@@ -22,7 +22,7 @@ const ModalHeader = ({company}) => (
               </a>
             </h3>
             <p className="company-desc">{company.short_description}</p>
-            <SubBtn company={company} />
+            <SubBtn company={company} handleGuestSubscribe={toggleSignInDialogue} />
           </div>
         </div>
       </div>

@@ -229,6 +229,15 @@ html {
   &.rb-btn-small {
     padding: 2px 9px;
   }
+
+  &.rb-btn-twitter {
+    background: #55ACEF;
+    border: none;
+
+    &:hover {
+      background: rgba(85, 172, 239, 0.87);
+    }
+  }
 }
 
 main {
@@ -250,4 +259,10 @@ main {
 
 .hidden {
   display: none;
+}
+
+.btn {
+  .fa {
+    margin-right: 4px;
+  }
 }

@@ -1,7 +1,18 @@
 import React from 'react';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
-const SubscribeButton = ({company, subscribeToCompany, unsubscribeFromCompany, subscribed}) => {
+const SubscribeButton = ({
+  company, subscribeToCompany, unsubscribeFromCompany, subscribed, handleGuestSubscribe, user
+}) => {
+
+  function onSubscribe() {
+    subscribeToCompany(company._id);
+
+    if (!user) {
+      handleGuestSubscribe();
+    }
+  }
+
   if (subscribed) {
     return (
       <button className="btn btn-secondary rb-btn-small"
@@ -12,7 +23,7 @@ const SubscribeButton = ({company, subscribeToCompany, unsubscribeFromCompany, s
   } else {
     return (
       <button className="btn rb-btn-primary rb-btn-small"
-        onClick={subscribeToCompany.bind(this, company._id)}>
+        onClick={onSubscribe}>
         <OverlayTrigger overlay={tooltip} placement="right">
           <span className="tooltip-trigger">Subscribe</span>
         </OverlayTrigger>

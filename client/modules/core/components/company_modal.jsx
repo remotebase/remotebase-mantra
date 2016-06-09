@@ -7,20 +7,28 @@ import ModalOverview from '../containers/modal_overview';
 import ModalWork from '../containers/modal_work';
 import ModalTechnology from '../containers/modal_technology';
 import ModalJob from '../containers/modal_job';
+import SignInDialogue from '../containers/sign_in_dialogue';
 
 class CompanyModal extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {currentTab: 'overview'};
+    this.state = {
+      currentTab: 'overview',
+      showSignInDialogue: false
+    };
   }
 
   handleTabChange(newTab) {
     this.setState({currentTab: newTab});
   }
 
+  toggleSignInDialogue(display) {
+    this.setState({showSignInDialogue: display});
+  }
+
   render() {
     const {company, navToHome} = this.props;
-    let {currentTab} = this.state;
+    let {currentTab, showSignInDialogue} = this.state;
 
     if (company) {
       return (
@@ -28,7 +36,8 @@ class CompanyModal extends React.Component {
             className="company-modal modal-right"
             onHide={navToHome.bind(this)} >
           <Modal.Header closeButton>
-            <ModalHeader company={company} />
+            <ModalHeader company={company}
+              toggleSignInDialogue={this.toggleSignInDialogue.bind(this, true)} />
           </Modal.Header>
 
           <ModalMenu company={company}
@@ -41,6 +50,11 @@ class CompanyModal extends React.Component {
             <ModalTechnology company={company} isActive={currentTab === 'tech'} />
             <ModalJob company={company} isActive={currentTab === 'jobs'} />
           </Modal.Body>
+          {
+            showSignInDialogue ?
+              <SignInDialogue company={company}
+                closeSignInDialogue={this.toggleSignInDialogue.bind(this, false)} /> : <span></span>
+          }
         </Modal>
       );
     } else {

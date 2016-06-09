@@ -10,7 +10,10 @@ export const composer = ({context, company}, onData) => {
     let subscribedCompanyIds = user ? user.subscribedCompanyIds : [];
     let subscribed = subscribedCompanyIds.indexOf(company._id) > -1;
 
-    onData(null, {subscribed});
+    onData(null, {
+      user,
+      subscribed
+    });
   }
 };
 

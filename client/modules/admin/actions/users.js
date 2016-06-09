@@ -9,10 +9,10 @@ export default {
   },
   // Admin stuff ends
 
-  loginWithTwitter({Meteor}) {
+  loginWithTwitter({Meteor}, done) {
     Meteor.loginWithTwitter({}, function (err) {
-      if (err) {
-        return console.log(err);
+      if (done) {
+        done(err);
       }
     });
   },
