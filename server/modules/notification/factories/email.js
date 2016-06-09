@@ -13,10 +13,13 @@ export function buildEmail(digest) {
   let source = Assets.getText('email/notification.html');
   let template = Handlebars.compile(source);
   let html = template(data);
+  let inlinedHtml = juice(html);
 
   return {
-    html: juice(html),
-    text: htmlToText.fromString(html),
+    html: inlinedHtml,
+    text: htmlToText.fromString(inlinedHtml, {
+      tables: [ '.body-wrap', '.footer-wrap' ]
+    }),
     subject: `RemoteBase | ${pluralize('alert', digest.length, true)}`
   };
 }
