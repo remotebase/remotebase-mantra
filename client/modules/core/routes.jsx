@@ -3,7 +3,7 @@ import {mount} from 'react-mounter';
 
 import MainLayout from './components/main_layout.jsx';
 import Home from './containers/home';
-import SubscriptionDashboard from './containers/subscription_dashboard';
+import SubscriptionDashboard from '/client/modules/user/containers/subscription_dashboard';
 
 export default function (injectDeps, {FlowRouter, _, DocHead, Meteor, Case}) {
   const MainLayoutCtx = injectDeps(MainLayout);

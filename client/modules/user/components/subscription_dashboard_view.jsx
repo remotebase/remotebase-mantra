@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MockFeatureBtn from '../containers/mock_feature_button';
+import MockFeatureBtn from '/client/modules/core/containers/mock_feature_button';
 import EmailForm from '../containers/email_form';
 import EmailList from '../containers/email_list';
 
