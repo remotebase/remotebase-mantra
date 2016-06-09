@@ -2,7 +2,7 @@ import {sitemaps} from 'meteor/gadicohen:sitemaps';
 import {WebApp} from 'meteor/webapp';
 import {Companies} from '/lib/collections';
 
-import {compileTemplate} from '../modules/digest/builder';
+import {compileTemplate} from '../modules/notification/factories/email';
 
 export function configureSitemap() {
   sitemaps.add('/sitemap.xml', function () {

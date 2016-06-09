@@ -193,13 +193,18 @@ ol li {
           </td>
         </tr>
 
-        {{#each companies}}
+        {{#each digest}}
           <tr>
             <td>
-              <img src={{logoAbsoluteUrl}} alt="company" class="company-logo" />
+              <img src={{companyLogoUrl}} alt="company" class="company-logo" />
             </td>
             <td>
               <h2 class="company-name">{{name}}</h2>
+              <p>
+                {{#if startHiring}}
+                  Started hiring. Check out their <a href={{profileUrl}}>profile</a>
+                {{/if}}
+              </p>
             </td>
           </tr>
         {{/each}}
