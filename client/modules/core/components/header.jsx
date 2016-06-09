@@ -9,6 +9,12 @@ const Header = ({loginWithTwitter, currentUser, logout}) => {
     loginWithTwitter();
   }
 
+  function handleLogout(e) {
+    e.preventDefault();
+
+    logout();
+  }
+
   return (
     <nav className="navbar navbar-light header">
       <div className="container header-content">
@@ -26,7 +32,7 @@ const Header = ({loginWithTwitter, currentUser, logout}) => {
               </a>
               <a href="#"
                 className="menu-item"
-                onClick={logout}>
+                onClick={handleLogout}>
                 Logout
               </a>
             </div> :
