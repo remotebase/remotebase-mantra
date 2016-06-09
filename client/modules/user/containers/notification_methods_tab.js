@@ -1,14 +1,11 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
-import SubscriptionDashboard from '../components/subscription_dashboard.jsx';
+import NotificationMethodsTab from '../components/notification_methods_tab.jsx';
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
 
-  if (Meteor.subscribe('currentUser').ready()) {
-    let user = Meteor.user();
-    onData(null, {user});
-  }
+  onData(null, {});
 };
 
 export const depsMapper = (context, actions) => ({
@@ -18,4 +15,4 @@ export const depsMapper = (context, actions) => ({
 export default composeAll(
   composeWithTracker(composer),
   useDeps(depsMapper)
-)(SubscriptionDashboard);
+)(NotificationMethodsTab);

@@ -4,7 +4,7 @@ import Header from '../containers/header';
 import Footer from '../containers/footer';
 
 const Layout = ({content = () => null }) => (
-  <div>
+  <div className="remotebase-layout">
     <Header />
     <main className="container">
       <div className="row">

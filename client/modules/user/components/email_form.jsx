@@ -13,13 +13,19 @@ class EmailForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <input type="email"
-          placeholder="Email"
-          className="form-control"
-          ref="emailAddress" />
-        <button className="btn rb-btn-primary rb-btn-small"
-          onClick={this.handleEmailAdd.bind(this)}>Add</button>
+      <div className="row">
+        <div className="col-xs-12 col-sm-12 col-md-6">
+          <div className="input-group">
+            <input type="email"
+              placeholder="Email"
+              className="form-control"
+              ref="emailAddress" />
+            <span className="input-group-btn">
+              <button className="btn btn-secondary"
+                onClick={this.handleEmailAdd.bind(this)}>Add</button>
+            </span>
+          </div>
+        </div>
       </div>
     );
   }

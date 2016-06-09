@@ -2,17 +2,14 @@ import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
 import SubscriptionDashboardView from '../components/subscription_dashboard_view.jsx';
 
-export const composer = ({context}, onData) => {
+export const composer = ({context, user}, onData) => {
   const {Meteor, Collections} = context();
 
-  if (Meteor.subscribe('currentUser').ready()) {
-    let user = Meteor.user();
-    let query = {_id: {$in: user.subscribedCompanyIds}};
+  let query = {_id: {$in: user.subscribedCompanyIds}};
 
-    if (Meteor.subscribe('companies', query)) {
-      let companies = Collections.Companies.find(query);
-      onData(null, {user, companies});
-    }
+  if (Meteor.subscribe('companies', query)) {
+    let companies = Collections.Companies.find(query);
+    onData(null, {user, companies});
   }
 };
 

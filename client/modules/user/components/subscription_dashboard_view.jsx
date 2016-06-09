@@ -1,79 +1,46 @@
 import React from 'react';
 
-import MockFeatureBtn from '/client/modules/core/containers/mock_feature_button';
-import EmailForm from '../containers/email_form';
-import EmailList from '../containers/email_list';
+import Menu from '../containers/subscription_dashboard_menu';
+import SubscribedTab from '../containers/subscribed_tab';
+import NotificationMethodsTab from '../containers/notification_methods_tab';
 
-const SubscriptionDashboardView = ({companies, unsubscribeFromCompany, user}) => {
-  function handleUnsubscribe(companyId, e) {
+class SubscriptionDashboardView extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {section: 'subscribed'};
+  }
+
+  handleUnsubscribe(companyId, e) {
     e.preventDefault();
+
+    const {unsubscribeFromCompany} = this.props;
     unsubscribeFromCompany(companyId);
   }
 
-  return (
-    <div className="row">
-      <div className="col-xs-12">
-        <h2>Your subscriptions</h2>
-        <p>
-          You will be notified when these companies update a profile or post a job.
-        </p>
+  handleSectionChange(section) {
+    this.setState({section});
+  }
 
-        <ul>
-          {
-            companies.map(company => (
-              <li key={company._id}>
-                {company.name} (<a href="#" onClick={handleUnsubscribe.bind(this, company._id)}>Unsubscribe</a>)
-              </li>
-            ))
-          }
-        </ul>
+  render() {
+    const {companies, user} = this.props;
+    let {section} = this.state;
 
-        <h2>Notification methods</h2>
-
-        <p>
-          Choose how you will be notified
-        </p>
-
-        <div className="row">
-          <div className="col-xs-12 col-sm-4">
-            <div className="card">
-              <div className="card-header">
-                Email
-              </div>
-              <div className="card-block">
-                <EmailForm />
-                <EmailList emails={user.emails || []} />
-              </div>
-            </div>
-          </div>
-          <div className="col-xs-12 col-sm-4">
-            <div className="card">
-              <div className="card-header">
-                Twitter
-              </div>
-              <div className="card-block">
-                <MockFeatureBtn targetName="subscribe-twitter"
-                  targetMeta={{userId: user._id}}
-                  buttonTxt="Add Twitter" />
-              </div>
-            </div>
-          </div>
-          <div className="col-xs-12 col-sm-4">
-            <div className="card">
-              <div className="card-header">
-                Facebook
-              </div>
-              <div className="card-block">
-                <MockFeatureBtn targetName="subscribe-facebook"
-                  targetMeta={{userId: user._id}}
-                  buttonTxt="Add Facebook" />
-              </div>
-            </div>
-          </div>
+    return (
+      <div className="row subscription-dashboard">
+        <div className="col-xs-12 col-sm-3">
+          <Menu section={section}
+            navigateToSection={this.handleSectionChange.bind(this)} />
+        </div>
+        <div className="col-xs-12 col-sm-9">
+          <SubscribedTab isActive={section === 'subscribed'}
+            companies={companies}
+            handleUnsubscribe={this.handleUnsubscribe.bind(this)} />
+          <NotificationMethodsTab isActive={section === 'notification_methods'}
+            user={user} />
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default SubscriptionDashboardView;
