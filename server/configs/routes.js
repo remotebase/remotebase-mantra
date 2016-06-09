@@ -2,6 +2,11 @@ import {sitemaps} from 'meteor/gadicohen:sitemaps';
 import {WebApp} from 'meteor/webapp';
 import {Companies} from '/lib/collections';
 
+// For debug
+import {Actions} from '/lib/collections';
+import {digestActions} from '/server/modules/notification/digest';
+import {buildEmail} from '/server/modules/notification/factories/email';
+
 import {compileTemplate} from '../modules/notification/factories/email';
 
 export function configureSitemap() {
@@ -24,7 +29,9 @@ export function configureSitemap() {
 
 export function configureDebugRoutes() {
   WebApp.connectHandlers.use('/debug-digest', function (req, res, next) {
-    let template = compileTemplate();
-    res.end(template);
+    let actions = Actions.find().fetch();
+    let actionDigest = digestActions(actions);
+    let emailObj = buildEmail(actionDigest);
+    res.end(emailObj.html);
   });
 }

@@ -16,7 +16,7 @@ export function buildEmail(digest) {
 
   return {
     html: juice(html),
-    text: htmlToText(html),
+    text: htmlToText.fromString(html),
     subject: `RemoteBase | ${pluralize('alert', digest.length, true)}`
   };
 }
