@@ -9,7 +9,7 @@ const ModalHeader = ({company, toggleSignInDialogue}) => (
   <div className="modal-header-container">
     <div className="row">
       <div className="col-xs-12">
-        <div>
+        <div className="modal-header-content">
           <img src={company.getLogoUrl()} alt="company" className="company-logo" />
           <div className="meta">
             <h3 className="company-name">
