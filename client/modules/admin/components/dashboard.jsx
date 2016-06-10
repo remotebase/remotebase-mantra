@@ -1,18 +1,17 @@
 import React from 'react';
 
-import {EnsureLoggedIn} from 'meteor-auth';
 import DashboardView from '../containers/dashboard_view';
 import Login from '../containers/login';
 
-const Dashboard = ({section}) => (
-  <div>
-    <EnsureLoggedIn unauthenticatedMessage={NotLoggedInMessage}>
-      <DashboardView section={section} />
-    </EnsureLoggedIn>
-  </div>
-);
+const Dashboard = ({section, user}) => {
+  if (!user) {
+    return <NotLoggedInMessage />;
+  }
 
-const NotLoggedInMessage = (
+  return <DashboardView section={section} user={user} />;
+};
+
+const NotLoggedInMessage = () => (
   <div>
     <div className="row">
       <div className="col-xs-12">

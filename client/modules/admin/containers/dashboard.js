@@ -5,7 +5,10 @@ import Dashboard from '../components/dashboard.jsx';
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
 
-  onData(null, {});
+  if (Meteor.subscribe('currentUser').ready()) {
+    let user = Meteor.user();
+    onData(null, {user});
+  }
 };
 
 export const depsMapper = (context, actions) => ({

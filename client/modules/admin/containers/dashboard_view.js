@@ -2,18 +2,14 @@ import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
 import DashboardView from '../components/dashboard_view.jsx';
 
-export const composer = ({context}, onData) => {
+export const composer = ({context, user}, onData) => {
   const {Meteor, Collections} = context();
+  let companySlug = user.companySlug;
 
-  if (Meteor.subscribe('currentUser').ready()) {
-    let user = Meteor.user();
-    let companySlug = user.companySlug;
+  if (Meteor.subscribe('company', companySlug).ready()) {
+    let company = Collections.Companies.findOne({slug: companySlug});
 
-    if (Meteor.subscribe('company', companySlug).ready()) {
-      let company = Collections.Companies.findOne({slug: companySlug});
-
-      onData(null, {company});
-    }
+    onData(null, {user, company});
   }
 };
 
