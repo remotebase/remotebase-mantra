@@ -11,8 +11,9 @@ export function getDescription(company) {
 
 export function getTwitterDescription(company) {
   let hiringPhrase = company.is_hiring ? ' They are hiring. ' : ' ';
+  let officialPhrase = company.official ? ' official ' : ' ';
 
-  return `${company.name} is a ${company.getDistrbituedPercent()}% remote team of ${company.team_size} people.${hiringPhrase}See their RemoteBase profile.`;
+  return `${company.name} is a ${company.getDistrbituedPercent()}% remote team of ${company.team_size} people.${hiringPhrase}See their${officialPhrase}RemoteBase profile.`;
 }
 
 export function setCompanyMeta(company) {
