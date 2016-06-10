@@ -10,6 +10,7 @@ export default function () {
 
       let userId = this.userId;
       Meteor.users.update(userId, {$addToSet: {subscribedCompanyIds: companyId}});
+      Companies.update(companyId, {$inc: {numSubscribers: 1}}); // increment numSubscribers
     },
 
     'users.unsubscribeFromCompany'(companyId) {
@@ -17,6 +18,7 @@ export default function () {
 
       let userId = this.userId;
       Meteor.users.update(userId, {$pull: {subscribedCompanyIds: companyId}});
+      Companies.update(companyId, {$inc: {numSubscribers: -1}});
     },
 
     'users.addEmail'(email) {

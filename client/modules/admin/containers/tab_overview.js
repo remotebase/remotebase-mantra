@@ -1,20 +1,18 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
-import DashboardMenu from '../components/dashboard_menu.jsx';
+import TabOverview from '../components/tab_overview.jsx';
 
-export const composer = ({context}, onData) => {
+export const composer = ({context, company}, onData) => {
   const {Meteor, Collections} = context();
 
   onData(null, {});
 };
 
 export const depsMapper = (context, actions) => ({
-  context: () => context,
-  logout: actions.users.logout,
-  recordClick: actions.analytics.recordClick
+  context: () => context
 });
 
 export default composeAll(
   composeWithTracker(composer),
   useDeps(depsMapper)
-)(DashboardMenu);
+)(TabOverview);

@@ -1,9 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-const TabJobs = ({isActive, recordClick, company}) => {
-  recordClick('jobs-tab', {companyName: company.name});
-
+const TabJobs = ({isActive}) => {
   return (
     <div className={classnames('dashboard text-xs-center', {hidden: !isActive})}>
       <img src="/images/cat.png" alt="not-here-yet" className="not-here-yet-cat" />

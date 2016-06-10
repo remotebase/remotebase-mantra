@@ -67,7 +67,7 @@ class ProfileForm extends React.Component {
                 {this.state.successMessage}
                 <div>
                   <TwitterShareBtn dataUrl={`https://remotebase.io/${company.slug}`}
-                    dataText={`I just updated ${company.name}'s profile on @remotebase. Do you #remotework? Join us there`} />
+                    dataText={`I just updated ${company.name}'s profile on @remotebase. Do you #remotework? Join us there.`} />
                 </div>
               </div>
             </div>
