@@ -1,5 +1,7 @@
 import React from 'react';
 
+import TwitterShareBtn from '/client/modules/core/containers/twitter_share_btn';
+
 class ProfileForm extends React.Component {
   constructor(props) {
     super(props);
@@ -43,11 +45,12 @@ class ProfileForm extends React.Component {
     };
 
     updateCompany(company._id, companyDoc, () => {
-      this.setState({successMessage: 'The company profile was saved'});
+      this.setState({successMessage: 'You successfully updated the company profile.'});
+      window.scrollTo(0,0); // Scroll to top to show the message
 
       setTimeout(() => {
         this.setState({successMessage: null});
-      }, 3000);
+      }, 60000);
     });
   }
 
@@ -60,8 +63,12 @@ class ProfileForm extends React.Component {
           this.state.successMessage ?
           <div className="row">
             <div className="col-xs-12">
-              <div className="alert alert-success">
+              <div className="alert alert-success text-xs-center">
                 {this.state.successMessage}
+                <div>
+                  <TwitterShareBtn dataUrl={`https://remotebase.io/${company.slug}`}
+                    dataText={`I just updated ${company.name}'s profile on @remotebase. Do you #remotework? Join us there`} />
+                </div>
               </div>
             </div>
           </div> : <span></span>
