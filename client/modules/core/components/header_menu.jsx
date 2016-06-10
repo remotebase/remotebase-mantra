@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {pathFor} from '/client/modules/core/libs/helpers';
+
 const HeaderMenu = ({currentUser, loginWithTwitter, logout}) => {
   function handleTwitterLogin(e) {
     e.preventDefault();
