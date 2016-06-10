@@ -19,11 +19,11 @@ const TabOverview = ({isActive, company}) => {
         <li>Profile last updated: {moment(company.createdAt).format('YYYY MMM Do')}</li>
       </ul>
 
-      <p>
+      <div>
         Increase the subscribers by sharing your profile on Twitter
         <TwitterShareBtn dataText={twitterTxt}
           dataUrl={company.getProfileUrl()} />
-      </p>
+      </div>
     </div>
   );
 };
