@@ -33,7 +33,7 @@ class AdNewsLetter extends React.Component {
             onSubmit={this.hideBanner.bind(this)}>
               <div className="col-xs-12 col-sm-7 cta">
                 <div className="hidden-sm-down">
-                  Get RemoteBase monthly featuring companies, jobs, and stories
+                  Latest in remote companies and jobs, delivered monthly
                 </div>
                 <div className="hidden-sm-up">
                   Get RemoteBase monthly.
