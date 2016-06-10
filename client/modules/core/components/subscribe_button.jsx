@@ -2,14 +2,16 @@ import React from 'react';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 const SubscribeButton = ({
-  company, subscribeToCompany, unsubscribeFromCompany, subscribed, handleGuestSubscribe, user
+  company, subscribeToCompany, unsubscribeFromCompany, subscribed, handleGuestSubscribe, user, recordClick
 }) => {
 
   function onSubscribe() {
-    subscribeToCompany(company._id);
 
-    if (!user) {
+    if (user) {
+      subscribeToCompany(company._id);
+    } else {
       handleGuestSubscribe();
+      recordClick('subscribe', {companyName: company.name});
     }
   }
 

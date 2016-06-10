@@ -20,7 +20,8 @@ export const composer = ({context, company}, onData) => {
 export const depsMapper = (context, actions) => ({
   context: () => context,
   subscribeToCompany: actions.users.subscribeToCompany,
-  unsubscribeFromCompany: actions.users.unsubscribeFromCompany
+  unsubscribeFromCompany: actions.users.unsubscribeFromCompany,
+  recordClick: actions.analytics.recordClick
 });
 
 export default composeAll(
