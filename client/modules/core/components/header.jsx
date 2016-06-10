@@ -1,19 +1,9 @@
 import React from 'react';
 
+import HeaderMenu from '../containers/header_menu';
 import {pathFor} from '/client/modules/core/libs/helpers';
 
-const Header = ({loginWithTwitter, currentUser, logout}) => {
-  function handleTwitterLogin(e) {
-    e.preventDefault();
-
-    loginWithTwitter();
-  }
-
-  function handleLogout(e) {
-    e.preventDefault();
-
-    logout();
-  }
+const Header = () => {
 
   return (
     <nav className="navbar navbar-light header">
@@ -23,28 +13,7 @@ const Header = ({loginWithTwitter, currentUser, logout}) => {
           <h1 className="name">RemoteBase</h1>
         </a>
 
-          {
-            currentUser ?
-            <div className="header-menu">
-              <a href={pathFor('mySubscriptions')}
-                className="menu-item">
-                My subscriptions
-              </a>
-              <a href="#"
-                className="menu-item"
-                onClick={handleLogout}>
-                Logout
-              </a>
-            </div> :
-            <div className="header-menu">
-              <a className="menu-item"
-                href="#"
-                onClick={handleTwitterLogin}>
-                <i className="fa fa-twitter"></i>
-                Login
-              </a>
-            </div>
-          }
+        <HeaderMenu />
       </div>
     </nav>
   );
