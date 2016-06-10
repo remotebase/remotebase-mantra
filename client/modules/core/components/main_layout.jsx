@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../containers/header';
 import Footer from '../containers/footer';
+import TwitterFollowBtn from '../containers/twitter_follow_btn';
 
 const Layout = ({content = () => null }) => (
   <div className="remotebase-layout">
@@ -12,6 +13,7 @@ const Layout = ({content = () => null }) => (
           {content()}
         </div>
       </div>
+      <TwitterFollowBtn />
     </main>
     <Footer />
   </div>

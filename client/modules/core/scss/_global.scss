@@ -282,3 +282,14 @@ main {
     }
   }
 }
+
+.follow-btn-container {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+
+  @include mobile {
+    display: none;
+  }
+}
