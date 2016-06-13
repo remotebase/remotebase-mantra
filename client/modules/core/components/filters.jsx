@@ -265,21 +265,27 @@ class Filters extends React.Component {
                   </div>
                 </div>
 
-                <div className={classnames('filter-row', {hidden: this.state.filterDisplayLevel < 3})}>
-                  <div className="filter-4x">
-                    <CommunicationFilters
-                      updateFilter={this.updateFilter.bind(this)}
-                      communicationFilters={this.state.filterSelection.communication_methods} />
+                <div className={classnames({hidden: this.state.filterDisplayLevel < 3})}>
+                  <div className="filter-row">
+                    <div className="filter-4x">
+                      <CommunicationFilters
+                        updateFilter={this.updateFilter.bind(this)}
+                        communicationFilters={this.state.filterSelection.communication_methods} />
+                    </div>
                   </div>
-                  <div className="filter-4x">
-                    <CollaborationFilters
-                      updateFilter={this.updateFilter.bind(this)}
-                      collaborationFilters={this.state.filterSelection.collaboration_methods} />
+                  <div className="filter-row">
+                    <div className="filter-4x">
+                      <CollaborationFilters
+                        updateFilter={this.updateFilter.bind(this)}
+                        collaborationFilters={this.state.filterSelection.collaboration_methods} />
+                    </div>
                   </div>
-                  <div className="filter-5x">
-                    <TechnologyFilters
-                      updateFilter={this.updateFilter.bind(this)}
-                      technologyFilters={this.state.filterSelection.technologies} />
+                  <div className="filter-row">
+                    <div className="filter-5x">
+                      <TechnologyFilters
+                        updateFilter={this.updateFilter.bind(this)}
+                        technologyFilters={this.state.filterSelection.technologies} />
+                    </div>
                   </div>
                 </div>
 

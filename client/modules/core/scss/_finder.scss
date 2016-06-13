@@ -249,9 +249,7 @@
 
   .desktop-view-filters {
     .filter-row {
-      &:not(:first-child) {
-        margin-top: 6px;
-      }
+      margin-top: 6px;
 
       &.filter-action-row {
         text-align: right;
