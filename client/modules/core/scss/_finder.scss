@@ -5,6 +5,10 @@
     font-size: 1.2em;
     padding: 26px 0 19px;
     font-weight: 600;
+
+    @include mobile {
+      font-size: 1em;
+    }
   }
 
   .filter-definition {
@@ -19,6 +23,10 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   .filter-label {
@@ -30,16 +38,27 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    // padding-left: 33px;
-    // padding-right: 33px;
-    // margin-bottom: 9px;
     color: #828282;
     border-radius: 3px;
+    font-size: 16px;
 
-    @media(max-width: 499px) {
-      // padding: 4px 9px;
-      // font-size: 14px;
-      // margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+
+    @include laptop-sm {
+      font-size: 13px;
+    }
+
+    @include tablet {
+      font-size: 10.5px;
+      height: 32px;
+    }
+
+    @include mobile {
+      height: 27px;
+      font-size: 11px;
     }
 
     &:hover {
@@ -111,6 +130,11 @@
       display: flex;
       flex-direction: row;
       margin-bottom: 2px;
+
+      &.filter-action-row {
+        text-align: right;
+        margin-top: 4px;
+      }
     }
 
     .filter-label {
@@ -148,6 +172,11 @@
       }
     }
 
+    .company-type-filters {
+      display: flex;
+      flex: 1;
+    }
+
     .filter-context-group {
       margin-top: 6px;
     }
@@ -172,7 +201,7 @@
         border-radius: 3px;
         font-size: 16px;
         padding: 5px 12px;
-        font-size: 12px;
+        font-size: 11px;
         text-align: center;
       }
     }

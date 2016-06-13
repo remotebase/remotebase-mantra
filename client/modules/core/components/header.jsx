@@ -11,7 +11,7 @@ const Header = () => {
         <img src="/images/logo.png" className="header-logo" alt="remotebase"/>
         <h1 className="name">RemoteBase</h1>
       </a>
-      <h2 className="header-desc">Discover the best remote companies</h2>
+      <h2 className="header-desc">Open database of remote companies</h2>
     </nav>
   );
 };

@@ -27,8 +27,6 @@ const CommunicationFilters = ({communicationFilters, updateFilter}) => {
               isSelected={communicationFilters.Skype}
               updateFilter={handleUpdate.bind(this)}
               filterKey="communication_methods.Skype" />
-          </div>
-          <div className="filter-row">
             <Filter label="HipChat"
               isSelected={communicationFilters.HipChat}
               updateFilter={handleUpdate.bind(this)}

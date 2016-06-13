@@ -106,6 +106,7 @@ class Filters extends React.Component {
         <div className="filters container">
           <div className="row">
             <div className="col-xs-12">
+
               <div className="hidden-sm-up mobile-view-filters">
                 <div className="filter-row">
                   <Filter label="Fully remote"
@@ -125,37 +126,6 @@ class Filters extends React.Component {
                     klass="retreats-filter" />
                 </div>
                 <div className="filter-row">
-                  <TeamSizeFilter updateFilter={this.updateFilter.bind(this)}
-                    filterSelection={this.state.filterSelection} />
-                </div>
-                <div className="filter-row">
-                  <div className="filter-group funding-filters">
-                    <Filter label="VC"
-                      updateFilter={this.updateFilter.bind(this)}
-                      filterKey="vc_funded"
-                      klass="vc-filter"
-                      isSelected={this.state.filterSelection.vc_funded}
-                      mutuallyExclusiveFilters={[ 'bootstrapped' ]} />
-                    <Filter label="Bootstrapped"
-                      updateFilter={this.updateFilter.bind(this)}
-                      filterKey="bootstrapped"
-                      isSelected={this.state.filterSelection.bootstrapped}
-                      mutuallyExclusiveFilters={[ 'vc_funded' ]} />
-                  </div>
-                  <div className="filter-group">
-                    <Filter label="Consulting"
-                      updateFilter={this.updateFilter.bind(this)}
-                      filterKey="is_agency"
-                      isSelected={this.state.filterSelection.is_agency}
-                      mutuallyExclusiveFilters={[ 'is_standalone' ]} />
-                    <Filter label="Standalone"
-                      updateFilter={this.updateFilter.bind(this)}
-                      filterKey="is_standalone"
-                      isSelected={this.state.filterSelection.is_standalone}
-                      mutuallyExclusiveFilters={[ 'is_agency' ]} />
-                  </div>
-                </div>
-                <div className="filter-row">
                   <Filter label="Flexible timezone"
                     updateFilter={this.updateFilter.bind(this)}
                     filterKey="asynchronous_collaboration"
@@ -166,26 +136,68 @@ class Filters extends React.Component {
                     isSelected={this.state.filterSelection.official}
                     tooltipText="Only show the official profiles managed by companies" />
                 </div>
-                <div className="filter-row">
-                  <NameFilter updateFilter={this.updateFilter.bind(this, 'name')}
-                    currentValue={this.state.filterSelection.name} />
-                  <DropdownSelectFilter selectedValue={this.state.filterSelection.hiring_region}
-                    defaultValue="Worldwide"
-                    possibleOptions={regions}
-                    updateFilter={this.updateFilter.bind(this, 'hiring_region')} />
+
+                <div className={classnames({hidden: this.state.filterDisplayLevel < 2})}>
+                  <div className="filter-row">
+                    <TeamSizeFilter updateFilter={this.updateFilter.bind(this)}
+                      filterSelection={this.state.filterSelection} />
+                  </div>
+                  <div className="filter-row">
+                    <div className="filter-group funding-filters">
+                      <Filter label="VC"
+                        updateFilter={this.updateFilter.bind(this)}
+                        filterKey="vc_funded"
+                        klass="vc-filter"
+                        isSelected={this.state.filterSelection.vc_funded}
+                        mutuallyExclusiveFilters={[ 'bootstrapped' ]} />
+                      <Filter label="Bootstrapped"
+                        updateFilter={this.updateFilter.bind(this)}
+                        filterKey="bootstrapped"
+                        isSelected={this.state.filterSelection.bootstrapped}
+                        mutuallyExclusiveFilters={[ 'vc_funded' ]} />
+                    </div>
+                    <div className="filter-group company-type-filters">
+                      <Filter label="Consulting"
+                        updateFilter={this.updateFilter.bind(this)}
+                        filterKey="is_agency"
+                        isSelected={this.state.filterSelection.is_agency}
+                        mutuallyExclusiveFilters={[ 'is_standalone' ]} />
+                      <Filter label="Standalone"
+                        updateFilter={this.updateFilter.bind(this)}
+                        filterKey="is_standalone"
+                        isSelected={this.state.filterSelection.is_standalone}
+                        mutuallyExclusiveFilters={[ 'is_agency' ]} />
+                    </div>
+                  </div>
+
+                  <div className="filter-row">
+                    <NameFilter updateFilter={this.updateFilter.bind(this, 'name')}
+                      currentValue={this.state.filterSelection.name} />
+                    <DropdownSelectFilter selectedValue={this.state.filterSelection.hiring_region}
+                      defaultValue="Worldwide"
+                      possibleOptions={regions}
+                      updateFilter={this.updateFilter.bind(this, 'hiring_region')} />
+                  </div>
                 </div>
-                <CommunicationFilters
-                  updateFilter={this.updateFilter.bind(this)}
-                  communicationFilters={this.state.filterSelection.communication_methods}
-                  isShowing={true} />
-                <CollaborationFilters
-                  updateFilter={this.updateFilter.bind(this)}
-                  collaborationFilters={this.state.filterSelection.collaboration_methods}
-                  isShowing={true} />
-                <TechnologyFilters
-                  updateFilter={this.updateFilter.bind(this)}
-                  technologyFilters={this.state.filterSelection.technologies}
-                  isShowing={true} />
+
+                <div className={classnames({hidden: this.state.filterDisplayLevel < 3})}>
+                  <CommunicationFilters
+                    updateFilter={this.updateFilter.bind(this)}
+                    communicationFilters={this.state.filterSelection.communication_methods} />
+                  <CollaborationFilters
+                    updateFilter={this.updateFilter.bind(this)}
+                    collaborationFilters={this.state.filterSelection.collaboration_methods} />
+                  <TechnologyFilters
+                    updateFilter={this.updateFilter.bind(this)}
+                    technologyFilters={this.state.filterSelection.technologies} />
+                </div>
+
+                <div className="filter-row filter-action-row">
+                  <UnselectAllButton onUnselectAll={this.resetFilter.bind(this)} />
+                  <MoreFiltersButton onMoreFilters={this.handleShowMoreFilters.bind(this)}
+                    onLessFilters={this.handleShowLessFilters.bind(this)}
+                    canShowMore={this.state.filterDisplayLevel < 3} />
+                </div>
               </div>
 
 

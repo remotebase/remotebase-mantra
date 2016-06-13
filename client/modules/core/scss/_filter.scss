@@ -6,6 +6,10 @@
 .filter-1x {
   @include filter;
   width: 20%;
+
+  @include mobile {
+    width: 50%;
+  }
 }
 
 .filter-2x {
@@ -26,13 +30,4 @@
 .filter-5x {
   @include filter;
   width: 100%;
-}
-
-.desktop-view-filters {
-  .filter-label {
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }

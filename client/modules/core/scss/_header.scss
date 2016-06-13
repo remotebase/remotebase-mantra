@@ -1,15 +1,15 @@
-.navbar.header { // To overwrite bootstrap
-  margin-bottom: 0px;
-  padding: 7px 0;
-  box-shadow: 0 -1px 1px 2px #B1B1B1;
-  border-radius: 0;
+// .navbar.header { // To overwrite bootstrap
+//   margin-bottom: 0px;
+//   padding: 7px 0;
+//   box-shadow: 0 -1px 1px 2px #B1B1B1;
+//   border-radius: 0;
+//
+//   @include mobile {
+//     margin-bottom: 14px;
+//   }
+// }
 
-  @include mobile {
-    margin-bottom: 14px;
-  }
-}
-
-.header {
+.navbar.header {
   height: 218px;
   background: #1e1f2a;
   color: white;
@@ -18,17 +18,31 @@
   justify-content: center;
   align-items: center;
 
+  @include mobile {
+    height: auto;
+    padding-top: 15px;
+  }
+
   .header-logo {
     width: 69px;
     display: block;
     margin: 0 auto;
     margin-bottom: 8px;
+
+    @include mobile {
+      width: 43px;
+      margin-bottom: 5px;
+    }
   }
 
   .header-desc {
     font-size: 1.4em;
-    margin-top: 11px;
+    margin-top: 12px;
     font-weight: 300;
+
+    @include mobile {
+      font-size: 1em;
+    }
   }
 
   .brand {
@@ -45,6 +59,10 @@
       margin-left: 10px;
       margin-bottom: 0;
       font-weight: 400;
+
+      @include mobile {
+        font-size: 1.3em;
+      }
     }
   }
 
