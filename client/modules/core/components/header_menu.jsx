@@ -15,32 +15,36 @@ const HeaderMenu = ({currentUser, loginWithTwitter, logout}) => {
     logout();
   }
 
-  if (currentUser) {
-    return (
-      <div className="header-menu">
-        <a href={pathFor('mySubscriptions')}
-          className="menu-item">
-          My subscriptions
-        </a>
-        <a href="#"
-          className="menu-item"
-          onClick={handleLogout}>
-          Logout
-        </a>
-      </div>
-    )
-  } else {
-    return (
-      <div className="header-menu">
+  return (
+    <div className="header-menu">
+      <a href="https://mike706.typeform.com/to/o6eSiQ"
+        className="menu-item typeform-share link"
+        data-mode="1"
+        target="_blank">
+        Add company
+      </a>
+      {
+        currentUser ?
+        <span>
+          <a href={pathFor('mySubscriptions')}
+            className="menu-item">
+            My subscriptions
+          </a>
+          <a href="#"
+            className="menu-item"
+            onClick={handleLogout}>
+            Logout
+          </a>
+        </span> :
         <a className="menu-item"
           href="#"
           onClick={handleTwitterLogin}>
           <i className="fa fa-twitter"></i>
           Login
         </a>
-      </div>
-    );
-  }
+      }
+    </div>
+  );
 };
 
 export default HeaderMenu;

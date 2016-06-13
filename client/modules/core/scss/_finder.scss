@@ -1,10 +1,10 @@
 .finder {
   .counter {
     text-align: center;
-    color: #8A8A8A;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    color: #1E1F2A;
     font-size: 1.2em;
+    padding: 26px 0 19px;
+    font-weight: 600;
   }
 
   .filter-definition {
@@ -22,10 +22,8 @@
   }
 
   .filter-label {
-    padding: 6px 12px;
     border: 2px solid #828282;
     cursor: pointer;
-    display: inline-block;
     text-transform: uppercase;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -60,9 +58,15 @@
       margin-left: 2px;
     }
 
-    input[type="checkbox"] {
-      display: none;
+    .fa {
+      margin-right: 3px;
+      font-size: 19px;
     }
+  }
+
+  .filter-action-label {
+    border: 2px solid #f02c41;
+    color: #f02c41;
   }
 
   .filter-group {
@@ -215,8 +219,13 @@
   }
 
   .desktop-view-filters {
-    .filter-row {
-      margin-bottom: 6px;
+    .filter-row:not(:first-child) {
+      margin-top: 6px;
+    }
+
+    .filter-action-row {
+      text-align: right;
+      margin-top: 17px;
     }
 
     .filter-row-stretch {
@@ -236,18 +245,18 @@
       }
     }
 
-    .filter-label {
-      padding: 9px 19px;
-
-      @media(max-width: 1024px) {
-        font-size: 13px;
-        letter-spacing: 0.3px;
-      }
-
-      &:not(:first-of-type) {
-        margin-left: 3px;
-      }
-    }
+    // .filter-label {
+    //   padding: 9px 19px;
+    //
+    //   @media(max-width: 1024px) {
+    //     font-size: 13px;
+    //     letter-spacing: 0.3px;
+    //   }
+    //
+    //   &:not(:first-of-type) {
+    //     margin-left: 3px;
+    //   }
+    // }
 
     .filter-group {
       display: flex;
@@ -284,21 +293,19 @@
 
     .name-filter-container {
       position: relative;
-      display: inline-block;
-      margin-left: 3px;
 
       .fa {
         position: absolute;
-        top: 16px;
-        left: 19px;
+        top: 13px;
+        left: 13px;
         color: #40435C;
       }
 
       .name-filter {
-        border: 2px solid #828282;
-        border-radius: 3px;
-        padding: 9px 20px 9px 40px;
-        font-size: 16px;
+        display: inherit;
+        width: 100%;
+        padding-left: 31px;
+        text-transform: none;
       }
     }
 
@@ -363,15 +370,19 @@
   }
 }
 
+.filters-container {
+  padding: 16px 0;
+  box-shadow: 0 -1px 1px 2px #B1B1B1;
+}
 
 .filters {
-  padding-bottom: 1.7em;
+  // padding-bottom: 1.7em;
 }
 
-.search-actions {
-  margin-top: 8px;
-
-  @media(max-width: 499px) {
-    margin-top: 4px;
-  }
-}
+// .search-actions {
+//   margin-top: 8px;
+//
+//   @media(max-width: 499px) {
+//     margin-top: 4px;
+//   }
+// }

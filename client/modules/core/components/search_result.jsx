@@ -23,16 +23,22 @@ class SearchResult extends React.Component {
     }
 
     return (
-      <div className="search-result">
-        <div className="counter">{companyResultCount} companies found</div>
-        <CompanyList companies={companies} />
-        {
-          isLoadingMore ? <Loading /> : <span></span>
-        }
-        {
-          limit < companyResultCount && !isLoadingMore ?
-          <LoadMoreBtn onLoadMore={this.handleLoadMore.bind(this)}/> : <span></span>
-        }
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12">
+            <div className="search-result">
+              <div className="counter">{companyResultCount} companies found</div>
+              <CompanyList companies={companies} />
+              {
+                isLoadingMore ? <Loading /> : <span></span>
+              }
+              {
+                limit < companyResultCount && !isLoadingMore ?
+                <LoadMoreBtn onLoadMore={this.handleLoadMore.bind(this)}/> : <span></span>
+              }
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

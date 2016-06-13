@@ -1,13 +1,10 @@
 import React from 'react';
-import classnames from 'classnames';
 
-const UnselectAllButton = ({onUnselectAll, klass}) => {
-  let buttonClass = classnames('btn rb-btn-primary unselect-all-btn', klass);
-
+const UnselectAllButton = ({onUnselectAll}) => {
   return (
-    <button className={buttonClass} onClick={onUnselectAll}>
+    <div className="filter-label filter-action-label" onClick={onUnselectAll}>
       Clear filters
-    </button>
+    </div>
   );
 };
 

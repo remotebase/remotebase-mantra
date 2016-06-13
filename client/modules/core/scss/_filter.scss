@@ -1,0 +1,38 @@
+@mixin filter {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.filter-1x {
+  @include filter;
+  width: 20%;
+}
+
+.filter-2x {
+  @include filter;
+  width: 40%;
+}
+
+.filter-3x {
+  @include filter;
+  width: 60%;
+}
+
+.filter-4x {
+  @include filter;
+  width: 80%;
+}
+
+.filter-5x {
+  @include filter;
+  width: 100%;
+}
+
+.desktop-view-filters {
+  .filter-label {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

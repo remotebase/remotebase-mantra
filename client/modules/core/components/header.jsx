@@ -7,14 +7,11 @@ const Header = () => {
 
   return (
     <nav className="navbar navbar-light header">
-      <div className="container header-content">
-        <a className="brand" href={pathFor('home')}>
-          <img src="/images/logo.png" className="header-logo" alt="logo"/>
-          <h1 className="name">RemoteBase</h1>
-        </a>
-
-        <HeaderMenu />
-      </div>
+      <a className="brand" href={pathFor('home')}>
+        <img src="/images/logo.png" className="header-logo" alt="remotebase"/>
+        <h1 className="name">RemoteBase</h1>
+      </a>
+      <h2 className="header-desc">Discover the best remote companies</h2>
     </nav>
   );
 };

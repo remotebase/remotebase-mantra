@@ -5,11 +5,25 @@ class NameFilter extends React.Component {
     super(props);
   }
 
+  componentWillUpdate() {
+    const {currentValue} = this.props;
+
+    if (currentValue === '') {
+      this.refs.name.value = '';
+    }
+  }
+
   handleChange() {
     const {updateFilter} = this.props;
 
     let name = this.refs.name.value;
     updateFilter(name);
+  }
+
+  handleKeyPress(e) {
+    if (e.key === 'Enter') {
+      this.handleChange();
+    }
   }
 
   render() {
@@ -19,11 +33,12 @@ class NameFilter extends React.Component {
       <div className="name-filter-container">
         <i className="fa fa-search"></i>
         <input type="text"
-          className="name-filter"
+          className="filter-label name-filter"
           placeholder="Company name"
           ref="name"
-          value={currentValue}
-          onChange={this.handleChange.bind(this)} />
+          defaultValue={currentValue}
+          onBlur={this.handleChange.bind(this)}
+          onKeyPress={this.handleKeyPress.bind(this)} />
       </div>
     );
   }

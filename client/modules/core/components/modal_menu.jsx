@@ -1,8 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import {pathFor} from '/client/modules/core/libs/helpers';
-
 const ModalMenu = ({company, currentTab, handleTabChange, recordClick}) => {
   function onTabChange(newTab) {
     handleTabChange(newTab);

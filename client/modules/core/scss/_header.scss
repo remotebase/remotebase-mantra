@@ -1,5 +1,5 @@
 .navbar.header { // To overwrite bootstrap
-  margin-bottom: 27px;
+  margin-bottom: 0px;
   padding: 7px 0;
   box-shadow: 0 -1px 1px 2px #B1B1B1;
   border-radius: 0;
@@ -10,8 +10,25 @@
 }
 
 .header {
+  height: 218px;
+  background: #1e1f2a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   .header-logo {
-    width: 46px;
+    width: 69px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  .header-desc {
+    font-size: 1.4em;
+    margin-top: 11px;
+    font-weight: 300;
   }
 
   .brand {
@@ -29,11 +46,6 @@
       margin-bottom: 0;
       font-weight: 400;
     }
-  }
-
-  .header-content {
-    display: flex;
-    align-items: center;
   }
 
   .header-menu {

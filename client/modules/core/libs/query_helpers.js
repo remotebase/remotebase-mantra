@@ -23,7 +23,6 @@ export function booleanObjToArray(obj) {
 export function filterToQuery(filterSelection) {
   // keys in filterSelection that are not actually a property in mongo document
   const non_properties = [ 'has_retreats', 'bootstrapped', 'is_standalone' ];
-  console.log(filterSelection);
 
   let query = {};
 
