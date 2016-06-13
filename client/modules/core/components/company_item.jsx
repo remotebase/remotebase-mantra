@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 import {pathFor} from '/client/modules/core/libs/helpers';
 import OfficialIcon from './official_icon.jsx';
@@ -13,7 +14,10 @@ const CompanyItem = ({company, navToCompany}) => (
             <div className="company-meta">
               <img src={company.getLogoUrl()} alt={`${company.name}`} className="company-logo"/>
               <h3 className="company-name">
-                {company.name}
+                <OverlayTrigger overlay={<Tooltip arrowOffsetLeft={10}>{company.short_description || 'No description found'}</Tooltip>}
+                  placement="bottom">
+                  <span>{company.name}</span>
+                </OverlayTrigger>
                 <OfficialIcon company={company} />
               </h3>
             </div>
@@ -25,7 +29,7 @@ const CompanyItem = ({company, navToCompany}) => (
                   {company.getDistrbituedPercent() || '?'}% <i className="fa fa-globe"></i>
                 </span>
                 <span className="hidden-sm-down">
-                  {company.getDistrbituedPercent() || '?'}% remote
+                  {company.getDistrbituedPercent() || '?'}% distributed
                 </span>
               </span>
             </div>
