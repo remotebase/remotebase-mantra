@@ -219,13 +219,15 @@
   }
 
   .desktop-view-filters {
-    .filter-row:not(:first-child) {
-      margin-top: 6px;
-    }
+    .filter-row {
+      &:not(:first-child) {
+        margin-top: 6px;
+      }
 
-    .filter-action-row {
-      text-align: right;
-      margin-top: 17px;
+      &.filter-action-row {
+        text-align: right;
+        margin-top: 17px;
+      }
     }
 
     .filter-row-stretch {
