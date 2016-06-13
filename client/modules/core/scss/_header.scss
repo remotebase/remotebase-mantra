@@ -67,6 +67,11 @@
   }
 
   .header-menu {
+    @include mobile {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
     .menu-item {
       color: gray;
       margin-right: 7px;
