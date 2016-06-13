@@ -15,6 +15,7 @@ const CompanyItem = ({company, navToCompany}) => (
             <div className="company-meta">
               <h3 className="company-name">
                 {company.name}
+                <OfficialIcon company={company} />
               </h3>
               <div>
                 <span className="company-label">
