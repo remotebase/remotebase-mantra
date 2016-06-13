@@ -26,17 +26,19 @@ class SubscriptionDashboardView extends React.Component {
     let {section} = this.state;
 
     return (
-      <div className="row subscription-dashboard">
-        <div className="col-xs-12 col-sm-3">
-          <Menu section={section}
-            navigateToSection={this.handleSectionChange.bind(this)} />
-        </div>
-        <div className="col-xs-12 col-sm-9">
-          <SubscribedTab isActive={section === 'subscribed'}
-            companies={companies}
-            handleUnsubscribe={this.handleUnsubscribe.bind(this)} />
-          <NotificationMethodsTab isActive={section === 'notification_methods'}
-            user={user} />
+      <div className="container">
+        <div className="row subscription-dashboard">
+          <div className="col-xs-12 col-sm-3">
+            <Menu section={section}
+              navigateToSection={this.handleSectionChange.bind(this)} />
+          </div>
+          <div className="col-xs-12 col-sm-9">
+            <SubscribedTab isActive={section === 'subscribed'}
+              companies={companies}
+              handleUnsubscribe={this.handleUnsubscribe.bind(this)} />
+            <NotificationMethodsTab isActive={section === 'notification_methods'}
+              user={user} />
+          </div>
         </div>
       </div>
     );

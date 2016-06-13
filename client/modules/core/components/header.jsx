@@ -12,6 +12,7 @@ const Header = () => {
         <h1 className="name">RemoteBase</h1>
       </a>
       <h2 className="header-desc">Open database of remote companies</h2>
+      <HeaderMenu />
     </nav>
   );
 };
