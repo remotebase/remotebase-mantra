@@ -60,14 +60,26 @@
       background: #F0F7F9;
     }
 
+    .mobile-company-item {
+      .company-name {
+        margin-left: 0;
+      }
+
+      .company-logo {
+        width: 67px;
+      }
+
+      .company-meta {
+        margin-left: 21px;
+
+        @include mobile-sm {
+          width: 100%;
+        }
+      }
+    }
+
     .company-item {
       height: 100%;
-
-      // @media(min-width: 1200px) {
-      //   display: flex;
-      //   flex: 1;
-      //   align-items: center;
-      // }
 
       .hiring-label-container {
         width: 148px;
@@ -103,6 +115,26 @@
         border: 1px solid #40435C;
         padding: 5px 16px;
         color: #40435C;
+        white-space: nowrap;
+
+        @include mobile {
+          padding: 5px 12px;
+          color: #40435C;
+          font-size: 14px;
+          margin-right: 6px;
+        }
+
+        @include mobile-md {
+          font-size: 12px;
+        }
+
+        @include mobile-sm {
+          padding: 2px 16px;
+          display: block;
+          font-size: 11px;
+          text-align: center;
+          margin-bottom: 3px;
+        }
 
         &.label-hiring {
           background-color: #519Eb0;
@@ -128,148 +160,148 @@
 }
 
 // company list card view
-.company-view-card {
-  .company-item-container {
-    @include card;
-
-    .company-item, .hover-info-container {
-      -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-    }
-
-    .company-item {
-      margin-left: 0;
-    }
-
-    .hover-info-container {
-      position:absolute;
-      top:0;
-      width: 100%;
-      margin-left:-598px;
-      background: #40435C;
-      color: #ffffff;
-      opacity: 0.98;
-      height: 234px;
-    }
-
-    .hover-info {
-      padding: 1.3em 3em;
-      background: #40435C;
-      color: #ffffff;
-      opacity: 0.98;
-      height: 100%;
-
-      @media (max-width: 769px) {
-            padding: 2em 1em;
-      }
-
-      .company-name {
-        display: block;
-        text-align: center;
-        font-size: 1.6em;
-        text-decoration: underline;
-
-        @media (max-width: 769px) {
-          font-size: 17px;
-        }
-      }
-
-      .salary-range {
-        margin-top: 11px;
-        font-size: 1.1em;
-
-        @media (max-width: 769px) {
-          font-size: 11.5px;
-        }
-
-      }
-
-      .summary-list {
-        margin-top: 5px;
-
-        li {
-          font-size: 18px;
-
-          @media (max-width: 769px) {
-            font-size: 13px;
-          }
-
-          .fa {
-            margin-right: 4px;
-          }
-        }
-      }
-
-      .official-icon {
-        color: inherit;
-        margin-right: 4px;
-        margin-left: 0;
-        font-size: inherit;
-      }
-
-      .official-info {
-        font-size: 13px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #F38282;
-      }
-    }
-
-    &:hover {
-      .hover-info-container {
-        margin-left: 0px;
-        border: none;
-      }
-    }
-  }
-
-  .company-item, .hover-info {
-    padding: 2em 0em;
-    // height: 234px;
-
-    @media (max-width: 499px) {
-      padding: 0.5em 0;
-      // height: 198px;
-      overflow: hidden;
-    }
-
-    .company-heading {
-      margin-bottom: 8px;
-    }
-
-    .company-logo {
-      width: 66px;
-      margin-bottom: 14px;
-
-      @media (max-width: 499px) {
-        width: 64px;
-        margin-bottom: 0;
-        width: 48px;
-      }
-    }
-
-    .company-name {
-      font-size: 25px;
-      font-weight: 600;
-      display: inline-block;
-      margin-top: 6px;
-
-      @media (max-width: 499px) {
-        font-size: 1em;
-      }
-    }
-
-    .short-desc {
-      text-transform: uppercase;
-      padding: 0 0.7em;
-
-      @media (max-width: 499px) {
-        font-size: 13px;
-        margin-bottom: 0;
-      }
-    }
-  }
-}
+// .company-view-card {
+//   .company-item-container {
+//     @include card;
+//
+//     .company-item, .hover-info-container {
+//       -webkit-transition: all 0.3s ease;
+//       transition: all 0.3s ease;
+//     }
+//
+//     .company-item {
+//       margin-left: 0;
+//     }
+//
+//     .hover-info-container {
+//       position:absolute;
+//       top:0;
+//       width: 100%;
+//       margin-left:-598px;
+//       background: #40435C;
+//       color: #ffffff;
+//       opacity: 0.98;
+//       height: 234px;
+//     }
+//
+//     .hover-info {
+//       padding: 1.3em 3em;
+//       background: #40435C;
+//       color: #ffffff;
+//       opacity: 0.98;
+//       height: 100%;
+//
+//       @media (max-width: 769px) {
+//             padding: 2em 1em;
+//       }
+//
+//       .company-name {
+//         display: block;
+//         text-align: center;
+//         font-size: 1.6em;
+//         text-decoration: underline;
+//
+//         @media (max-width: 769px) {
+//           font-size: 17px;
+//         }
+//       }
+//
+//       .salary-range {
+//         margin-top: 11px;
+//         font-size: 1.1em;
+//
+//         @media (max-width: 769px) {
+//           font-size: 11.5px;
+//         }
+//
+//       }
+//
+//       .summary-list {
+//         margin-top: 5px;
+//
+//         li {
+//           font-size: 18px;
+//
+//           @media (max-width: 769px) {
+//             font-size: 13px;
+//           }
+//
+//           .fa {
+//             margin-right: 4px;
+//           }
+//         }
+//       }
+//
+//       .official-icon {
+//         color: inherit;
+//         margin-right: 4px;
+//         margin-left: 0;
+//         font-size: inherit;
+//       }
+//
+//       .official-info {
+//         font-size: 13px;
+//         text-align: center;
+//         text-transform: uppercase;
+//         color: #F38282;
+//       }
+//     }
+//
+//     &:hover {
+//       .hover-info-container {
+//         margin-left: 0px;
+//         border: none;
+//       }
+//     }
+//   }
+//
+//   .company-item, .hover-info {
+//     padding: 2em 0em;
+//     // height: 234px;
+//
+//     @media (max-width: 499px) {
+//       padding: 0.5em 0;
+//       // height: 198px;
+//       overflow: hidden;
+//     }
+//
+//     .company-heading {
+//       margin-bottom: 8px;
+//     }
+//
+//     .company-logo {
+//       width: 66px;
+//       margin-bottom: 14px;
+//
+//       @media (max-width: 499px) {
+//         width: 64px;
+//         margin-bottom: 0;
+//         width: 48px;
+//       }
+//     }
+//
+//     .company-name {
+//       font-size: 25px;
+//       font-weight: 600;
+//       display: inline-block;
+//       margin-top: 6px;
+//
+//       @media (max-width: 499px) {
+//         font-size: 1em;
+//       }
+//     }
+//
+//     .short-desc {
+//       text-transform: uppercase;
+//       padding: 0 0.7em;
+//
+//       @media (max-width: 499px) {
+//         font-size: 13px;
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+// }
 
 // .company-modal {
 //   //

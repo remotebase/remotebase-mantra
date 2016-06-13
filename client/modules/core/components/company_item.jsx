@@ -9,7 +9,29 @@ const CompanyItem = ({company, navToCompany}) => (
   <li className="col-xs-12">
     <a href={pathFor('company', {companySlug: company.slug})} className="company-item-link">
       <div className="company-item-container">
-        <div className="row company-item">
+        <div className="row company-item mobile-company-item hidden-sm-up">
+          <div className="col-xs-12 company-item-section">
+            <img src={company.getLogoUrl()} alt={`${company.name}`} className="company-logo"/>
+            <div className="company-meta">
+              <h3 className="company-name">
+                {company.name}
+              </h3>
+              <div>
+                <span className="company-label">
+                  {company.getDistrbituedPercent() || '?'}% <i className="fa fa-globe"></i>
+                </span>
+                <span className="company-label">
+                  {company.team_size || '?'} <i className="fa fa-users"></i>
+                </span>
+                <span className={classnames('company-label', {'label-hiring': company.is_hiring, 'label-not-hiring': !company.is_hiring})}>
+                  {company.is_hiring ? 'Hiring' : 'Not hiring'}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row company-item desktop-company-item hidden-sm-down">
           <div className="col-xs-12 col-sm-4 company-item-section">
             <div className="company-meta">
               <img src={company.getLogoUrl()} alt={`${company.name}`} className="company-logo"/>
@@ -25,22 +47,12 @@ const CompanyItem = ({company, navToCompany}) => (
           <div className="col-xs-12 col-sm-8 company-item-section">
             <div className="distributed-ratio-label-container">
               <span className="company-label">
-                <span className="hidden-sm-up">
-                  {company.getDistrbituedPercent() || '?'}% <i className="fa fa-globe"></i>
-                </span>
-                <span className="hidden-sm-down">
-                  {company.getDistrbituedPercent() || '?'}% distributed
-                </span>
+                {company.getDistrbituedPercent() || '?'}% distributed
               </span>
             </div>
             <div className="team-size-label-container">
               <span className="company-label">
-                <span className="hidden-sm-up">
-                  {company.team_size || '?'} <i className="fa fa-users"></i>
-                </span>
-                <span className="hidden-sm-down">
-                  {company.team_size || '?'} people
-                </span>
+                {company.team_size || '?'} people
               </span>
             </div>
             <div className="hiring-label-container">
