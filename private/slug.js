@@ -96,10 +96,12 @@ data.map(company => {
     if (val === 0 && !_.includes(['non_remote_team_size', 'salary_lower_bound', 'salary_upper_bound', 'note', 'sex_ratio', 'family_leave', 'num_retreats_per_year', 'founded_year'], key)) {
       company[key] = false;
     }
-    if (val === 1) {
+    if (val === 1 && !_.includes(['non_remote_team_size', 'salary_lower_bound', 'salary_upper_bound', 'note', 'sex_ratio', 'family_leave', 'num_retreats_per_year', 'founded_year'], key)) {
       company[key] = true;
     }
   });
+
+  company.is_hiring = false;
 
   company.logo_url = `/images/companies/${company.slug.replace(/\-/g, '_')}.png`;
   company.logo_file_name = company.slug.replace(/\-/g, '_');

@@ -24,6 +24,22 @@ export default function () {
 
     'debug.insertCompany'(companyDoc) {
       Companies.insert(companyDoc);
-    }
+    },
+
+    'debug.import'() {
+      let companies = JSON.parse(Assets.getText('addition.json'));
+      companies.forEach(company => {
+        console.log(company.name);
+        Companies.insert(company);
+      });
+      console.log('Done debug.import');
+    },
+    'debug.undo-import'() {
+      let companies = JSON.parse(Assets.getText('addition.json'));
+      companies.forEach(company => {
+        Companies.remove({name: company.name});
+      });
+      console.log('Done debug.undo-import');
+    },
   });
 }
