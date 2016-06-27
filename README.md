@@ -3,13 +3,12 @@
 The codebase that used to power [RemoteBase](https://remotebase.io),
 an open database of remote companies.
 
-This was open sourced to provide a practical example for building Meteor apps
-with Mantra.
+This was open sourced as a practical example for building Meteor apps with Mantra.
 
 
 ## Technology Stack
 
-* Meteor (With Mantra application architecture)
+* Meteor (With [Mantra](https://kadirahq.github.io/mantra/) application architecture)
 * React
 * MongoDB
 
